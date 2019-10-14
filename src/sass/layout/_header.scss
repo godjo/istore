@@ -1,0 +1,105 @@
+.header {
+  background-color: #E5E5E5;
+
+  /* select city, links and login */
+  &__top {
+    font: 500 16px/24px FuturaPT;
+
+    &-select-city {
+      span {
+        color: rgba(51, 51, 51, 0.5);
+      }
+
+      a {
+        position: relative;
+        padding-right: 15px;
+
+        &::after {
+          position: absolute;
+          content: '';
+          top: 10px;
+          right: 0;
+          width: 8px;
+          height: 8px;
+          border-top: 2px solid;
+          border-left: 2px solid;
+          border-radius: 3px 0 0 0;
+          transform: rotate(225deg) translate(0, 50%);
+        }
+      }
+    }
+
+    a {
+      color: #FF548C;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+
+    &-list {
+      li {
+        position: relative;
+        text-align: center;
+
+        &::after {
+          position: absolute;
+          content: "";
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 1px;
+          height: 20px;
+          background-color: rgba(0, 0, 0, .1);
+        }
+
+        &:first-of-type {
+          &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 1px;
+            height: 20px;
+            background-color: rgba(0, 0, 0, .1);
+          }
+
+          a {
+            width: 18px;
+            height: 18px;
+            background: url("../img/pic/logo/insta-logo.svg") center no-repeat;
+          }
+        }
+
+        &:nth-of-type(2) {
+          a {
+            width: 25px;
+            height: 14px;
+            background: url("../img/pic/logo/vk-logo.svg") center no-repeat;
+          }
+
+        }
+
+        a {
+          position: relative;
+          display: block;
+          padding: 0 20px;
+          min-width: 60px;
+        }
+
+        svg {
+          position: absolute;
+          display: block;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
