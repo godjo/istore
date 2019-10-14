@@ -1,0 +1,23 @@
+*,
+::before,
+::after {
+    box-sizing: border-box !important;
+    outline: none;
+}
+
+body {
+    position: relative;
+    font-family: 'FuturaPT', Roboto, sans-serif;
+    font-weight: normal;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    transition: opacity .3s;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+  }
