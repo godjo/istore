@@ -21,28 +21,28 @@
     }
   }
 
-  // 640 - 1199
+  // 640 - 1299
   @if $size=='sm' {
     @media only screen and (min-width: $breakpoint-sm + px) and (max-width: ($breakpoint-lg - 1) + px) {
       @content;
     }
   }
 
-  // 959 - 1199
+  // 959 - 1299
   @if $size=='m' {
     @media only screen and (min-width: $breakpoint-md + px) and (max-width: ($breakpoint-lg - 1) + px) {
       @content;
     }
   }
 
-  // 1200 +
+  // 1300 +
   @if $size=='l' {
     @media only screen and (min-width: $breakpoint-lg + px) {
       @content;
     }
   }
 
-  // 0 - 1199
+  // 0 - 1299
   @if $size=='xl' {
     @media only screen and (min-width: 0) and (max-width: ($breakpoint-lg - 1) + px) {
       @content;
