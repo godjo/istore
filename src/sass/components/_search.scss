@@ -1,0 +1,28 @@
+.search {
+	position: relative;
+
+	@include screen(l) {
+		margin-right: 10px;
+	}
+
+	&::after {
+		position: absolute;
+		content: "";
+		right: 20px;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		width: 18px;
+		height: 18px;
+		background: url("../img/pic/ico/search-ico.svg") no-repeat;
+		pointer-events: none;
+	}
+
+	input {
+		padding: 11px 20px 12px;
+		width: 100%;
+		border-radius: 8px;
+		border: none;
+		background: #EFEFF0;
+	}
+}
