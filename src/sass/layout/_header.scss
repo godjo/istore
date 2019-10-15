@@ -1,9 +1,9 @@
 .header {
-  background-color: #E5E5E5;
 
   /* select city, links and login */
   &__top {
     font: 500 16px/24px FuturaPT;
+    background-color: #E5E5E5;
 
     &-select-city {
       span {
@@ -102,4 +102,178 @@
       }
     }
   }
+
+  &__logo {
+
+    @include screen(l) {
+      margin-right: 60px;
+    }
+  }
+
+  &__navigation {
+    @include screen(l) {
+      margin-right: 50px;
+    }
+
+    a {
+      border-bottom: 1px solid transparent;
+      font: 500 16px/22px FuturaPT;
+      color: #30373d;
+      transition: border .3s;
+
+      &:hover {
+        border-color: #30373d;
+      }
+    }
+  }
+
+  &__contacts {
+    span {
+      color: rgba(51, 51, 51, .5);
+
+      &:first-child {
+        position: relative;
+        font: normal 14px/18px FuturaPT;
+
+        @include screen(l) {
+          padding-right: 20px;
+          margin-right: 20px;
+        }
+
+        &:after {
+          position: absolute;
+          content: "";
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 1px;
+          height: 40px;
+          background-color: #E9E9E9;
+        }
+      }
+
+      &:last-child {
+        font: normal 11px/13px Roboto;
+      }
+    }
+
+    a {
+      position: relative;
+      /* padding-left: 19px; */
+      margin-bottom: 5px;
+      font: 600 20px/26px FuturaPT;
+      color: #333333;
+
+      svg {
+        transition: transform .3s;
+      }
+
+      &:hover svg {
+        transform: scale(1.3);
+      }
+
+      /* &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 14px;
+        height: 14px;
+        background: url("../img/pic/ico/phone-ico.svg") no-repeat;
+      } */
+    }
+  }
+
+  &__btn-catalog {
+    padding: 10px 15px 9px;
+    max-width: 230px;
+    box-shadow: 0px 4px 12px rgba(255, 84, 140, 0.4);
+    border-radius: 8px;
+    background-color: #FF548C;
+    font: 600 15px/19px FuturaPT;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    @include screen(l) {
+      margin-right: 10px;
+    }
+
+    svg {
+      margin: 0 15px 2px 0;
+    }
+  }
+
+  &__bottom {
+    @include screen(l) {
+      margin-top: 25px;
+    }
+
+    nav {
+      a {
+        padding: 0 35px;
+        white-space: nowrap;
+        font: 500 18px/23px FuturaPT;
+        color: #30373D;
+      }
+
+      img {
+        margin-right: 10px;
+      }
+
+      li:not(:last-of-type) {
+        position: relative;
+
+        &::after {
+          position: absolute;
+          content: "";
+          top: 0;
+          bottom: 0;
+          right: 0;
+          margin: auto;
+          width: 1px;
+          height: 50px;
+          background-color: rgba(0, 0, 0, .1);
+        }
+      }
+    }
+  }
+
+  &__banner {
+    position: relative;
+    padding: 15px 30px 15px 105px;
+    width: 310px;
+    text-align: right;
+    background-color: #F4F4F4;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+
+    img {
+      position: absolute;
+      left: 20px;
+      bottom: 0;
+      mix-blend-mode: darken;
+    }
+
+    span {
+      display: block;
+
+      &:first-of-type {
+        margin-bottom: 5px;
+        font: 500 11px/13px Roboto;
+        text-transform: uppercase;
+        color: #FF548C;
+      }
+
+      &:last-of-type {
+        font: 700 20px/23px Roboto;
+        color: #30373D;
+      }
+    }
+  }
+
+
 }
