@@ -26,7 +26,7 @@ gulp.task("styles", function () {
     .pipe(sass())
     //.pipe(groupmq())  group media queries
     .pipe(postcss([autoprefixer()]))
-    .pipe(cleanCSS())
+    //.pipe(cleanCSS())
     .pipe(rename({
       suffix: ".min"
     }))
@@ -106,7 +106,7 @@ gulp.task("scripts", function () {
         presets: ["@babel/env"]
       })
     )
-    .pipe(uglify())
+    //.pipe(uglify())
     .pipe(rename({
       suffix: ".min"
     }))
