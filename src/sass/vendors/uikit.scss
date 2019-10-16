@@ -7842,8 +7842,24 @@ iframe.uk-cover {
 }
 
 .uk-flex-column {
+  &\@x {
+    @include screen(x) {
+      flex-direction: column;
+    }
+  }
+
   &\@s {
     @include screen(xl) {
+      flex-direction: column;
+    }
+  }
+
+  &\@m {
+    @include screen(sm) {
+      flex-direction: column;
+    }
+
+    @include screen(l) {
       flex-direction: column;
     }
   }
@@ -7856,9 +7872,25 @@ iframe.uk-cover {
 }
 
 .uk-flex-column-reverse {
+  &\@x {
+    @include screen(x) {
+      flex-direction: column;
+    }
+  }
+
   &\@s {
     @include screen(xl) {
       flex-direction: column-reverse;
+    }
+  }
+
+  &\@m {
+    @include screen(sm) {
+      flex-direction: column;
+    }
+
+    @include screen(l) {
+      flex-direction: column;
     }
   }
 

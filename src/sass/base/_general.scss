@@ -21,4 +21,42 @@ button {
     width: 100%;
     border: none;
     background-color: transparent;
-  }
+}
+
+.bg-full-width {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        display: block !important;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        height: 100%;
+        width: 100vw;
+        z-index: -1;
+        background-color: #F2F2F2;
+    }
+}
+
+.bg-full-width--gradient {
+    position: relative!important;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        display: block !important;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        height: 100%;
+        width: 100vw;
+        z-index: -1;
+        background: linear-gradient(360deg, #f2f2f2 0%, rgba(255, 255, 255, 0.0001) 100%);
+    }
+}
