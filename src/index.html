@@ -1,9 +1,9 @@
 //= components/head.html
 
 <body>
-    //= components/header.html
-
-    <div class="main-banner uk-container">
+    <!-- //= components/header.html -->
+    <!-- Slider top -->
+    <div class="main-banner uk-container bg-full-width--gradient">
         <div class="main-banner__container">
             <ul class="swiper-wrapper">
                 <li class="swiper-slide">
@@ -21,6 +21,26 @@
         <div class="main-banner__button main-banner__button--next uk-visible@l"></div>
         <div class="main-banner__button main-banner__button--prev uk-visible@l"></div>
     </div>
+
+    <!-- Banners -->
+    <div
+        class="uk-container uk-child-width-1-2@s uk-flex uk-flex-column@x bg-full-width uk-padding-large-top@l uk-padding-large-top@s">
+        <!-- banner-1 -->
+        <div class="banner banner--pink">
+            <img src="img/pic/ico/banner-pink-title.svg" width="173" height="28" alt="">
+            <p>В наличии и по лучшей цене</p>
+            <a href="#">В каталог</a>
+            <img src="img/pic/bg/banner-pink-mobile.jpg" alt="">
+        </div>
+        <!-- banner-2 -->
+        <div class="banner banner--white">
+            <span>Аксессуары</span>
+            <p>Чехлы, зарядки, наушники</p>
+            <a href="#">В каталог</a>
+            <img src="img/pic/bg/banner-white.jpg" alt="">
+        </div>
+    </div>
+
     //= components/footer.html
 </body>
 //= components/bottom.html
