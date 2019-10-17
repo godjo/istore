@@ -43,7 +43,7 @@ button {
 }
 
 .bg-full-width--gradient {
-    position: relative!important;
+    position: relative !important;
 
     &::after {
         content: "";
@@ -58,5 +58,42 @@ button {
         width: 100vw;
         z-index: -1;
         background: linear-gradient(360deg, #f2f2f2 0%, rgba(255, 255, 255, 0.0001) 100%);
+    }
+}
+
+.title {
+    &--small {
+        color: #30373D;
+
+        @include screen(xl) {
+            font: 500 28px/33px FuturaPT;
+        }
+
+        @include screen(l) {
+            font: 500 32px/37px FuturaPT;
+        }
+    }
+}
+
+.link-see-all {
+    position: relative;
+    padding-right: 30px;
+    font: 500 16px/22px FuturaPT;
+    color: #D63469;
+    transition: transform .3s;
+    /* чинит текст который скачет при scale */
+    backface-visibility: hidden;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    svg {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        transition: transform .3s;
     }
 }
