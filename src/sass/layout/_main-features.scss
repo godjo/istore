@@ -1,0 +1,112 @@
+.main-features {
+  background-color: #2C0952;
+
+  .title {
+    color: #ffffff;
+  }
+
+  li {
+    &:not(:last-of-type) {
+      @include screen(xl) {
+        margin-right: 10px;
+      }
+
+      @include screen(l) {
+        margin-right: 20px;
+      }
+    }
+
+    div {
+      position: relative;
+      padding-bottom: 20px;
+      min-height: 431.641px;
+      text-align: center;
+      box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+      background: #FFFFFF;
+      overflow: hidden;
+      color: #30373D;
+    }
+
+    img {
+      margin: auto;
+      width: 100%;
+      height: auto;
+    }
+
+    span {
+      display: block;
+      padding: 0 15px;
+      margin-bottom: 15px;
+      font: 500 28px/33px FuturaPT;
+    }
+
+    p {
+      padding: 0 15px;
+      margin-bottom: 60px;
+      font: normal 16px/24px Roboto;
+    }
+
+    a {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      font: 600 16px/22px FuturaPT;
+      color: #FF548C;
+    }
+  }
+
+
+
+  .main-features__container {
+    @include screen(xl) {
+      padding-right: 20px;
+    }
+  }
+
+  .swiper-wrapper {
+    flex-wrap: nowrap !important;
+
+    @include screen(l) {
+      transform: translate3d(0px, 0, 0) !important;
+    }
+  }
+
+  .swiper-pagination {
+    @include screen(xl) {
+      position: relative;
+      display: flex;
+    }
+
+    @include screen(l) {
+      display: none;
+    }
+
+    &-bullet {
+      height: 3px;
+      background: #FF548C;
+      box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+
+      @include screen(x) {
+        width: calc(100% / 4);
+      }
+
+      @include screen(s) {
+        width: calc(100% / 3);
+      }
+
+      @include screen(m) {
+        width: calc(100% / 2);
+      }
+
+      &:not(:last-of-type) {
+        margin-right: 5px;
+      }
+    }
+  }
+
+
+}

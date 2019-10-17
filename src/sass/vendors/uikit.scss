@@ -266,18 +266,18 @@
 
   /* Horizontal */
   .uk-grid {
-    margin-left: -40px;
+    margin-left: -20px;
   }
 
   .uk-grid>* {
-    padding-left: 40px;
+    padding-left: 20px;
   }
 
   /* Vertical */
   .uk-grid+.uk-grid,
   .uk-grid>.uk-grid-margin,
   *+.uk-grid-margin {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 
@@ -7922,7 +7922,6 @@ iframe.uk-cover {
 .uk-grid-small {
   margin-left: -10px;
 }
-
 
 .uk-padding-top-0 {
   padding-top: 0;
