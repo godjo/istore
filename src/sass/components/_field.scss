@@ -1,0 +1,19 @@
+.field {
+  &__title {
+    display: block;
+    margin-bottom: 10px;
+    font: 600 16px/19px FuturaPT;
+    text-transform: uppercase;
+    color: #30373D;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    font: normal 15px/18px Roboto;
+    color: #30373D;
+    background: #F3F2F4;
+  }
+}

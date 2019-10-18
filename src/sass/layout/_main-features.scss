@@ -53,12 +53,11 @@
       left: 0;
       right: 0;
       margin: auto;
+      width: max-content;
       font: 600 16px/22px FuturaPT;
       color: #FF548C;
     }
   }
-
-
 
   .main-features__container {
     @include screen(xl) {
@@ -107,6 +106,4 @@
       }
     }
   }
-
-
 }
