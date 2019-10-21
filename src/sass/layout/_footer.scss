@@ -1,4 +1,10 @@
 .footer {
+  &__container {
+    @include screen(xl) {
+      padding: 40px 5px 0;
+    }
+  }
+
   &__subtitle {
     text-transform: uppercase;
     font: 600 16px/19px FuturaPT;
@@ -6,14 +12,27 @@
   }
 
   &__description {
+    @include screen(xl) {
+      order: 1;
+    }
+
     a {
       display: inline-block;
       margin-bottom: 25px;
+
+      @include screen(xl) {
+        padding: 0 15px;
+      }
     }
 
     p {
       font: normal 14px/24px Roboto;
       color: #555555;
+
+      @include screen(xl) {
+        margin-bottom: 20px;
+        padding: 0 15px;
+      }
 
       @include screen(l) {
         margin-bottom: 60px;
@@ -27,10 +46,22 @@
     span {
       font: normal 12px/18px Roboto;
       color: rgba(51, 51, 51, .5);
+
+      @include screen(xl) {
+        display: block;
+        padding: 20px 15px;
+        border-top: 1px solid #F1E8E8;
+      }
     }
   }
 
   &__menu {
+    @include screen(xl) {
+      margin-bottom: 40px;
+      padding: 0 15px 20px;
+      border-bottom: 1px solid #F1E8E8;
+    }
+
     @include screen(l) {
       padding-left: 115px;
     }
@@ -41,8 +72,15 @@
     }
 
     a {
+      border-bottom: 1px solid transparent;
       font: 500 16px/24px FuturaPT;
       color: #333333;
+      transition: border .3s, color .3s;
+
+      &:hover {
+        border-color: #FF548C;
+        color: #FF548C;
+      }
     }
 
     li:not(:last-of-type) {
@@ -58,9 +96,17 @@
 
     .footer__subtitle {
       margin-bottom: 10px;
+
+      @include screen(xl) {
+        padding: 0 15px;
+      }
     }
 
     &-container {
+      @include screen(xl) {
+        padding: 0 15px;
+      }
+
       a {
         font: 600 32px/37px FuturaPT;
         color: #333333;
@@ -77,7 +123,65 @@
     margin-bottom: 10px;
     font: normal 14px/32px Roboto;
     color: #30373D;
+
+    @include screen(xl) {
+      padding: 0 15px;
+    }
   }
 
-  
+  &__btn-map {
+    display: inline-block;
+    margin-bottom: 25px;
+    width: max-content;
+    border-bottom: 1px solid transparent;
+    font: 600 16px/22px FuturaPT;
+    color: #FF548C;
+    cursor: pointer;
+    transition: border .3s;
+
+    @include screen(xl) {
+      padding: 0 15px;
+    }
+
+    &:hover {
+      border-color: #FF548C;
+    }
+  }
+
+  &__socials {
+    margin-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+
+    @include screen(xl) {
+      padding: 20px 15px 0;
+    }
+
+    @include screen(l) {
+      padding-top: 20px;
+    }
+
+    li:not(:last-of-type) {
+      margin-right: 30px;
+    }
+
+    a {
+      transition: opacity .3s;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+
+  .btn {
+    padding: 10px 15px 9px;
+    max-width: 210px;
+    border-radius: 8px;
+    font: 600 16px/22px FuturaPT;
+    cursor: pointer;
+
+    @include screen(xl) {
+      margin: 0 15px 40px;
+    }
+  }
 }
