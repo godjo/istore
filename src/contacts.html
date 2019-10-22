@@ -1,8 +1,119 @@
 //= components/head.html
 
-<body>
-  <div class="uk-container frame">
+<body class="contacts">
+  <div class="contacts__container uk-container bg-full-width">
+    <div class="frame">
+      <ul class="breadcrumbs uk-subnav uk-subnav-divider">
+        <li><a href="#">Главная</a></li>
+        <li class="uk-active"><a href="#">Контакты</a></li>
+      </ul>
 
+      <div class="contacts__header uk-flex uk-flex-between uk-flex-wrap">
+        <h1 class="title title--medium">Контакты и адреса пунктов выдачи</h1>
+        <div class="uk-flex uk-flex-middle uk-flex-wrap">
+          <label class="uk-margin-right">Сортировать</label>
+          <select>
+            <option data-display="Санкт-Петербург">Санкт-Петербург</option>
+            <option value="1">Москва</option>
+            <option value="2">Псков</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="contacts__switcher">
+        <ul class="uk-subnav" uk-switcher>
+          <li>
+            <a href="#">Списком</a>
+          </li>
+          <li>
+            <a href="#">На карте</a>
+          </li>
+        </ul>
+
+        <ul class="uk-switcher">
+          <li>
+            <!-- Swiper -->
+            <div class="contacts__swiper-container">
+              <ul class="swiper-wrapper" uk-toggle="target: > .swiper-slide; cls: active">
+                <li class="swiper-slide">
+                  <div class="contacts__info uk-flex uk-flex-column">
+                    <span class="contacts__info-title">Савеловская</span>
+                    <span class="contacts__info-address">Сущевский Вал 5 с 6,</span>
+                    <span class="contacts__info-phone">0987654321</span>
+                    <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="contacts__info uk-flex uk-flex-column">
+                    <span class="contacts__info-title">Ломоновский проспект</span>
+                    <span class="contacts__info-address">ул. Мосфильмовская 31</span>
+                    <span class="contacts__info-phone">0987654321</span>
+                    <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="contacts__info uk-flex uk-flex-column">
+                    <span class="contacts__info-title">Озерная</span>
+                    <span class="contacts__info-address">ул. Озерная 38</span>
+                    <span class="contacts__info-phone">0987654321</span>
+                    <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="contacts__info uk-flex uk-flex-column">
+                    <span class="contacts__info-title">Кузьминки</span>
+                    <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
+                    <span class="contacts__info-phone">0987654321</span>
+                    <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="contacts__info uk-flex uk-flex-column">
+                    <span class="contacts__info-title">Кузьминки</span>
+                    <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
+                    <span class="contacts__info-phone">0987654321</span>
+                    <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="contacts__info uk-flex uk-flex-column">
+                    <span class="contacts__info-title">Кузьминки</span>
+                    <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
+                    <span class="contacts__info-phone">0987654321</span>
+                    <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="contacts__info uk-flex uk-flex-column">
+                    <span class="contacts__info-title">Кузьминки</span>
+                    <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
+                    <span class="contacts__info-phone">0987654321</span>
+                    <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="contacts__info uk-flex uk-flex-column">
+                    <span class="contacts__info-title">Кузьминки</span>
+                    <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
+                    <span class="contacts__info-phone">0987654321</span>
+                    <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
+                  </div>
+                </li>
+                <li class="swiper-slide">Slide 9</li>
+                <li class="swiper-slide">Slide 10</li>
+              </ul>
+              <!-- Add Scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </li>
+          <li>
+            <iframe class="contacts__map"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53787.65773638526!2d30.337858222679674!3d59.93387135736224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1562672617310!5m2!1sru!2sru"
+              width="750" height="470" style="border:0" allowfullscreen></iframe>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 
 
