@@ -81,17 +81,16 @@
 
   .btn {
     padding: 15px;
+    max-width: 230px;
     text-transform: uppercase;
     font: 600 16px/19px FuturaPT;
 
     @include screen(xl) {
       margin: 0 30px;
-      max-width: 300px;
     }
 
     @include screen(l) {
       align-self: flex-end;
-      max-width: 230px;
     }
   }
 }
