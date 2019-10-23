@@ -73,6 +73,18 @@ button {
             font: 500 32px/37px FuturaPT;
         }
     }
+
+    &--medium {
+        color: #30373D;
+
+        @include screen(xl) {
+            font: 500 28px/33px FuturaPT;
+        }
+
+        @include screen(l) {
+            font: 500 38px/48px FuturaPT;
+        }
+    }
 }
 
 .link-see-all {
@@ -95,5 +107,82 @@ button {
         bottom: 0;
         margin: auto;
         transition: transform .3s;
+    }
+}
+
+/* subnav */
+.breadcrumbs {
+    &.uk-subnav>*> :first-child {
+        color: rgba(51, 51, 51, .8) !important;
+        font: normal 14px/16px FuturaPT !important;
+        text-transform: none !important;
+    }
+
+    &.uk-subnav>.uk-active>a {
+        color: rgba(51, 51, 51, .4) !important;
+
+        &:hover {
+            color: rgba(51, 51, 51, .8) !important;
+        }
+    }
+
+    &.uk-subnav-divider> :nth-child(n+2):not(.uk-first-column)::before {
+        position: absolute;
+        left: 8px;
+        content: "";
+        height: 9px !important;
+        width: 5px !important;
+        margin-left: 0px;
+        margin-right: 20px;
+        border: none !important;
+        background: url("../img/pic/ico/arrow.svg") no-repeat;
+        background-size: contain;
+    }
+}
+
+
+
+/* nice-select */
+
+.nice-select {
+    min-width: 215px !important;
+    background: #FFFFFF !important;
+    border: 1px solid #E7E7E7 !important;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05) !important;
+    border-radius: 10px !important;
+
+    &::after {
+        position: absolute !important;
+        top: 0 !important;
+        bottom: 0;
+        right: 12px;
+        margin: auto !important;
+        height: 8px !important;
+        width: 8px !important;
+        border-bottom: 2px solid #F8355E !important;
+        border-right: 2px solid #F8355E !important;
+        pointer-events: none;
+        position: absolute;
+        transform-origin: 66% 66%;
+        transform: rotate(45deg);
+        transition: all 0.3s ease-in-out !important;
+    }
+
+    .option {
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        min-height: auto !important;
+        padding: 15px 15px !important;
+        font: normal 14px/16px FuturaPT !important;
+        color: #30373D !important;
+
+        &.selected {
+            font-weight: 500 !important;
+        }
+    }
+
+    &.open .list {
+        width: 100%;
     }
 }

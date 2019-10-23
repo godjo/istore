@@ -1,0 +1,274 @@
+.contacts {
+  .breadcrumbs {
+    @include screen(xl) {
+      padding: 25px 20px 0;
+      margin-bottom: 20px;
+    }
+
+    @include screen(l) {
+      padding: 15px 30px 0;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__container {
+    @include screen(xl) {
+      padding: 0;
+    }
+  }
+
+  .frame {
+    overflow: hidden;
+  }
+
+  &__header {
+    @include screen(xl) {
+      padding: 0 20px;
+      margin-bottom: 20px;
+    }
+
+    @include screen(l) {
+      margin-bottom: 20px;
+      padding: 0 20px 0 30px;
+    }
+
+    .title {
+      margin-right: 20px;
+
+      @include screen(xl) {
+        margin-bottom: 20px;
+      }
+    }
+
+    label {
+      text-transform: uppercase;
+      font: 600 12px/15px FuturaPT;
+      color: rgba(48, 55, 61, .4);
+
+      @include screen(x) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  /* Tabs */
+  &__switcher {
+    .uk-switcher> :not(.uk-active) {
+      @include screen(l) {
+        display: block !important;
+      }
+    }
+
+    .uk-subnav>*> :first-child {
+      color: rgba(51, 51, 51, .8) !important;
+      font: 500 14px/16px FuturaPT !important;
+      text-transform: none !important;
+    }
+
+    .uk-subnav {
+
+      @include screen(xl) {
+        padding: 0 20px 10px;
+      }
+
+      @include screen(l) {
+        display: none;
+      }
+    }
+
+    .uk-subnav a {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 50%;
+        height: 5px;
+        background: transparent;
+        border-radius: 100px 100px 0px 0px;
+        transition: width .15s;
+      }
+    }
+
+    .uk-subnav>.uk-active>a {
+      position: relative;
+      color: #FF548C !important;
+
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        height: 5px;
+        background: #FF548C;
+        border-radius: 100px 100px 0px 0px;
+      }
+    }
+
+    .uk-switcher {
+      @include screen(l) {
+        display: flex !important;
+        justify-content: space-between !important;
+      }
+
+      li:first-of-type {
+        @include screen(l) {
+          flex: 1 !important;
+        }
+      }
+    }
+  }
+
+  &__map {
+    @include screen(xl) {
+      width: 100%;
+      height: 630px;
+    }
+
+    @include screen(l) {
+      margin-bottom: -3px !important;
+      width: 955px;
+      height: 600px;
+    }
+  }
+
+  /* swiper */
+  &__swiper-container {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+
+    @include screen(l) {
+      max-width: 315px;
+      border-top: 1px solid #E6E6E6;
+      border-right: 1px solid #E6E6E6;
+    }
+
+    .swiper-wrapper {
+      @include screen(l) {
+        max-width: 300px;
+      }
+    }
+
+    li {
+      border-top: 1px solid #E6E6E6;
+      border-right: 1px solid #E6E6E6;
+
+      &:first-of-type {
+        border-top: none;
+      }
+
+      &.active {
+        @include screen(l) {
+          background-color: rgba(230, 230, 230, .3);
+        }
+
+        &::after {
+          @include screen (l) {
+            content: "";
+            position: absolute;
+            right: 20px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 7px;
+            height: 15px;
+            background: url("../img/pic/ico/arrow.svg") no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+
+      div {
+        position: relative;
+        padding: 10px;
+        height: 150px;
+        transition: background-color .3s;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgba(230, 230, 230, .3);
+        }
+      }
+    }
+
+    .swiper-scrollbar {
+      position: absolute;
+      right: 5px !important;
+      left: auto !important;
+      background: transparent !important;
+
+      &-drag {
+        background: #D4D4D4 !important;
+        border-radius: 8px;
+        ;
+      }
+    }
+  }
+
+  &__info {
+    &--on-map {
+      @include screen(xl) {
+        position: absolute;
+        bottom: 25px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding: 20px;
+        width: 80%;
+        z-index: 1;
+        background: #ffffff;
+        border: 1px solid #E7E7E7;
+        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+      }
+
+      @include screen(l) {
+        display: none;
+      }
+    }
+
+    &-title {
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 25px;
+      font: 500 16px/19px Roboto;
+      color: #797C80;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 20px;
+        height: 20px;
+        background: url("../img/pic/ico/metro-ico.svg") no-repeat;
+      }
+    }
+
+    &-address {
+      margin-bottom: 10px;
+      font: normal 16px/19px Roboto;
+      color: #2B2D30;
+    }
+
+    &-phone {
+      margin-bottom: 10px;
+      font: 500 18px/21px Roboto;
+      color: #2B2D30;
+    }
+
+    &-time {
+      font: normal 12px/20px Roboto;
+      color: #2B2D30;
+    }
+  }
+}

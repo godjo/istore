@@ -24,3 +24,16 @@ var swiperFeatures = new Swiper('.main-features__container', {
     clickable: true,
   },
 });
+
+$(document).ready(function () {
+  var swiperContacts = new Swiper('.contacts__swiper-container', {
+    direction: 'vertical',
+    slidesPerView: 4,
+    mousewheel: true,
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      hide: false,
+    },
+    touchReleaseOnEdges: true,
+  });
+});
