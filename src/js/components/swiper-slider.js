@@ -34,5 +34,6 @@ $(document).ready(function () {
       el: '.swiper-scrollbar',
       hide: false,
     },
+    touchReleaseOnEdges: true,
   });
 });
