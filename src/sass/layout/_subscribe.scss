@@ -48,8 +48,11 @@
 
   img {
     @include screen(xl) {
+      width: 100%;
       max-width: 450px;
-      height: auto;
+      height: 100%;
+      /* max-width: 450px;
+      height: auto; */
     }
   }
 }

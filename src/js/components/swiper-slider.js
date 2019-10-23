@@ -3,6 +3,14 @@ var swiperBanner = new Swiper('.main-banner__container', {
     nextEl: '.main-banner__button--next',
     prevEl: '.main-banner__button--prev',
   },
+  breakpoints: {
+    1300: {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 'auto',
+      centeredSlides: true,
+    },
+  },
 });
 
 var swiperFeatures = new Swiper('.main-features__container', {

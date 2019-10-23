@@ -54,8 +54,14 @@
       right: 0;
       margin: auto;
       width: max-content;
+      border-bottom: 1px solid transparent;
       font: 600 16px/22px FuturaPT;
       color: #FF548C;
+      transition: border .3s;
+
+      &:hover {
+        border-color: #FF548C;
+      }
     }
   }
 
