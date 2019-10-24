@@ -1,0 +1,60 @@
+.review {
+  position: relative;
+  border: 1px solid #EAEAEA;
+  border-radius: 15px;
+  background-color: #F8F8F8;
+
+  @include screen(xl) {
+    padding: 20px;
+  }
+
+  @include screen(l) {
+    padding: 20px 20px 20px 100px;
+  }
+
+  img {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  &__name {
+    font: 500 22px/26px FuturaPT;
+    color: #30373D;
+
+    @include screen(xl) {
+      margin-bottom: 5px;
+      padding-left: 80px;
+    }
+
+    @include screen(l) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__text {
+    font: normal 16px/24px Roboto;
+    color: #30373D;
+
+    @include screen(xl) {
+      order: 1;
+    }
+
+    @include screen(l) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__date {
+    font: normal 14px/22px Roboto;
+    color: rgba(48, 55, 61, .5);
+
+    @include screen(xl) {
+      margin-bottom: 20px;
+      padding-left: 80px;
+    }
+  }
+}

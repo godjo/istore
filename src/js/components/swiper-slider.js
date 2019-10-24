@@ -45,3 +45,27 @@ $(document).ready(function () {
     touchReleaseOnEdges: true,
   });
 });
+
+var swiperReviews = new Swiper('.reviews__container', {
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  autoplay: {
+    delay: 5000,
+  },
+  slidesPerView: 3,
+  spaceBetween: 10,
+  loop: true,
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    960: {
+      slidesPerView: 2,
+    },
+    1300: {
+      centeredSlides: true,
+      slidesPerView: 3,
+    },
+  },
+});

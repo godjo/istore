@@ -11,7 +11,7 @@
     }
   }
 
-  &__container {
+  &__wrapper {
     @include screen(xl) {
       padding: 0;
     }
