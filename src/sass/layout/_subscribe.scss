@@ -44,6 +44,12 @@
     margin-bottom: 30px;
     font: normal 16px/26px Roboto;
     color: #30373D;
+
+    br {
+      @include screen(xl) {
+        display: none;
+      }
+    }
   }
 
   img {
