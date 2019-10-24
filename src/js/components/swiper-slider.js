@@ -58,7 +58,8 @@ var swiperReviews = new Swiper('.reviews__container', {
   loop: true,
   breakpoints: {
     640: {
-      slidesPerView: 1,
+      centeredSlides: true,
+      slidesPerView: 'auto',
     },
     960: {
       slidesPerView: 2,
