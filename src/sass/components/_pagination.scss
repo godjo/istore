@@ -59,6 +59,11 @@
       }
     }
 
+    &--active {
+      background: #2C0952;
+      color: #ffffff;
+    }
+
     &--prev,
     &--next {
       position: relative;
