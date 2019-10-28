@@ -1,5 +1,12 @@
 .frame {
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
   background-color: #ffffff;
+
+  @include screen(xl) {
+    border-radius: 0;
+  }
+
+  @include screen(l) {
+    border-radius: 20px;
+  }
 }
