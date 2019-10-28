@@ -73,4 +73,12 @@
       }
     }
   }
+
+  &--green {
+    div {
+      &::after {
+        background: linear-gradient(180deg, rgb(160, 245, 154) 0%, rgb(42, 190, 122) 100%);
+      }
+    }
+  }
 }

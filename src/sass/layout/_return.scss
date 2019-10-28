@@ -1,0 +1,200 @@
+.return {
+  &__wrapper {
+    @include screen(xl) {
+      padding: 0;
+    }
+  }
+
+  &__top {
+    background: #F8F8F8;
+
+    @include screen(xl) {
+      padding: 20px 0 0;
+    }
+
+    @include screen(l) {
+      padding: 15px 0 0;
+    }
+  }
+
+  .breadcrumbs {
+    @include screen(l) {
+      padding: 0 30px;
+    }
+  }
+
+  &__tabs {
+    justify-content: center;
+    margin: 0;
+    border-bottom: 1px solid rgba(216, 216, 216, .5);
+
+    li {
+      &:not(:last-of-type) {
+        @include screen(l) {
+          margin-right: 30px;
+        }
+      }
+    }
+
+    &.uk-subnav-pill>.uk-active>a {
+      background-color: transparent !important;
+      color: #FF548C;
+
+      &::after {
+        width: 100%;
+        background: #FF548C;
+      }
+    }
+
+    &.uk-subnav-pill>*> :first-child {
+      position: relative;
+      padding: 5px 10px 15px;
+      background: transparent;
+      color: #333333;
+      font: 500 20px/24px FuturaPT;
+      text-transform: inherit;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 6px;
+        width: 40%;
+        background: transparent;
+        border-radius: 100px 100px 0px 0px;
+        transition: width .3s;
+      }
+    }
+  }
+
+  &__content {
+    background-color: #fff;
+
+    @include screen(l) {
+      padding: 30px 40px 50px;
+    }
+  }
+
+  &__inner-frame {
+    background: #F8F8F8;
+    border: 1px solid #EAEAEA;
+    border-radius: 20px;
+
+    @include screen(l) {
+      padding: 40px 40px 30px;
+    }
+
+    span {
+      display: inline-block;
+    }
+
+    a {
+      display: inline-block;
+      width: max-content;
+      border-bottom: 1px solid transparent;
+      font: 600 16px/22px FuturaPT;
+      color: #FF548C;
+      transition: border .3s;
+
+      &:hover {
+        border-color: #FF548C;
+      }
+    }
+  }
+
+  &__subtitle {
+    font: 600 24px/24px FuturaPT;
+  }
+
+  &__text {
+    &-gray {
+      font: normal 16px/26px Roboto;
+      opacity: .7;
+    }
+
+    &-green {
+      font: 600 24px/24px FuturaPT;
+      color: #27CC00;
+    }
+
+    &-pink {
+      font: normal 20px/26px FuturaPT;
+      color: #FF548C;
+    }
+
+    &-border {
+      border-top: 1px solid rgba(216, 216, 216, .5);
+    }
+  }
+
+  &__feature {
+    div {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: #FFFFFF;
+      border: 4px solid #FFFFFF;
+      box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1);
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 75px;
+        height: 32px;
+        z-index: 1;
+        mix-blend-mode: darken;
+      }
+    }
+  }
+
+  .feature {
+    li:not(:last-of-type) {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        background-color: #EAEAEA;
+
+        @include screen(xl) {
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          width: 100%;
+          height: 1px;
+        }
+
+        @include screen(l) {
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 1px;
+          height: 270px;
+        }
+      }
+    }
+  }
+}
