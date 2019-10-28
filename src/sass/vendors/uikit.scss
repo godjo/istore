@@ -8414,6 +8414,65 @@ iframe.uk-cover {
       }
     }
   }
+
+  /* margin-large */
+  &-large {
+    &-top {
+      &\@s {
+        @include screen(xl) {
+          margin-top: 60px !important;
+        }
+      }
+
+      &\@l {
+        @include screen(l) {
+          margin-top: 60px !important;
+        }
+      }
+    }
+
+    &-bottom {
+      &\@s {
+        @include screen(xl) {
+          margin-bottom: 60px !important;
+        }
+      }
+
+      &\@l {
+        @include screen(l) {
+          margin-bottom: 60px !important;
+        }
+      }
+    }
+
+    &-left {
+      &\@s {
+        @include screen(xl) {
+          margin-left: 60px !important;
+        }
+      }
+
+      &\@l {
+        @include screen(l) {
+          margin-left: 60px !important;
+        }
+      }
+    }
+
+    &-right {
+      &\@s {
+        @include screen(xl) {
+          margin-right: 60px !important;
+        }
+      }
+
+      &\@l {
+        @include screen(l) {
+          margin-right: 60px !important;
+        }
+      }
+    }
+  }
 }
 
 .uk-flex-middle {
