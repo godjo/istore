@@ -1,0 +1,87 @@
+.catalog {
+  &__header {
+    @include screen(xl) {
+      padding: 10px 20px 20px;
+    }
+
+    &-top {
+      background-color: #FFFFFF;
+
+      @include screen(l) {
+        padding: 15px 30px 25px;
+        background-image: url("../img/pic/bg/catalog-header.jpg");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        border: 1px solid #E7E7E7;
+        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+      }
+    }
+
+    &-bottom {
+      @include screen(l) {
+        border-bottom: 1px solid #E9E9E9;
+      }
+    }
+  }
+
+  &__sort {
+    label {
+      font: 700 12px/15px FuturaPT;
+      text-transform: uppercase;
+      color: rgba(48, 55, 61, .4);
+    }
+  }
+
+  &__btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 9px 15px;
+    font: 600 16px/22px FuturaPT;
+    color: #FF548C;
+    background-color: #ffffff;
+    border: 1px solid #ECECEC;
+    border-radius: 8px;
+    transition: border .3s, background-color .3s, box-shadow .3s, color .15s;
+    overflow: hidden;
+
+    &:hover {
+      background-color: #FF548C;
+      color: #ffffff;
+      border-color: #FF548C;
+      box-shadow: 0px 6px 30px rgba(248, 53, 94, 0.4);
+    }
+  }
+
+  &__features {
+    .feature {
+      div:first-of-type {
+        width: 80px;
+        height: 80px;
+      }
+
+      div:last-of-type {
+        p {
+          &:first-of-type {
+            font: 500 22px/26px FuturaPT;
+          }
+
+          &:last-of-type {
+            font: normal 14px/21px Roboto;
+          }
+        }
+      }
+    }
+  }
+
+  &__open-filter {
+    @include screen(xl) {
+      align-self: flex-end;
+      padding: 9px 15px;
+      max-width: 250px;
+      font: 600 16px/22px FuturaPT;
+    }
+  }
+}
