@@ -18,6 +18,10 @@
       background-color: #F8F8F8;
       transition: background-color .3s, color .1s;
 
+      &-light {
+        background-color: #ffffff;
+      }
+
       &:hover {
         background-color: #2C0952;
         color: #ffffff;
@@ -70,6 +74,10 @@
       background-color: #F8F8F8;
       border-radius: 10px;
       cursor: pointer;
+
+      &-light {
+        background-color: #fff;
+      }
 
       &:hover {
         background-color: #2C0952;
