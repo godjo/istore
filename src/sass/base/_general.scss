@@ -185,3 +185,17 @@ button {
         width: 100%;
     }
 }
+
+.position-right {
+    &\@l {
+        @include screen(l) {
+            margin: auto 0 auto auto;
+        }
+    }
+
+    &\@s {
+        @include screen(xl) {
+            margin: auto 0 auto auto;
+        }
+    }
+}
