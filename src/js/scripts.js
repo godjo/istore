@@ -3,7 +3,7 @@
 //= swiper.js
 //= nice-select.js
 
-document.addEventListener("DOMContentLoaded", function () {
+$(document).ready(function () {
 	//= components/swiper-slider.js
 	//= components/select.js
 });

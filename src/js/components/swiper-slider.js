@@ -4,7 +4,7 @@ var swiperBanner = new Swiper('.main-banner__container', {
     prevEl: '.main-banner__button--prev',
   },
   breakpoints: {
-    1300: {
+    1330: {
       loop: true,
       spaceBetween: 10,
       slidesPerView: 'auto',
@@ -23,7 +23,7 @@ var swiperFeatures = new Swiper('.main-features__container', {
     960: {
       slidesPerView: 2,
     },
-    1300: {
+    1330: {
       slidesPerView: 3,
     },
   },
@@ -33,18 +33,18 @@ var swiperFeatures = new Swiper('.main-features__container', {
   },
 });
 
-$(document).ready(function () {
-  var swiperContacts = new Swiper('.contacts__swiper-container', {
-    direction: 'vertical',
-    slidesPerView: 4,
-    mousewheel: true,
-    scrollbar: {
-      el: '.swiper-scrollbar',
-      hide: false,
-    },
-    touchReleaseOnEdges: true,
-  });
+
+var swiperContacts = new Swiper('.contacts__swiper-container', {
+  direction: 'vertical',
+  slidesPerView: 4,
+  mousewheel: true,
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    hide: false,
+  },
+  touchReleaseOnEdges: true,
 });
+
 
 var swiperReviews = new Swiper('.reviews__container', {
   pagination: {
@@ -64,9 +64,26 @@ var swiperReviews = new Swiper('.reviews__container', {
     960: {
       slidesPerView: 2,
     },
-    1300: {
+    1330: {
       centeredSlides: true,
       slidesPerView: 3,
     },
   },
 });
+
+
+if ($(window).width() < 1330) {
+  if (typeof swiperCatalog == 'undefined') {
+    swiperCatalog = new Swiper('.catalog__swiper', {
+      slidesPerView: 'auto',
+    });
+  }
+} else {
+  if (typeof swiperCatalog != 'undefined') {
+    swiperCatalog.destroy();
+    swiperCatalog = undefined;
+
+    $('.swiper-wrapper').removeAttr('style');
+    $('.swiper-slide').removeAttr('style');
+  }
+}
