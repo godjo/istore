@@ -72,6 +72,36 @@
     }
   }
 
+  .account__date {
+    font: normal 14px/24px Roboto;
+    color: #30373D;
+
+    @include screen(xl) {
+      align-self: flex-start;
+    }
+
+    @include screen (l) {
+      text-align: right;
+    }
+  }
+
+  .account__order-status {
+    text-align: right;
+    font: normal 14px/24px Roboto;
+
+    &--process {
+      color: #FF9600;
+    }
+
+    &--transit {
+      color: #0095FF;
+    }
+
+    &--done {
+      color: #27CC00;
+    }
+  }
+
   /* main */
   &--main {
     .account {
@@ -226,17 +256,51 @@
           }
         }
 
-        .account__date {
-          font: normal 14px/24px Roboto;
+
+      }
+    }
+  }
+
+  /* -------- */
+
+  /* cashback */
+  &--cashback {
+    .account {
+      &__cashback {
+        &-header {
+          padding: 20px 25px;
+          color: #ffffff;
+          background: #2C0952;
+          border-radius: 15px;
+
+          span {
+            &:first-of-type {
+              font: normal 18px/24px Roboto;
+
+              @include screen(xl) {
+                margin-bottom: 15px;
+              }
+            }
+
+            &:last-of-type {
+              font: 700 24px/24px Roboto;
+            }
+          }
+        }
+
+        &-list {
+          li {
+            padding: 20px 0;
+
+            &:not(:first-of-type) {
+              border-top: 1px solid rgba(0, 0, 0, .1);
+            }
+          }
+        }
+
+        &-subtitle {
+          font: 700 18px/24px Roboto;
           color: #30373D;
-
-          @include screen(xl) {
-            align-self: flex-start;
-          }
-
-          @include screen (l) {
-            text-align: right;
-          }
         }
       }
     }
