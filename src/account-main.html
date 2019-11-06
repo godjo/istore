@@ -4,10 +4,10 @@
   <!-- //= components/header.html -->
   <div
     class="account__wrapper uk-container bg-full-width--gradient uk-padding-large-bottom@l uk-padding-large-bottom@s">
-    <div class="frame uk-flex">
+    <div class="frame uk-flex uk-flex-column-reverse@s">
 
       <div class="uk-width-expand@l">
-        <h1 class="title title--medium uk-margin-bottom@s">Здравствуйте, Василий!</h1>
+        <h1 class="title title--medium uk-margin-bottom@s uk-visible@l">Здравствуйте, Василий!</h1>
         <ul class="account__list uk-flex uk-flex-between">
           <li class="active">
             <a href="#">Главная</a>
@@ -18,13 +18,13 @@
           <li>
             <a href="#">Заказы</a>
           </li>
-          <li>
+          <li class="uk-visible@l">
             <a href="#">Кешбэк</a>
           </li>
           <li>
-            <a href="#">Отзывы и обратная связь</a>
+            <a href="#">Отзывы <span class="uk-visible@l">и обратная связь</span></a>
           </li>
-          <li>
+          <li class="uk-visible@l">
             <a class="account__logout" href="#">Выйти
               <svg width="20" height="20" fill="#FF548C">
                 <use xlink:href="img/symbol/sprite.svg#log-out" />
@@ -34,13 +34,13 @@
         </ul>
 
         <div class="account__content">
-          <div class="account__container account__container--cart uk-margin-bottom uk-flex">
+          <div class="account__container account__container--cart uk-margin-bottom uk-flex uk-flex-column@s">
             <div class="account__container-left uk-width-1-4@l uk-flex uk-flex-column uk-flex-between">
               <div class="uk-flex uk-flex-column">
                 <span class="account__container-title">Моя корзина</span>
                 <span>1 товар</span>
               </div>
-              <a href="#">Подробнее</a>
+              <a class="account__container-link uk-visible@l" href="#">Подробнее</a>
             </div>
             <ul class="account__container-right uk-width-expand@l">
               <li class="uk-flex uk-flex-between">
@@ -52,25 +52,26 @@
                 <span>12&nbsp;900&nbsp;&#8381;</span>
               </li>
             </ul>
+            <a class="account__container-link uk-hidden@l" href="#">Подробнее</a>
           </div>
 
-          <div class="account__container account__container--order uk-flex">
+          <div class="account__container account__container--order uk-flex uk-flex-column@s">
             <div class="account__container-left uk-width-1-4@l uk-flex uk-flex-column uk-flex-between">
               <div class="uk-flex uk-flex-column">
                 <span class="account__container-title">Мои заказы</span>
                 <span>В процессе: 2</span>
               </div>
-              <a class="" href="#">Подробнее</a>
+              <a class="account__container-link uk-visible@l" href="#">Подробнее</a>
             </div>
             <ul class="account__container-right uk-width-expand@l">
               <li>
-                <div class="uk-flex uk-flex-column@s uk-flex-between">
+                <div class="uk-flex uk-flex-between uk-margin-small-bottom@s">
                   <span class="account__order-number">&#8470;34503</span>
-                  <span class="account__order-status account__order-status--process uk-width-1-4">Заказ
+                  <span class="account__order-status account__order-status--process uk-width-1-4@l">Заказ
                     обрабатывается</span>
                 </div>
                 <div class="uk-flex uk-flex-column@s uk-flex-bottom uk-flex-between">
-                  <ul class="account__info-list">
+                  <ul class="account__info-list uk-margin-small-bottom@s">
                     <li>iPhone X 128 Gb Black 44&nbsp;990&nbsp;&#8381;</li>
                     <li>Доставка: Почта России EMS</li>
                     <li>Адрес доставки: Москва, ул. Пушкина 19, кв 88. 908800</li>
@@ -81,12 +82,12 @@
               </li>
 
               <li>
-                <div class="uk-flex uk-flex-column@s uk-flex-between">
+                <div class="uk-flex uk-flex-between uk-margin-small-bottom@s">
                   <span class="account__order-number">&#8470;34504</span>
-                  <span class="account__order-status account__order-status--transit uk-width-1-4">В пути</span>
+                  <span class="account__order-status account__order-status--transit uk-width-1-4@l">В пути</span>
                 </div>
                 <div class="uk-flex uk-flex-column@s uk-flex-bottom uk-flex-between">
-                  <ul class="account__info-list">
+                  <ul class="account__info-list uk-margin-small-bottom@s">
                     <li>iPhone X 128 Gb Black 44&nbsp;990&nbsp;&#8381;</li>
                     <li>Доставка: Почта России EMS</li>
                     <li>Адрес доставки: Москва, ул. Пушкина 19, кв 88. 908800</li>
@@ -96,12 +97,13 @@
                 </div>
               </li>
             </ul>
+            <a class="account__container-link uk-hidden@l" href="#">Подробнее</a>
           </div>
         </div>
       </div>
 
       <div class="profile__wrap uk-width-1-3@l">
-        <div class="uk-flex uk-flex-between uk-flex-middle">
+        <div class="uk-flex uk-flex-between uk-flex-middle uk-visible@l">
           <span class="profile__title">Профиль</span>
           <button class="profile__edit" type="button">Изменить
             профиль</button>
@@ -109,7 +111,7 @@
         <ul class="profile" uk-accordion>
           <li class="uk-open">
             <a class="uk-accordion-title" href="#">
-              <div class="uk-flex uk-flex-middle">
+              <div class="uk-flex uk-flex-middle uk-width-expand@s">
                 <img class="profile__logo uk-margin-right" src="img/temp/profile-logo.jpg" width="80" height="80"
                   alt="">
                 <div class="uk-flex uk-flex-column">
@@ -173,12 +175,22 @@
                 <p>Когда приглашенный сделает первую покупку по вашей ссылке, вы поулчите 100 балов на счет</p>
               </div>
 
+              <button class="profile__edit uk-hidden@l" type="button">Изменить
+                профиль</button>
+
             </div>
           </li>
         </ul>
       </div>
 
-
+      <div class="profile__header-mobile uk-hidden@l uk-flex uk-flex-between">
+        <h1 class="title title--medium">Здравствуйте, <br>Василий!</h1>
+        <a class="account__logout" href="#">
+          <svg width="20" height="20" fill="#FF548C">
+            <use xlink:href="img/symbol/sprite.svg#log-out" />
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
 
