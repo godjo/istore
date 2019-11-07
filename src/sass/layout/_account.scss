@@ -70,16 +70,6 @@
     }
   }
 
-  &__content {
-    @include screen(xl) {
-      padding: 20px;
-    }
-
-    @include screen(l) {
-      padding: 30px;
-    }
-  }
-
   .account__date {
     font: normal 14px/24px Roboto;
     color: #30373D;
@@ -141,9 +131,25 @@
     }
   }
 
+  .account__container-title {
+    display: inline-block;
+    font: 500 24px/28px FuturaPT;
+    color: #30373D;
+  }
+
   /* main */
   &--main {
     .account {
+      &__content {
+        @include screen(xl) {
+          padding: 20px;
+        }
+
+        @include screen(l) {
+          padding: 30px;
+        }
+      }
+
       &__container {
         border-radius: 15px;
         font: normal 14px/24px Roboto;
@@ -193,7 +199,6 @@
 
           .account__container-title {
             margin-bottom: 5px;
-            font: 500 24px/28px FuturaPT;
             color: #ffffff;
           }
         }
@@ -242,7 +247,6 @@
 
           .account__container-title {
             margin-bottom: 5px;
-            font: 500 24px/28px FuturaPT;
             color: #30373D;
           }
         }
@@ -255,6 +259,16 @@
   /* cashback */
   &--cashback {
     .account {
+      &__content {
+        @include screen(xl) {
+          padding: 20px;
+        }
+
+        @include screen(l) {
+          padding: 30px;
+        }
+      }
+
       &__cashback {
         &-header {
           padding: 20px 25px;
@@ -300,6 +314,16 @@
   /* orders */
   &--orders {
     .account {
+      &__content {
+        @include screen(xl) {
+          padding: 20px;
+        }
+
+        @include screen(l) {
+          padding: 30px;
+        }
+      }
+
       &__info-list {
         color: rgba(48, 55, 61, .7);
       }
@@ -326,6 +350,41 @@
             padding-top: 20px;
             border-top: 1px solid rgba(0, 0, 0, .1);
           }
+        }
+      }
+    }
+  }
+
+  /* -------- */
+
+  /* reviews */
+
+  &--reviews {
+    .account {
+      &__container {
+        @include screen(xl) {
+          padding: 20px;
+        }
+
+        @include screen(l) {
+          padding: 30px;
+        }
+
+        &:first-of-type {
+          .btn {
+            margin-top: 20px;
+            padding: 15px;
+            font: 600 16px/19px FuturaPT;
+            text-transform: uppercase;
+          }
+        }
+
+        &:not(:first-of-type) {
+          border-top: 1px solid rgba(0, 0, 0, .1);
+        }
+
+        &-link {
+          font: normal 14px/22px Roboto;
         }
       }
     }
