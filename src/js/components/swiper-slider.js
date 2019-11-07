@@ -4,7 +4,7 @@ var swiperBanner = new Swiper('.main-banner__container', {
     prevEl: '.main-banner__button--prev',
   },
   breakpoints: {
-    1330: {
+    1250: {
       loop: true,
       spaceBetween: 10,
       slidesPerView: 'auto',
@@ -23,7 +23,7 @@ var swiperFeatures = new Swiper('.main-features__container', {
     960: {
       slidesPerView: 2,
     },
-    1330: {
+    1250: {
       slidesPerView: 3,
     },
   },
@@ -64,7 +64,7 @@ var swiperReviews = new Swiper('.reviews__container', {
     960: {
       slidesPerView: 2,
     },
-    1330: {
+    1250: {
       centeredSlides: true,
       slidesPerView: 3,
     },
@@ -72,7 +72,7 @@ var swiperReviews = new Swiper('.reviews__container', {
 });
 
 
-if ($(window).width() < 1330) {
+if ($(window).width() < 1250) {
   if (typeof swiperCatalog == 'undefined') {
     swiperCatalog = new Swiper('.catalog__swiper', {
       slidesPerView: 'auto',

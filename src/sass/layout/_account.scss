@@ -16,6 +16,10 @@
   &__list {
     border-bottom: 1px solid rgba(216, 216, 216, .5);
 
+    @include screen(xl) {
+      overflow: scroll;
+    }
+
     @include screen(l) {
       padding: 0 30px;
     }
@@ -25,6 +29,10 @@
       padding: 0 15px 10px;
       font: 500 16px/24px FuturaPT;
       color: #333333;
+    }
+
+    a {
+      white-space: nowrap;
     }
 
     li.active a {
@@ -102,6 +110,37 @@
     }
   }
 
+  .account__order-number {
+    font: 700 18px/24px Roboto;
+    color: #FF548C;
+  }
+
+  .account__info-list {
+    li {
+      &:not(:last-of-type) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .account__container-link {
+    border-bottom: 1px solid transparent;
+    font: 500 16px/22px FuturaPT;
+    color: #FF548C;
+
+    @include screen(l) {
+      display: inline-block;
+      width: max-content;
+      transition: border .3s;
+    }
+
+    &:hover {
+      @include screen(l) {
+        border-color: #FF548C;
+      }
+    }
+  }
+
   /* main */
   &--main {
     .account {
@@ -115,24 +154,6 @@
 
         @include screen(l) {
           padding: 20px 30px;
-        }
-
-        &-link {
-          border-bottom: 1px solid transparent;
-          font: 500 16px/22px FuturaPT;
-          color: #FF548C;
-
-          @include screen(l) {
-            display: inline-block;
-            width: max-content;
-            transition: border .3s;
-          }
-
-          &:hover {
-            @include screen(l) {
-              border-color: #FF548C;
-            }
-          }
         }
 
         &--cart {
@@ -219,44 +240,12 @@
             }
           }
 
-          .account__info-list {
-            li {
-              &:not(:last-of-type) {
-                margin-bottom: 5px;
-              }
-            }
-          }
-
           .account__container-title {
             margin-bottom: 5px;
             font: 500 24px/28px FuturaPT;
             color: #30373D;
           }
-
-          .account__order-number {
-            font: 700 18px/24px Roboto;
-            color: #FF548C;
-          }
-
-          .account__order-status {
-            text-align: right;
-            font: normal 14px/24px Roboto;
-
-            &--process {
-              color: #FF9600;
-            }
-
-            &--transit {
-              color: #0095FF;
-            }
-
-            &--done {
-              color: #27CC00;
-            }
-          }
         }
-
-
       }
     }
   }
@@ -301,6 +290,42 @@
         &-subtitle {
           font: 700 18px/24px Roboto;
           color: #30373D;
+        }
+      }
+    }
+  }
+
+  /* -------- */
+
+  /* orders */
+  &--orders {
+    .account {
+      &__info-list {
+        color: rgba(48, 55, 61, .7);
+      }
+
+      &__container-link {
+        padding: 0;
+        white-space: nowrap;
+        font: normal 14px/24px Roboto;
+
+        @include screen(l) {
+          margin-right: 30px;
+        }
+      }
+
+      &__date {
+        white-space: nowrap;
+      }
+
+      &__order-list {
+        &>li {
+          margin-bottom: 20px;
+
+          &:not(:first-of-type) {
+            padding-top: 20px;
+            border-top: 1px solid rgba(0, 0, 0, .1);
+          }
         }
       }
     }
