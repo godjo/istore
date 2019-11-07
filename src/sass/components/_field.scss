@@ -16,4 +16,32 @@
     color: #30373D;
     background: #F3F2F4;
   }
+
+  &--account {
+    &__title {
+      font: 600 12px/20px FuturaPT;
+      color: rgba(66, 92, 116, .8);
+    }
+
+    input {
+      padding: 15px;
+      background: #FFFFFF;
+      border: 1px solid #E9E9E9;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+      border-radius: 8px;
+    }
+
+    textarea {
+      padding: 15px;
+      width: 100%;
+      max-height: 150px;
+      background: #FFFFFF;
+      font: normal 15px/18px Roboto;
+      color: #30373D;
+      border: 1px solid #E9E9E9;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+      border-radius: 8px;
+      resize: none;
+    }
+  }
 }
