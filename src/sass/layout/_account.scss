@@ -358,7 +358,6 @@
   /* -------- */
 
   /* reviews */
-
   &--reviews {
     .account {
       &__container {
@@ -385,6 +384,23 @@
 
         &-link {
           font: normal 14px/22px Roboto;
+        }
+      }
+    }
+  }
+
+  /* -------- */
+
+  /* cart */
+  &--cart {
+    .account {
+      &__content {
+        @include screen(xl) {
+          padding: 20px;
+        }
+
+        @include screen(l) {
+          padding: 30px;
         }
       }
     }
