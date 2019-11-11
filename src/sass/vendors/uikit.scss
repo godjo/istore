@@ -8488,3 +8488,9 @@ iframe.uk-cover {
     }
   }
 }
+
+.uk-grid+.uk-grid-small,
+.uk-grid-small>.uk-grid-margin,
+*+.uk-grid-margin-small {
+  margin-top: 10px !important;
+}

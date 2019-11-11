@@ -1,4 +1,10 @@
 .checkout {
+  &__wrapper {
+    @include screen(xl) {
+      padding: 0;
+    }
+  }
+
   &__container {
     &-title {
       display: inline-block;
@@ -6,12 +12,33 @@
       font: 600 12px/20px FuturaPT;
       color: rgba(48, 55, 61, .8);
     }
+
+    &-subtitle {
+      display: inline-block;
+      font: 600 18px/20px FuturaPT;
+      color: rgba(48, 55, 61, .8);
+
+      @include screen(xl) {
+        margin-bottom: 30px;
+      }
+
+      @include screen(l) {
+        margin-bottom: 20px;
+      }
+    }
   }
 
   &__cards {
-    margin-bottom: 30px;
     border-top: 1px solid rgba(216, 216, 216, .5);
     border-bottom: 1px solid rgba(216, 216, 216, .5);
+
+    @include screen(xl) {
+      margin-bottom: 40px;
+    }
+
+    @include screen(l) {
+      margin-bottom: 30px;
+    }
   }
 
   &__card {
@@ -24,9 +51,358 @@
 
   &__btn {
     padding: 18px 15px;
+    text-transform: uppercase;
     font: 600 18px/24px FuturaPT;
     color: #ffffff;
     background: #27CC00;
     box-shadow: 0px 3px 10px rgba(39, 204, 0, 0.35);
+  }
+
+  &__btn-credit {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    background: #FFFFFF;
+    cursor: pointer;
+
+    @include screen(xl) {
+      padding: 21px 20px 20px;
+    }
+
+    @include screen(l) {
+      padding: 21px 30px 20px;
+    }
+
+    span {
+      &:first-of-type {
+        white-space: nowrap;
+        text-transform: uppercase;
+        color: #FF548C;
+
+        @include screen(xl) {
+          font: 500 16px/19px FuturaPT;
+        }
+
+        @include screen(l) {
+          font: 600 16px/19px FuturaPT;
+        }
+      }
+
+      &:last-of-type {
+
+        border-left: 1px solid rgba(233, 235, 239, .5);
+        font: normal 14px/16px FuturaPT;
+        color: #333333;
+
+        @include screen(xl) {
+          padding-left: 15px;
+        }
+
+        @include screen(l) {
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+
+  &__btn-question {
+    margin-bottom: 30px;
+    padding: 15px;
+    background: #FFFFFF;
+    border: 1px solid #27CC00;
+    border-radius: 8px;
+    color: #27CC00;
+    font: 600 18px/24px FuturaPT;
+    text-transform: uppercase;
+  }
+
+  .frame {
+    @include screen(xl) {
+      padding: 20px 20px 40px;
+    }
+
+    @include screen(l) {
+      padding: 40px 40px 40px 30px;
+    }
+  }
+
+  &__product-container {
+    @include screen(xl) {
+      margin-bottom: 40px;
+    }
+
+    @include screen(l) {
+      padding-right: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  &__frame {
+    margin-bottom: 30px;
+    border: 1px solid #EAEAEA;
+    border-radius: 15px;
+    background: #F8F8F8;
+
+    @include screen(xl) {
+      padding: 20px;
+    }
+
+    @include screen(l) {
+      padding: 20px 30px 30px;
+    }
+
+    &-title {
+      display: inline-block;
+      font: 500 24px/28px FuturaPT;
+      color: #2B2D30;
+    }
+  }
+
+  &__price {
+    &-list {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgba(234, 234, 234, .5);
+
+      li {
+        &:not(:last-of-type) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    &-total {
+      font: 700 24px/28px Roboto;
+      color: #2C0952;
+    }
+
+    &-sale {
+      font: 700 18px/22px Roboto;
+      color: #FF548C;
+    }
+
+    &-delivery {
+      font: 700 18px/22px Roboto;
+      color: #2C0952;
+    }
+  }
+
+  &__bonus {
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(234, 234, 234, .5);
+
+    &-title {
+      font: 500 18px/26px FuturaPT;
+      color: #30373D;
+
+      @include screen(xl) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &-value {
+      font: 500 24px/28px Roboto;
+      color: #FF548C;
+    }
+  }
+
+  &__promo-code {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(234, 234, 234, .5);
+  }
+
+  &__delivery {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(234, 234, 234, .5);
+
+    p {
+      font: normal 16px/24px Roboto;
+      text-align: center;
+
+      br {
+        @include screen(xl) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__list-select {
+    border: 1px solid #E9E9E9;
+    border-radius: 10px;
+
+    img {
+      mix-blend-mode: darken;
+
+      @include screen(xl) {
+        margin: auto;
+      }
+
+      @include screen(l) {
+        margin: 0 auto 20px;
+      }
+    }
+
+    span {
+      font: 500 16px/16px Roboto;
+
+      @include screen(xl) {
+        text-align: center;
+      }
+    }
+
+    li {
+      position: relative;
+      text-align: center;
+      background: #F8F8F8;
+      cursor: pointer;
+
+      @include screen(xl) {
+        padding: 20px;
+      }
+
+      @include screen(l) {
+        padding: 20px 10px 20px;
+      }
+
+      &:not(:last-of-type) {
+        @include screen(xl) {
+          border-bottom: 1px solid #E9E9E9;
+        }
+
+        @include screen(l) {
+          border-right: 1px solid #E9E9E9;
+        }
+      }
+
+      &:first-of-type {
+        border-radius: 10px 0 0 10px;
+      }
+
+      &:last-of-type {
+        border-radius: 0 10px 10px 0;
+      }
+
+      &.active {
+        z-index: 1;
+        background-color: #ffffff;
+        border: 1px solid #FF548C;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        transform: scale(1.05, 1.1);
+
+        &::after {
+          display: block;
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 85%;
+          height: 6px;
+          background-color: #FF548C;
+          border-radius: 100px 100px 0px 0px;
+        }
+
+        span {
+          color: #FF548C;
+        }
+      }
+    }
+  }
+
+  &__payment {
+    .checkout__list-select {
+      margin-bottom: 30px;
+
+      li {
+        @include screen(l) {
+          padding: 20px 5px 10px;
+        }
+
+      }
+
+      span:not(.checkout__subtitle) {
+        font: 500 14px/18px Roboto;
+        color: #333333;
+
+        span {
+          opacity: .5;
+
+        }
+      }
+    }
+  }
+
+  &__subtitle {
+    display: inline-block;
+    text-transform: uppercase;
+    font: 600 16px/19px FuturaPT;
+    color: #30373D;
+  }
+
+  &__checkbox {
+    margin-bottom: 30px;
+    padding-left: 25px;
+
+    label {
+      position: relative;
+      cursor: pointer;
+      font: normal 14px/16px Roboto;
+    }
+
+    input+label::after {
+      content: "";
+      position: absolute;
+      left: -25px;
+      top: -2px;
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      background-color: #ffffff;
+      border: 2px solid #E3E3E3;
+    }
+
+    input:checked+label::before {
+      content: "";
+      position: absolute;
+      left: -21px;
+      top: 3px;
+      width: 12px;
+      height: 10px;
+      background: url("../img/pic/ico/checkout-check-ico.svg") no-repeat;
+      background-size: cover;
+      z-index: 1;
+    }
+  }
+
+  &__contacts {
+    text-align: center;
+
+    a {
+      margin-bottom: 12px;
+      display: inline-block;
+      font: 500 32px/37px Roboto;
+      color: #2B2D30;
+    }
+
+    span {
+      display: inline-block;
+
+      &:first-of-type {
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        font: 600 12px/20px FuturaPT;
+        color: rgba(48, 55, 61, .8);
+      }
+
+      &:last-of-type {
+        font: normal 14px/20px Roboto;
+        color: rgba(48, 55, 61, .5);
+      }
+    }
   }
 }

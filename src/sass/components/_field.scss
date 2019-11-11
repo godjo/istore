@@ -44,4 +44,48 @@
       resize: none;
     }
   }
+
+  &--checkout {
+    @include screen(l) {
+      border: 1px solid #E9E9E9;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    input {
+      padding: 15px;
+      width: 100%;
+      border: none;
+
+      @include screen(xl) {
+        margin-bottom: 15px;
+        background: #FFFFFF;
+        border: 1px solid #E9E9E9;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+        border-radius: 6px;
+      }
+    }
+
+    &>div {
+      @include screen(l) {
+        padding: 10px;
+        background: #FFFFFF;
+      }
+
+      .btn {
+        font: 600 14px/16px FuturaPT;
+        color: #ffffff;
+
+        @include screen(xl) {
+          padding: 10px 15px 12px;
+        }
+
+        @include screen(l) {
+          padding: 5px 15px 7px;
+          width: 125px;
+        }
+      }
+    }
+  }
 }

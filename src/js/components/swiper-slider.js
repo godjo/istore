@@ -87,3 +87,19 @@ if ($(window).width() < 1250) {
     $('.swiper-slide').removeAttr('style');
   }
 }
+
+if ($(window).width() < 1250) {
+  if (typeof swiperCheckout == 'undefined') {
+    swiperCheckout = new Swiper('.checkout__swiper', {
+      /* slidesPerView: 'auto', */
+    });
+  }
+} else {
+  if (typeof swiperCheckout != 'undefined') {
+    swiperCheckout.destroy();
+    swiperCheckout = undefined;
+
+    $('.swiper-wrapper').removeAttr('style');
+    $('.swiper-slide').removeAttr('style');
+  }
+}
