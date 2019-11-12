@@ -1,0 +1,68 @@
+.tooltip {
+  position: relative;
+
+  a {
+    display: inline-block;
+    font: normal 16px/18px FuturaPT;
+    color: #FF548C;
+    cursor: pointer;
+  }
+
+  a:hover~&-content {
+    opacity: 1;
+  }
+
+  &-content {
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 100;
+    transition: opacity .3s;
+
+    @include screen(xl) {
+      width: 280px;
+      top: 35px;
+      left: -15px;
+      padding: 15px;
+    }
+
+    @include screen(l) {
+      top: -280px;
+      padding: 20px;
+      width: 400px;
+    }
+
+    &::after {
+      @include screen(xl) {
+        content: "";
+        position: absolute;
+        top: -8px;
+        left: 73px;
+        border: 8px solid transparent;
+        border-top: none;
+        border-bottom: 8px solid #ffffff;
+        z-index: 11;
+        transform: translateX(-50%);
+      }
+
+      @include screen(l) {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        border: 8px solid transparent;
+        border-top: none;
+        border-bottom: 8px solid #ffffff;
+        z-index: 1;
+        transform: translateX(-50%) rotate(180deg);
+      }
+    }
+  }
+
+  &-title {
+    margin-bottom: 5px;
+    font: 600 16px/21px FuturaPT;
+  }
+}
