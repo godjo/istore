@@ -69,7 +69,7 @@
       var $selected_image = $select.find('option:selected').data('image') ? '<img src="' + $select.find('option:selected').data('image') + '"/ >' : '';
 
 
-      $dropdown.find('.current').html($selected_image + $selected.data('display') || $selected.text());
+      $dropdown.find('.current').html($selected.data('display') || $selected_image + $selected.text());
 
       $options.each(function (i) {
         var $option = $(this);
@@ -123,8 +123,11 @@
       $dropdown.find('.selected').removeClass('selected');
       $option.addClass('selected');
 
-      var text = $option.data('display') || $option.text();
-      $dropdown.find('.current').text(text);
+      var text = $option.data('display') || $option.html();
+      var image = $option.find('img');
+      console.log(this);
+
+      $dropdown.find('.current').html(text);
 
       $dropdown.prev('select').val($option.data('value')).trigger('change');
     });

@@ -50,7 +50,28 @@
         </div>
 
         <div class="uk-flex">
-          <div class="uk-width-expand"></div>
+          <div class="product__gallery uk-width-expand uk-flex">
+
+            <!-- Swiper -->
+            <div class="swiper-container gallery-thumbs">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background:url(./img/temp/product-gallery-small.jpg)"></div>
+                <div class="swiper-slide" style="background:url(./img/temp/product-gallery-small.jpg)"></div>
+                <div class="swiper-slide" style="background:url(./img/temp/product-gallery-small.jpg)"></div>
+              </div>
+              <!-- Add Arrows -->
+              <!-- <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div> -->
+            </div>
+
+            <div class="swiper-container gallery-top">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background:url(./img/temp/product-gallery.jpg)"></div>
+                <div class="swiper-slide" style="background:url(./img/temp/product-card-1.jpg)"></div>
+                <div class="swiper-slide" style="background:url(./img/temp/product-card-2.jpg)"></div>
+              </div>
+            </div>
+          </div>
 
           <div class="product__frame">
             <div class="product__container uk-flex uk-child-width-1-2@l">
@@ -75,8 +96,8 @@
               <div class="uk-flex uk-flex-column uk-margin-left">
                 <span class="checkout__container-title">Цвет корпуса</span>
                 <select>
-                  <option data-image="img/pic/ico/circle-gold.svg" data-display="Золотой">Золотой</option>
-                  <option value="1">Серый</option>
+                  <option data-image="img/pic/ico/circle-gold.svg" value="8">Золотой</option>
+                  <option data-image="img/pic/ico/circle-gold.svg" value="1">Серый</option>
                   <option value="2">Чёрный</option>
                 </select>
               </div>
@@ -102,9 +123,46 @@
               </div>
             </div>
 
-            <div class="product__container"></div>
+            <div class="product__container">
+              <span class="product__container-title uk-margin-small-bottom"><span>Купить</span> в 1 клик</span>
+              <div class="uk-flex uk-flex-between uk-margin-bottom">
+                <input class="product__container-input" type="text" placeholder="Введите номер телефона">
+                <button class="btn product__container-btn" type="button">Купить</button>
+              </div>
+              <button class="btn product__container-btn-checkout" type="btn">
+                <span>
+                  <svg width="24" height="24" fill="#ffffff">
+                    <use xlink:href="img/symbol/sprite.svg#cart-icon" />
+                  </svg>
+                  добавить в корзину</span>
+              </button>
+            </div>
 
-            <div class="product__container"></div>
+            <div class="product__container uk-text-center@l">
+              <span class="product__container-title uk-margin-bottom">Выберите 2 подарка</span>
+              <ul class="product__present uk-flex uk-flex-between">
+                <li class="checked">
+                  <div>
+                    <span class="uk-margin-top uk-padding-small-top@l uk-padding-small-top@s">Чехол</span>
+                    <img src="img/temp/product-present-1.jpg" width="110" height="70" alt="">
+                  </div>
+                </li>
+
+                <li>
+                  <div>
+                    <span class="uk-margin-top uk-padding-small-top@l uk-padding-small-top@s">Скидка</span>
+                    <img src="img/temp/product-present-2.jpg" width="68" height="60" alt="">
+                  </div>
+                </li>
+
+                <li>
+                  <div>
+                    <span class="uk-margin-top">Защитное стекло</span>
+                    <img src="img/temp/product-present-3.jpg" width="90" height="58" alt="">
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
