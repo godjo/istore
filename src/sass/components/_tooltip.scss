@@ -6,6 +6,12 @@
     font: normal 16px/18px FuturaPT;
     color: #FF548C;
     cursor: pointer;
+
+    br {
+      @include screen(xl) {
+        display: none;
+      }
+    }
   }
 
   a:hover~&-content {
@@ -25,7 +31,7 @@
     @include screen(xl) {
       width: 280px;
       top: 35px;
-      left: -15px;
+      left: -80px;
       padding: 15px;
     }
 
@@ -40,7 +46,7 @@
         content: "";
         position: absolute;
         top: -8px;
-        left: 73px;
+        left: 160px;
         border: 8px solid transparent;
         border-top: none;
         border-bottom: 8px solid #ffffff;

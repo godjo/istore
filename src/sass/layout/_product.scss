@@ -1,5 +1,16 @@
 .product {
+  &__wrapper {
+    @include screen(xl) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   .frame {
+    @include screen(xl) {
+      box-shadow: none;
+    }
+
     @include screen(l) {
       padding: 0 0 30px;
     }
@@ -12,24 +23,52 @@
     }
 
     .btn {
+      padding: 9px 15px;
+      font: 600 16px/22px FuturaPT;
+
+      @include screen(xl) {
+        max-width: 335px;
+        margin-left: 20px;
+      }
+
       @include screen(l) {
         margin-bottom: 98px;
         margin-top: 15px;
-        padding: 9px 15px;
         max-width: 270px;
-        font: 600 16px/22px FuturaPT;
       }
     }
 
     .feature {
+      @include screen(xl) {
+        margin-top: 20px;
+        padding: 20px 5px 15px;
+        width: 100%;
+        overflow-x: scroll;
+        background: #f2f2f2;
+      }
+
       div:first-of-type {
         width: 80px;
         height: 80px;
       }
 
       li {
+        @include screen(xl) {
+          background: #FFFFFF;
+          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+          border-radius: 8px;
+          min-width: 276px;
+          padding: 15px;
+        }
+
         &:not(:last-of-type) {
-          margin-bottom: 40px;
+          @include screen(xl) {
+            margin-right: 10px;
+          }
+
+          @include screen(l) {
+            margin-bottom: 40px;
+          }
         }
       }
 
@@ -45,13 +84,27 @@
     }
   }
 
+  &__content {
+    @include screen(xl) {
+      padding: 20px 20px 0;
+    }
+  }
+
   &__header {
+    @include screen(xl) {
+      margin-bottom: 30px;
+    }
+
     @include screen(l) {
       padding: 15px 30px;
       margin-bottom: 20px;
     }
 
     .title {
+      @include screen(xl) {
+        margin-bottom: 10px;
+      }
+
       @include screen(l) {
         margin-bottom: 15px;
       }
@@ -98,6 +151,11 @@
     border-radius: 15px;
     background: #F8F8F8;
 
+    @include screen(xl) {
+      margin-bottom: 30px;
+      padding: 15px 0 20px;
+    }
+
     @include screen(l) {
       width: 410px;
       padding: 15px 20px 20px;
@@ -108,6 +166,17 @@
         margin-bottom: 20px;
         padding-bottom: 20px;
         border-bottom: 1px solid #EAEAEA;
+
+        @include screen(xl) {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+      &:last-of-type {
+        @include screen(xl) {
+          width: 100%;
+        }
       }
 
       &-title {
@@ -134,6 +203,10 @@
           margin-right: 10px;
           max-width: 240px;
         }
+
+        &::placeholder {
+          opacity: .3;
+        }
       }
 
       &-btn {
@@ -149,10 +222,27 @@
         }
       }
 
-      &-btn-checkout {
+      &-btn--pink {
         padding: 19px 15px;
         font: 600 18px/21px FuturaPT;
         text-transform: uppercase;
+
+        span {
+          position: relative;
+        }
+
+        svg {
+          position: absolute;
+          left: -35px;
+        }
+      }
+
+      &-btn--blue {
+        padding: 19px 15px;
+        font: 600 18px/21px FuturaPT;
+        text-transform: uppercase;
+        background: #0095FF;
+        box-shadow: 0px 3px 10px rgba(0, 149, 255, 0.4);
 
         span {
           position: relative;
@@ -174,6 +264,7 @@
       background: #FFFFFF;
       border: 1px solid #E9E9E9;
       border-radius: 10px;
+      text-align: center;
 
       label {
         display: block;
@@ -219,6 +310,11 @@
     &-total {
       font: 700 38px/28px Roboto;
       color: #2C0952;
+
+      @include screen(xl) {
+        align-self: flex-start;
+        margin-bottom: 5px;
+      }
     }
 
     &-sale {
@@ -233,14 +329,23 @@
   }
 
   &__present {
+    @include screen(xl) {
+      padding-left: 20px;
+      width: 100%;
+      overflow-x: scroll;
+    }
+
     li {
       position: relative;
+      min-width: 110px;
+      min-height: 110px;
+      width: 110px;
+      height: 110px;
       border: 2px solid transparent;
       border-radius: 50%;
 
-      @include screen(l) {
-        width: 110px;
-        height: 110px;
+      div {
+        text-align: center;
       }
 
       &::after {
@@ -337,17 +442,21 @@
   /* swiper-gallery */
 
   &__gallery {
-    @include screen(xl) {
-      margin-bottom: 20px;
+    @include screen(l) {
+      width: 100%;
+      height: 100%;
     }
 
-    @include screen(l) {
-      margin-top: 40px;
+    &-wrap {
+      margin-right: 30px;
+      align-items: center;
     }
 
     .swiper-container {
-      width: 100%;
-      height: 300px;
+      width: 100% !important;
+      max-width: 333px !important;
+      height: auto;
+      max-height: 455px !important;
       margin-left: auto;
       margin-right: auto;
     }
@@ -358,44 +467,71 @@
     }
 
     .gallery-top {
-      background: red;
       @include screen(l) {
-        /* height: 80%; */
-        /* width: 100%; */
+        display: flex;
+        align-self: center;
+        height: 100% !important;
+        width: 100% !important;
       }
 
       .swiper-slide {
+        display: flex;
+        align-self: center;
         background-size: contain !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+
+        &:not(.swiper-slide-active) {
+          opacity: 0 !important;
+        }
       }
     }
 
     .gallery-thumbs {
-      /* margin-top: 20px; */
-      /* height: 83px; */
-      width: 150px;
-      background: blue;
+      display: flex;
+      align-self: center;
+      width: 150px !important;
       box-sizing: border-box;
-      /* padding: 10px 25px; */
-     /*  background: #F7F7F7; */
-     /*  border-radius: 8px; */
+
+      @include screen(xl) {
+        display: none;
+      }
     }
 
     .gallery-thumbs .swiper-slide {
-      padding: 10px 5px !important;
+      position: relative;
       background-color: #ffffff !important;
       background-size: contain !important;
       background-position: center !important;
       background-repeat: no-repeat !important;
-      /* border-radius: 6px; */
-      width: 70px;
-      height: 70px;
-      /* opacity: 0.4; */
+      width: 70px !important;
+      height: 80px !important;
+      cursor: pointer;
+
+      @include screen(l) {
+        margin-left: 15px !important;
+      }
     }
 
     .gallery-thumbs .swiper-slide-thumb-active {
       opacity: 1;
+      position: relative;
+
+      &::before {
+        @include screen(l) {
+          content: "";
+          display: block;
+          position: absolute;
+          left: -15px;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 4px;
+          height: 80px;
+          background: #F8355E;
+          border-radius: 0px 100px 100px 0px;
+        }
+      }
     }
 
     .swiper-button-next {
@@ -414,4 +550,22 @@
   }
 
   /* ---------------------------------------------- */
+
+  &__points {
+    display: inline-block;
+    padding: 8px 15px 10px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #FF548C;
+    border-radius: 8px;
+    font: 600 16px/22px FuturaPT;
+    background: #FFFFFF;
+    color: #FF548C;
+
+    @include screen(l) {
+      align-self: flex-start;
+      margin-left: 40px;
+      max-width: 244px;
+    }
+  }
 }
