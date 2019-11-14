@@ -1,0 +1,571 @@
+.product {
+  &__wrapper {
+    @include screen(xl) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .frame {
+    @include screen(xl) {
+      box-shadow: none;
+    }
+
+    @include screen(l) {
+      padding: 0 0 30px;
+    }
+  }
+
+  &__section {
+    @include screen(l) {
+      padding: 30px 40px 0;
+      width: 350px;
+    }
+
+    .btn {
+      padding: 9px 15px;
+      font: 600 16px/22px FuturaPT;
+
+      @include screen(xl) {
+        max-width: 335px;
+        margin-left: 20px;
+      }
+
+      @include screen(l) {
+        margin-bottom: 98px;
+        margin-top: 15px;
+        max-width: 270px;
+      }
+    }
+
+    .feature {
+      @include screen(xl) {
+        margin-top: 20px;
+        padding: 20px 5px 15px;
+        width: 100%;
+        overflow-x: scroll;
+        background: #f2f2f2;
+      }
+
+      div:first-of-type {
+        width: 80px;
+        height: 80px;
+      }
+
+      li {
+        @include screen(xl) {
+          background: #FFFFFF;
+          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+          border-radius: 8px;
+          min-width: 276px;
+          padding: 15px;
+        }
+
+        &:not(:last-of-type) {
+          @include screen(xl) {
+            margin-right: 10px;
+          }
+
+          @include screen(l) {
+            margin-bottom: 40px;
+          }
+        }
+      }
+
+      p {
+        &:first-of-type {
+          font: 500 22px/26px FuturaPT;
+        }
+
+        &:last-of-type {
+          font: normal 14px/21px Roboto;
+        }
+      }
+    }
+  }
+
+  &__content {
+    @include screen(xl) {
+      padding: 20px 20px 0;
+    }
+  }
+
+  &__header {
+    @include screen(xl) {
+      margin-bottom: 30px;
+    }
+
+    @include screen(l) {
+      padding: 15px 30px;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      @include screen(xl) {
+        margin-bottom: 10px;
+      }
+
+      @include screen(l) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__rating {
+    margin-left: 15px;
+    margin-top: 4px;
+    margin: 4px 20px 0 15px;
+
+    li {
+      &:not(:last-of-type) {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    font: normal 13px/15px Roboto;
+    text-decoration: underline;
+    color: #FF548C;
+  }
+
+  &__status {
+    display: inline-block;
+    font: 700 14px/16px Roboto;
+    text-transform: uppercase;
+
+    &--preorder {
+      color: #0095FF;
+    }
+  }
+
+  &__vendor-code {
+    display: inline-block;
+    font: normal 14px/16px Roboto;
+    color: rgba(51, 51, 51, .5);
+  }
+
+  &__frame {
+    border: 1px solid #EAEAEA;
+    border-radius: 15px;
+    background: #F8F8F8;
+
+    @include screen(xl) {
+      margin-bottom: 30px;
+      padding: 15px 0 20px;
+    }
+
+    @include screen(l) {
+      width: 410px;
+      padding: 15px 20px 20px;
+    }
+
+    .product__container {
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #EAEAEA;
+
+        @include screen(xl) {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+      &:last-of-type {
+        @include screen(xl) {
+          width: 100%;
+        }
+      }
+
+      &-title {
+        display: inline-block;
+        text-transform: uppercase;
+        font: 600 16px/19px FuturaPT;
+
+        span {
+          color: #FF548C;
+        }
+      }
+
+      &-input {
+        width: 100%;
+        padding: 15px;
+        font: normal 15px/18px Roboto;
+        color: #30373D;
+        background: #FFFFFF;
+        border: 1px solid #E9E9E9;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+
+        @include screen(l) {
+          margin-right: 10px;
+          max-width: 240px;
+        }
+
+        &::placeholder {
+          opacity: .3;
+        }
+      }
+
+      &-btn {
+        padding: 15px 13px;
+        font: 600 18px/21px FuturaPT;
+        text-transform: uppercase;
+        background: #27CC00;
+        box-shadow: 0px 3px 10px rgba(39, 204, 0, 0.35);
+        border-radius: 8px;
+
+        @include screen(l) {
+          max-width: 120px;
+        }
+      }
+
+      &-btn--pink {
+        padding: 19px 15px;
+        font: 600 18px/21px FuturaPT;
+        text-transform: uppercase;
+
+        span {
+          position: relative;
+        }
+
+        svg {
+          position: absolute;
+          left: -35px;
+        }
+      }
+
+      &-btn--blue {
+        padding: 19px 15px;
+        font: 600 18px/21px FuturaPT;
+        text-transform: uppercase;
+        background: #0095FF;
+        box-shadow: 0px 3px 10px rgba(0, 149, 255, 0.4);
+
+        span {
+          position: relative;
+        }
+
+        svg {
+          position: absolute;
+          left: -35px;
+        }
+      }
+    }
+
+    .checkout__container-title {
+      margin-bottom: 5px;
+    }
+
+    .filter__memory {
+      padding: 3px;
+      background: #FFFFFF;
+      border: 1px solid #E9E9E9;
+      border-radius: 10px;
+      text-align: center;
+
+      label {
+        display: block;
+        padding: 9px;
+        font: 500 12px/16px Roboto;
+      }
+    }
+
+    .nice-select {
+      @include screen(l) {
+        min-width: 175px !important;
+        width: 175px !important;
+      }
+
+      img {
+        margin-right: 10px;
+        width: 28px;
+        height: 28px;
+      }
+
+      .current {
+        display: flex;
+        align-items: center;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  &__price {
+    margin-bottom: 10px;
+
+    &-old {
+      text-align: right;
+      font: 700 18px/21px Roboto;
+      text-decoration-line: line-through;
+      color: rgba(48, 55, 61, .5);
+    }
+
+    &-total {
+      font: 700 38px/28px Roboto;
+      color: #2C0952;
+
+      @include screen(xl) {
+        align-self: flex-start;
+        margin-bottom: 5px;
+      }
+    }
+
+    &-sale {
+      padding: 3px 5px 2px;
+      margin: 2px 0 0 0;
+      text-align: center;
+      font: 700 14px/16px Roboto;
+      color: #FF548C;
+      background-color: rgba(255, 84, 140, .2);
+      border-radius: 13px;
+    }
+  }
+
+  &__present {
+    @include screen(xl) {
+      padding-left: 20px;
+      width: 100%;
+      overflow-x: scroll;
+    }
+
+    li {
+      position: relative;
+      min-width: 110px;
+      min-height: 110px;
+      width: 110px;
+      height: 110px;
+      border: 2px solid transparent;
+      border-radius: 50%;
+
+      div {
+        text-align: center;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 18px;
+        height: 14px;
+        background: url("../img/pic/ico/product-check.svg") no-repeat;
+        opacity: 0;
+        z-index: 2;
+        transition: opacity .2s;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 26px;
+        height: 26px;
+        background: url("../img/pic/ico/product-plus.svg") no-repeat;
+        z-index: 2;
+        opacity: 0;
+        transition: opacity .2s;
+      }
+
+      &:hover {
+        border-color: rgba(255, 84, 140, 0.2);
+        box-shadow: 0px 5px 15px rgba(255, 84, 140, 0.3);
+
+        div {
+          border-color: rgba(255, 84, 140, 0.2);
+        }
+
+        &:before {
+          opacity: 1;
+        }
+      }
+
+      &.checked {
+        border-color: #FF548C;
+
+        div {
+          border-color: #FF548C;
+        }
+
+        &::after {
+          opacity: 1;
+        }
+
+        &::before {
+          display: none;
+        }
+
+      }
+    }
+
+    div {
+      position: relative;
+      border: 1px solid #EAEAEA;
+      border-radius: 50%;
+      background: #FFFFFF;
+      overflow: hidden;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+
+      span {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        font: 600 14px/16px FuturaPT;
+        text-transform: uppercase;
+      }
+
+      img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: auto;
+        mix-blend-mode: darken;
+      }
+    }
+  }
+
+  /* swiper-gallery */
+
+  &__gallery {
+    @include screen(l) {
+      width: 100%;
+      height: 100%;
+    }
+
+    &-wrap {
+      margin-right: 30px;
+      align-items: center;
+    }
+
+    .swiper-container {
+      width: 100% !important;
+      max-width: 333px !important;
+      height: auto;
+      max-height: 455px !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .gallery-top {
+      @include screen(l) {
+        display: flex;
+        align-self: center;
+        height: 100% !important;
+        width: 100% !important;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-self: center;
+        background-size: contain !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+
+        &:not(.swiper-slide-active) {
+          opacity: 0 !important;
+        }
+      }
+    }
+
+    .gallery-thumbs {
+      display: flex;
+      align-self: center;
+      width: 150px !important;
+      box-sizing: border-box;
+
+      @include screen(xl) {
+        display: none;
+      }
+    }
+
+    .gallery-thumbs .swiper-slide {
+      position: relative;
+      background-color: #ffffff !important;
+      background-size: contain !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      width: 70px !important;
+      height: 80px !important;
+      cursor: pointer;
+
+      @include screen(l) {
+        margin-left: 15px !important;
+      }
+    }
+
+    .gallery-thumbs .swiper-slide-thumb-active {
+      opacity: 1;
+      position: relative;
+
+      &::before {
+        @include screen(l) {
+          content: "";
+          display: block;
+          position: absolute;
+          left: -15px;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 4px;
+          height: 80px;
+          background: #F8355E;
+          border-radius: 0px 100px 100px 0px;
+        }
+      }
+    }
+
+    .swiper-button-next {
+      right: 0;
+      transform: rotate(-90deg);
+      background-image: url(../img/pic/ico/arrow.svg);
+      background-size: 10px;
+    }
+
+    .swiper-button-prev {
+      left: 0;
+      transform: rotate(90deg);
+      background-image: url(../img/pic/ico/arrow.svg);
+      background-size: 10px;
+    }
+  }
+
+  /* ---------------------------------------------- */
+
+  &__points {
+    display: inline-block;
+    padding: 8px 15px 10px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #FF548C;
+    border-radius: 8px;
+    font: 600 16px/22px FuturaPT;
+    background: #FFFFFF;
+    color: #FF548C;
+
+    @include screen(l) {
+      align-self: flex-start;
+      margin-left: 40px;
+      max-width: 244px;
+    }
+  }
+}

@@ -74,7 +74,7 @@ var swiperReviews = new Swiper('.reviews__container', {
 
 if ($(window).width() < 1250) {
   if (typeof swiperCatalog == 'undefined') {
-    swiperCatalog = new Swiper('.catalog__swiper', {
+    var swiperCatalog = new Swiper('.catalog__swiper', {
       slidesPerView: 'auto',
     });
   }
@@ -90,7 +90,7 @@ if ($(window).width() < 1250) {
 
 if ($(window).width() < 1250) {
   if (typeof swiperCheckout == 'undefined') {
-    swiperCheckout = new Swiper('.checkout__swiper', {
+    var swiperCheckout = new Swiper('.checkout__swiper', {
       /* slidesPerView: 'auto', */
     });
   }
@@ -103,3 +103,30 @@ if ($(window).width() < 1250) {
     $('.swiper-slide').removeAttr('style');
   }
 }
+
+var galleryThumbs = new Swiper('.gallery-thumbs', {
+  spaceBetween: 20,
+  slidesPerView: 5,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  direction: 'vertical',
+  breakpoints: {
+    640: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 8,
+    }
+  },
+});
+var galleryTop = new Swiper('.gallery-top', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  effect: 'fade',
+  thumbs: {
+    swiper: galleryThumbs
+  }
+});
