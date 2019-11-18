@@ -41,14 +41,14 @@
   }
 
   &__image {
-    max-width: 100%;
-
     @include screen(l) {
       text-align: end;
       padding-right: 125px;
     }
 
     img {
+      max-width: 100%;
+
       @include screen(xl) {
         width: 272px;
       }
