@@ -1,132 +1,184 @@
 .main-banner {
-	position: relative;
-	margin-top: 20px;
-	background: linear-gradient(360deg, #f2f2f2 0%, rgba(255, 255, 255, 0.0001) 100%);
+  position: relative;
+  margin-top: 20px;
+  /* background: linear-gradient(360deg, #f2f2f2 0%, rgba(255, 255, 255, 0.0001) 100%); */
 
-	@include screen(xl) {
-		padding: 0;
-	}
+  @include screen(xl) {
+    padding: 0;
+  }
 
-	&__container {
-		overflow: hidden;
+  &__container {
+    overflow: hidden;
 
-		@include screen(l) {
-			box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.05);
-			border-radius: 20px;
-		}
-	}
+    @include screen(xl) {
+      padding-bottom: 30px;
+    }
 
-	.swiper-slide {
-		text-align: center;
+    @include screen(l) {
+      box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+    }
+  }
 
-		@include screen(xl) {
-			padding: 25px 15px 0;
-			width: 90% !important;
-			height: 450px;
-			box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.05);
-			border-radius: 20px;
-		}
+  .swiper-slide {
+    text-align: center;
 
-		@include screen(l) {
-			padding-top: 100px;
-			height: 565px;
-		}
+    @include screen(xl) {
+      padding: 25px 15px 0;
+      width: 90% !important;
+      height: 450px;
+      box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+    }
 
-		&.slide-1 {
-			@include screen (xl) {
-				background: url("../img/pic/bg/main-banner-mobile.jpg") no-repeat, #000000;
-				background-position: bottom center;
-				background-size: contain;
-			}
+    @include screen(l) {
+      padding-top: 100px;
+      height: 565px;
+    }
 
-			@include screen(l) {
-				background: url("../img/pic/bg/main-banner.jpg") no-repeat;
-			}
-		}
+    p {
+      color: #ffffff;
 
-		&.slide-2 {
-			@include screen (xl) {
-				background: url("../img/pic/bg/main-banner-mobile.jpg") no-repeat, #000000;
-				background-position: bottom center;
-				background-size: contain;
-			}
+      &:nth-of-type(1) {
+        @include screen(xl) {
+          margin-bottom: 15px;
+          font: 500 26px/34px FuturaPT;
+        }
 
-			@include screen(l) {
-				background: url("../img/pic/bg/main-banner.jpg") no-repeat;
-			}
-		}
+        @include screen(l) {
+          font: 500 42px/54px FuturaPT;
+        }
+      }
 
-		&.slide-3 {
-			@include screen (xl) {
-				background: url("../img/pic/bg/main-banner-mobile.jpg") no-repeat, #000000;
-				background-position: bottom center;
-				background-size: contain;
-			}
+      &:nth-of-type(2) {
+        @include screen(xl) {
+          font: 500 16px/24px FuturaPT;
+        }
 
-			@include screen(l) {
-				background: url("../img/pic/bg/main-banner.jpg") no-repeat;
-			}
-		}
+        @include screen(l) {
+          font: normal 30px/54px FuturaPT;
+        }
+      }
+    }
 
-		p {
-			color: #ffffff;
+    &.slide-1 {
+      @include screen (xl) {
+        background: url("../img/pic/bg/main-banner-mobile.jpg") no-repeat, #000000;
+        background-position: bottom center;
+        background-size: contain;
+      }
 
-			&:nth-of-type(1) {
-				@include screen(xl) {
-					margin-bottom: 15px;
-					font: 500 26px/34px FuturaPT;
-				}
+      @include screen(l) {
+        background: url("../img/pic/bg/main-banner.jpg") no-repeat;
+      }
+    }
 
-				@include screen(l) {
-					font: 500 42px/54px FuturaPT;
-				}
-			}
+    &.slide-2 {
+      @include screen (xl) {
+        background: url("../img/pic/bg/main-banner-2-mobile.jpg") no-repeat, #000000;
+        background-position: center 200px;
+        background-size: 230px 300px;
+      }
 
-			&:nth-of-type(2) {
-				@include screen(xl) {
-					font: 500 16px/24px FuturaPT;
-				}
+      @include screen(l) {
+        padding-top: 70px;
+        background: url("../img/pic/bg/main-banner-2.jpg") no-repeat;
+        background-color: #000000;
+        background-size: 430px 330px;
+        background-position: center 250px;
+      }
+    }
 
-				@include screen(l) {
-					font: normal 30px/54px FuturaPT;
-				}
-			}
-		}
+    &.slide-3 {
+      @include screen (xl) {
+        background: url("../img/pic/bg/main-banner-3-mobile.jpg") no-repeat, #fafafa;
+        background-position: bottom center;
+        background-size: contain;
+      }
 
-		.btn {
-			margin: 15px auto;
-			padding: 10px 15px;
-			max-width: 150px;
-			text-transform: uppercase;
-			font: 600 15px/22px FuturaPT;
-		}
-	}
+      @include screen(l) {
+        padding-top: 50px;
+        background: url("../img/pic/bg/main-banner-3.jpg") no-repeat, #fafafa;
+        background-size: cover;
+        background-position: bottom center;
+      }
 
-	&__button {
-		position: absolute;
-		content: "";
-		top: 0;
-		bottom: 0;
-		margin: auto !important;
-		width: 14px;
-		height: 24px;
-		cursor: pointer;
-		transition: opacity .3s;
+      p {
+        color: #30373D;
+      }
+    }
 
-		&.swiper-button-disabled {
-			opacity: .3;
-			pointer-events: none;
-		}
+    &.slide-4 {
+      @include screen (xl) {
+        background: url("../img/pic/bg/main-banner-4-mobile.jpg") no-repeat, #fafafa;
+        background-position: bottom center;
+        background-size: contain;
+      }
 
-		&--next {
-			right: -10px;
-			background: url("../img/pic/ico/arrow.svg") no-repeat;
-		}
+      @include screen(l) {
+        padding-top: 50px;
+        background: url("../img/pic/bg/main-banner-4.jpg") no-repeat, #fafafa;
+        background-size: 1227px 564px;
+        background-position: center 30px;
+      }
 
-		&--prev {
-			left: -10px;
-			transform: rotate(180deg);
-			background: url("../img/pic/ico/arrow.svg") no-repeat;
-		}
-	}
+      p {
+        color: #30373D;
+      }
+    }
+
+    &.slide-5 {
+      @include screen (xl) {
+        background: url("../img/pic/bg/main-banner-5-mobile.jpg") no-repeat, #fafafa;
+        background-position: bottom center;
+        background-size: contain;
+      }
+
+      @include screen(l) {
+        background: url("../img/pic/bg/main-banner-5.jpg") no-repeat, #fafafa;
+        background-size: contain;
+        background-position: center bottom;
+      }
+
+      p {
+        color: #30373D;
+      }
+    }
+
+    .btn {
+      margin: 15px auto;
+      padding: 10px 15px;
+      max-width: 150px;
+      text-transform: uppercase;
+      font: 600 15px/22px FuturaPT;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    margin: auto !important;
+    width: 14px;
+    height: 24px;
+    cursor: pointer;
+    transition: opacity .3s;
+
+    &.swiper-button-disabled {
+      opacity: .3;
+      pointer-events: none;
+    }
+
+    &--next {
+      right: -10px;
+      background: url("../img/pic/ico/arrow.svg") no-repeat;
+    }
+
+    &--prev {
+      left: -10px;
+      transform: rotate(180deg);
+      background: url("../img/pic/ico/arrow.svg") no-repeat;
+    }
+  }
 }
