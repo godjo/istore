@@ -56,7 +56,7 @@
         <li>м. Площадь Восстания, Невский проспект 120;</li>
         <li>м. Садовая, Ефимова 3А, литер Д</li>
       </ul>
-      <span class="footer__btn-map">Смотреть карту</span>
+      <span class="footer__btn-map" data-uk-toggle="target: #popupMaps">Смотреть карту</span>
       <ul class="footer__socials uk-flex uk-flex-middle">
         <li>
           <a href="#">
@@ -94,7 +94,7 @@
           </a>
         </li>
       </ul>
-      <span class="btn" data-uk-toggle="target: #popupPreOrder">Задать вопрос онлайн</span>
+      <span class="btn" data-uk-toggle="target: #popupCredit">Задать вопрос онлайн</span>
     </div>
   </div>
 </footer>
@@ -111,7 +111,7 @@
     </div>
     <div class="popup__content">
       <div class="field field--account uk-margin-bottom">
-        <label for="" class="field__title">Телефон</label>
+        <label for="" class="field__title popup__subtitle">Контактный телефон</label>
         <input type="text">
       </div>
       <button class="btn" type="button">Перезвоните мне</button>
@@ -135,18 +135,18 @@
     </div>
     <div class="popup__content">
       <div class="field field--account uk-width-expand@l uk-margin-bottom">
-        <label for="" class="field__title">Детально опишите свой вопрос</label>
+        <label for="" class="field__title popup__subtitle">Детально опишите свой вопрос</label>
         <textarea rows="150"></textarea>
       </div>
       <div class="field field--account uk-margin-bottom">
-        <label for="" class="field__title">Телефон</label>
+        <label for="" class="field__title popup__subtitle">Телефон</label>
         <input type="text">
       </div>
       <button class="btn" type="button">Отправить</button>
     </div>
     <div class="popup__footer">
-      <input class="uk-hidden" type="checkbox" id="f1" name="f1" checked="">
-      <label for="f1">Согласен с условиями <a href="#">Публичной оферты</a></label>
+      <input class="uk-hidden" type="checkbox" id="f2" name="f2" checked="">
+      <label for="f2">Согласен с условиями <a href="#">Публичной оферты</a></label>
     </div>
   </div>
 </div>
@@ -289,6 +289,453 @@
       </ul>
       <button class="btn" type="button">Внести предоплату</button>
       <button class="btn btn--gray" type="button">Я оплачу всю сумму при получении без скидки</button>
+    </div>
+  </div>
+</div>
+
+<!-- Adds-reviews -->
+<div id="popupAddsReviews" class="popup popup--adds-reviews uk-flex-top" data-uk-modal>
+  <div class="popup__dialog popup__dialog--large uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+    <svg class="popup__close uk-modal-close-default" width="25" height="25">
+      <use xlink:href="img/symbol/sprite.svg#close" />
+    </svg>
+    <div class="popup__header">
+      <h2 class="title title--small">Добавить отзыв</h2>
+      <p>Вам понравилось покупать у нас или есть замечания? <br>Поделитесь своими впечатлениями в форме ниже:</p>
+    </div>
+    <div class="popup__content">
+      <div class="uk-flex uk-flex-column@s uk-flex-between uk-child-width-1-2@l uk-margin-bottom">
+        <div class="popup__container-left uk-margin-right@l uk-margin-bottom@s">
+          <div class="field field--account uk-margin-bottom">
+            <label for="" class="field__title popup__subtitle">Плюсы</label>
+            <textarea rows="150"></textarea>
+          </div>
+          <div class="field field--account">
+            <label for="" class="field__title popup__subtitle">Минусы</label>
+            <textarea rows="150"></textarea>
+          </div>
+        </div>
+        <div class="popup__container-right field field--account uk-width-expand@l uk-margin-small-left@l">
+          <label for="" class="field__title popup__subtitle">Комментарий</label>
+          <textarea rows="200"></textarea>
+        </div>
+      </div>
+      <div class="uk-flex uk-flex-column@s uk-flex-between uk-child-width-1-2@l uk-margin-bottom@s">
+        <div class="uk-margin-bottom@s">
+          <div class="fileuploader fileuploader-theme-thumbnails">
+            <input type="hidden" name="fileuploader-list-file" value="[{&quot;file&quot;:&quot;0:/212121.jpg&quot;}]">
+            <input type="file" name="file[]" multiple="multiple"
+              style="position: absolute; z-index: -9999; height: 0px; width: 0px; padding: 0px; margin: 0px; line-height: 0; outline: 0px; border: 0px; opacity: 0;">
+            <input type="file" name="file[]" multiple="multiple"
+              style="position: absolute; z-index: -9999; height: 0px; width: 0px; padding: 0px; margin: 0px; line-height: 0; outline: 0px; border: 0px; opacity: 0;">
+            <div class="fileuploader-items">
+              <ul class="fileuploader-items-list">
+                <li class="fileuploader-item file-has-popup file-type-image file-ext-jpg">
+                  <div class="fileuploader-item-inner">
+                    <div class="actions-holder">
+                      <a class="fileuploader-action fileuploader-action-remove" title="Remove"><i></i></a>
+                    </div>
+                    <div class="thumbnail-holder">212121.jpg</div>
+                    <div class="progress-holder"></div>
+                  </div>
+                </li>
+                <li class="fileuploader-thumbnails-input">
+                  <span class="popup__subtitle" onclick="clickTrigger('.fileuploader-thumbnails-input')">Добавить
+                    фото</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="popup__rating">
+          <span class="popup__subtitle">Оценка</span>
+          <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="Rocks!">5 stars</label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="Pretty good">4
+              stars</label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="Meh">3 stars</label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="Kinda bad">2 stars</label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="Sucks big time">1
+              star</label>
+          </div>
+        </div>
+      </div>
+      <button class="btn" type="button">Добавить отзыв</button>
+    </div>
+    <div class="popup__footer">
+      <input class="uk-hidden" type="checkbox" id="f3" name="f3" checked="">
+      <label for="f3">Согласен с условиями <a href="#">Публичной оферты</a></label>
+    </div>
+  </div>
+</div>
+
+<!-- Maps -->
+<div id="popupMaps" class="popup popup--maps uk-flex-top" data-uk-modal>
+  <div class="popup__dialog popup__dialog--large uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+    <svg class="popup__close uk-modal-close-default" width="30" height="30">
+      <use xlink:href="img/symbol/sprite.svg#close" />
+    </svg>
+    <div class="popup__header">
+      <h2 class="title title--small">Пункты самовывоза</h2>
+      <select>
+        <option data-display="Санкт-Петербург">Санкт-Петербург</option>
+        <option value="1">Москва</option>
+        <option value="2">Псков</option>
+      </select>
+    </div>
+    <div class="popup__content uk-flex uk-flex-column@s">
+      <div class="popup-maps__wrap">
+        <!-- Swiper -->
+        <div class="popup-maps__swiper-container">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide active">
+              <div class="contacts__info uk-flex uk-flex-column">
+                <span class="contacts__info-title">Савеловская</span>
+                <span class="contacts__info-address">Сущевский Вал 5 с 6,</span>
+                <span class="contacts__info-phone">0987654321</span>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="contacts__info uk-flex uk-flex-column">
+                <span class="contacts__info-title">Ломоновский проспект</span>
+                <span class="contacts__info-address">ул. Мосфильмовская 31</span>
+                <span class="contacts__info-phone">0987654321</span>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="contacts__info uk-flex uk-flex-column">
+                <span class="contacts__info-title">Озерная</span>
+                <span class="contacts__info-address">ул. Озерная 38</span>
+                <span class="contacts__info-phone">0987654321</span>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="contacts__info uk-flex uk-flex-column">
+                <span class="contacts__info-title">Кузьминки</span>
+                <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
+                <span class="contacts__info-phone">0987654321</span>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="contacts__info uk-flex uk-flex-column">
+                <span class="contacts__info-title">Кузьминки</span>
+                <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
+                <span class="contacts__info-phone">0987654321</span>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="contacts__info uk-flex uk-flex-column">
+                <span class="contacts__info-title">Кузьминки</span>
+                <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
+                <span class="contacts__info-phone">0987654321</span>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="contacts__info uk-flex uk-flex-column">
+                <span class="contacts__info-title">Кузьминки</span>
+                <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
+                <span class="contacts__info-phone">0987654321</span>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="contacts__info uk-flex uk-flex-column">
+                <span class="contacts__info-title">Кузьминки</span>
+                <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
+                <span class="contacts__info-phone">0987654321</span>
+              </div>
+            </li>
+          </ul>
+          <!-- Add Scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53787.65773638526!2d30.337858222679674!3d59.93387135736224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1562672617310!5m2!1sru!2sru"
+        width="640" height="500" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Credit -->
+<div id="popupCredit" class="popup popup--credit uk-flex-top" data-uk-modal>
+  <div class="popup__dialog popup__dialog--large uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+    <svg class="popup__close uk-modal-close-default" width="25" height="25">
+      <use xlink:href="img/symbol/sprite.svg#close" />
+    </svg>
+    <div class="popup__header">
+      <h2 class="title title--small">Купить в кредит</h2>
+      <p>Заполните анкеты, чтобы получить расчет и возможность получения кредита <br>на покупку. Вы получите ответ в
+        течении 5 минут после заявки.</p>
+    </div>
+    <div class="popup__content uk-flex uk-flex-column@s uk-flex-between uk-child-width-1-2@l">
+      <div class="uk-margin-small-top@l uk-margin-bottom@s">
+        <span class="checkout__container-title uk-margin-small-bottom">Состав заказа</span>
+        <div class="product-card product-card--checkout uk-flex">
+          <a class="product-card__image" href="#">
+            <img src="img/temp/checkout-card.jpg" alt="">
+          </a>
+          <div class="uk-flex uk-flex-column uk-width-expand">
+            <a href="#" class="product-card__name">Apple iPhone XS Max Dual SIM 512GB (черный)</a>
+            <div class="product-card__price uk-flex uk-flex-middle">
+              <div class="uk-flex uk-flex-column uk-margin-small-right">
+                <span class="product-card__price-old">97&nbsp;990&nbsp;&#8381;</span>
+                <span class="product-card__price-sale">-&nbsp;2000&nbsp;&#8381;</span>
+              </div>
+              <span class="product-card__price-total">95&nbsp;990&nbsp;&#8381;</span>
+            </div>
+          </div>
+        </div>
+        <ul class="popup__radio-button">
+          <li class="uk-flex uk-flex-between uk-flex-middle">
+            <span class="popup__subtitle">Есть задолженность <br>по кредитам?</span>
+            <div class="uk-flex">
+              <div class="popup__radio-button-item uk-flex">
+                <input class="uk-hidden" type="radio" id="rb-1-1" name="rb-1">
+                <label for="rb-1-1">Да</label>
+              </div>
+              <div class="popup__radio-button-item uk-flex">
+                <input class="uk-hidden" type="radio" id="rb-1-2" name="rb-1" checked="">
+                <label for="rb-1-2">Нет</label>
+              </div>
+            </div>
+          </li>
+          <li class="uk-flex uk-flex-between uk-flex-middle">
+            <span class="popup__subtitle">Вам больше 21?</span>
+            <div class="uk-flex">
+              <div class="popup__radio-button-item uk-flex">
+                <input class="uk-hidden" type="radio" id="rb-2-1" name="rb-2" checked="">
+                <label for="rb-2-1">Да</label>
+              </div>
+              <div class="popup__radio-button-item uk-flex">
+                <input class="uk-hidden" type="radio" id="rb-2-2" name="rb-2">
+                <label for="rb-2-2">Нет</label>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="popup__footer">
+          <input class="uk-hidden" type="checkbox" id="f4" name="f4" checked="">
+          <label for="f4">Согласен с условиями <a href="#">Публичной оферты</a></label>
+        </div>
+      </div>
+      <div class="popup__container">
+        <span class="popup__subtitle">Приблизительный ежемесячный платеж:</span>
+        <div class="popup__container-header uk-flex uk-flex-column@s uk-flex-between uk-flex-middle@l">
+          <span>16&nbsp;990&nbsp;&#8381;</span>
+          <span>Точный платеж <br>расчитывается менеджером</span>
+        </div>
+        <div class="popup__container-footer">
+          <span class="popup__container-big-text">Напишите свой номер и мы позвоним Вам в течение 5 минут</span>
+          <div class="field field--account uk-margin-bottom">
+            <label for="" class="field__title popup__subtitle">Телефон</label>
+            <input type="text">
+          </div>
+          <button type="button" class="btn">Отправить заявку</button>
+          <button class="btn btn--green uk-margin-small-top" type="button">Остались вопросы?</button>
+          <div class="popup__contact uk-align-center">
+            <span class="popup__contact-title">или позвоните нам по номеру:</span>
+            <a href="tel:88125092480">
+              <span>+7&nbsp;(812)&nbsp;509-24-80</span>
+            </a>
+            <span class="popup__contact-text">С 10:00 до 21:00, без выходных, <br>бесплатно по РФ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Login -->
+<div id="popupLogin" class="popup popup--login uk-flex-top" data-uk-modal>
+  <div class="popup__dialog popup__dialog--medium uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+    <svg class="popup__close uk-modal-close-default" width="30" height="30">
+      <use xlink:href="img/symbol/sprite.svg#close" />
+    </svg>
+    <div class="popup__header">
+      <h2 class="title title--small uk-text-center">Войти или создать профиль</h2>
+    </div>
+    <div class="popup__content">
+      <div class="field field--account uk-margin-bottom">
+        <label for="" class="field__title popup__subtitle">Контактный телефон</label>
+        <input type="text">
+      </div>
+      <button class="btn btn--disabled" type="button">Перезвоните мне</button>
+      <span>Введите номер телефона!</span>
+    </div>
+    <div class="popup__footer">
+      <div class="uk-margin-small-bottom">
+        <input class="uk-hidden" type="checkbox" id="f5" name="f5" checked="">
+        <label for="f5">Согласен с условиями <a href="#">Публичной оферты</a></label>
+      </div>
+      <div>
+        <input class="uk-hidden" type="checkbox" id="f6" name="f6">
+        <label for="f6">Получать эксклюзивные скидки в SMS‑рассылке</label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Message -->
+<div id="popupMessage" class="popup popup--message uk-flex-top" data-uk-modal>
+  <div class="popup__dialog popup__dialog--medium uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+    <svg class="popup__close uk-modal-close-default" width="30" height="30">
+      <use xlink:href="img/symbol/sprite.svg#close" />
+    </svg>
+    <div class="popup__header">
+      <h2 class="title title--small uk-margin-bottom">Введите код из СМС</h2>
+      <div class="popup__header-container uk-flex uk-flex-middle">
+        <div>
+          <svg width="24" height="20" fill="rgba(255,255,255,1)">
+            <use xlink:href="img/symbol/sprite.svg#popup-arrow" />
+          </svg>
+        </div>
+        <div class="uk-flex uk-flex-column">
+          <span>Код выслан на номер</span>
+          <span>+7 098 765 43 21</span>
+        </div>
+      </div>
+    </div>
+    <div class="popup__content">
+      <div class="field field--account uk-margin-bottom uk-flex uk-flex-between uk-flex-middle">
+        <input type="text">
+        <p class="uk-margin-left">Повторная доставка доступна через 48 секунд</p>
+      </div>
+      <button class="btn btn--light" type="button">Получить повторно</button>
+    </div>
+    <div class="popup__footer">
+      <input class="uk-hidden" type="checkbox" id="f5" name="f5" checked="">
+      <label for="f5">Согласен с условиями <a href="#">Публичной оферты</a></label>
+    </div>
+  </div>
+</div>
+
+<!-- Pay -->
+<div id="popupPay" class="popup popup--pay uk-flex-top" data-uk-modal>
+  <div class="popup__dialog popup__dialog--medium uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+    <svg class="popup__close uk-modal-close-default" width="30" height="30">
+      <use xlink:href="img/symbol/sprite.svg#close" />
+    </svg>
+    <div class="popup__header">
+      <h2 class="title title--small uk-margin-bottom">Доступно 5065&nbsp;&#8381;</h2>
+      <p>Выберите куда хотите получить выплату</p>
+    </div>
+    <div class="popup__content">
+      <ul class="checkout__list-select uk-flex uk-flex-column@s uk-child-width-1-2@l uk-margin-bottom">
+        <li class="uk-flex uk-flex-center uk-flex-middle">
+          <div>
+            <img src="img/pic/ico/popup-cash.svg" width="50" height="48" alt="">
+          </div>
+          <span>На э-кошелек <br>Qiwi, Webmoney</span>
+        </li>
+        <li class="active uk-flex uk-flex-center uk-flex-middle">
+          <div>
+            <img src="img/pic/ico/popup-card.svg" width="60" height="40" alt="">
+          </div>
+          <span>На карту <br>Visa, MC, Мир</span>
+        </li>
+      </ul>
+      <div class="field field--account uk-margin-bottom">
+        <label for="" class="field__title popup__subtitle">Номер карты, телефона или эл. кошелька</label>
+        <input type="text">
+      </div>
+      <button class="btn" type="button">Получить деньги</button>
+      <a href="#">Есть вопросы?</a>
+    </div>
+    <div class="popup__footer">
+      <input class="uk-hidden" type="checkbox" id="f5" name="f5" checked="">
+      <label for="f5">Согласен с условиями <a href="#">Публичной оферты</a></label>
+    </div>
+  </div>
+</div>
+
+<!-- Error-pay -->
+<div id="popupErrorPay" class="popup popup--error-pay uk-flex-top" data-uk-modal>
+  <div class="popup__dialog popup__dialog--medium uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+    <svg class="popup__close uk-modal-close-default" width="30" height="30">
+      <use xlink:href="img/symbol/sprite.svg#close" />
+    </svg>
+    <div class="popup__header">
+      <h2 class="title title--small uk-margin-bottom">Недостаточно средств для выплаты</h2>
+      <p>Минимальная выплата 3000&nbsp;&#8381;</p>
+    </div>
+    <div class="popup__content">
+      <ul class="checkout__list-select uk-flex uk-flex-column@s uk-child-width-1-2@l uk-margin-bottom">
+        <li class="uk-flex uk-flex-center uk-flex-middle">
+          <div>
+            <img src="img/pic/ico/popup-cash.svg" width="50" height="48" alt="">
+          </div>
+          <span>На э-кошелек <br>Qiwi, Webmoney</span>
+        </li>
+        <li class="uk-flex uk-flex-center uk-flex-middle">
+          <div>
+            <img src="img/pic/ico/popup-card.svg" width="60" height="40" alt="">
+          </div>
+          <span>На карту <br>Visa, MC, Мир</span>
+        </li>
+      </ul>
+      <div class="field field--account uk-margin-bottom">
+        <label for="" class="field__title popup__subtitle">Номер карты, телефона или эл. кошелька</label>
+        <input type="text">
+      </div>
+      <button class="btn btn--dark" type="button">Получить деньги</button>
+      <a href="#">Есть вопросы?</a>
+    </div>
+    <div class="popup__footer">
+      <input class="uk-hidden" type="checkbox" id="f5" name="f5" checked="">
+      <label for="f5">Согласен с условиями <a href="#">Публичной оферты</a></label>
+    </div>
+  </div>
+</div>
+
+<!-- Accepted -->
+<div id="popupAccepted" class="popup uk-flex-top" data-uk-modal>
+  <div class="popup__dialog popup__dialog--small uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+    <svg class="popup__close uk-modal-close-default" width="30" height="30">
+      <use xlink:href="img/symbol/sprite.svg#close" />
+    </svg>
+    <div class="popup__header">
+      <h2 class="title title--small">Заявка принята!</h2>
+      <p>Выплты производятся от 15 минут до 3х рабочих дней, в&nbsp;зависимости от&nbsp;условий работы вашего банка
+        или&nbsp;платежной
+        системы.</p>
+    </div>
+    <div class="popup__content">
+      <button class="btn" type="button">Понятно</button>
+    </div>
+  </div>
+</div>
+
+<!-- Eddit -->
+<div id="popupEddit" class="popup popup--eddit uk-flex-top" data-uk-modal>
+  <div class="popup__dialog popup__dialog--medium uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+    <svg class="popup__close uk-modal-close-default" width="30" height="30">
+      <use xlink:href="img/symbol/sprite.svg#close" />
+    </svg>
+    <div class="popup__header">
+      <h2 class="title title--small uk-text-center">Редактировать профиль</h2>
+    </div>
+    <div class="popup__content">
+      <div class="field field--account uk-margin-bottom">
+        <label for="" class="field__title popup__subtitle">Телефон</label>
+        <input type="text">
+      </div>
+      <div class="field field--account uk-margin-bottom">
+        <label for="" class="field__title popup__subtitle">Email</label>
+        <input type="text">
+      </div>
+      <div class="field field--account uk-margin-bottom">
+        <label for="" class="field__title popup__subtitle">Адрес</label>
+        <input type="text">
+      </div>
+      <div class="field field--account uk-margin-bottom">
+        <label for="" class="field__title popup__subtitle">Индекс</label>
+        <input type="text">
+      </div>
+      <div class="field field--account uk-margin-bottom">
+        <label for="" class="field__title popup__subtitle">Изменить пароль</label>
+        <input type="text">
+      </div>
+      <button class="btn" type="button">Сохранить</button>
     </div>
   </div>
 </div>
