@@ -326,6 +326,24 @@
       &--gray {
         margin-top: 15px;
         text-transform: none;
+
+        @include screen(xl) {
+          font-weight: 500;
+        }
+
+        br {
+          @include screen(l) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .popup__footer {
+      @include screen(xl) {
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 0;
       }
     }
   }
@@ -778,6 +796,16 @@
       &:nth-of-type(5) {
         padding-top: 20px;
         border-top: 1px solid rgba(216, 216, 216, .5);
+      }
+    }
+  }
+
+  &--one-click {
+    .popup__footer {
+      @include screen(xl) {
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 0;
       }
     }
   }
