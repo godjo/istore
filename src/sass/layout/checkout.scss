@@ -7,7 +7,7 @@
 
   &__container {
     &-title {
-      display: inline-block;
+      display: block;
       text-transform: uppercase;
       font: 600 12px/20px FuturaPT;
       color: rgba(48, 55, 61, .8);
@@ -322,7 +322,6 @@
         @include screen(l) {
           padding: 20px 5px 10px;
         }
-
       }
 
       span:not(.checkout__subtitle) {
@@ -331,7 +330,6 @@
 
         span {
           opacity: .5;
-
         }
       }
     }

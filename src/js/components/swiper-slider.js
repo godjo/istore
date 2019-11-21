@@ -33,7 +33,6 @@ var swiperFeatures = new Swiper('.main-features__container', {
   },
 });
 
-
 var swiperContacts = new Swiper('.contacts__swiper-container', {
   direction: 'vertical',
   slidesPerView: 4,
@@ -44,7 +43,6 @@ var swiperContacts = new Swiper('.contacts__swiper-container', {
   },
   touchReleaseOnEdges: true,
 });
-
 
 var swiperReviews = new Swiper('.reviews__container', {
   pagination: {
@@ -70,7 +68,6 @@ var swiperReviews = new Swiper('.reviews__container', {
     },
   },
 });
-
 
 if ($(window).width() < 1250) {
   if (typeof swiperCatalog == 'undefined') {
@@ -130,3 +127,23 @@ var galleryTop = new Swiper('.gallery-top', {
     swiper: galleryThumbs
   }
 });
+
+var swiperPopupMaps = new Swiper('.popup-maps__swiper-container', {
+  direction: 'vertical',
+  slidesPerView: 5,
+  mousewheel: true,
+  /* scrollbar: {
+    el: '.swiper-scrollbar',
+    hide: false,
+  }, */
+  touchReleaseOnEdges: true,
+  breakpoints: {
+    1250: {
+      direction: 'horizontal',
+      slidesPerView: 'auto',
+    },
+  },
+});
+UIkit.util.on('#popupMaps', 'show', function () {
+  swiperPopupMaps.update();
+})
