@@ -70,12 +70,153 @@
     </div>
 
     <div class="uk-flex">
-      <button class="header__btn-catalog" type="button">
-        <svg width="24" height="6" fill="rgba(255,255,255,.5)">
-          <use xlink:href="img/symbol/sprite.svg#points-ico" />
-        </svg>
-        Каталог товаров
-      </button>
+      <div class="header__catalog">
+        <button class="header__catalog-btn" type="button">
+          <svg width="24" height="6" fill="rgba(255,255,255,.5)">
+            <use xlink:href="img/symbol/sprite.svg#points-ico" />
+          </svg>
+          Каталог товаров
+        </button>
+
+        <div class="header__catalog-container" uk-dropdown="mode: click; delay-hide: 0">
+          <button class="header__catalog-close" id="header-catalog-close" type="button"
+            onclick="UIkit.dropdown('.header__catalog-container').hide();">Закрыть</button>
+          <ul class="header__catalog-tabs uk-subnav uk-subnav-pill" uk-switcher>
+            <li><a href="#">iPhone</a></li>
+            <li><a href="#">iPad</a></li>
+            <li><a href="#">MacBook и iMac</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">Аксессуары</a></li>
+          </ul>
+          <ul class="header__catalog-content uk-switcher uk-text-left">
+            <li>
+              <ul class="header__catalog-list uk-flex uk-child-width-auto uk-grid-small" uk-grid>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-1.jpg" alt="">
+                    </div>
+                    <span>iPhone 11 Pro Max</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-1.jpg" alt="">
+                    </div>
+                    <span>iPhone 11 Pro</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-2.jpg" alt="">
+                    </div>
+                    <span>iPhone 11</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-3.jpg" alt="">
+                    </div>
+                    <span>iPhone XS Max</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-3.jpg" alt="">
+                    </div>
+                    <span>iPhone XS</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-4.jpg" alt="">
+                    </div>
+                    <span>iPhone XR</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-5.jpg" alt="">
+                    </div>
+                    <span>iPhone X</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-6.jpg" alt="">
+                    </div>
+                    <span>iPhone 8 Plus</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-6.jpg" alt="">
+                    </div>
+                    <span>iPhone 8</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-7.jpg" alt="">
+                    </div>
+                    <span>iPhone 7 Plus</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-7.jpg" alt="">
+                    </div>
+                    <span>iPhone 7</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-8.jpg" alt="">
+                    </div>
+                    <span>iPhone 6S Plus</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-8.jpg" alt="">
+                    </div>
+                    <span>iPhone 6S</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-9.jpg" alt="">
+                    </div>
+                    <span>iPhone SE</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <h2 class="uk-text-center uk-margin-bottom">Обмен и возврат в
+                течении 14 дней <br>с момента покупки.</h2>
+            </li>
+          </ul>
+
+        </div>
+        <div class="header__catalog-bg"></div>
+      </div>
 
       <div class="search uk-width-expand">
         <input type="text" placeholder="Поиск по каталогу">
@@ -90,36 +231,91 @@
 
   <div class="header__bottom uk-container uk-flex uk-flex-middle">
     <nav class="uk-width-expand">
-      <ul class="uk-flex uk-flex-between">
+      <ul class="header__list uk-flex uk-flex-between">
         <li>
           <a class="uk-flex uk-flex-middle" href="#">
             <img src="img/pic/ico/iphone-ico.svg" width="50" height="46" alt="">
             <span>iPhone</span>
           </a>
+          <ul class="header__sublist" uk-dropdown="delay-hide: 500; delay-show: 100;">
+            <li>
+              <a href="#">iPhone 11 Pro Max</a>
+            </li>
+            <li>
+              <a href="#">iPhone 11 Pro</a>
+            </li>
+            <li>
+              <a href="#">iPhone 11</a>
+            </li>
+          </ul>
         </li>
         <li>
           <a class="uk-flex uk-flex-middle" href="#">
             <img src="img/pic/ico/ipad-ico.svg" width="46" height="48" alt="">
             <span>iPad</span>
           </a>
+          <ul class="header__sublist" uk-dropdown="delay-hide: 500; delay-show: 100;">
+            <li>
+              <a href="#">iPhone 11 Pro Max</a>
+            </li>
+            <li>
+              <a href="#">iPhone 11 Pro</a>
+            </li>
+            <li>
+              <a href="#">iPhone 11</a>
+            </li>
+          </ul>
         </li>
         <li>
           <a class="uk-flex uk-flex-middle" href="#">
             <img src="img/pic/ico/macbook-ico.svg" width="70" height="40" alt="">
             <span>MacBook и iMac</span>
           </a>
+          <ul class="header__sublist" uk-dropdown="delay-hide: 500; delay-show: 100;">
+            <li>
+              <a href="#">iPhone 11 Pro Max</a>
+            </li>
+            <li>
+              <a href="#">iPhone 11 Pro</a>
+            </li>
+            <li>
+              <a href="#">iPhone 11</a>
+            </li>
+          </ul>
         </li>
         <li>
           <a class="uk-flex uk-flex-middle" href="#">
             <img src="img/pic/ico/iwatch-ico.svg" width="23" height="42" alt="">
             <span>Watch</span>
           </a>
+          <ul class="header__sublist" uk-dropdown="delay-hide: 500; delay-show: 100;">
+            <li>
+              <a href="#">iPhone 11 Pro Max</a>
+            </li>
+            <li>
+              <a href="#">iPhone 11 Pro</a>
+            </li>
+            <li>
+              <a href="#">iPhone 11</a>
+            </li>
+          </ul>
         </li>
         <li>
           <a class="uk-flex uk-flex-middle" href="#">
             <img src="img/pic/ico/accessories-ico.svg" width="31" height="46" alt="">
             <span>Аксессуары</span>
           </a>
+          <ul class="header__sublist" uk-dropdown>
+            <li>
+              <a href="#">iPhone 11 Pro Max</a>
+            </li>
+            <li>
+              <a href="#">iPhone 11 Pro</a>
+            </li>
+            <li>
+              <a href="#">iPhone 11</a>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>
