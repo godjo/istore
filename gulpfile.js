@@ -24,9 +24,9 @@ gulp.task("styles", function () {
   return gulp
     .src("src/sass/main.scss")
     .pipe(sass())
-    //.pipe(groupmq())  group media queries
+    .pipe(groupmq()) //group media queries
     .pipe(postcss([autoprefixer()]))
-    //.pipe(cleanCSS())
+    .pipe(cleanCSS())
     .pipe(rename({
       suffix: ".min"
     }))
@@ -98,8 +98,7 @@ gulp.task("clean", function () {
 });
 
 gulp.task("scripts", function () {
-  return gulp
-    .src("src/js/scripts.js")
+  return gulp.src(["src/js/scripts.js", "src/js/library.js", "src/js/library/jquery.js"])
     .pipe(rigger())
     .pipe(
       babel({
