@@ -147,3 +147,41 @@ var swiperPopupMaps = new Swiper('.popup-maps__swiper-container', {
 UIkit.util.on('#popupMaps', 'show', function () {
   swiperPopupMaps.update();
 })
+
+var swiperProductReviews = new Swiper('.product__reviews-container', {
+  direction: 'vertical',
+  mousewheel: true,
+  threshold: 20,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  autoplay: {
+    delay: 5000,
+  },
+  slidesPerView: 3,
+  spaceBetween: 30,
+  breakpoints: {
+    640: {
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      direction: 'horizontal',
+      mousewheel: false,
+    },
+    960: {
+      slidesPerView: 2,
+      direction: 'horizontal',
+      mousewheel: false,
+    },
+    1250: {
+      centeredSlides: true,
+      slidesPerView: 3,
+      direction: 'horizontal',
+      mousewheel: false,
+    },
+  },
+});
+
+$('body').on('click', '.product__reviews', function () {
+  var swiperProductReviews = $('body').find('.product__reviews-container')[0].swiper;
+  swiperProductReviews.update(true);
+});

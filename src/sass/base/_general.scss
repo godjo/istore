@@ -141,8 +141,6 @@ button {
   }
 }
 
-
-
 /* nice-select */
 
 .nice-select {
@@ -200,4 +198,12 @@ button {
       margin: auto 0 auto auto;
     }
   }
+}
+
+
+/* uk-light-box */
+
+.uk-lightbox {
+  background: transparent !important;
+  backdrop-filter: blur(5px);
 }
