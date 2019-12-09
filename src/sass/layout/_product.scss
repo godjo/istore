@@ -578,20 +578,68 @@
 
     .frame {
       background: #FFFFFF;
-      box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05);
+
+
+      @include screen(xl) {
+        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        overflow: hidden;
+      }
 
       @include screen(l) {
         padding: 30px 25px 40px 0;
+        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05);
       }
     }
 
     &-title {
-      font: 600 32px/42px FuturaPT;
+      position: relative;
       color: #333333;
+
+      @include screen(xl) {
+        padding: 20px 40px 20px 20px;
+        font: 600 28px/32px FuturaPT;
+      }
 
       @include screen(l) {
         padding-left: 40px;
         margin-bottom: 35px;
+        pointer-events: none;
+        font: 600 32px/42px FuturaPT;
+      }
+
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        @include screen(xl) {
+          position: absolute;
+          display: block;
+          content: "";
+          top: 0;
+          bottom: 0;
+          right: 20px;
+          margin: auto;
+          width: 15px;
+          height: 12px;
+          background: url(../img/pic/ico/faq-arrow-mobile.svg) no-repeat, transparent;
+          background-size: 15px 10px;
+          background-position: center;
+          border-radius: 0;
+          transition: transform .3s;
+          transform: rotate(180deg);
+
+          .uk-open & {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+
+    .uk-accordion-content {
+      @include screen(xl) {
+        margin-top: 0;
       }
     }
 
@@ -617,14 +665,41 @@
 
       .uk-accordion-title {
         position: relative;
-        padding: 7px 20px 6px 25px;
         border-bottom: 1px solid #E9E9E9;
-        font: 600 14px/28px FuturaPT;
         text-transform: uppercase;
         color: #30373D;
 
+        @include screen(xl) {
+          padding: 15px 60px 15px 25px;
+          font: 600 14px/22px FuturaPT;
+        }
+
+        @include screen(l) {
+          padding: 7px 20px 6px 25px;
+          font: 600 14px/28px FuturaPT;
+        }
+
         &::before {
+          @include screen(xl) {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0;
+            bottom: 0;
+            right: 25px;
+            margin: auto;
+            width: 10px;
+            height: 16px;
+            background: url(../img/pic/ico/arrow-2.svg) no-repeat, transparent;
+            background-size: 10px 16px;
+            background-position: center;
+            border-radius: 0;
+            transition: transform .3s;
+            transform: rotate(90deg);
+          }
+
           @include screen(l) {
+            content: "";
             position: absolute;
             top: 0;
             bottom: 0;
@@ -643,7 +718,15 @@
       }
 
       & li.uk-open>.uk-accordion-title::before {
-        transform: none;
+        transition: transform .3s;
+
+        @include screen(xl) {
+          transform: rotate(270deg);
+        }
+
+        @include screen(l) {
+          transform: none;
+        }
       }
 
       .uk-accordion-content {
@@ -672,6 +755,10 @@
 
   &__accordion {
     .accordion {
+      @include screen(xl) {
+        box-shadow: none;
+      }
+
       @include screen(l) {
         margin-top: 40px;
       }
@@ -769,15 +856,30 @@
 
       .title {
         margin-bottom: 40px;
+
+        @include screen(xl) {
+          display: none;
+        }
       }
 
       .reviews__content {
         background-color: #ffffff;
+
+        .pagination__btn--large {
+          @include screen(xl) {
+            margin-left: 20px;
+            margin-right: 20px;
+          }
+        }
       }
 
       &-container {
         position: relative;
         overflow: hidden;
+
+        @include screen(xl) {
+          padding-bottom: 35px;
+        }
 
         @include screen(l) {
           max-height: 1200px;
@@ -786,7 +888,7 @@
 
       .swiper-pagination {
         @include screen(xl) {
-          bottom: 20px;
+          bottom: 0;
         }
 
         @include screen(l) {
