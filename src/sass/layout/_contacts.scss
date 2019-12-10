@@ -12,8 +12,11 @@
   }
 
   &__wrapper {
+    padding-top: 20px;
+
     @include screen(xl) {
       padding: 0;
+      padding-top: 20px;
     }
   }
 

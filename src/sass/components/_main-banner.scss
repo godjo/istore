@@ -1,10 +1,13 @@
 .main-banner {
   position: relative;
-  margin-top: 20px;
-  /* background: linear-gradient(360deg, #f2f2f2 0%, rgba(255, 255, 255, 0.0001) 100%); */
 
   @include screen(xl) {
-    padding: 0;
+    padding: 15px 0 0 0;
+    background: rgb(248, 248, 248);
+  }
+
+  @include screen(l) {
+    margin-top: 20px;
   }
 
   &__container {

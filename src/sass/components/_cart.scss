@@ -1,48 +1,66 @@
 .cart {
-	position: relative;
-	/* padding: 13px 20px 10px 55px; */
-	border-radius: 8px;
-	background: #6344B6;
-	box-shadow: 0px 4px 12px rgba(107, 72, 169, 0.4);
-	cursor: pointer;
+	@include screen(l) {
+		position: relative;
+		border-radius: 8px;
+		background: #6344B6;
+		box-shadow: 0px 4px 12px rgba(107, 72, 169, 0.4);
+		cursor: pointer;
+	}
 
 	&::before {
-		position: absolute;
-		display: block !important;
-		content: "";
-		left: 20px;
-		top: 0;
-		bottom: 0;
-		margin: auto;
-		width: 24px;
-		height: 24px;
-		background: url("../img/pic/ico/cart-ico.svg") no-repeat;
+		@include screen(l) {
+			position: absolute;
+			display: block !important;
+			content: "";
+			left: 20px;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			width: 24px;
+			height: 24px;
+			background: url("../img/pic/ico/cart-ico.svg") no-repeat;
+		}
 	}
 
 	span {
-		position: relative;
-		display: block;
-		color: #ffffff;
+		@include screen(l) {
+			position: relative;
+			display: block;
+			color: #ffffff;
+		}
 
 		&:first-of-type {
-			padding: 13px 0 10px 55px;
-			font: 600 15px/19px FuturaPT;
+			@include screen(l) {
+				padding: 13px 0 10px 55px;
+				font: 600 15px/19px FuturaPT;
+			}
 		}
 
 		&:last-of-type {
-			padding: 13px 20px 10px 0;
-			font: 300 15px/19px FuturaPT;
+			@include screen(l) {
+				padding: 13px 20px 10px 0;
+				font: 300 15px/19px FuturaPT;
+			}
 
 			&::before {
-				position: absolute;
-				display: block !important;
-				content: "";
-				left: -20px;
-				top: 0;
-				width: 1px;
-				height: 100%;
-				background: rgba(0, 0, 0, .2);
+				@include screen(l) {
+					position: absolute;
+					display: block !important;
+					content: "";
+					left: -20px;
+					top: 0;
+					width: 1px;
+					height: 100%;
+					background: rgba(0, 0, 0, .2);
+				}
 			}
+		}
+	}
+
+	&__mobile {
+		@include screen(xl) {
+			padding: 5px 20px 0 20px;
+			border-left: 1px solid rgba(0, 0, 0, .1)
 		}
 	}
 }

@@ -1,7 +1,10 @@
 .warranty {
   &__wrapper {
+    padding-top: 20px;
+
     @include screen(xl) {
       padding: 0;
+      padding-top: 20px;
     }
   }
 
@@ -19,7 +22,7 @@
         content: "";
         position: absolute;
         background: url('../img/pic/bg/warranty.jpg') no-repeat;
-        top: 10px;
+        top: 20px;
         right: 15px;
         width: 528px;
         height: 528px;

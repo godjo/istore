@@ -11,10 +11,15 @@
     width: 100%;
     padding: 10px 15px;
     border-radius: 8px;
-    border: none;
+    border: 1px solid transparent;
     font: normal 15px/18px Roboto;
     color: #30373D;
     background: #F3F2F4;
+    transition: border-color .3s;
+
+    &:focus {
+      border-color: #FF548C;
+    }
   }
 
   &--account {
