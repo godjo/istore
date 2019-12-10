@@ -1,5 +1,7 @@
 .account {
   &__wrapper {
+    padding-top: 20px;
+
     @include screen(xl) {
       padding-left: 0;
       padding-right: 0;
@@ -254,8 +256,6 @@
     }
   }
 
-  /* -------- */
-
   /* cashback */
   &--cashback {
     .account {
@@ -309,8 +309,6 @@
     }
   }
 
-  /* -------- */
-
   /* orders */
   &--orders {
     .account {
@@ -355,8 +353,6 @@
     }
   }
 
-  /* -------- */
-
   /* reviews */
   &--reviews {
     .account {
@@ -389,8 +385,6 @@
     }
   }
 
-  /* -------- */
-
   /* cart */
   &--cart {
     .account {
@@ -405,6 +399,4 @@
       }
     }
   }
-
-  /* -------- */
 }

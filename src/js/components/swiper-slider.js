@@ -185,3 +185,25 @@ $('body').on('click', '.product__reviews', function () {
   var swiperProductReviews = $('body').find('.product__reviews-container')[0].swiper;
   swiperProductReviews.update(true);
 });
+
+if ($(window).width() < 1250) {
+  if (typeof swiperHeaderBottom == 'undefined') {
+    var swiperHeaderBottom = new Swiper('.header__bottom-container', {
+      
+      breakpoints: {
+        1250: {
+          spaceBetween: 10,
+          slidesPerView: 3,
+        },
+      },
+    });
+  }
+} else {
+  if (typeof swiperHeaderBottom != 'undefined') {
+    swiperHeaderBottom.destroy();
+    swiperHeaderBottom = undefined;
+
+    $('.swiper-wrapper').removeAttr('style');
+    $('.swiper-slide').removeAttr('style');
+  }
+}

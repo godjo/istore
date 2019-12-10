@@ -1,6 +1,6 @@
 <div class="header">
   <div
-    class="header__top uk-padding-small-top@l uk-padding-small-top@s uk-padding-small-bottom@l uk-padding-small-bottom@s">
+    class="header__top uk-padding-small-top@l uk-padding-small-top@s uk-padding-small-bottom@l uk-padding-small-bottom@s uk-visible@l">
     <div class="uk-container uk-flex uk-flex-between uk-flex-middle">
       <div class="header__top-select-city">
         <span>Ваш город:</span>
@@ -23,14 +23,23 @@
     </div>
   </div>
 
-  <div class="uk-container">
-    <div
-      class="uk-flex uk-flex-middle uk-padding-small-top@l uk-padding-small-top@s uk-padding-small-bottom@l uk-padding-small-bottom@s">
+  <div class="header__sticky-mobile uk-container uk-flex uk-flex-column@l uk-flex-row@s bg-full-width--white"
+    uk-sticky="media: (max-width:1249px)">
+
+    <div class="uk-flex uk-flex-middle uk-padding-small-top@l uk-padding-small-bottom@l">
+      <div class="header__menu uk-hidden@l">
+        <button class="header__menu-button">
+          <svg width="26" height="20" fill="#F9F9F9">
+            <use xlink:href="img/symbol/sprite.svg#hamburger" />
+          </svg>
+        </button>
+      </div>
+
       <a href="#" class="header__logo">
         <img src="img/pic/logo/i-store-logo.svg" width="116" height="16" alt="">
       </a>
 
-      <nav class="header__navigation uk-width-expand">
+      <nav class="header__navigation uk-width-expand@l uk-visible@l">
         <ul class="uk-flex uk-flex-center uk-flex-between">
           <li>
             <a href="#">Распродажа</a>
@@ -69,8 +78,8 @@
       </div>
     </div>
 
-    <div class="uk-flex">
-      <div class="header__catalog">
+    <div class="header__sticky uk-flex uk-flex-middle bg-full-width--white" uk-sticky="media: (min-width: 1250px)">
+      <div class="header__catalog uk-visible@l">
         <button class="header__catalog-btn" type="button">
           <svg width="24" height="6" fill="rgba(255,255,255,.5)">
             <use xlink:href="img/symbol/sprite.svg#points-ico" />
@@ -218,26 +227,48 @@
         <div class="header__catalog-bg"></div>
       </div>
 
-      <div class="search uk-width-expand">
-        <input type="text" placeholder="Поиск по каталогу">
+      <div class="search uk-width-expand@l">
+        <input class="uk-visible@l" type="text" placeholder="Поиск по каталогу">
+
+        <button class="search__mobile uk-hidden@l">
+          <svg width="24" height="24" fill="#393939">
+            <use xlink:href="img/symbol/sprite.svg#header__search-mobile" />
+          </svg>
+        </button>
       </div>
 
-      <div class="cart uk-flex uk-flex-between uk-width-1-6">
-        <span>Корзина</span>
-        <span>2 шт</span>
+      <a class="header__contacts-mobile uk-hidden@l" href="tel:84991131908">
+        <svg width="24" height="24">
+          <use xlink:href="img/symbol/sprite.svg#header__contact-mobile" />
+        </svg>
+      </a>
+
+      <div class="cart uk-width-1-6@l">
+        <div class="uk-flex uk-flex-between uk-visible@l">
+          <span>Корзина</span>
+          <span>2 шт</span>
+        </div>
+
+        <button class="cart__mobile uk-hidden@l">
+          <svg width="24" height="24" fill="#6344B6">
+            <use xlink:href="img/symbol/sprite.svg#cart-icon" />
+          </svg>
+        </button>
       </div>
     </div>
+
   </div>
 
   <div class="header__bottom uk-container uk-flex uk-flex-middle">
-    <nav class="uk-width-expand">
-      <ul class="header__list uk-flex uk-flex-between">
-        <li>
+    <!-- Swiper -->
+    <nav class="uk-width-expand header__bottom-container">
+      <ul class="header__list uk-flex uk-flex-between swiper-wrapper">
+        <li class="swiper-slide">
           <a class="uk-flex uk-flex-middle" href="#">
             <img src="img/pic/ico/iphone-ico.svg" width="50" height="46" alt="">
             <span>iPhone</span>
           </a>
-          <ul class="header__sublist" uk-dropdown="delay-hide: 500; delay-show: 100;">
+          <ul class="header__sublist">
             <li>
               <a href="#">iPhone 11 Pro Max</a>
             </li>
@@ -249,12 +280,13 @@
             </li>
           </ul>
         </li>
-        <li>
+
+        <li class="swiper-slide">
           <a class="uk-flex uk-flex-middle" href="#">
             <img src="img/pic/ico/ipad-ico.svg" width="46" height="48" alt="">
             <span>iPad</span>
           </a>
-          <ul class="header__sublist" uk-dropdown="delay-hide: 500; delay-show: 100;">
+          <ul class="header__sublist">
             <li>
               <a href="#">iPhone 11 Pro Max</a>
             </li>
@@ -266,12 +298,13 @@
             </li>
           </ul>
         </li>
-        <li>
+
+        <li class="swiper-slide">
           <a class="uk-flex uk-flex-middle" href="#">
             <img src="img/pic/ico/macbook-ico.svg" width="70" height="40" alt="">
             <span>MacBook и iMac</span>
           </a>
-          <ul class="header__sublist" uk-dropdown="delay-hide: 500; delay-show: 100;">
+          <ul class="header__sublist">
             <li>
               <a href="#">iPhone 11 Pro Max</a>
             </li>
@@ -283,12 +316,13 @@
             </li>
           </ul>
         </li>
-        <li>
+
+        <li class="swiper-slide">
           <a class="uk-flex uk-flex-middle" href="#">
             <img src="img/pic/ico/iwatch-ico.svg" width="23" height="42" alt="">
             <span>Watch</span>
           </a>
-          <ul class="header__sublist" uk-dropdown="delay-hide: 500; delay-show: 100;">
+          <ul class="header__sublist">
             <li>
               <a href="#">iPhone 11 Pro Max</a>
             </li>
@@ -300,12 +334,13 @@
             </li>
           </ul>
         </li>
-        <li>
+
+        <li class="swiper-slide">
           <a class="uk-flex uk-flex-middle" href="#">
             <img src="img/pic/ico/accessories-ico.svg" width="31" height="46" alt="">
             <span>Аксессуары</span>
           </a>
-          <ul class="header__sublist" uk-dropdown>
+          <ul class="header__sublist">
             <li>
               <a href="#">iPhone 11 Pro Max</a>
             </li>
@@ -320,7 +355,7 @@
       </ul>
     </nav>
 
-    <div class="header__banner">
+    <div class="header__banner uk-visible@l">
       <img src="img/pic/bg/header-banner.jpg" width="70" height="70" alt="">
       <span>Новинки уже в наличии</span>
       <span>iPhone 11 Pro Max</span>

@@ -1,21 +1,12 @@
 .search {
 	position: relative;
 
-	@include screen(l) {
-		margin-right: 10px;
+	@include screen(xl) {
+		padding-top: 5px;
 	}
 
-	&::after {
-		position: absolute;
-		content: "";
-		right: 20px;
-		top: 0;
-		bottom: 0;
-		margin: auto;
-		width: 18px;
-		height: 18px;
-		background: url("../img/pic/ico/search-ico.svg") no-repeat;
-		pointer-events: none;
+	@include screen(l) {
+		margin-right: 10px;
 	}
 
 	input {
@@ -23,6 +14,14 @@
 		width: 100%;
 		border-radius: 8px;
 		border: none;
-		background: #EFEFF0;
+		background: url("../img/pic/ico/search-ico.svg") no-repeat, #EFEFF0;
+		background-size: 18px 18px;
+		background-position: 98%;
+	}
+
+	&__mobile {
+		@include screen(xl) {
+			margin-right: 25px;
+		}
 	}
 }
