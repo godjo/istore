@@ -4,21 +4,32 @@
   //= components/header.html
   <div class="reviews__wrapper uk-container bg-full-width--gradient">
     <div class="frame">
-      <div class="reviews__header uk-flex uk-flex-between uk-flex-wrap">
-        <div class="uk-flex uk-flex-column uk-margin-medium-right uk-margin-bottom@s">
-          <ul class="breadcrumbs uk-subnav uk-subnav-divider uk-margin-bottom@s">
-            <li><a href="#">Главная</a></li>
-            <li class="uk-active"><a href="#">Отзывы о покупке</a></li>
-          </ul>
+      <div class="reviews__header">
+        <ul class="breadcrumbs uk-subnav uk-subnav-divider uk-margin-bottom@s uk-margin-medium-bottom@l">
+          <li><a href="#">Главная</a></li>
+          <li class="uk-active"><a href="#">Отзывы о покупке</a></li>
+        </ul>
+
+        <div class="uk-flex uk-flex-between uk-flex-middle">
           <h1 class="title title--medium">Отзывы о покупке</h1>
+          <div class="uk-width-1-4@l">
+            <button type="button" class="btn reviews__btn-adds position-right@s">Оставить отзыв</button>
+          </div>
         </div>
-        <div class="uk-flex uk-flex-column">
-          <span>Отзывы о модели:</span>
-        </div>
+
       </div>
       <div class="reviews__content uk-flex uk-flex-column@s">
         <!-- left-section -->
         <div class="uk-width-expand@l uk-margin-right">
+          <div class="uk-flex uk-flex-column uk-padding-left@s uk-padding-right@s uk-hidden@l">
+            <span class="checkout__container-title">Отзывы о модели:</span>
+            <select>
+              <option data-image="img/temp/reviews-model-1.jpg" value="8">Apple iPhone XS Max</option>
+              <option data-image="img/temp/reviews-model-1.jpg" value="1">Apple iPhone XS Max</option>
+              <option value="2">Apple iPhone XS Max</option>
+            </select>
+          </div>
+
           <!-- Swiper -->
           <div class="reviews__container uk-margin-bottom">
             <div class="swiper-wrapper">
@@ -115,62 +126,74 @@
           </ul>
           //= components/pagination.html
         </div>
-        <!-- right-section -->
-        <ul class="uk-width-1-4@l uk-flex uk-flex-column uk-padding-left@s uk-padding-right@s">
-          <li class="uk-margin-bottom">
-            <div class="product-card product-card--default uk-flex uk-flex-column">
-              <a href="#" class="product-card__image">
-                <img src="img/temp/product-card-1.jpg" alt="">
-              </a>
-              <span class="product-card__title">iPhone Xr 128GB Blue</span>
-              <div class="product-card__footer">
-                <div class="product-card__footer-top uk-flex uk-flex-between uk-flex-middle">
-                  <div class="product-card__price">
-                    <div class="uk-flex uk-flex-middle">
-                      <span class="product-card__price-old uk-margin-small-right">99990&nbsp;&#8381;</span>
-                      <span class="product-card__price-sale">-&nbsp;2000&nbsp;&#8381;</span>
-                    </div>
-                    <span class="product-card__price-total">97&nbsp;990&nbsp;&#8381;</span>
-                  </div>
-                  <a href="#" class="btn">В корзину</a>
-                </div>
-                <div class="product-card__footer-bottom uk-flex uk-flex-middle uk-flex-between">
-                  <a href="#">Подробнее</a>
-                  <span>Купить в 1 клик</span>
-                </div>
-              </div>
-            </div>
-          </li>
 
-          <li>
-            <div class="product-card product-card--default uk-flex uk-flex-column">
-              <a href="#" class="product-card__image">
-                <img src="img/temp/product-card-2.jpg" alt="">
-              </a>
-              <span class="product-card__title">iPhone Xr 128GB Blue</span>
-              <div class="product-card__footer">
-                <div class="product-card__footer-top uk-flex uk-flex-between uk-flex-middle">
-                  <div class="product-card__price">
-                    <div class="uk-flex uk-flex-middle">
-                      <span class="product-card__price-old uk-margin-small-right">99990&nbsp;&#8381;</span>
-                      <span class="product-card__price-sale">-&nbsp;2000&nbsp;&#8381;</span>
+        <!-- right-section -->
+        <div class="uk-width-1-4@l uk-flex uk-flex-column uk-padding-left@s uk-padding-right@s">
+          <div class="uk-flex uk-flex-column uk-visible@l">
+            <span class="checkout__container-title">Отзывы о модели:</span>
+            <select>
+              <option data-image="img/temp/reviews-model-1.jpg" value="8">Apple iPhone XS Max</option>
+              <option data-image="img/temp/reviews-model-1.jpg" value="1">Apple iPhone XS Max</option>
+              <option value="2">Apple iPhone XS Max</option>
+            </select>
+          </div>
+
+          <ul>
+            <li class="uk-margin-bottom">
+              <div class="product-card product-card--default uk-flex uk-flex-column">
+                <a href="#" class="product-card__image">
+                  <img src="img/temp/product-card-1.jpg" alt="">
+                </a>
+                <span class="product-card__title">iPhone Xr 128GB Blue</span>
+                <div class="product-card__footer">
+                  <div class="product-card__footer-top uk-flex uk-flex-between uk-flex-middle">
+                    <div class="product-card__price">
+                      <div class="uk-flex uk-flex-middle">
+                        <span class="product-card__price-old uk-margin-small-right">99990&nbsp;&#8381;</span>
+                        <span class="product-card__price-sale">-&nbsp;2000&nbsp;&#8381;</span>
+                      </div>
+                      <span class="product-card__price-total">97&nbsp;990&nbsp;&#8381;</span>
                     </div>
-                    <span class="product-card__price-total">97&nbsp;990&nbsp;&#8381;</span>
+                    <a href="#" class="btn">В корзину</a>
                   </div>
-                  <a href="#" class="btn">В корзину</a>
-                </div>
-                <div class="product-card__footer-bottom uk-flex uk-flex-middle uk-flex-between">
-                  <a href="#">Подробнее</a>
-                  <span>Купить в 1 клик</span>
+                  <div class="product-card__footer-bottom uk-flex uk-flex-middle uk-flex-between">
+                    <a href="#">Подробнее</a>
+                    <span>Купить в 1 клик</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+
+            <li>
+              <div class="product-card product-card--default uk-flex uk-flex-column">
+                <a href="#" class="product-card__image">
+                  <img src="img/temp/product-card-2.jpg" alt="">
+                </a>
+                <span class="product-card__title">iPhone Xr 128GB Blue</span>
+                <div class="product-card__footer">
+                  <div class="product-card__footer-top uk-flex uk-flex-between uk-flex-middle">
+                    <div class="product-card__price">
+                      <div class="uk-flex uk-flex-middle">
+                        <span class="product-card__price-old uk-margin-small-right">99990&nbsp;&#8381;</span>
+                        <span class="product-card__price-sale">-&nbsp;2000&nbsp;&#8381;</span>
+                      </div>
+                      <span class="product-card__price-total">97&nbsp;990&nbsp;&#8381;</span>
+                    </div>
+                    <a href="#" class="btn">В корзину</a>
+                  </div>
+                  <div class="product-card__footer-bottom uk-flex uk-flex-middle uk-flex-between">
+                    <a href="#">Подробнее</a>
+                    <span>Купить в 1 клик</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </div>
-
 
   //= components/subscribe.html
   //= components/footer.html

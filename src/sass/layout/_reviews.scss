@@ -28,6 +28,49 @@
     @include screen(l) {
       padding: 20px 20px 40px;
     }
+
+    .checkout__container-title {
+      margin-bottom: 5px;
+    }
+
+    .nice-select {
+      padding: 8px;
+      height: auto;
+      margin-bottom: 30px;
+
+      @include screen(xl) {
+        max-width: 400px;
+      }
+
+      &::after {
+        right: 20px;
+        height: 10px;
+        width: 10px;
+      }
+
+      & .option,
+      & .option.focus,
+      & .option.selected.focus,
+      & .option:hover {
+        padding: 8px !important;
+      }
+
+      img {
+        margin-right: 10px;
+        width: 64px;
+        height: 64px;
+      }
+
+      .current {
+        display: flex;
+        align-items: center;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+      }
+    }
   }
 
   /* Swiper */
@@ -136,6 +179,26 @@
     @include screen(xl) {
       margin-bottom: 20px;
       padding: 0 20px;
+    }
+  }
+
+  &__btn-adds {
+    padding: 13px 15px 12px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    white-space: nowrap;
+    font: 500 16px/22px FuturaPT;
+    color: #f8355e;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: box-shadow .3s, color .1s, background-color .3s, border .3s;
+    border: 1px solid #f8355e;
+
+    &:hover {
+      background-color: #f8355e;
+      color: #fff;
+      border: 1px solid transparent;
     }
   }
 }

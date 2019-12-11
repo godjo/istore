@@ -3,15 +3,13 @@ $(document).ready(function () {
 	//= components/select.js
 
 
-
+	/* Adds scroll for accordion on page Product */
 	UIkit.util.on('.product__accordion .accordion', 'shown', function () {
-		var active = $(this).find('.uk-open');
-		console.log(active);
-
 		setTimeout(function () {
-			UIkit.scroll('body', {
-				duration: 400,
-			}).scrollTo(active);
+			$('html, body').animate({
+				scrollTop: $('.product__accordion .uk-open').offset().top - 52
+			}, 600);
 		}, 50);
 	});
+
 });
