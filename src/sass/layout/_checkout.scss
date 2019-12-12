@@ -406,4 +406,40 @@
       }
     }
   }
+
+  &__swiper {
+    .swiper-wrapper {
+      display: flex;
+
+      @include screen(l) {
+        flex-wrap: wrap;
+        margin-left: -10px;
+      }
+    }
+
+    .swiper-slide {
+      @include screen(xl) {
+        max-width: 280px;
+      }
+
+      @include screen(l) {
+        padding-left: 10px;
+        padding-bottom: 10px;
+      }
+
+      &:not(:last-of-type) {
+        @include screen(xl) {
+          margin-right: 10px;
+        }
+      }
+
+      &:nth-of-type(2n-1) {
+        @include screen(l) {
+          @include screen(l) {
+            /* margin: 0 10px 10px -10px; */
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,4 +1,5 @@
 var swiperBanner = new Swiper('.main-banner__container', {
+  threshold: 20,
   loop: true,
   navigation: {
     nextEl: '.main-banner__button--next',
@@ -6,6 +7,7 @@ var swiperBanner = new Swiper('.main-banner__container', {
   },
   breakpoints: {
     1250: {
+      threshold: 0,
       spaceBetween: 10,
       slidesPerView: 'auto',
       centeredSlides: true,
@@ -45,6 +47,7 @@ var swiperContacts = new Swiper('.contacts__swiper-container', {
 });
 
 var swiperReviews = new Swiper('.reviews__container', {
+  threshold: 20,
   pagination: {
     el: '.swiper-pagination',
   },
@@ -63,6 +66,7 @@ var swiperReviews = new Swiper('.reviews__container', {
       slidesPerView: 2,
     },
     1250: {
+      threshold: 0,
       centeredSlides: true,
       slidesPerView: 3,
     },
@@ -88,7 +92,19 @@ if ($(window).width() < 1250) {
 if ($(window).width() < 1250) {
   if (typeof swiperCheckout == 'undefined') {
     var swiperCheckout = new Swiper('.checkout__swiper', {
-      /* slidesPerView: 'auto', */
+      slidesPerView: 'auto',
+      spaceBetween: 10,
+      breakpoints: {
+        640: {
+          slidesPerView: 'auto',
+        },
+        960: {
+          slidesPerView: 2,
+        },
+        1250: {
+          slidesPerView: 3,
+        },
+      },
     });
   }
 } else {
@@ -189,7 +205,6 @@ $('body').on('click', '.product__reviews', function () {
 if ($(window).width() < 1250) {
   if (typeof swiperHeaderBottom == 'undefined') {
     var swiperHeaderBottom = new Swiper('.header__bottom-container', {
-      
       breakpoints: {
         1250: {
           spaceBetween: 10,
@@ -202,7 +217,6 @@ if ($(window).width() < 1250) {
   if (typeof swiperHeaderBottom != 'undefined') {
     swiperHeaderBottom.destroy();
     swiperHeaderBottom = undefined;
-
     $('.swiper-wrapper').removeAttr('style');
     $('.swiper-slide').removeAttr('style');
   }

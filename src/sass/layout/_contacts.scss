@@ -69,9 +69,9 @@
     }
 
     .uk-subnav {
-
       @include screen(xl) {
         padding: 0 20px 10px;
+        border-bottom: 1px solid rgba(216, 216, 216, .5);
       }
 
       @include screen(l) {
@@ -156,15 +156,24 @@
     .swiper-wrapper {
       @include screen(l) {
         max-width: 300px;
+        flex-direction: column;
       }
     }
 
     li {
-      border-top: 1px solid #E6E6E6;
-      border-right: 1px solid #E6E6E6;
+      @include screen(xl) {
+        border-bottom: 1px solid #E6E6E6;
+      }
+
+      @include screen(l) {
+        border-top: 1px solid #E6E6E6;
+        border-right: 1px solid #E6E6E6;
+      }
 
       &:first-of-type {
-        border-top: none;
+        @include screen(l) {
+          border-top: none;
+        }
       }
 
       &.active {
@@ -190,10 +199,16 @@
 
       div {
         position: relative;
-        padding: 10px;
-        height: 150px;
         transition: background-color .3s;
         cursor: pointer;
+
+        @include screen(xl) {
+          padding: 10px 10px 10px 50px;
+        }
+
+        @include screen(l) {
+          padding: 12px 10px 10px 40px;
+        }
 
         &:hover {
           background-color: rgba(230, 230, 230, .3);
@@ -203,14 +218,13 @@
 
     .swiper-scrollbar {
       position: absolute;
-      right: 5px !important;
+      right: 4px !important;
       left: auto !important;
       background: transparent !important;
 
       &-drag {
         background: #D4D4D4 !important;
         border-radius: 8px;
-        ;
       }
     }
   }
