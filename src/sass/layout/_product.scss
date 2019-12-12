@@ -7,7 +7,7 @@
       padding-right: 0;
     }
   }
-
+ 
   .frame {
     @include screen(xl) {
       box-shadow: none;
@@ -836,24 +836,8 @@
 
     .product__reviews {
 
-      &-btn {
+      .reviews__btn-adds {
         margin-bottom: 40px;
-        padding: 13px 15px 12px;
-        width: 100%;
-        text-align: center;
-        white-space: nowrap;
-        font: 500 16px/22px FuturaPT;
-        color: #f8355e;
-        border-radius: 8px;
-        background-color: #fff;
-        transition: box-shadow .3s, color .1s, background-color .3s, border .3s;
-        border: 1px solid #f8355e;
-
-        &:hover {
-          background-color: #f8355e;
-          color: #fff;
-          border: 1px solid transparent;
-        }
       }
 
       .title {
