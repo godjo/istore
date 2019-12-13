@@ -12,4 +12,24 @@ $(document).ready(function () {
 		}, 50);
 	});
 
+	/* adds class for body on click search */
+	$("body").on('focus', '#searchInput', function () {
+		$('body').addClass('search--opened');
+	});
+
+	$("body").on('blur', '#searchInput', function () {
+		$('body').removeClass('search--opened');
+	});
+
+	/* clear val for search input */
+	$(document).ready(function () {
+		$('.search__close').on('click', function () {
+			$('#searchInput').val('');
+		})
+
+		$('body').on('click', '.search__clear', function () {
+			$(this).prev().val('');
+		})
+	})
+
 });

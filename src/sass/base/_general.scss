@@ -226,3 +226,68 @@ button {
   background: transparent !important;
   backdrop-filter: blur(5px);
 }
+
+.backdrop {
+  display: none;
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.search--opened {
+  .backdrop {
+    display: block;
+  }
+
+  .search {
+    z-index: 100;
+  }
+
+  .search input {
+    border: 1px solid #FF548C;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+    background: url("../img/pic/ico/search-ico-pink.svg") no-repeat, #FFFFFF;
+    background-size: 18px 18px;
+    background-position: 755px;
+    position: relative;
+    z-index: 100;
+  }
+
+  .search__close {
+    opacity: 1;
+    pointer-events: inherit;
+    z-index: 300;
+  }
+
+  .search__result {
+    pointer-events: inherit;
+    opacity: 1;
+    z-index: 100;
+  }
+
+  &-mobile {
+    .search input {
+      display: block !important;
+      z-index: 100;
+      pointer-events: inherit;
+    }
+
+    .search__close {
+      opacity: 1;
+      pointer-events: inherit;
+      z-index: 100;
+
+      &-wrap {
+        pointer-events: inherit;
+      }
+    }
+
+    .backdrop {
+      display: block;
+    }
+  }
+}
