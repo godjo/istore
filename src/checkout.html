@@ -2,8 +2,7 @@
 
 <body class="checkout">
   //= components/header.html
-  <div
-    class="checkout__wrapper uk-container bg-full-width--gradient">
+  <div class="checkout__wrapper uk-container bg-full-width--gradient">
     <div class="frame uk-flex uk-flex-column@s uk-child-width-1-2@l">
       <div class="checkout__product-container">
         <h1 class="title title--medium uk-margin-bottom uk-padding-small-bottom@s">Корзина</h1>
@@ -285,7 +284,48 @@
                 <span>Самовывоз</span>
               </li>
             </ul>
+
             <p>Точку выдачи с товаром в наличии уточняйте <br>у менеджера</p>
+
+            <div>
+              <div class="field field--account uk-margin-bottom">
+                <label for="" class="field__title">Ф.И.О.</label>
+                <input type="text" placeholder="Введите свои Фамилию Имя и Отчество">
+              </div>
+
+              <div class="field field--account uk-margin-bottom">
+                <label for="" class="field__title">Телефон</label>
+                <input type="number" placeholder="+7">
+              </div>
+
+              <div class="field field--account uk-margin-bottom">
+                <label for="" class="field__title">Email</label>
+                <input type="email" placeholder="+7">
+              </div>
+
+              <div class="field field--account uk-margin-bottom">
+                <label for="" class="field__title">Город</label>
+                <input type="text">
+              </div>
+
+              <div
+                class="uk-flex uk-flex-middle@l uk-flex-column@s checkout__delivery-field-wrap uk-flex-between uk-margin-bottom">
+                <div class="field field--account uk-margin-bottom@s">
+                  <label for="" class="field__title">Улица</label>
+                  <input type="text">
+                </div>
+
+                <div class="field--account">
+                  <label for="" class="field__title">Дом / квартира</label>
+                  <input type="text">
+                </div>
+              </div>
+
+              <div class="field field--account uk-margin-bottom">
+                <label for="" class="field__title">Индекс</label>
+                <input type="text">
+              </div>
+            </div>
           </div>
 
           <div class="checkout__payment">
@@ -332,7 +372,6 @@
               <span>от&nbsp;1440&nbsp;&#8381 в&nbsp;месяц</span>
             </div>
           </div>
-
         </div>
 
         <button class="btn checkout__btn-question">Остались вопросы?</button>

@@ -230,6 +230,22 @@
         }
       }
     }
+
+    &-field-wrap {
+      .field--account {
+        &:first-of-type {
+          @include screen(l) {
+            width: 280px;
+          }
+        }
+
+        input {
+          @include screen(xl) {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 
   &__list-select {
