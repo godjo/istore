@@ -606,5 +606,20 @@
       box-shadow: 0px 2px 8px rgba(255, 84, 140, 0.4);
       background: #FF548C;
     }
+
+    .uk-offcanvas {
+      top: 61px;
+    }
+
+    .uk-offcanvas-bar {
+      width: 100%;
+      transform: none !important;
+      left: 0;
+      overflow-x: hidden;
+    }
+
+    .menu.uk-open>.uk-offcanvas-bar {
+      transform: none !important;
+    }
   }
 }
