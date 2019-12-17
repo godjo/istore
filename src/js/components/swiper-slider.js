@@ -235,3 +235,25 @@ document.querySelectorAll(".swiper-products").forEach(function (slider, index) {
     slidesPerView: 'auto',
   });
 });
+
+
+var swiperSeoReviews = new Swiper('.seo-msk__reviews-container', {
+  slidesPerView: 3,
+  spaceBetween: 15,
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: false,
+  },
+  breakpoints: {
+    640: {
+      centeredSlides: true,
+      slidesPerView: 1,
+    },
+    960: {
+      slidesPerView: 2,
+    },
+    1250: {
+      slidesPerView: 3,
+    },
+  },
+});
