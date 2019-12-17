@@ -226,6 +226,12 @@
         background: #27CC00;
         box-shadow: 0px 3px 10px rgba(39, 204, 0, 0.35);
         border-radius: 8px;
+        transition: background-color .3s, box-shadow .3s;
+
+        &:hover {
+          background: #5EF13B;
+          box-shadow: 0px 3px 20px rgba(67, 254, 22, 0.701841);
+        }
 
         @include screen(l) {
           max-width: 120px;
@@ -684,6 +690,12 @@
           height: 0;
           opacity: 0;
           pointer-events: none;
+        }
+
+        &.uk-active {
+          .uk-accordion-title {
+            background: #F8F8F8;
+          }
         }
       }
 

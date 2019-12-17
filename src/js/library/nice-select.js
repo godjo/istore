@@ -1,7 +1,3 @@
-/*  jQuery Nice Select - v1.1.0
-    https://github.com/hernansartorio/jquery-nice-select
-    Made by Hernán Sartorio  */
-
 (function ($) {
 
   $.fn.niceSelect = function (method) {
@@ -67,14 +63,16 @@
       var $options = $select.find('option');
       var $selected = $select.find('option:selected');
       var $selected_image = $select.find('option:selected').data('image') ? '<img src="' + $select.find('option:selected').data('image') + '"/ >' : '';
+      var $selected_svg = $select.find('option:selected').data('svg-color') ? '<svg width="28" height="28" viewBox="0 0 28 28"><path fill-rule="evenodd" clip-rule="evenodd" d="M14 28C21.732 28 28 21.732 28 14C28 6.26801 21.732 0 14 0C6.26801 0 0 6.26801 0 14C0 21.732 6.26801 28 14 28Z" fill="' + $select.find('option:selected').data('svg-color') + '"/></svg>' : '';
 
 
-      $dropdown.find('.current').html($selected.data('display') || $selected_image + $selected.text());
+      $dropdown.find('.current').html($selected.data('display') || $selected_image + $selected_svg + $selected.text());
 
       $options.each(function (i) {
         var $option = $(this);
         var display = $option.data('display');
         var image = $option.data('image') ? '<img src="' + $option.data('image') + '"/ >' : '';
+        var svg = $option.data('svg-color') ? '<svg width="28" height="28" viewBox="0 0 28 28"><path fill-rule="evenodd" clip-rule="evenodd" d="M14 28C21.732 28 28 21.732 28 14C28 6.26801 21.732 0 14 0C6.26801 0 0 6.26801 0 14C0 21.732 6.26801 28 14 28Z" fill="' + $option.data('svg-color') + '"/></svg>' : '';
 
         $dropdown.find('ul').append($('<li></li>')
           .attr('data-value', $option.val())
@@ -82,7 +80,7 @@
           .addClass('option' +
             ($option.is(':selected') ? ' selected' : '') +
             ($option.is(':disabled') ? ' disabled' : ''))
-          .html(image + $option.text())
+          .html(image + svg + $option.text())
         );
       });
     }
@@ -125,6 +123,7 @@
 
       var text = $option.data('display') || $option.html();
       var image = $option.find('img');
+      var svg = $option.find('svg');
       console.log(this);
 
       $dropdown.find('.current').html(text);
