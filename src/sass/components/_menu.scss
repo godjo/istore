@@ -1,20 +1,15 @@
 .menu {
-	.uk-offcanvas-bar {
-		width: 100%;
-		transform: translate(-100%);
-		left: 0;
-		transition: transform .5s;
-		overflow-x: hidden;
-	}
+	&.uk-modal {
+		top: 60px;
+		padding: 0;
+		background: #FFFFFF;
+		box-shadow: inset 2px 2px 5px rgba(0, 0, 0, .1);
+		z-index: 300;
 
-	&.uk-open>.uk-offcanvas-bar {
-		transform: translate(0%) !important;
-	}
-
-	& .uk-offcanvas-bar {
-		@include screen(xl) {
-			padding: 0 0;
-			background-color: #fff;
+		&.uk-modal-container .uk-modal-dialog {
+			height: 100%;
+			border-radius: 0;
+			overflow-y: scroll;
 		}
 	}
 
@@ -26,29 +21,12 @@
 	}
 
 	&__footer {
-		/* padding: 5px; */
 		border-top: 1px solid rgba(216, 216, 216, .5);
-		/* background-color: #F4F4F4;
-		display: flex;
-		flex-wrap: wrap; */
-
-		/* li {
-			margin: 5px;
-
-			a {
-				display: block;
-				padding: 9px 15px;
-				border: 1px solid #E5E5E5;
-				background: #FFFFFF;
-				border-radius: 8px;
-				font: normal 16px/20px FuturaPT;
-				color: #333333;
-			}
-		} */
 	}
 
 	&__header {
 		border-bottom: 1px solid rgba(0, 0, 0, .1);
+		box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, .1);
 
 		button {
 			padding: 10px 15px 9px;
@@ -70,7 +48,7 @@
 			display: block;
 			padding: 20px 15px 16px;
 			text-align: center;
-			font: 500 14px/16px FuturaPT;
+			font: 500 16px/16px FuturaPT;
 			color: #333333;
 
 			&::after {
@@ -106,14 +84,30 @@
 
 		a {
 			display: block;
-			padding: 5px 15px;
-			font: 500 16px/24px FuturaPT;
+			padding: 10px 15px;
+			font: 500 18px/24px FuturaPT;
 			color: #333333;
 		}
 	}
 
 	&__select-city {
+		position: relative;
 		padding: 13px 15px;
+
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			right: 25px;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			border-bottom: 2px solid #f8355e;
+			border-right: 2px solid #f8355e;
+			height: 8px;
+			width: 8px;
+			transform: rotate(45deg);
+		}
 
 		span {
 			font: normal 14px/22px Roboto;
@@ -141,10 +135,34 @@
 
 	&__categories {
 		.uk-accordion-title {
+			position: relative;
 			padding: 15px;
 			border-bottom: 1px solid rgba(216, 216, 216, .5);
-			font: 500 16px/24px FuturaPT;
+			font: 500 19px/24px FuturaPT;
 			color: #333333;
+
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				right: 25px;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				border-bottom: 2px solid #f8355e;
+				border-right: 2px solid #f8355e;
+				height: 8px;
+				width: 8px;
+				transform: rotate(45deg);
+				background: none;
+				transition: transform .3s;
+			}
+		}
+
+		li.uk-open .uk-accordion-title {
+			&::before {
+				transform: rotate(-135deg);
+			}
 		}
 
 		.uk-accordion-content {

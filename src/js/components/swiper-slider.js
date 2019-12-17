@@ -226,7 +226,9 @@ document.querySelectorAll(".swiper-products").forEach(function (slider, index) {
   slider.classList.add("swiper-products--" + index);
   $('body').on('click', '.header__menu-button', function () {
     var swiperProduct = $('body').find('.swiper-products--' + index)[0].swiper;
-    swiperProduct.update(true);
+    UIkit.util.on('#menuMobile', 'show', function () {
+      swiperProduct.update(true);
+    });
   });
   window["swiper-products--" + index] = new Swiper(".swiper-products--" + index, {
     spaceBetween: 10,
