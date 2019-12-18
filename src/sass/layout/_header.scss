@@ -1,4 +1,5 @@
 .header {
+
   /* select city, links and login */
   &__top {
     font: 500 16px/24px FuturaPT;
@@ -232,11 +233,17 @@
       font: 600 15px/19px FuturaPT;
       color: #ffffff;
       text-transform: uppercase;
+      transition: box-shadow .3s, background-color.3s;
 
       @include screen(l) {
         margin-right: 10px;
         max-width: 205.38px;
         max-height: 41px;
+      }
+
+      &:hover {
+        background: #F8355E;
+        box-shadow: 0px 6px 30px rgba(248, 53, 94, 0.4);
       }
 
       svg {
@@ -606,7 +613,7 @@
       background: #FF548C;
     }
 
-   /*  .uk-offcanvas {
+    /*  .uk-offcanvas {
       top: 61px;
     }
 

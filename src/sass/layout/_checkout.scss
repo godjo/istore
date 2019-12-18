@@ -59,6 +59,11 @@
     color: #ffffff;
     background: #27CC00;
     box-shadow: 0px 3px 10px rgba(39, 204, 0, 0.35);
+
+    &:hover {
+      background-color: #5EF13B;
+      box-shadow: 0px 3px 20px rgba(67, 254, 22, 0.701841);
+    }
   }
 
   &__btn-credit {
@@ -66,6 +71,7 @@
     border-radius: 8px;
     background: #FFFFFF;
     cursor: pointer;
+    transition: box-shadow .3s;
 
     @include screen(xl) {
       padding: 21px 20px 20px;
@@ -73,6 +79,11 @@
 
     @include screen(l) {
       padding: 21px 30px 20px;
+    }
+
+    &:hover {
+      background: #ffffff;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, .2);
     }
 
     span {
@@ -116,6 +127,11 @@
     color: #27CC00;
     font: 600 18px/24px FuturaPT;
     text-transform: uppercase;
+
+    &:hover {
+      background: #ffffff;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, .1);
+    }
   }
 
   .frame {

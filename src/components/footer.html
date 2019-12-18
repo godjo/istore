@@ -94,7 +94,7 @@
           </a>
         </li>
       </ul>
-      <span class="btn" data-uk-toggle="target: #popupErrorPay">Задать вопрос онлайн</span>
+      <span class="btn" data-uk-toggle="target: #popupQuestion">Задать вопрос онлайн</span>
     </div>
   </div>
 </footer>
@@ -493,6 +493,21 @@
             </div>
           </div>
         </div>
+
+        <div class="calc__range-wrap">
+          <input class="calc__range" type="range" value="2" min="2" max="36" step="1" />
+          <span class="calc__range-input-val">2</span>
+          <ul class="calc__range-items">
+            <li class="calc__range-item">2</li>
+            <li class="calc__range-item">6</li>
+            <li class="calc__range-item">12</li>
+            <li class="calc__range-item">18</li>
+            <li class="calc__range-item">24</li>
+            <li class="calc__range-item"></li>
+            <li class="calc__range-item">36</li>
+          </ul>
+        </div>
+
         <ul class="popup__radio-button">
           <li class="uk-flex uk-flex-between uk-flex-middle">
             <span class="popup__subtitle">Есть задолженность <br>по кредитам?</span>
@@ -529,8 +544,9 @@
       <div class="popup__container">
         <span class="popup__subtitle">Приблизительный ежемесячный платеж:</span>
         <div class="popup__container-header uk-flex uk-flex-column@s uk-flex-between uk-flex-middle@l">
-          <span>16&nbsp;990&nbsp;&#8381;</span>
+          <span class="calc__result">16&nbsp;990&nbsp;&#8381;</span>
           <span>Точный платеж <br>расчитывается менеджером</span>
+          <input class="calc__total-price-current" name="total_sum" type="hidden" value="89990">
         </div>
         <div class="popup__container-footer">
           <span class="popup__container-big-text">Напишите свой номер и мы позвоним Вам в течение 5 минут</span>
@@ -538,8 +554,8 @@
             <label for="" class="field__title popup__subtitle">Телефон</label>
             <input type="text">
           </div>
-          <button type="button" class="btn">Отправить заявку</button>
-          <button class="btn btn--green uk-margin-small-top" type="button">Остались вопросы?</button>
+          <button type="button" class="btn" data-uk-toggle="target: #popupThanks">Отправить заявку</button>
+          <button class="btn btn--green uk-margin-small-top" type="button" data-uk-toggle="target: #popupQuestion">Остались вопросы?</button>
           <div class="popup__contact uk-align-center">
             <span class="popup__contact-title">или позвоните нам по номеру:</span>
             <a href="tel:88125092480">
@@ -651,7 +667,7 @@
         <input type="text">
       </div>
       <button class="btn" type="button">Получить деньги</button>
-      <a href="#">Есть вопросы?</a>
+      <a href="#" data-uk-toggle="target: #popupQuestion">Есть вопросы?</a>
     </div>
     <div class="popup__footer">
       <input class="uk-hidden" type="checkbox" id="f11" name="f11" checked="">

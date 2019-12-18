@@ -31,4 +31,4 @@ UIkit.util.on("#popupCredit", "show", function () {
         (Math.pow(1.016, myRange.value) - 1)
       ) + " ₽";
   }
-});
+})
