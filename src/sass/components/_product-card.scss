@@ -67,12 +67,23 @@
         a {
           font: 500 16px/22px FuturaPT;
           color: rgba(48, 55, 61, .5);
+          transition: color .3s;
+
+          &:hover {
+            color: rgba(48, 55, 61, .8);
+          }
         }
 
         span {
           font: 500 16px/22px FuturaPT;
           color: #27CC00;
+          border-bottom: 1px solid transparent;
           cursor: pointer;
+          transition: color .3s;
+
+          &:hover {
+            color: #5EF13B;
+          }
         }
       }
 
