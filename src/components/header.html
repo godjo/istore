@@ -1,6 +1,5 @@
 <div class="header">
-  <div
-    class="header__top uk-padding-small-top@l uk-padding-small-top@s uk-padding-small-bottom@l uk-padding-small-bottom@s uk-visible@l">
+  <div class="header__top uk-padding-small-top@s uk-padding-small-bottom@s uk-visible@l">
     <div class="uk-container uk-flex uk-flex-between uk-flex-middle">
       <div class="header__top-select-city">
         <span>Ваш город:</span>
@@ -710,10 +709,10 @@
       <nav class="header__navigation uk-width-expand@l uk-visible@l">
         <ul class="uk-flex uk-flex-center uk-flex-between">
           <li>
-            <a href="#">Распродажа</a>
+            <a href="#">Гарантия</a>
           </li>
           <li>
-            <a href="#">Гарантия</a>
+            <a href="#">Политика возврата</a>
           </li>
           <li>
             <a href="#">Доставка и оплата</a>
@@ -728,6 +727,9 @@
             <a href="#">Отзывы</a>
           </li>
           <li>
+            <a href="#">Кешбэк</a>
+          </li>
+          <li>
             <a href="#">Контакты</a>
           </li>
         </ul>
@@ -737,11 +739,11 @@
         <span>С 10:00 до 21:00<br>без выходных</span>
         <div class="uk-flex uk-flex-column">
           <a href="tel:84991131908">
-            <svg width="14" height="14">
+            <svg width="14" height="14" fill="#6344B6">
               <use xlink:href="img/symbol/sprite.svg#phone-ico" />
             </svg>
             +7 (499) 113 19 08</a>
-          <span>Бесплатно по всей територрии РФ</span>
+          <span>Бесплатно по всей территории РФ</span>
         </div>
       </div>
     </div>
@@ -758,6 +760,7 @@
         <div class="header__catalog-container" uk-dropdown="mode: click; delay-hide: 0">
           <button class="header__catalog-close" id="header-catalog-close" type="button"
             onclick="UIkit.dropdown('.header__catalog-container').hide();">Закрыть</button>
+          <span class="btn header__catalog-question" data-uk-toggle="target: #popupQuestion">Задать вопрос онлайн</span>
           <ul class="header__catalog-tabs uk-subnav uk-subnav-pill" uk-switcher>
             <li><a href="#">iPhone</a></li>
             <li><a href="#">iPad</a></li>
@@ -937,7 +940,7 @@
         </svg>
       </a>
 
-      <div class="cart uk-width-1-6@l">
+      <div class="cart">
         <div class="uk-flex uk-flex-between uk-visible@l">
           <span>Корзина</span>
           <span>2 шт</span>
@@ -956,7 +959,7 @@
   <div class="header__bottom uk-container uk-flex uk-flex-middle">
     <!-- Swiper -->
     <nav class="uk-width-expand header__bottom-container">
-      <ul class="header__list uk-flex uk-flex-between swiper-wrapper">
+      <ul class="header__list uk-flex swiper-wrapper">
         <li class="swiper-slide">
           <a class="uk-flex uk-flex-middle" href="#">
             <img src="img/pic/ico/iphone-ico.svg" width="50" height="46" alt="">

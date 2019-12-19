@@ -221,6 +221,7 @@
       right: 4px !important;
       left: auto !important;
       background: transparent !important;
+      z-index: 1;
 
       &-drag {
         background: #D4D4D4 !important;
@@ -274,7 +275,7 @@
     &-address {
       margin-bottom: 10px;
       font: normal 16px/19px Roboto;
-      color: #2B2D30;
+      color: rgba(43, 45, 48, 0.9);
     }
 
     &-phone {
@@ -285,7 +286,7 @@
 
     &-time {
       font: normal 12px/20px Roboto;
-      color: #2B2D30;
+      color: rgba(43, 45, 48, 0.7);
     }
   }
 }

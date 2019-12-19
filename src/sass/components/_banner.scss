@@ -36,7 +36,6 @@
   }
 
   &--pink {
-   
     background: linear-gradient(250.77deg, #ED656C 0%, #DF5C91 99.52%);
 
     @include screen(x) {
@@ -131,6 +130,11 @@
       }
     }
 
+    span {
+      margin-bottom: 15px;
+      display: inline-block;
+    }
+
     img {
       position: absolute;
       bottom: 0;
@@ -150,8 +154,4 @@
       }
     }
   }
-
-
-
-
 }

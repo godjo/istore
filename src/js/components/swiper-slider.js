@@ -39,6 +39,7 @@ var swiperContacts = new Swiper('.contacts__swiper-container', {
   direction: 'vertical',
   slidesPerView: 4,
   mousewheel: true,
+  sensitivity: 1000,
   scrollbar: {
     el: '.swiper-scrollbar',
     hide: false,
@@ -52,7 +53,7 @@ var swiperReviews = new Swiper('.reviews__container', {
     el: '.swiper-pagination',
   },
   autoplay: {
-    delay: 5000,
+    delay: 3000,
   },
   slidesPerView: 3,
   spaceBetween: 10,

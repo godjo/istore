@@ -1,6 +1,8 @@
 .cart {
 	@include screen(l) {
 		position: relative;
+		min-width: 230px;
+		max-width: 230px;
 		border-radius: 8px;
 		background: #6344B6;
 		box-shadow: 0px 4px 12px rgba(107, 72, 169, 0.4);
@@ -35,18 +37,19 @@
 			position: relative;
 			display: block;
 			color: #ffffff;
+			text-transform: uppercase;
 		}
 
 		&:first-of-type {
 			@include screen(l) {
-				padding: 13px 0 10px 55px;
-				font: 600 15px/19px FuturaPT;
+				padding: 12px 0 10px 55px;
+				font: 500 15px/19px FuturaPT;
 			}
 		}
 
 		&:last-of-type {
 			@include screen(l) {
-				padding: 13px 20px 10px 0;
+				padding: 12px 20px 10px 0;
 				font: 300 15px/19px FuturaPT;
 			}
 

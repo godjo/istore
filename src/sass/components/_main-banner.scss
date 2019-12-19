@@ -7,7 +7,7 @@
   }
 
   @include screen(l) {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   &__container {
@@ -35,7 +35,7 @@
     }
 
     @include screen(l) {
-      padding-top: 100px;
+      padding-top: 70px;
       height: 565px;
     }
 
@@ -72,7 +72,9 @@
       }
 
       @include screen(l) {
-        background: url("../img/pic/bg/main-banner.jpg") no-repeat;
+        background: url("../img/pic/bg/main-banner.jpg") no-repeat, #000000;
+        background-position: bottom center;
+        background-size: contain;
       }
     }
 

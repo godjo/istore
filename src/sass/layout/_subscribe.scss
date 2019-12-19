@@ -43,7 +43,7 @@
   p {
     margin-bottom: 30px;
     font: normal 16px/26px Roboto;
-    color: #30373D;
+    color: rgba(48, 55, 61, 0.9);
 
     br {
       @include screen(xl) {
@@ -57,8 +57,6 @@
       width: 100%;
       max-width: 450px;
       height: 100%;
-      /* max-width: 450px;
-      height: auto; */
     }
   }
 }

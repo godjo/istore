@@ -32,7 +32,7 @@
   }
 
   &__lower-text {
-    display: inline-block;
+    display: block;
     font: normal 24px/32px FuturaPT;
     color: rgba(48, 55, 61, .5);
   }
@@ -125,6 +125,10 @@
           height: 270px;
         }
       }
+    }
+
+    p {
+      font: normal 16px/26px Roboto;
     }
   }
 

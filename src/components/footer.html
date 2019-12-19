@@ -94,7 +94,7 @@
           </a>
         </li>
       </ul>
-      <span class="btn" data-uk-toggle="target: #popupQuestion">Задать вопрос онлайн</span>
+      <span class="btn" data-uk-toggle="target: #popupEddit">Задать вопрос онлайн</span>
     </div>
   </div>
 </footer>
@@ -135,7 +135,7 @@
     </div>
     <div class="popup__content">
       <div class="field field--account uk-width-expand@l uk-margin-bottom">
-        <label for="" class="field__title popup__subtitle">Детально опишите свой вопрос</label>
+        <label for="" class="field__title popup__subtitle">Ваш вопрос</label>
         <textarea rows="150"></textarea>
       </div>
       <div class="field field--account uk-margin-bottom">
@@ -159,11 +159,11 @@
     </svg>
     <div class="popup__header">
       <h2 class="title title--small">Спасибо!</h2>
-      <p>Заявка отправлена, мы свяжемся с Вами в течении дня. Так же Вы можете связаться с нами по телефону: 8 (812)
+      <p>Заявка отправлена, мы свяжемся с Вами в течении дня. Так же Вы можете связаться с нами по телефону: <br>8 (812)
         507-65-59</p>
     </div>
     <div class="popup__content">
-      <button class="btn" type="button">Понятно</button>
+      <button class="btn" type="button">Ждём звонок!</button>
     </div>
   </div>
 </div>
@@ -494,18 +494,30 @@
           </div>
         </div>
 
-        <div class="calc__range-wrap">
-          <input class="calc__range" type="range" value="2" min="2" max="36" step="1" />
-          <span class="calc__range-input-val">2</span>
-          <ul class="calc__range-items">
-            <li class="calc__range-item">2</li>
-            <li class="calc__range-item">6</li>
-            <li class="calc__range-item">12</li>
-            <li class="calc__range-item">18</li>
-            <li class="calc__range-item">24</li>
-            <li class="calc__range-item"></li>
-            <li class="calc__range-item">36</li>
-          </ul>
+        <div class="uk-flex uk-flex-column uk-margin-bottom">
+          <span class="popup__subtitle uk-margin-small-bottom">Выберите банк:</span>
+          <select>
+            <option value="8">Любой</option>
+            <option value="1">Серый</option>
+            <option value="2">Чёрный</option>
+          </select>
+        </div>
+
+        <div class="uk-flex uk-flex-column">
+          <span class="popup__subtitle uk-margin-small-bottom">Срок кредита (месяцев):</span>
+          <div class="calc__range-wrap">
+            <input class="calc__range" type="range" value="2" min="2" max="36" step="1" />
+            <span class="calc__range-input-val">2</span>
+            <ul class="calc__range-items">
+              <li class="calc__range-item">2</li>
+              <li class="calc__range-item">6</li>
+              <li class="calc__range-item">12</li>
+              <li class="calc__range-item">18</li>
+              <li class="calc__range-item">24</li>
+              <li class="calc__range-item"></li>
+              <li class="calc__range-item">36</li>
+            </ul>
+          </div>
         </div>
 
         <ul class="popup__radio-button">
@@ -555,7 +567,8 @@
             <input type="text">
           </div>
           <button type="button" class="btn" data-uk-toggle="target: #popupThanks">Отправить заявку</button>
-          <button class="btn btn--green uk-margin-small-top" type="button" data-uk-toggle="target: #popupQuestion">Остались вопросы?</button>
+          <button class="btn btn--green uk-margin-small-top" type="button"
+            data-uk-toggle="target: #popupQuestion">Остались вопросы?</button>
           <div class="popup__contact uk-align-center">
             <span class="popup__contact-title">или позвоните нам по номеру:</span>
             <a href="tel:88125092480">
@@ -580,14 +593,14 @@
       <use xlink:href="img/symbol/sprite.svg#close" />
     </svg>
     <div class="popup__header">
-      <h2 class="title title--small uk-text-center">Войти или создать профиль</h2>
+      <h2 class="title title--small uk-text-center">Войдите или зарегистрируйтесь</h2>
     </div>
     <div class="popup__content">
       <div class="field field--account uk-margin-bottom">
         <label for="" class="field__title popup__subtitle">Контактный телефон</label>
         <input type="text">
       </div>
-      <button class="btn btn--disabled" type="button">Перезвоните мне</button>
+      <button class="btn" type="button">Войти или зарегистрироваться</button>
       <span>Введите номер телефона!</span>
     </div>
     <div class="popup__footer">
@@ -667,7 +680,7 @@
         <input type="text">
       </div>
       <button class="btn" type="button">Получить деньги</button>
-      <a href="#" data-uk-toggle="target: #popupQuestion">Есть вопросы?</a>
+      <a href="#" data-uk-toggle="target: #popupQuestion">Остались вопросы?</a>
     </div>
     <div class="popup__footer">
       <input class="uk-hidden" type="checkbox" id="f11" name="f11" checked="">
@@ -684,6 +697,7 @@
     </svg>
     <div class="popup__header">
       <h2 class="title title--small uk-margin-bottom">Недостаточно средств для выплаты</h2>
+      <p>Баланс 1000&nbsp;&#8381;</p>
       <p>Минимальная выплата 3000&nbsp;&#8381;</p>
     </div>
     <div class="popup__content">

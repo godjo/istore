@@ -1,10 +1,14 @@
 .product-card {
   &--default {
     padding: 20px 5px 5px 5px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07);
     border-radius: 20px;
     background-color: #FFFFFF;
     overflow: hidden;
+    transition: box-shadow .3s;
+
+    &:hover {
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+    }
 
     .product-card__image {
       margin-bottom: 25px;

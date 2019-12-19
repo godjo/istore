@@ -20,6 +20,7 @@
       position: relative;
       padding-bottom: 20px;
       min-height: 431.641px;
+      max-height: 431.641px;
       text-align: center;
       box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.05);
       border-radius: 20px;
@@ -36,7 +37,7 @@
 
     span {
       display: block;
-      padding: 0 15px;
+      padding: 20px 15px 0;
       margin-bottom: 15px;
       font: 500 28px/33px FuturaPT;
     }
@@ -44,7 +45,8 @@
     p {
       padding: 0 15px;
       margin-bottom: 60px;
-      font: normal 16px/24px Roboto;
+      font: 400 16px/24px Roboto;
+      color: rgba(48, 55, 61, 0.9);
     }
 
     a {

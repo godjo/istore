@@ -42,9 +42,14 @@
 		width: 100%;
 		border-radius: 8px;
 		border: 1px solid transparent;
-		background: url("../img/pic/ico/search-ico.svg") no-repeat, #EFEFF0;
+		background: url("../img/pic/ico/search-ico.svg") no-repeat, rgba(239, 239, 240, .6);
 		background-size: 18px 18px;
-		background-position: 755px;
+		background-position: 700px;
+
+		&::placeholder {
+			font: normal 15px/18px FuturaPT;
+			color: rgba(48, 55, 61, .6);
+		}
 
 		&:valid {
 
