@@ -121,6 +121,7 @@ if ($(window).width() < 1250) {
 var galleryThumbs = new Swiper('.gallery-thumbs', {
   spaceBetween: 20,
   slidesPerView: 5,
+  threshold: 20,
   freeMode: true,
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
@@ -241,9 +242,13 @@ document.querySelectorAll(".swiper-products").forEach(function (slider, index) {
 var swiperSeoReviews = new Swiper('.seo-msk__reviews-container', {
   slidesPerView: 3,
   spaceBetween: 15,
+  autoplay: {
+    delay: 3000,
+  },
   pagination: {
     el: '.swiper-pagination',
     dynamicBullets: false,
+    clickable: true,
   },
   breakpoints: {
     640: {

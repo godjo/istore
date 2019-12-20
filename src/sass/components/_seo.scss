@@ -37,7 +37,7 @@
     @include screen(l) {
       position: relative;
       overflow: hidden;
-      width: 1330px;
+      max-width: 1330px;
       height: 320px;
       border-radius: 10px;
     }

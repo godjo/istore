@@ -125,13 +125,15 @@
 
     li {
       padding-left: 25px;
+      padding-bottom: 10px;
       background-color: transparent;
     }
 
     label {
       position: relative;
       cursor: pointer;
-      font: normal 16px/19px Roboto;
+      font: normal 14px/19px Roboto;
+      color: #30373D;
     }
 
     input+label::after {
@@ -202,6 +204,7 @@
   }
 
   &__btn-see-all {
+    font: normal 13px/16px Roboto;
     transition: color .15s;
 
     &:hover {

@@ -1,4 +1,5 @@
 .return {
+  color: #30373D;
   &__wrapper {
     padding-top: 20px;
 
@@ -130,9 +131,12 @@
 
   &__subtitle {
     font: 600 24px/24px FuturaPT;
+    color: #30373D;
   }
 
   &__text {
+    color: #30373D;
+
     &-gray {
       font: normal 16px/26px Roboto;
       color: rgba(48, 55, 61, .7);
@@ -150,6 +154,7 @@
 
     &-border {
       border-top: 1px solid rgba(216, 216, 216, .5);
+      font: normal 16px/26px Roboto;
     }
   }
 
@@ -219,5 +224,18 @@
         }
       }
     }
+  }
+
+  &__sort {
+    label {
+      text-transform: uppercase;
+      font: 700 12px/15px FuturaPT;
+      color: rgba(48, 55, 61, .4);
+    }
+  }
+
+  &__date {
+    font: normal 16px/26px Roboto;
+    color: #30373D;
   }
 }

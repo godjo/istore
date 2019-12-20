@@ -4,7 +4,7 @@
   a {
     display: inline-block;
     font: normal 16px/18px FuturaPT;
-    color: #FF548C;
+    color: rgba(48, 55, 61, 0.8);
     cursor: pointer;
 
     br {
@@ -36,7 +36,7 @@
     }
 
     @include screen(l) {
-      top: -280px;
+      top: -260px;
       padding: 20px;
       width: 400px;
     }

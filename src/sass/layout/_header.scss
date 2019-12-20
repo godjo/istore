@@ -41,7 +41,7 @@
       color: rgba(255, 84, 141, 0.9);
 
       &:hover {
-        opacity: .7;
+        color: #F8355E;
       }
     }
 
@@ -88,7 +88,16 @@
             height: 18px;
             background: url("../img/pic/logo/insta-logo.svg") center no-repeat;
           }
+        }
 
+        &:last-of-type {
+          a {
+            color: #6344B6;
+
+            &:hover {
+              color: #2C0952;
+            }
+          }
         }
 
         a {
@@ -129,7 +138,6 @@
 
   &__navigation {
     @include screen(l) {
-      /* margin-right: 50px; */
       margin: 0 40px;
     }
 
@@ -501,10 +509,18 @@
           }
 
           @include screen(l) {
-            padding: 0 28px;
+            padding: 0 30px;
             white-space: nowrap;
             font: 500 18px/23px FuturaPT;
             transition: color .15s;
+          }
+        }
+
+        &:first-of-type {
+          &>a {
+            @include screen(l) {
+              padding: 0 30px 0 10px;
+            }
           }
         }
 

@@ -143,7 +143,7 @@
     border-top: 1px solid #EAEAEA;
 
     span {
-      font: 600 18px/20px FuturaPT;
+      font: 500 18px/20px FuturaPT;
       color: #FF548C;
     }
 
@@ -155,11 +155,11 @@
       text-align: center;
       white-space: nowrap;
       font: 500 16px/22px FuturaPT;
-      color: #F8355E;
+      color: #FF548C;
       border-radius: 8px;
       background-color: #ffffff;
       transition: box-shadow .3s, color .1s, background-color .3s, border .3s;
-      border: 1px solid #F8355E;
+      border: 1px solid #FF548C;
 
       &:hover {
         color: #ffffff;
@@ -242,6 +242,10 @@
         &:hover {
           color: #30373D;
         }
+      }
+
+      p {
+        color: rgba(48, 55, 61, .6);
       }
     }
   }

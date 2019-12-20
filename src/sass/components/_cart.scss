@@ -17,6 +17,13 @@
 		}
 	}
 
+	&--active {
+		@include screen(l) {
+			background: rgb(103, 60, 221);
+			box-shadow: 0px 4px 15px rgba(107, 72, 169, 0.7);
+		}
+	}
+
 	&::before {
 		@include screen(l) {
 			position: absolute;

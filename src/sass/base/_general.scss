@@ -83,7 +83,7 @@ button {
 }
 
 .title {
-  display: inline-block;
+  display: block;
 
   &--small {
     color: #30373D;
@@ -194,9 +194,13 @@ button {
     overflow: hidden !important;
     text-overflow: ellipsis !important;
     min-height: auto !important;
-    padding: 15px 15px !important;
-    font: normal 14px/16px FuturaPT !important;
+    padding: 5px 15px !important;
+    font: inherit !important;
     color: #30373D !important;
+
+    & li {
+      cursor: pointer;
+    }
 
     &.selected {
       font-weight: 500 !important;

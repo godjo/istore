@@ -119,7 +119,8 @@
         <div class="checkout__swiper">
           <ul class="swiper-wrapper uk-child-width-1-2@l">
             <li class="swiper-slide">
-              <div class="product-card product-card--accessories uk-flex">
+              <div
+                class="product-card product-card--accessories product-card--accessories product-card--active uk-flex">
                 <a class="product-card__image" href="#">
                   <img src="img/temp/product-card-accessories.jpg" alt="">
                 </a>
@@ -136,7 +137,7 @@
                       <span class="product-card__price-total">95&nbsp;990&nbsp;&#8381;</span>
                     </div>
 
-                    <button class="btn" type="button" data-uk-toggle="target: #popupCartAdd">Добавить</button>
+                    <button class="btn" type="button" data-uk-toggle="target: #popupCartAdd">Добавлено</button>
                   </div>
                 </div>
               </div>
@@ -249,7 +250,7 @@
             </div>
           </div>
 
-          <div class="checkout__promo-code">
+          <!-- <div class="checkout__promo-code">
             <span class="checkout__subtitle uk-margin-small-bottom">Промокод</span>
             <div class="field--checkout uk-flex uk-flex-column@s">
               <input class="checkout" type="text">
@@ -257,7 +258,7 @@
                 <button class="btn">Добавить</button>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div class="checkout__delivery">
             <span class="checkout__subtitle uk-margin-small-bottom">Доставка</span>
@@ -295,20 +296,20 @@
 
               <div class="field field--account uk-margin-bottom">
                 <label for="" class="field__title">Телефон</label>
-                <input type="number" placeholder="+7">
+                <input type="tel" placeholder="+7">
               </div>
 
-              <div class="field field--account uk-margin-bottom">
+              <!-- <div class="field field--account uk-margin-bottom">
                 <label for="" class="field__title">Email</label>
-                <input type="email" placeholder="+7">
-              </div>
+                <input type="email">
+              </div> -->
 
               <div class="field field--account uk-margin-bottom">
                 <label for="" class="field__title">Город</label>
                 <input type="text">
               </div>
 
-              <div
+              <!-- <div
                 class="uk-flex uk-flex-middle@l uk-flex-column@s checkout__delivery-field-wrap uk-flex-between uk-margin-bottom">
                 <div class="field field--account uk-margin-bottom@s">
                   <label for="" class="field__title">Улица</label>
@@ -319,10 +320,10 @@
                   <label for="" class="field__title">Дом / квартира</label>
                   <input type="text">
                 </div>
-              </div>
+              </div> -->
 
               <div class="field field--account uk-margin-bottom">
-                <label for="" class="field__title">Индекс</label>
+                <label for="" class="field__title">Адрес доставки</label>
                 <input type="text">
               </div>
             </div>
@@ -337,14 +338,14 @@
                 <div class="uk-flex uk-flex-middle">
                   <img src="img/pic/ico/checkout-pay-1.svg" width="38" height="60" alt="">
                 </div>
-                <span>При получении <br><span>(Наложенный платеж)</span></span>
+                <span>При получении</span>
               </li>
               <li
                 class="uk-flex uk-flex-column@l uk-flex-center@s uk-flex-middle@s uk-child-width-1-2@s uk-child-width-1-1@l">
                 <div class="uk-flex uk-flex-middle">
                   <img src="img/pic/ico/checkout-pay-2.svg" width="60" height="40" alt="">
                 </div>
-                <span>Картой Visa, MC, Мир <br><span>(При получении)</span></span>
+                <span>Картой Visa, MC, Мир</span>
               </li>
               <li
                 class="active uk-flex uk-flex-column@l uk-flex-center@s uk-flex-middle@s uk-child-width-1-2@s uk-child-width-1-1@l">

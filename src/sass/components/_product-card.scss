@@ -37,6 +37,7 @@
         font: 600 12px/14px Roboto;
         color: rgba(48, 55, 61, .5);
         text-decoration-line: line-through;
+        letter-spacing: .5px;
       }
 
       &-sale {
@@ -70,7 +71,7 @@
 
         a {
           font: 500 16px/22px FuturaPT;
-          color: rgba(48, 55, 61, .5);
+          color: rgba(48, 55, 61, .4);
           transition: color .3s;
 
           &:hover {
@@ -94,8 +95,9 @@
       .btn {
         padding: 13px 15px 14px;
         max-width: 150px;
-        font: 600 18px/21px FuturaPT;
+        font: 500 18px/21px FuturaPT;
         text-transform: uppercase;
+        white-space: nowrap;
       }
     }
   }
@@ -285,12 +287,11 @@
 
   &--accessories {
     padding: 15px;
-    background: #F8F8F8;
+    background: #ffffff;
     border: 1px solid #EAEAEA;
     border-radius: 10px;
 
     .product-card {
-
       &__image {
         display: flex;
         align-items: center;
@@ -362,6 +363,22 @@
       &:hover {
         background: #5EF13B;
         box-shadow: 0px 3px 20px rgba(67, 254, 22, 0.701841);
+      }
+    }
+  }
+
+  &--active {
+    background: #F8F8F8;
+
+    .btn {
+      background: #ffffff;
+      color: rgba(43, 45, 48, 0.8);
+      box-shadow: none;
+
+      &:hover {
+        background: #ffffff;
+        color: rgba(43, 45, 48, 0.8);
+        box-shadow: none;
       }
     }
   }

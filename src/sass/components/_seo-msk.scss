@@ -135,16 +135,21 @@
 
   &__review {
     padding: 20px;
-    border: 1px solid #EAEAEA;
+    border: 1px solid transparent;
     border-radius: 15px;
     background: #F8F8F8;
     overflow: hidden;
+    transition: border-color .3s;
 
     @include screen(l) {
       min-width: 300px;
       max-width: 300px;
       min-height: 374px;
       max-height: 374px;
+    }
+
+    &:hover {
+      border: 1px solid #EAEAEA;
     }
 
     &:not(:last-of-type) {
@@ -175,8 +180,8 @@
     }
 
     p {
-      font: normal 16px/24px Roboto;
-      color: #30373D;
+      font: normal 14px/26px Roboto;
+      color: rgba(48, 55, 61, .9);
     }
   }
 }

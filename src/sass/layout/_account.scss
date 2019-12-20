@@ -54,6 +54,14 @@
         border-radius: 100px 100px 0px 0px;
       }
     }
+
+    li {
+      &:not(:last-of-type) {
+        @include screen(l) {
+          margin-right: 15px;
+        }
+      }
+    }
   }
 
   &__logout {

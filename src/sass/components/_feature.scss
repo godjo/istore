@@ -81,4 +81,10 @@
       }
     }
   }
+
+  p {
+    &:first-of-type {
+      font: 500 18px/24px FuturaPT;
+    }
+  }
 }
