@@ -102,13 +102,13 @@
       }
 
       &:last-of-type {
-
         border-left: 1px solid rgba(233, 235, 239, .5);
         font: normal 14px/16px FuturaPT;
         color: #333333;
 
         @include screen(xl) {
           padding-left: 15px;
+          margin-left: 15px;
         }
 
         @include screen(l) {

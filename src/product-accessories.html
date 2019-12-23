@@ -81,16 +81,11 @@
             <div class="product__container">
               <div class="uk-flex uk-flex-between uk-flex-middle uk-child-width-1-2">
                 <span class="checkout__container-title">Беспроводной кейс</span>
-                <ul class="filter__radio uk-flex uk-flex-middle uk-child-width-1-2">
-                  <li>
-                    <input class="uk-hidden" type="radio" id="m1" name="m1">
-                    <label for="m1">Да</label>
-                  </li>
-                  <li>
-                    <input class="uk-hidden" type="radio" id="m2" name="m1" checked="">
-                    <label for="m2">Нет</label>
-                  </li>
-                </ul>
+
+                <select>
+                  <option value="8">Да</option>
+                  <option value="1">Нет</option>
+                </select>
               </div>
             </div>
 
@@ -115,13 +110,7 @@
             </div>
 
             <div class="product__container">
-              <span class="product__container-title uk-margin-small-bottom"><span>Купить</span> в 1 клик</span>
-              <div class="uk-flex uk-flex-between uk-flex-column@s uk-margin-bottom">
-                <input class="product__container-input uk-margin-bottom@s" type="text"
-                  placeholder="Введите номер телефона">
-                <button class="btn product__container-btn" type="button">Купить</button>
-              </div>
-              <button class="btn product__container-btn--pink" type="btn">
+              <button class="btn product__container-btn--green" type="btn">
                 <span>
                   <svg width="24" height="24" fill="#ffffff">
                     <use xlink:href="img/symbol/sprite.svg#cart-icon" />
@@ -129,20 +118,18 @@
                   Добавить в корзину</span>
               </button>
 
-              <button class="btn product__container-btn--blue uk-margin-top uk-hidden" type="btn">
-                <span>
-                  <svg width="24" height="24" fill="#ffffff">
-                    <use xlink:href="img/symbol/sprite.svg#cart-icon" />
-                  </svg>
-                  Оформить предзаказ</span>
-              </button>
+              <div class="checkout__btn-credit uk-flex uk-flex-between uk-flex-middle uk-margin-top"
+                data-uk-toggle="target: #popupCredit">
+                <span>Купить в кредит</span>
+                <span>от&nbsp;1440&nbsp;&#8381 в&nbsp;месяц</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="product__section">
-        <button class="btn" type="button">Задать вопрос онлайн</button>
+        <button class="btn" type="button" data-uk-toggle="target: #popupQuestion">Задать вопрос онлайн</button>
 
         <ul class="feature uk-flex uk-flex-column@l">
           <li class="feature--green uk-flex">

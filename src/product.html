@@ -77,27 +77,19 @@
                 </div>
               </div>
             </div>
-            <span class="product__points uk-visible@l" data-uk-toggle="#popupRegistration">+ 95 баллов на бонусный счет</span>
+            <span class="product__points uk-visible@l" data-uk-toggle="#popupRegistration">+ 95 баллов на бонусный
+              счет</span>
           </div>
 
           <div class="product__frame">
             <div class="product__container uk-flex uk-flex-column@s uk-child-width-1-2@l">
               <div class="uk-flex uk-flex-column uk-margin-bottom@s">
                 <span class="checkout__container-title">Объем памяти</span>
-                <ul class="filter__memory uk-flex uk-flex-wrap uk-flex-middle uk-child-width-auto uk-child-width-1-3@s">
-                  <li>
-                    <input class="uk-hidden" type="radio" id="m1" name="m1">
-                    <label for="m1">64 Gb</label>
-                  </li>
-                  <li>
-                    <input class="uk-hidden" type="radio" id="m2" name="m1" checked="">
-                    <label for="m2">256 Gb</label>
-                  </li>
-                  <li>
-                    <input class="uk-hidden" type="radio" id="m3" name="m1">
-                    <label for="m3">512 Gb</label>
-                  </li>
-                </ul>
+                <select>
+                  <option value="8">64GB</option>
+                  <option value="1">256GB</option>
+                  <option value="2">512GB</option>
+                </select>
               </div>
 
               <div class="uk-flex uk-flex-column uk-margin-left@l">
@@ -131,13 +123,7 @@
             </div>
 
             <div class="product__container">
-              <span class="product__container-title uk-margin-small-bottom">Купить в 1 клик</span>
-              <div class="uk-flex uk-flex-between uk-flex-column@s uk-margin-bottom">
-                <input class="product__container-input uk-margin-bottom@s" type="text"
-                  placeholder="Введите номер телефона">
-                <button class="btn product__container-btn" type="button">Купить</button>
-              </div>
-              <button class="btn product__container-btn--pink" type="btn">
+              <button class="btn product__container-btn--green" type="btn">
                 <span>
                   <svg width="24" height="24" fill="#ffffff">
                     <use xlink:href="img/symbol/sprite.svg#cart-icon" />
@@ -145,36 +131,34 @@
                   Добавить в корзину</span>
               </button>
 
-              <button class="btn product__container-btn--blue uk-margin-top uk-hidden" type="btn">
-                <span>
-                  <svg width="24" height="24" fill="#ffffff">
-                    <use xlink:href="img/symbol/sprite.svg#cart-icon" />
-                  </svg>
-                  Оформить предзаказ</span>
-              </button>
+              <div class="checkout__btn-credit uk-flex uk-flex-between uk-flex-middle uk-margin-top"
+                data-uk-toggle="target: #popupCredit">
+                <span>Купить в кредит</span>
+                <span>от&nbsp;1440&nbsp;&#8381 в&nbsp;месяц</span>
+              </div>
             </div>
 
-            <div class="product__container product__container--present uk-text-center@l">
-              <span class="product__container-title uk-margin-bottom uk-padding-left@s">Выберите 2 подарка</span>
+            <div class="product__container product__container--present">
+              <span class="checkout__container-title uk-margin-small-bottom uk-padding-left@s">Выберите 2 подарка</span>
               <ul class="product__present uk-flex">
-                <li class="checked uk-margin-right">
+                <li class="checked">
                   <div>
-                    <span class="uk-margin-top uk-padding-small-top@l uk-padding-small-top@s">Чехол</span>
-                    <img src="img/temp/product-present-1.jpg" width="110" height="70" alt="">
-                  </div>
-                </li>
-
-                <li class="uk-margin-right">
-                  <div>
-                    <span class="uk-margin-top uk-padding-small-top@l uk-padding-small-top@s">Скидка</span>
-                    <img src="img/temp/product-present-2.jpg" width="68" height="60" alt="">
+                    <img src="img/temp/product-present-1.svg" width="22" height="41" alt="">
+                    <span>Защитное стекло</span>
                   </div>
                 </li>
 
                 <li>
                   <div>
-                    <span class="uk-margin-top">Защитное стекло</span>
-                    <img src="img/temp/product-present-3.jpg" width="90" height="58" alt="">
+                    <img src="img/temp/product-present-2.svg" width="28" height="41" alt="">
+                    <span>Чехол</span>
+                  </div>
+                </li>
+
+                <li>
+                  <div>
+                    <img src="img/temp/product-present-3.svg" width="30" height="34" alt="">
+                    <span>Скидка</span>
                   </div>
                 </li>
               </ul>
@@ -184,7 +168,7 @@
       </div>
 
       <div class="product__section">
-        <button class="btn" type="button">Задать вопрос онлайн</button>
+        <button class="btn" type="button" data-uk-toggle="target: #popupQuestion">Задать вопрос онлайн</button>
 
         <ul class="feature uk-flex uk-flex-column@l">
           <li class="feature--green uk-flex">
