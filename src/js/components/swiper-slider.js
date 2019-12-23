@@ -208,6 +208,10 @@ if ($(window).width() < 1250) {
   if (typeof swiperHeaderBottom == 'undefined') {
     var swiperHeaderBottom = new Swiper('.header__bottom-container', {
       breakpoints: {
+        640: {
+          spaceBetween: 10,
+          slidesPerView: 'auto',
+        },
         1250: {
           spaceBetween: 10,
           slidesPerView: 3,

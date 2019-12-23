@@ -115,10 +115,11 @@
         <input type="text">
       </div>
       <button class="btn" type="button">Перезвоните мне</button>
-    </div>
-    <div class="popup__footer">
-      <input class="uk-hidden" type="checkbox" id="f1" name="f1" checked="">
-      <label for="f1">Согласен с условиями <a href="#">Публичной оферты</a></label>
+
+      <div class="popup__footer">
+        <input class="uk-hidden" type="checkbox" id="f1" name="f1" checked="">
+        <label for="f1">Согласен с условиями <a href="#">Публичной оферты</a></label>
+      </div>
     </div>
   </div>
 </div>
@@ -143,24 +144,25 @@
         <input type="text">
       </div>
       <button class="btn" type="button">Отправить</button>
-    </div>
-    <div class="popup__footer">
-      <input class="uk-hidden" type="checkbox" id="f2" name="f2" checked="">
-      <label for="f2">Согласен с условиями <a href="#">Публичной оферты</a></label>
+
+      <div class="popup__footer">
+        <input class="uk-hidden" type="checkbox" id="f2" name="f2" checked="">
+        <label for="f2">Согласен с условиями <a href="#">Публичной оферты</a></label>
+      </div>
     </div>
   </div>
 </div>
 
 <!-- Thanks -->
-<div id="popupThanks" class="popup uk-flex-top" data-uk-modal>
+<div id="popupThanks" class="popup popup--thanks uk-flex-top" data-uk-modal>
   <div class="popup__dialog popup__dialog--small uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
     <svg class="popup__close uk-modal-close-default" width="25" height="25">
       <use xlink:href="img/symbol/sprite.svg#close" />
     </svg>
     <div class="popup__header">
       <h2 class="title title--small">Спасибо!</h2>
-      <p>Заявка отправлена, мы свяжемся с Вами в течении дня. Так же Вы можете связаться с нами по телефону: <br>8 (812)
-        507-65-59</p>
+      <p>Заявка отправлена, мы свяжемся с Вами в течении дня. Так же Вы можете связаться с нами по телефону:
+        <br><span>8&nbsp;(812)&nbsp;507&nbsp;65&nbsp;59</span></p>
     </div>
     <div class="popup__content">
       <button class="btn" type="button">Ждём звонок!</button>
@@ -208,7 +210,7 @@
     </svg>
     <div class="popup__header">
       <h2 class="title title--small">Купить в 1 клик</h2>
-      <p>Оставьте свой номер, мы свяжемся с вами в течении дня.</p>
+      <p class="uk-visible@l">Оставьте свой номер, мы свяжемся с вами в течении дня.</p>
     </div>
     <div class="popup__content">
       <span class="checkout__container-title uk-margin-small-bottom">Состав заказа</span>
@@ -242,7 +244,7 @@
       </div>
       <div class="popup__footer uk-hidden@l">
         <input class="uk-hidden" type="checkbox" id="f9" name="f9" checked="">
-        <label for="f4">Согласен с условиями <a href="#">Публичной оферты</a></label>
+        <label for="f9">Согласен с условиями <a href="#">Публичной оферты</a></label>
       </div>
     </div>
   </div>
@@ -369,10 +371,10 @@
         </div>
       </div>
       <button class="btn" type="button">Добавить отзыв</button>
-    </div>
-    <div class="popup__footer">
-      <input class="uk-hidden" type="checkbox" id="f3" name="f3" checked="">
-      <label for="f3">Согласен с условиями <a href="#">Публичной оферты</a></label>
+      <div class="popup__footer">
+        <input class="uk-hidden" type="checkbox" id="f3" name="f3" checked="">
+        <label for="f3">Согласен с условиями <a href="#">Публичной оферты</a></label>
+      </div>
     </div>
   </div>
 </div>
@@ -602,15 +604,15 @@
       </div>
       <button class="btn" type="button">Войти</button>
       <span>Введите номер телефона!</span>
-    </div>
-    <div class="popup__footer">
-      <div class="uk-margin-small-bottom">
-        <input class="uk-hidden" type="checkbox" id="f7" name="f7" checked="">
-        <label for="f7">Согласен с условиями <a href="#">Публичной оферты</a></label>
-      </div>
-      <div>
-        <input class="uk-hidden" type="checkbox" id="f8" name="f8">
-        <label for="f8">Получать эксклюзивные скидки в SMS‑рассылке</label>
+      <div class="popup__footer">
+        <div class="uk-margin-small-bottom">
+          <input class="uk-hidden" type="checkbox" id="f7" name="f7" checked="">
+          <label for="f7">Согласен с условиями <a href="#">Публичной оферты</a></label>
+        </div>
+        <div>
+          <input class="uk-hidden" type="checkbox" id="f8" name="f8">
+          <label for="f8">Получать эксклюзивные скидки в SMS‑рассылке</label>
+        </div>
       </div>
     </div>
   </div>
@@ -632,15 +634,16 @@
       </div>
       <button class="btn" type="button">Зарегистрироваться</button>
       <span>Введите номер телефона!</span>
-    </div>
-    <div class="popup__footer">
-      <div class="uk-margin-small-bottom">
-        <input class="uk-hidden" type="checkbox" id="f7" name="f7" checked="">
-        <label for="f7">Согласен с условиями <a href="#">Публичной оферты</a></label>
-      </div>
-      <div>
-        <input class="uk-hidden" type="checkbox" id="f8" name="f8">
-        <label for="f8">Получать эксклюзивные скидки в SMS‑рассылке</label>
+
+      <div class="popup__footer">
+        <div class="uk-margin-small-bottom">
+          <input class="uk-hidden" type="checkbox" id="f7" name="f7" checked="">
+          <label for="f7">Согласен с условиями <a href="#">Публичной оферты</a></label>
+        </div>
+        <div>
+          <input class="uk-hidden" type="checkbox" id="f8" name="f8">
+          <label for="f8">Получать эксклюзивные скидки в SMS‑рассылке</label>
+        </div>
       </div>
     </div>
   </div>
@@ -672,10 +675,10 @@
         <p class="uk-margin-left">Повторная доставка доступна через 48 секунд</p>
       </div>
       <button class="btn btn--light" type="button">Получить повторно</button>
-    </div>
-    <div class="popup__footer">
-      <input class="uk-hidden" type="checkbox" id="f10" name="f10" checked="">
-      <label for="f10">Согласен с условиями <a href="#">Публичной оферты</a></label>
+      <div class="popup__footer">
+        <input class="uk-hidden" type="checkbox" id="f10" name="f10" checked="">
+        <label for="f10">Согласен с условиями <a href="#">Публичной оферты</a></label>
+      </div>
     </div>
   </div>
 </div>
@@ -711,10 +714,10 @@
       </div>
       <button class="btn" type="button">Получить деньги</button>
       <a href="#" data-uk-toggle="target: #popupQuestion">Остались вопросы?</a>
-    </div>
-    <div class="popup__footer">
-      <input class="uk-hidden" type="checkbox" id="f11" name="f11" checked="">
-      <label for="f11">Согласен с условиями <a href="#">Публичной оферты</a></label>
+      <div class="popup__footer">
+        <input class="uk-hidden" type="checkbox" id="f11" name="f11" checked="">
+        <label for="f11">Согласен с условиями <a href="#">Публичной оферты</a></label>
+      </div>
     </div>
   </div>
 </div>
@@ -751,10 +754,10 @@
       </div>
       <button class="btn btn--dark" type="button">Получить деньги</button>
       <a href="#">Есть вопросы?</a>
-    </div>
-    <div class="popup__footer">
-      <input class="uk-hidden" type="checkbox" id="f12" name="f12" checked="">
-      <label for="f12">Согласен с условиями <a href="#">Публичной оферты</a></label>
+      <div class="popup__footer">
+        <input class="uk-hidden" type="checkbox" id="f12" name="f12" checked="">
+        <label for="f12">Согласен с условиями <a href="#">Публичной оферты</a></label>
+      </div>
     </div>
   </div>
 </div>

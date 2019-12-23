@@ -5,6 +5,7 @@
 		background: #FFFFFF;
 		box-shadow: inset 2px 2px 5px rgba(0, 0, 0, .1);
 		z-index: 300;
+		transition: opacity .05s linear;
 
 		&.uk-modal-container .uk-modal-dialog {
 			height: 100%;
@@ -35,6 +36,10 @@
 
 			&:first-of-type {
 				border-right: 1px solid rgba(0, 0, 0, .1);
+			}
+
+			&:last-of-type {
+				color: #6344B6;
 			}
 		}
 	}

@@ -32,4 +32,7 @@ $(document).ready(function () {
 		})
 	})
 
+	$(".header__menu-button").click(function () {
+		$(this).toggleClass('open');
+	});
 });
