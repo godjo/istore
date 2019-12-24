@@ -1,10 +1,12 @@
 .return {
   color: #30373D;
-  &__wrapper {
-    padding-top: 20px;
 
+  &__wrapper {
     @include screen(xl) {
       padding: 0;
+    }
+
+    @include screen(l) {
       padding-top: 20px;
     }
   }
@@ -22,6 +24,10 @@
   }
 
   .breadcrumbs {
+    @include screen(xl) {
+      padding: 0 15px;
+    }
+
     @include screen(l) {
       padding: 0 30px;
     }
@@ -231,6 +237,10 @@
       text-transform: uppercase;
       font: 700 12px/15px FuturaPT;
       color: rgba(48, 55, 61, .4);
+
+      @media (max-width: 346px) {
+        margin-bottom: 10px;
+      }
     }
   }
 

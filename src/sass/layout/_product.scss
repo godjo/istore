@@ -1,10 +1,18 @@
 .product {
   &__wrapper {
-    padding-top: 20px;
-
     @include screen(xl) {
-      padding-left: 0;
-      padding-right: 0;
+      padding: 0;
+    }
+
+    @include screen(l) {
+      padding-top: 20px;
+    }
+  }
+
+  .uk-subnav {
+    @include screen(xl) {
+      flex-wrap: nowrap;
+      overflow: hidden;
     }
   }
 
@@ -259,6 +267,10 @@
         svg {
           position: absolute;
           left: -35px;
+
+          @media (max-width: 374px) {
+            display: none;
+          }
         }
 
         &:hover {
@@ -363,6 +375,36 @@
       padding-left: 20px;
       width: 100%;
       overflow-x: scroll;
+
+      &::-webkit-scrollbar {
+        height: 0;
+        opacity: 0;
+      }
+
+      &::-webkit-scrollbar-button {
+        height: 0;
+        opacity: 0;
+      }
+
+      &::-webkit-scrollbar-track-piece {
+        height: 0;
+        opacity: 0;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        height: 0;
+        opacity: 0;
+      }
+
+      &::-webkit-scrollbar-corner {
+        height: 0;
+        opacity: 0;
+      }
+
+      &::-webkit-resize {
+        height: 0;
+        opacity: 0;
+      }
     }
 
     li {
@@ -437,11 +479,37 @@
     }
 
     .gallery-top {
+      @include screen(xl) {
+        position: relative;
+        display: flex;
+        align-self: center;
+        width: 300px !important;
+        height: 350px !important;
+      }
+
       @include screen(l) {
         display: flex;
         align-self: center;
-        height: 100% !important;
-        width: 100% !important;
+        width: 319px !important;
+        height: 455px !important;
+      }
+
+      .swiper-wrapper {
+        @include screen(xl) {
+          margin-bottom: 60px;
+          height: auto;
+        }
+      }
+
+      .swiper-pagination {
+        &-bullet {
+          background: #E0E0E0;
+          opacity: 1;
+
+          &-active {
+            background: #7A7A7A;
+          }
+        }
       }
 
       .swiper-slide {
@@ -636,7 +704,9 @@
 
         &.uk-active {
           .uk-accordion-title {
-            background: #F8F8F8;
+            @include screen(l) {
+              background: #F8F8F8;
+            }
           }
         }
       }
@@ -818,9 +888,15 @@
 
       .reviews__btn-adds {
         margin-bottom: 40px;
+        max-width: 295px;
 
-        @include screen(l) {
-          max-width: 295px;
+        @include screen(xl) {
+          margin: 0 20px 40px auto;
+        }
+
+        @media (max-width: 374px) {
+          max-width: 250px;
+          margin-left: 10px;
         }
       }
 

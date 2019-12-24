@@ -118,47 +118,59 @@ if ($(window).width() < 1250) {
   }
 }
 
-var galleryThumbs = new Swiper('.gallery-thumbs', {
-  spaceBetween: 20,
-  slidesPerView: 5,
-  threshold: 20,
-  freeMode: true,
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
-  direction: 'vertical',
-  breakpoints: {
-    640: {
-      slidesPerView: 4,
-    },
-    1200: {
-      slidesPerView: 8,
-    }
-  },
-});
+if ($(window).width() > 1250) {
+  if (typeof swiperHeaderBottom == 'undefined') {
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 20,
+      slidesPerView: 5,
+      threshold: 20,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+      direction: 'vertical',
+      breakpoints: {
+        640: {
+          slidesPerView: 4,
+        },
+        1200: {
+          slidesPerView: 8,
+        }
+      },
+    });
+  }
+} else {
+  if (typeof galleryThumbs != 'undefined') {
+    galleryThumbs.destroy();
+    galleryThumbs = undefined;
+    $('.swiper-wrapper').removeAttr('style');
+    $('.swiper-slide').removeAttr('style');
+  }
+}
+
 var galleryTop = new Swiper('.gallery-top', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  pagination: {
+    el: '.swiper-pagination',
+  },
   effect: 'fade',
   thumbs: {
     swiper: galleryThumbs
-  }
+  },
 });
 
 var swiperPopupMaps = new Swiper('.popup-maps__swiper-container', {
   direction: 'vertical',
   slidesPerView: 5,
   mousewheel: true,
-  /* scrollbar: {
-    el: '.swiper-scrollbar',
-    hide: false,
-  }, */
   touchReleaseOnEdges: true,
   breakpoints: {
     1250: {
       direction: 'horizontal',
       slidesPerView: 'auto',
+      mousewheel: false,
     },
   },
 });

@@ -15,11 +15,6 @@
     font: normal 15px/18px Roboto;
     color: #30373D;
     background: #F3F2F4;
-    transition: border-color .3s;
-
-    &:focus {
-      border-color: #FF548C;
-    }
   }
 
   &--account {

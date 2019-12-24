@@ -1,9 +1,10 @@
 .checkout {
   &__wrapper {
-    padding-top: 20px;
-
     @include screen(xl) {
       padding: 0;
+    }
+
+    @include screen(l) {
       padding-top: 20px;
     }
   }
@@ -81,6 +82,10 @@
       padding: 21px 30px 20px;
     }
 
+    @media (max-width: 374px) {
+     justify-content: center;
+    }
+
     &:hover {
       background: #ffffff;
       box-shadow: 5px 5px 15px rgba(0, 0, 0, .2);
@@ -113,6 +118,10 @@
 
         @include screen(l) {
           padding-left: 20px;
+        }
+
+        @media (max-width: 374px) {
+          display: none;
         }
       }
     }

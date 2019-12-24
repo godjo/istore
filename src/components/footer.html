@@ -317,6 +317,10 @@
       <div class="uk-flex uk-flex-column@s uk-flex-between uk-child-width-1-2@l uk-margin-bottom">
         <div class="popup__container-left uk-margin-right@l uk-margin-bottom@s">
           <div class="field field--account uk-margin-bottom">
+            <label for="" class="field__title popup__subtitle">Ваше имя</label>
+            <input type="text">
+          </div>
+          <div class="field field--account uk-margin-bottom">
             <label for="" class="field__title popup__subtitle">Плюсы</label>
             <textarea rows="150"></textarea>
           </div>
@@ -563,7 +567,8 @@
           <input class="calc__total-price-current" name="total_sum" type="hidden" value="89990">
         </div>
         <div class="popup__container-footer">
-          <span class="popup__container-big-text">Напишите свой номер и мы позвоним Вам в течение 5 минут</span>
+          <span class="popup__container-big-text uk-visible@l">Напишите свой номер и мы позвоним Вам в течение 5
+            минут</span>
           <div class="field field--account uk-margin-bottom">
             <label for="" class="field__title popup__subtitle">Телефон</label>
             <input type="text">
@@ -603,7 +608,6 @@
         <input type="text">
       </div>
       <button class="btn" type="button">Войти</button>
-      <span>Введите номер телефона!</span>
       <div class="popup__footer">
         <div class="uk-margin-small-bottom">
           <input class="uk-hidden" type="checkbox" id="f7" name="f7" checked="">
@@ -633,7 +637,6 @@
         <input type="text">
       </div>
       <button class="btn" type="button">Зарегистрироваться</button>
-      <span>Введите номер телефона!</span>
 
       <div class="popup__footer">
         <div class="uk-margin-small-bottom">
@@ -715,8 +718,10 @@
       <button class="btn" type="button">Получить деньги</button>
       <a href="#" data-uk-toggle="target: #popupQuestion">Остались вопросы?</a>
       <div class="popup__footer">
-        <input class="uk-hidden" type="checkbox" id="f11" name="f11" checked="">
-        <label for="f11">Согласен с условиями <a href="#">Публичной оферты</a></label>
+        <div class="uk-margin-small-bottom">
+          <input class="uk-hidden" type="checkbox" id="f11" name="f11" checked="">
+          <label for="f11">Согласен с условиями <a href="#">Публичной оферты</a></label>
+        </div>
       </div>
     </div>
   </div>
@@ -770,7 +775,7 @@
     </svg>
     <div class="popup__header">
       <h2 class="title title--small">Заявка принята!</h2>
-      <p>Выплты производятся от 15 минут до 3х рабочих дней, в&nbsp;зависимости от&nbsp;условий работы вашего банка
+      <p>Выплаты производятся от 15 минут до 3х рабочих дней, в&nbsp;зависимости от&nbsp;условий работы вашего банка
         или&nbsp;платежной
         системы.</p>
     </div>
@@ -820,11 +825,33 @@
   <div class="uk-modal-dialog uk-modal-body">
     <input id="#searchInputModal" class="uk-width-1-1" type="text" placeholder="Поиск" pattern=".{0}" value=""
       autocomplete="off" />
-    <button class="search__clear" type="button">
+    <!-- <button class="search__clear" type="button">
       <svg width="24" height="24">
         <use xlink:href="img/symbol/sprite.svg#close" />
       </svg>
+    </button> -->
+    <button class="popup__search-btn" type="button">
+      <svg width="24" height="24" fill="#FF548C">
+        <use xlink:href="img/symbol/sprite.svg#search" />
+      </svg>
     </button>
+    <ul class="popup__search__result">
+      <li>
+        <a href="#">iphone xr 256</a>
+      </li>
+      <li>
+        <a href="#">iphone xr 64</a>
+      </li>
+      <li>
+        <a href="#">iphone xr Dual SIM</a>
+      </li>
+      <li>
+        <a href="#">iphone xr 128</a>
+      </li>
+      <li>
+        <a href="#">iphone xr чехол</a>
+      </li>
+    </ul>
   </div>
 </div>
 

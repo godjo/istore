@@ -80,7 +80,6 @@
         }
 
         span {
-          font: 500 16px/22px FuturaPT;
           color: #27CC00;
           border-bottom: 1px solid transparent;
           cursor: pointer;
@@ -88,6 +87,14 @@
 
           &:hover {
             color: #5EF13B;
+          }
+
+          @include screen(xl) {
+            font: 500 18px/22px FuturaPT;
+          }
+
+          @include screen(l) {
+            font: 500 16px/22px FuturaPT;
           }
         }
       }

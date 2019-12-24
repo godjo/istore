@@ -27,7 +27,7 @@
   &__header {
     @include screen(xl) {
       padding: 0 20px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
     @include screen(l) {
@@ -40,6 +40,7 @@
 
       @include screen(xl) {
         margin-bottom: 20px;
+        font-size: 22px;
       }
     }
 
@@ -64,8 +65,15 @@
 
     .uk-subnav>*> :first-child {
       color: rgba(51, 51, 51, .8) !important;
-      font: 500 14px/16px FuturaPT !important;
       text-transform: none !important;
+
+      @include screen(xl) {
+        font: 500 16px/16px FuturaPT !important;
+      }
+
+      @include screen(l) {
+        font: 500 14px/16px FuturaPT !important;
+      }
     }
 
     .uk-subnav {

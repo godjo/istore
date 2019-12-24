@@ -1,8 +1,7 @@
 .catalog {
   &__header {
     @include screen(xl) {
-      padding: 10px 0 20px;
-      border-top: 1px solid #E7E7E7;
+      padding: 0
     }
 
     @include screen(l) {
@@ -13,7 +12,7 @@
       background: #FFFFFF;
 
       @include screen(xl) {
-        padding: 0 20px 20px;
+        padding: 10px 20px 20px;
       }
 
       @include screen(l) {
@@ -36,6 +35,10 @@
   }
 
   &__settings {
+    @media (max-width: 374px) {
+      flex-wrap: wrap;
+    }
+
     @include screen(xl) {
       padding-bottom: 15px;
       background: #FFFFFF;
@@ -45,6 +48,10 @@
   }
 
   &__sort {
+    @media (max-width: 374px) {
+      margin-bottom: 10px;
+    }
+
     label {
       font: 700 12px/15px FuturaPT;
       text-transform: uppercase;
@@ -102,7 +109,7 @@
     @include screen(xl) {
       align-self: flex-end;
       padding: 9px 15px;
-      max-width: 250px;
+      max-width: 215px;
       font: 600 16px/22px FuturaPT;
     }
   }

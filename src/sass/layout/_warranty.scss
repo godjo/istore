@@ -1,9 +1,10 @@
 .warranty {
   &__wrapper {
-    padding-top: 20px;
-
     @include screen(xl) {
       padding: 0;
+    }
+
+    @include screen(l) {
       padding-top: 20px;
     }
   }

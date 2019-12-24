@@ -18,11 +18,13 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		height: 100%;
+		/* height: 100%; */
+		height: auto;
 	}
 
 	&__footer {
 		border-top: 1px solid rgba(216, 216, 216, .5);
+		border-bottom: 1px solid rgba(216, 216, 216, .5);
 	}
 
 	&__header {
@@ -126,6 +128,7 @@
 
 	&__socials {
 		li {
+			height: auto;
 			border-left: 1px solid rgba(0, 0, 0, .1);
 		}
 
@@ -139,10 +142,15 @@
 	}
 
 	&__categories {
+		li:not(:last-of-type) {
+			.uk-accordion-title {
+				border-bottom: 1px solid rgba(216, 216, 216, .5);
+			}
+		}
+
 		.uk-accordion-title {
 			position: relative;
 			padding: 15px;
-			border-bottom: 1px solid rgba(216, 216, 216, .5);
 			font: 500 19px/24px FuturaPT;
 			color: #333333;
 
