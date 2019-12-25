@@ -37,8 +37,9 @@
       font: 600 16px/22px FuturaPT;
 
       @include screen(xl) {
+        width: 85%;
         max-width: 335px;
-        margin-left: 20px;
+        margin: auto;
       }
 
       @include screen(l) {
@@ -180,7 +181,6 @@
     background: #F8F8F8;
 
     @include screen(xl) {
-      margin-bottom: 30px;
       padding: 15px 0 20px;
     }
 
@@ -344,13 +344,13 @@
 
     &-old {
       text-align: right;
-      font: 700 18px/21px Roboto;
+      font: 600 18px/21px FuturaPT;
       text-decoration-line: line-through;
       color: rgba(48, 55, 61, .5);
     }
 
     &-total {
-      font: 700 38px/28px Roboto;
+      font: 600 38px/28px FuturaPT;
       color: #2C0952;
 
       @include screen(xl) {
@@ -363,7 +363,7 @@
       padding: 3px 5px 2px;
       margin: 2px 0 0 0;
       text-align: center;
-      font: 700 14px/16px Roboto;
+      font: 600 14px/16px FuturaPT;
       color: #FF548C;
       background-color: rgba(255, 84, 140, .2);
       border-radius: 13px;
@@ -379,31 +379,37 @@
       &::-webkit-scrollbar {
         height: 0;
         opacity: 0;
+        display: none;
       }
 
       &::-webkit-scrollbar-button {
         height: 0;
         opacity: 0;
+        display: none;
       }
 
       &::-webkit-scrollbar-track-piece {
         height: 0;
         opacity: 0;
+        display: none;
       }
 
       &::-webkit-scrollbar-thumb {
         height: 0;
         opacity: 0;
+        display: none;
       }
 
       &::-webkit-scrollbar-corner {
         height: 0;
         opacity: 0;
+        display: none;
       }
 
       &::-webkit-resize {
         height: 0;
         opacity: 0;
+        display: none;
       }
     }
 
@@ -614,6 +620,7 @@
   &__faq {
     @include screen(xl) {
       padding-bottom: 25px;
+      padding-top: 15px;
     }
 
     .frame {
@@ -799,6 +806,34 @@
         height: auto;
       }
     }
+
+    &-btn {
+      padding: 9px 15px;
+      font: 600 16px/22px FuturaPT;
+
+      @include screen(xl) {
+        max-width: 335px;
+        margin: 15px auto 0;
+      }
+
+      /* @include screen(l) {
+        margin-bottom: 85px;
+        margin-top: 30px;
+        max-width: 270px;
+        color: #FF548C;
+        background-color: #ffffff;
+        border: 1px solid rgba(236, 236, 236, .7);
+        transition: border .3s, background-color .3s, box-shadow .3s, color .15s;
+        overflow: hidden;
+
+        &:hover {
+          background-color: #FF548C;
+          color: #ffffff;
+          border-color: #FF548C;
+          box-shadow: 0px 6px 30px rgba(248, 53, 94, 0.4);
+        }
+      } */
+    }
   }
 
   &__accordion {
@@ -859,6 +894,10 @@
 
           &:first-of-type {
             color: #959595;
+
+            @include screen(xl) {
+              margin-right: 10px;
+            }
           }
 
           &:last-of-type {

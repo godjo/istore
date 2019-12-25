@@ -4,12 +4,18 @@ $(document).ready(function () {
 	//= components/calc.js
 
 	/* Adds scroll for accordion on page Product */
-	UIkit.util.on('.product__accordion .accordion', 'shown', function () {
-		setTimeout(function () {
-			$('html, body').animate({
-				scrollTop: $('.product__accordion .uk-open').offset().top - 52
-			}, 600);
-		}, 50);
+	UIkit.util.on('.accordion', 'shown', function () {
+		var li_open = $(this).find('.uk-open');
+		var li_content = $(li_open).find('.uk-accordion-content');
+		var top_margin = $('.header__top').is(':visible') ? '52' : '63';
+		if ((li_content).is(':visible')) {
+			setTimeout(function () {
+				$('html, body').animate({
+					scrollTop: li_open.offset().top - top_margin
+				}, 600);
+
+			}, 50);
+		}
 	});
 
 	/* adds class for body on click search */
@@ -35,4 +41,9 @@ $(document).ready(function () {
 	$(".header__menu-button").click(function () {
 		$(this).toggleClass('open');
 	});
+
+	/* Adds autofocus for search input mobile */
+/* 	UIkit.util.on('#popupSearch', 'shown', function () {
+		$('#searchInputModal').attr('autofocus', '');
+	}); */
 });

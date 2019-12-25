@@ -633,10 +633,14 @@
     </div>
     <div class="popup__content">
       <div class="field field--account uk-margin-bottom">
+        <label for="" class="field__title popup__subtitle">Имя</label>
+        <input type="text">
+      </div>
+      <div class="field field--account uk-margin-bottom">
         <label for="" class="field__title popup__subtitle">Контактный телефон</label>
         <input type="text">
       </div>
-      <button class="btn" type="button">Зарегистрироваться</button>
+      <button class="btn" type="button" data-uk-toggle="target: #popupMessage">Зарегистрироваться</button>
 
       <div class="popup__footer">
         <div class="uk-margin-small-bottom">
@@ -796,6 +800,10 @@
     </div>
     <div class="popup__content">
       <div class="field field--account uk-margin-bottom">
+        <label for="" class="field__title popup__subtitle">Имя</label>
+        <input type="text">
+      </div>
+      <div class="field field--account uk-margin-bottom">
         <label for="" class="field__title popup__subtitle">Телефон</label>
         <input type="text">
       </div>
@@ -820,40 +828,7 @@
   </div>
 </div>
 
-<!-- Search -->
-<div id="popupSearch" class="popup popup--search" uk-modal>
-  <div class="uk-modal-dialog uk-modal-body">
-    <input id="#searchInputModal" class="uk-width-1-1" type="text" placeholder="Поиск" pattern=".{0}" value=""
-      autocomplete="off" />
-    <!-- <button class="search__clear" type="button">
-      <svg width="24" height="24">
-        <use xlink:href="img/symbol/sprite.svg#close" />
-      </svg>
-    </button> -->
-    <button class="popup__search-btn" type="button">
-      <svg width="24" height="24" fill="#FF548C">
-        <use xlink:href="img/symbol/sprite.svg#search" />
-      </svg>
-    </button>
-    <ul class="popup__search__result">
-      <li>
-        <a href="#">iphone xr 256</a>
-      </li>
-      <li>
-        <a href="#">iphone xr 64</a>
-      </li>
-      <li>
-        <a href="#">iphone xr Dual SIM</a>
-      </li>
-      <li>
-        <a href="#">iphone xr 128</a>
-      </li>
-      <li>
-        <a href="#">iphone xr чехол</a>
-      </li>
-    </ul>
-  </div>
-</div>
+
 
 <script defer src="js/library.min.js"></script>
 <script defer src="js/scripts.min.js"></script>

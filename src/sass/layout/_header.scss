@@ -17,7 +17,7 @@
         color: rgba(51, 51, 51, 0.45);
       }
 
-      a {
+      &>a {
         position: relative;
         padding-right: 15px;
         font: 400 13px/14px Roboto;
@@ -116,6 +116,42 @@
           top: 0;
           bottom: 0;
           margin: auto;
+        }
+      }
+    }
+  }
+
+  &__dropdown {
+    min-width: 260px;
+    padding: 5px;
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+
+    input {
+      margin-bottom: 15px;
+      padding: 10px 20px;
+      width: 100%;
+      background: #EFEFF0;
+      border-radius: 8px;
+      font: normal 15px/19px FuturaPT;
+      color: #30373D;
+      border: none;
+    }
+
+    a {
+      padding: 10px;
+      font: normal 15px/19px FuturaPT;
+      color: #30373D;
+    }
+
+    li {
+      margin-bottom: 10px;
+
+      &.active {
+        a {
+          color: #FF548C;
         }
       }
     }

@@ -34,7 +34,7 @@
       padding-right: 10px;
 
       &-old {
-        font: 600 12px/14px Roboto;
+        font: 600 12px/14px FuturaPT;
         color: rgba(48, 55, 61, .5);
         text-decoration-line: line-through;
         letter-spacing: .5px;
@@ -42,14 +42,14 @@
 
       &-sale {
         padding: 4px 5px;
-        font: 700 12px/14px Roboto;
+        font: 600 12px/14px FuturaPT;
         color: #FF548C;
         background-color: rgba(255, 84, 140, .2);
         border-radius: 13px;
       }
 
       &-total {
-        font: 700 24px/28px Roboto;
+        font: 600 24px/28px FuturaPT;
         color: #2C0952;
       }
     }
@@ -154,13 +154,13 @@
 
         &-old {
           text-align: right;
-          font: 700 12px/14px Roboto;
+          font: 600 12px/14px FuturaPT;
           text-decoration-line: line-through;
           color: rgba(48, 55, 61, .5);
         }
 
         &-total {
-          font: 700 24px/28px Roboto;
+          font: 600 24px/28px FuturaPT;
           color: #2C0952;
         }
 
@@ -168,7 +168,7 @@
           padding: 3px 5px 2px;
           margin: 2px 0 0 0;
           text-align: center;
-          font: 700 10px/12px Roboto;
+          font: 600 10px/12px FuturaPT;
           color: #FF548C;
           background-color: rgba(255, 84, 140, .2);
           border-radius: 13px;
@@ -261,6 +261,10 @@
         border-radius: 8px;
         background: #FFFFFF;
 
+        @include screen(xl) {
+          display: none;
+        }
+
         img {
           width: 100%;
           height: auto;
@@ -282,7 +286,7 @@
       }
 
       &__price {
-        font: 700 18px/16px Roboto;
+        font: 600 18px/16px FuturaPT;
         color: #27CC00;
 
         @include screen(l) {
@@ -339,20 +343,20 @@
         &-old {
           margin-right: 5px;
           text-align: right;
-          font: 700 12px/14px Roboto;
+          font: 600 12px/14px FuturaPT;
           text-decoration-line: line-through;
           color: rgba(48, 55, 61, .5);
         }
 
         &-total {
-          font: 700 18px/26px Roboto;
+          font: 600 18px/26px FuturaPT;
           color: #2C0952;
         }
 
         &-sale {
           padding: 3px 5px 2px;
           text-align: center;
-          font: 700 10px/12px Roboto;
+          font: 600 10px/12px FuturaPT;
           color: #FF548C;
           background-color: rgba(255, 84, 140, .2);
           border-radius: 13px;

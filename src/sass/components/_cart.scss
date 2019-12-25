@@ -77,8 +77,37 @@
 
 	&__mobile {
 		@include screen(xl) {
-			padding: 5px 20px 0 20px;
-			border-left: 1px solid rgba(0, 0, 0, .1)
+			display: flex;
+			padding: 0 30px 0 30px;
+			border-left: 1px solid rgba(0, 0, 0, .1);
+			width: 24px;
+			height: 40px;
+			background: url('../img/pic/ico/cart-icon.svg') no-repeat;
+			background-size: 30px 30px;
+			background-position: 15px center;
+		}
+
+		&--active {
+			@include screen(xl) {
+				position: relative;
+				background: url('../img/pic/ico/cart-icon2.svg') no-repeat;
+				background-size: 30px 30px;
+				background-position: 15px center;
+			}
+
+			&::after {
+				content: "2";
+				position: absolute;
+				top: 0;
+				right: 6px;
+				width: 17px;
+				height: 17px;
+				border-radius: 50%;
+				color: #ffffff;
+				font: 600 11px/13px Roboto;
+				background: #FF548C;
+				border: 2px solid #FFFFFF;
+			}
 		}
 	}
 }

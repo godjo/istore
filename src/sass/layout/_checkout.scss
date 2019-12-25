@@ -83,7 +83,7 @@
     }
 
     @media (max-width: 374px) {
-     justify-content: center;
+      justify-content: center;
     }
 
     &:hover {
@@ -199,17 +199,17 @@
     }
 
     &-total {
-      font: 700 24px/28px Roboto;
+      font: 600 24px/28px FuturaPT;
       color: #2C0952;
     }
 
     &-sale {
-      font: 700 18px/22px Roboto;
+      font: 600 18px/22px FuturaPT;
       color: #FF548C;
     }
 
     &-delivery {
-      font: 700 18px/22px Roboto;
+      font: 600 18px/22px FuturaPT;
       color: #2C0952;
     }
   }
@@ -229,7 +229,7 @@
     }
 
     &-value {
-      font: 500 24px/28px Roboto;
+      font: 500 24px/28px FuturaPT;
       color: #FF548C;
     }
   }
@@ -277,6 +277,10 @@
     border: 1px solid #E9E9E9;
     border-radius: 10px;
 
+    @include screen(xl) {
+      flex-wrap: wrap;
+    }
+
     img {
       mix-blend-mode: darken;
 
@@ -305,7 +309,12 @@
       cursor: pointer;
 
       @include screen(xl) {
-        padding: 20px;
+        padding: 10px;
+        width: 50%;
+
+        border-bottom: 1px solid #E9E9E9;
+        border-right: 1px solid #E9E9E9;
+
       }
 
       @include screen(l) {
@@ -313,10 +322,6 @@
       }
 
       &:not(:last-of-type) {
-        @include screen(xl) {
-          border-bottom: 1px solid #E9E9E9;
-        }
-
         @include screen(l) {
           border-right: 1px solid #E9E9E9;
         }

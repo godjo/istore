@@ -4,6 +4,26 @@
       <div class="header__top-select-city">
         <span>Ваш город:</span>
         <a href="#">Санкт-Петeрбург</a>
+        <div class="header__dropdown" uk-dropdown="mode: click">
+          <input type="text" placeholder="Введите название своего города">
+          <ul class="uk-flex uk-flex-column">
+            <li class="active">
+              <a href="#">Москва</a>
+            </li>
+            <li>
+              <a href="#">Санкт-Петербург</a>
+            </li>
+            <li>
+              <a href="#">Ростов на Дону</a>
+            </li>
+            <li>
+              <a href="#">Новгород</a>
+            </li>
+            <li>
+              <a href="#">Казань</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <ul class="header__top-list uk-flex uk-flex-middle">
         <li>
@@ -944,11 +964,7 @@
           <span>2 шт</span>
         </div>
 
-        <button class="cart__mobile uk-hidden@l" data-uk-toggle="target: #popupEddit">
-          <svg width="24" height="24" fill="#6344B6">
-            <use xlink:href="img/symbol/sprite.svg#cart-icon" />
-          </svg>
-        </button>
+        <button class="cart__mobile cart__mobile--active uk-hidden@l" data-uk-toggle="target: #popupRegistration"></button>
       </div>
     </div>
 
@@ -1254,5 +1270,40 @@
       <span>Новинки уже в наличии</span>
       <span>iPhone 11 Pro Max</span>
     </div>
+  </div>
+</div>
+
+<!-- Search -->
+<div id="popupSearch" class="popup popup--search" uk-modal>
+  <div class="uk-modal-dialog uk-modal-body">
+    <input id="searchInputModal" class="uk-width-1-1" type="text" placeholder="Поиск" pattern=".{0}" value=""
+      autocomplete="off" autofocus />
+    <!-- <button class="search__clear" type="button">
+      <svg width="24" height="24">
+        <use xlink:href="img/symbol/sprite.svg#close" />
+      </svg>
+    </button> -->
+    <button class="popup__search-btn" type="button">
+      <svg width="24" height="24" fill="#FF548C">
+        <use xlink:href="img/symbol/sprite.svg#search" />
+      </svg>
+    </button>
+    <ul class="popup__search__result">
+      <li>
+        <a href="#">iphone xr 256</a>
+      </li>
+      <li>
+        <a href="#">iphone xr 64</a>
+      </li>
+      <li>
+        <a href="#">iphone xr Dual SIM</a>
+      </li>
+      <li>
+        <a href="#">iphone xr 128</a>
+      </li>
+      <li>
+        <a href="#">iphone xr чехол</a>
+      </li>
+    </ul>
   </div>
 </div>
