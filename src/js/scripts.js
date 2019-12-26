@@ -42,8 +42,14 @@ $(document).ready(function () {
 		$(this).toggleClass('open');
 	});
 
+	/* Удалить при натяжке!!! */
+	if (localStorage.selected_city == undefined) {
+		$('.header__city').show();
+		localStorage.selected_city = true;
+	}
+
 	/* Adds autofocus for search input mobile */
-/* 	UIkit.util.on('#popupSearch', 'shown', function () {
-		$('#searchInputModal').attr('autofocus', '');
-	}); */
+	/* 	UIkit.util.on('#popupSearch', 'shown', function () {
+			$('#searchInputModal').attr('autofocus', '');
+		}); */
 });

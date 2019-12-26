@@ -140,6 +140,10 @@
         margin-bottom: 15px;
         color: #30373D;
 
+        @media (max-width: 375px) {
+          width: 85%;
+        }
+
         @include screen(xl) {
           font: normal 14px/26px Roboto;
         }

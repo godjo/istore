@@ -3,8 +3,8 @@
     <div class="uk-container uk-flex uk-flex-between uk-flex-middle">
       <div class="header__top-select-city">
         <span>Ваш город:</span>
-        <a href="#">Санкт-Петeрбург</a>
-        <div class="header__dropdown" uk-dropdown="mode: click">
+        <a href="#" data-uk-toggle="target: #popupSelectCity">Санкт-Петeрбург</a>
+        <!-- <div class="header__dropdown" uk-dropdown="mode: click">
           <input type="text" placeholder="Введите название своего города">
           <ul class="uk-flex uk-flex-column">
             <li class="active">
@@ -23,7 +23,7 @@
               <a href="#">Казань</a>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
       <ul class="header__top-list uk-flex uk-flex-middle">
         <li>
@@ -693,7 +693,8 @@
               </div>
 
               <div class="menu__footer uk-flex">
-                <a href="#" class="menu__select-city uk-flex uk-flex-column uk-width-expand">
+                <a href="#" class="menu__select-city uk-flex uk-flex-column uk-width-expand"
+                  data-uk-toggle="target: #popupSelectCity">
                   <span>Ваш город:</span>
                   <span>Санкт-Петeрбург</span>
                 </a>
@@ -964,7 +965,8 @@
           <span>2 шт</span>
         </div>
 
-        <button class="cart__mobile cart__mobile--active uk-hidden@l" data-uk-toggle="target: #popupRegistration"></button>
+        <button class="cart__mobile cart__mobile--active uk-hidden@l"
+          data-uk-toggle="target: #popupRegistration"></button>
       </div>
     </div>
 
@@ -1271,7 +1273,24 @@
       <span>iPhone 11 Pro Max</span>
     </div>
   </div>
+
+  <div class="header__city">
+    <div class="header__city-confirm">
+      <p>Ваш город: <span>г. Санкт-Петербург</span> ?</p>
+      <ul class="uk-flex uk-flex-center uk-flex-middle">
+        <li>
+          <button class="btn">Да</button>
+        </li>
+        <li>
+          <button class="btn" data-uk-toggle="target: #popupSelectCity">Нет</button>
+        </li>
+      </ul>
+    </div>
+    <div class="header__city-backdrop"></div>
+  </div>
 </div>
+
+
 
 <!-- Search -->
 <div id="popupSearch" class="popup popup--search" uk-modal>
