@@ -315,6 +315,10 @@
     }
 
     .nice-select {
+      @include screen(xl) {
+        min-width: 120px !important;
+      }
+
       @include screen(l) {
         min-width: 175px !important;
         width: 175px !important;
@@ -421,15 +425,9 @@
       &:not(:last-of-type) {
         margin-right: 10px;
       }
-
-      &.checked {
-        border: 1px solid #FF548C;
-        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-      }
     }
 
-    div {
+    label {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -452,6 +450,12 @@
       img {
         margin-right: 10px;
       }
+    }
+
+    input:checked+label {
+      border: 1px solid #FF548C;
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
     }
   }
 
@@ -602,18 +606,24 @@
     padding: 8px 15px 10px;
     width: 100%;
     text-align: center;
-    border: 1px solid #FF548C;
     border-radius: 8px;
     font: 600 16px/22px FuturaPT;
     background: #FFFFFF;
-    color: #FF548C;
+
     cursor: pointer;
     white-space: nowrap;
+
+    @include screen(xl) {
+      color: #6344B6;
+    }
+
 
     @include screen(l) {
       align-self: flex-start;
       margin-left: 40px;
       max-width: 244px;
+      color: #FF548C;
+      border: 1px solid #FF548C;
     }
   }
 

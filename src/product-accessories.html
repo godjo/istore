@@ -61,17 +61,22 @@
                   <div class="swiper-slide" style="background:url(./img/temp/product-accessories-mini-2.jpg)"></div>
                   <div class="swiper-slide" style="background:url(./img/temp/product-accessories-mini-3.jpg)"></div>
                 </div>
-                <!-- Add Arrows -->
-                <!-- <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div> -->
               </div>
 
               <div class="swiper-container gallery-top">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide" style="background:url(./img/temp/product-accessories-1.jpg)"></div>
-                  <div class="swiper-slide" style="background:url(./img/temp/product-accessories-1.jpg)"></div>
-                  <div class="swiper-slide" style="background:url(./img/temp/product-accessories-1.jpg)"></div>
+                <div class="swiper-wrapper" uk-lightbox>
+                  <div class="swiper-slide" style="background:url(./img/temp/product-accessories-1.jpg)">
+                    <a href="../img/temp/product-accessories-1.jpg" data-alt="Image 1"></a>
+                  </div>
+                  <div class="swiper-slide" style="background:url(./img/temp/product-accessories-1.jpg)">
+                    <a href="./img/temp/product-accessories-1.jpg" data-alt="Image 2"></a>
+                  </div>
+                  <div class="swiper-slide" style="background:url(./img/temp/product-accessories-1.jpg)">
+                    <a href="./img/temp/product-accessories-1.jpg" data-alt="Image 3"></a>
+                  </div>
                 </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination uk-hidden@l"></div>
               </div>
             </div>
             <span class="product__points uk-visible@l">+ 95 балов на бонусный счет</span>
@@ -123,13 +128,18 @@
                 <span>Купить в кредит</span>
                 <span>от&nbsp;1440&nbsp;&#8381 в&nbsp;месяц</span>
               </div>
+
+              <span class="product__points uk-margin-top uk-hidden@l" data-uk-toggle="#popupRegistration">+ 95 баллов на
+                бонусный
+                счет</span>
             </div>
           </div>
         </div>
       </div>
 
       <div class="product__section">
-        <button class="btn" type="button" data-uk-toggle="target: #popupQuestion">Задать вопрос онлайн</button>
+        <button class="btn uk-visible@l" type="button" data-uk-toggle="target: #popupQuestion">Задать вопрос
+          онлайн</button>
 
         <ul class="feature uk-flex uk-flex-column@l">
           <li class="feature--green uk-flex">
@@ -194,7 +204,7 @@
           <ul class="accordion uk-width-expand@s" uk-accordion="collapsible: true"
             uk-switcher="animation: uk-animation-fade; active: 12;">
             <li>
-              <a class="uk-accordion-title" href="#">Телефоны новые или восстановленные?</a>
+              <a class="uk-accordion-title" href="#">1. Телефоны новые или восстановленные?</a>
               <div class="uk-accordion-content">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
                   doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
@@ -202,7 +212,7 @@
               </div>
             </li>
             <li>
-              <a class="uk-accordion-title" href="#">Почему такая низкая цена?</a>
+              <a class="uk-accordion-title" href="#">2. Почему такая низкая цена?</a>
               <div class="uk-accordion-content">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
                   doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
@@ -210,7 +220,7 @@
               </div>
             </li>
             <li>
-              <a class="uk-accordion-title" href="#">Какие сроки гарантии? Куда обратиться по гарантии?</a>
+              <a class="uk-accordion-title" href="#">3. Какие сроки гарантии? Куда обратиться по гарантии?</a>
               <div class="uk-accordion-content">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
                   doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
@@ -218,7 +228,7 @@
               </div>
             </li>
             <li>
-              <a class="uk-accordion-title" href="#">Есть ли у вас рассрочка или кредит?</a>
+              <a class="uk-accordion-title" href="#">4. Есть ли у вас рассрочка или кредит?</a>
               <div class="uk-accordion-content">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
                   doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
@@ -226,7 +236,7 @@
               </div>
             </li>
             <li>
-              <a class="uk-accordion-title" href="#">Могу ли я получить скидку?</a>
+              <a class="uk-accordion-title" href="#">5. Могу ли я получить скидку?</a>
               <div class="uk-accordion-content">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
                   doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
@@ -234,7 +244,7 @@
               </div>
             </li>
             <li>
-              <a class="uk-accordion-title" href="#">Как происходит доставка?</a>
+              <a class="uk-accordion-title" href="#">6. Как происходит доставка?</a>
               <div class="uk-accordion-content">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
                   doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
@@ -242,7 +252,7 @@
               </div>
             </li>
             <li>
-              <a class="uk-accordion-title" href="#">Сколько времени занимает доставка?</a>
+              <a class="uk-accordion-title" href="#">7. Сколько времени занимает доставка?</a>
               <div class="uk-accordion-content">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
                   doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
@@ -250,7 +260,7 @@
               </div>
             </li>
             <li>
-              <a class="uk-accordion-title" href="#">Нужно ли мне платить вперед?</a>
+              <a class="uk-accordion-title" href="#">8. Нужно ли мне платить вперед?</a>
               <div class="uk-accordion-content">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
                   doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
@@ -258,7 +268,7 @@
               </div>
             </li>
             <li>
-              <a class="uk-accordion-title" href="#">Сколько стоит доставка?</a>
+              <a class="uk-accordion-title" href="#">9. Сколько стоит доставка?</a>
               <div class="uk-accordion-content">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
                   doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
@@ -266,7 +276,7 @@
               </div>
             </li>
             <li>
-              <a class="uk-accordion-title" href="#">Могу ли я отказаться от покупки?</a>
+              <a class="uk-accordion-title" href="#">10. Могу ли я отказаться от покупки?</a>
               <div class="uk-accordion-content">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
                   doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
@@ -274,7 +284,7 @@
               </div>
             </li>
             <li>
-              <a class="uk-accordion-title" href="#">Как я могу отследить заказ?</a>
+              <a class="uk-accordion-title" href="#">11. Как я могу отследить заказ?</a>
               <div class="uk-accordion-content">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
                   doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
@@ -282,7 +292,7 @@
               </div>
             </li>
             <li>
-              <a class="uk-accordion-title" href="#">Какие данные нужны для доставки?</a>
+              <a class="uk-accordion-title" href="#">12. Какие данные нужны для доставки?</a>
               <div class="uk-accordion-content">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
                   doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
@@ -290,11 +300,11 @@
               </div>
             </li>
             <!-- Не удалять последнюю <li> !!! -->
-            <li>
+            <!-- <li>
               <a class="uk-accordion-title" href="#"></a>
               <div class="uk-accordion-content">
               </div>
-            </li>
+            </li> -->
           </ul>
 
           <ul class="uk-switcher uk-width-expand@l uk-visible@l">
@@ -343,18 +353,21 @@
               <p>Bazinga!</p>
             </li>
             <!-- Не удалять последнюю <li> !!! -->
-            <li>
+            <!-- <li>
               <img src="img/pic/bg/faq-bg.svg" alt="">
-            </li>
+            </li> -->
           </ul>
         </div>
       </li>
     </ul>
+
+    <button class="btn product__faq-btn uk-hidden@l" type="button" data-uk-toggle="target: #popupQuestion">Задать вопрос
+      онлайн</button>
   </div>
 
   <div class="product__accordion uk-container bg-full-width">
     <ul class="accordion" uk-accordion="collapsible: true; duration: 0;">
-      <li class="product__main-atributes">
+      <!-- <li class="product__main-atributes">
         <a class="uk-accordion-title" href="#">Основные характеристики</a>
         <div class="uk-accordion-content">
           <ul>
@@ -427,6 +440,146 @@
               <span>12 месяцев</span>
             </li>
           </ul>
+        </div>
+      </li> -->
+
+      <li class="product__reviews uk-open">
+        <a class="uk-accordion-title" href="#">Отзывы</a>
+        <div class="uk-accordion-content">
+          <div class="reviews__content">
+            <div class="uk-flex uk-flex-between">
+              <h2 class="title title--medium">Отзывы</h2>
+              <button type="button" class="btn reviews__btn-adds" data-uk-toggle="target: #popupAddsReviews">Оставить
+                отзыв</button>
+            </div>
+            <div class="uk-flex uk-flex-column@s">
+              <!-- left-section -->
+              <div class="uk-width-expand@l uk-margin-medium-bottom@s">
+                <ul class="uk-flex uk-flex-column uk-margin-bottom uk-padding-left@s uk-padding-right@s">
+                  <li class="review uk-flex uk-flex-column uk-margin-small-bottom">
+                    <img class="uk-margin-right" src="img/pic/ico/avatar-ico.svg" width="60" height="60" alt="">
+                    <span class="review__name">Женя</span>
+                    <p class="review__text review__text--plus"><span>Плюсы:</span> Lorem ipsum dolor sit amet
+                      consectetur
+                      adipisicing elit. Ipsum libero deserunt rerum assumenda nihil sequi maiores voluptatum esse quo
+                      doloribus consequatur illo voluptatibus totam, error molestiae iusto molestias fugiat vel.</p>
+                    <p class="review__text review__text--minus"><span>Минусы:</span> Lorem ipsum dolor sit amet
+                      consectetur
+                      adipisicing elit. Ipsum libero deserunt rerum assumenda nihil sequi maiores voluptatum esse quo
+                      doloribus consequatur.</p>
+                    <p class="review__text"><span>Комментарий:</span> Покупал телефон подружке на день рождения, так что
+                      как
+                      он себя ведёт особо не знаю, но судя по всему всё красиво. Заказ оформили за считаные минуты, и
+                      доставка
+                      не заставила ждать, телефон привезли за 4 часа. При проверке телефон выглядел отлично, и IMEI
+                      сошёлся.
+                      Ну вроде не жалуется, так что телефон нормальный.</p>
+                    <span class="review__date">20 сентября 2019</span>
+                  </li>
+                  <li class="review uk-flex uk-flex-column uk-margin-small-bottom">
+                    <img class="uk-margin-right" src="img/pic/ico/avatar-ico.svg" width="60" height="60" alt="">
+                    <span class="review__name">Женя</span>
+                    <p class="review__text review__text--plus"><span>Плюсы:</span> Lorem ipsum dolor sit amet
+                      consectetur
+                      adipisicing elit. Ipsum libero deserunt rerum assumenda nihil sequi maiores voluptatum esse quo
+                      doloribus consequatur illo voluptatibus totam, error molestiae iusto molestias fugiat vel.</p>
+                    <p class="review__text review__text--minus"><span>Минусы:</span> Lorem ipsum dolor sit amet
+                      consectetur
+                      adipisicing elit. Ipsum libero deserunt rerum assumenda nihil sequi maiores voluptatum esse quo
+                      doloribus consequatur.</p>
+                    <p class="review__text"><span>Комментарий:</span> Покупал телефон подружке на день рождения, так что
+                      как
+                      он себя ведёт особо не знаю, но судя по всему всё красиво. Заказ оформили за считаные минуты, и
+                      доставка
+                      не заставила ждать, телефон привезли за 4 часа. При проверке телефон выглядел отлично, и IMEI
+                      сошёлся.
+                      Ну вроде не жалуется, так что телефон нормальный.</p>
+                    <span class="review__date">20 сентября 2019</span>
+                  </li>
+                  <li class="review uk-flex uk-flex-column uk-margin-small-bottom">
+                    <img class="uk-margin-right" src="img/pic/ico/avatar-ico.svg" width="60" height="60" alt="">
+                    <span class="review__name">Женя</span>
+                    <p class="review__text review__text--plus"><span>Плюсы:</span> Lorem ipsum dolor sit amet
+                      consectetur
+                      adipisicing elit. Ipsum libero deserunt rerum assumenda nihil sequi maiores voluptatum esse quo
+                      doloribus consequatur illo voluptatibus totam, error molestiae iusto molestias fugiat vel.</p>
+                    <p class="review__text review__text--minus"><span>Минусы:</span> Lorem ipsum dolor sit amet
+                      consectetur
+                      adipisicing elit. Ipsum libero deserunt rerum assumenda nihil sequi maiores voluptatum esse quo
+                      doloribus consequatur.</p>
+                    <p class="review__text"><span>Комментарий:</span> Покупал телефон подружке на день рождения, так что
+                      как
+                      он себя ведёт особо не знаю, но судя по всему всё красиво. Заказ оформили за считаные минуты, и
+                      доставка
+                      не заставила ждать, телефон привезли за 4 часа. При проверке телефон выглядел отлично, и IMEI
+                      сошёлся.
+                      Ну вроде не жалуется, так что телефон нормальный.</p>
+                    <span class="review__date">20 сентября 2019</span>
+                  </li>
+                </ul>
+                //= components/pagination.html
+              </div>
+
+              <!-- right-section -->
+              <div class="uk-width-1-4@l uk-margin-left@l uk-padding-left@s uk-padding-right@s">
+                <div class="product__reviews-container">
+                  <!-- Swiper -->
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="uk-margin-small-bottom" uk-lightbox>
+                        <a href="https://www.youtube.com/watch?v=c2pz2mlSfXA" data-caption="YouTube">
+                          <img src="img/temp/review-1.jpg" width="300" height="300" alt="">
+                        </a>
+                      </div>
+                      <div class="uk-flex uk-flex-between uk-margin-small-bottom">
+                        <span>Валерий</span>
+                        <span>iPhone X</span>
+                      </div>
+                      <span>18 сентября 2019</span>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="uk-margin-small-bottom" uk-lightbox>
+                        <a href="https://www.youtube.com/watch?v=c2pz2mlSfXA" data-caption="YouTube">
+                          <img src="img/temp/review-2.jpg" width="300" height="300" alt="">
+                        </a>
+                      </div>
+                      <div class="uk-flex uk-flex-between uk-margin-small-bottom">
+                        <span>Максим</span>
+                        <span>iPhone XS</span>
+                      </div>
+                      <span>18 сентября 2019</span>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="uk-margin-small-bottom" uk-lightbox>
+                        <a href="https://www.youtube.com/watch?v=c2pz2mlSfXA" data-caption="YouTube">
+                          <img src="img/temp/review-3.jpg" width="300" height="300" alt="">
+                        </a>
+                      </div>
+                      <div class="uk-flex uk-flex-between uk-margin-small-bottom">
+                        <span>Карина</span>
+                        <span>iPhone XS Max</span>
+                      </div>
+                      <span>18 сентября 2019</span>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="uk-margin-small-bottom" uk-lightbox>
+                        <a href="https://www.youtube.com/watch?v=c2pz2mlSfXA" data-caption="YouTube">
+                          <img src="img/temp/review-3.jpg" width="300" height="300" alt="">
+                        </a>
+                      </div>
+                      <div class="uk-flex uk-flex-between uk-margin-small-bottom">
+                        <span>Валерий</span>
+                        <span>iPhone X</span>
+                      </div>
+                      <span>18 сентября 2019</span>
+                    </div>
+                  </div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </li>
 
@@ -609,120 +762,7 @@
         </div>
       </li>
 
-      <li class="product__reviews">
-        <a class="uk-accordion-title" href="#">Отзывы</a>
-        <div class="uk-accordion-content">
-          <div class="reviews__content uk-flex uk-flex-column@s">
-            <!-- left-section -->
-            <div class="uk-width-expand@l uk-margin-right@l uk-margin-medium-bottom@s">
-              <h2 class="title title--medium">Отзывы</h2>
-              <ul class="uk-flex uk-flex-column uk-margin-bottom uk-padding-left@s uk-padding-right@s">
-                <li class="review uk-flex uk-flex-column uk-margin-small-bottom">
-                  <img class="uk-margin-right" src="img/pic/ico/avatar-ico.svg" width="60" height="60" alt="">
-                  <span class="review__name">Женя</span>
-                  <p class="review__text">Покупал телефон подружке на день рождения, так что как он себя ведёт особо не
-                    знаю, но судя по всему всё красиво. Заказ оформили за считаные минуты, и доставка не заставила
-                    ждать,
-                    телефон привезли за 4 часа. При проверке телефон выглядел отлично, и IMEI сошёлся. Ну вроде не
-                    жалуется, так что телефон нормальный.</p>
-                  <span class="review__date">20 сентября 2019</span>
-                </li>
-                <li class="review uk-flex uk-flex-column uk-margin-small-bottom">
-                  <img class="uk-margin-right" src="img/pic/ico/avatar-ico.svg" width="60" height="60" alt="">
-                  <span class="review__name">Женя</span>
-                  <p class="review__text">Покупал телефон подружке на день рождения, так что как он себя ведёт особо не
-                    знаю, но судя по всему всё красиво. Заказ оформили за считаные минуты, и доставка не заставила
-                    ждать,
-                    телефон привезли за 4 часа. При проверке телефон выглядел отлично, и IMEI сошёлся. Ну вроде не
-                    жалуется, так что телефон нормальный.</p>
-                  <span class="review__date">20 сентября 2019</span>
-                </li>
-                <li class="review uk-flex uk-flex-column uk-margin-small-bottom">
-                  <img class="uk-margin-right" src="img/pic/ico/avatar-ico.svg" width="60" height="60" alt="">
-                  <span class="review__name">Женя</span>
-                  <p class="review__text">Покупал телефон подружке на день рождения, так что как он себя ведёт особо не
-                    знаю, но судя по всему всё красиво. Заказ оформили за считаные минуты, и доставка не заставила
-                    ждать,
-                    телефон привезли за 4 часа. При проверке телефон выглядел отлично, и IMEI сошёлся. Ну вроде не
-                    жалуется, так что телефон нормальный.</p>
-                  <span class="review__date">20 сентября 2019</span>
-                </li>
-                <li class="review uk-flex uk-flex-column">
-                  <img class="uk-margin-right" src="img/pic/ico/avatar-ico.svg" width="60" height="60" alt="">
-                  <span class="review__name">Женя</span>
-                  <p class="review__text">Покупал телефон подружке на день рождения, так что как он себя ведёт особо не
-                    знаю, но судя по всему всё красиво. Заказ оформили за считаные минуты, и доставка не заставила
-                    ждать,
-                    телефон привезли за 4 часа. При проверке телефон выглядел отлично, и IMEI сошёлся. Ну вроде не
-                    жалуется, так что телефон нормальный.</p>
-                  <span class="review__date">20 сентября 2019</span>
-                </li>
-              </ul>
-              //= components/pagination.html
-            </div>
 
-            <!-- right-section -->
-            <div class="uk-width-1-4@l uk-padding-left@s uk-padding-right@s">
-              <button type="button" class="btn reviews__btn-adds">Оставить отзыв</button>
-              <div class="product__reviews-container">
-                <!-- Swiper -->
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="uk-margin-small-bottom" uk-lightbox>
-                      <a href="https://www.youtube.com/watch?v=c2pz2mlSfXA" data-caption="YouTube">
-                        <img src="img/temp/review-1.jpg" width="300" height="300" alt="">
-                      </a>
-                    </div>
-                    <div class="uk-flex uk-flex-between uk-margin-small-bottom">
-                      <span>Валерий</span>
-                      <span>iPhone X</span>
-                    </div>
-                    <span>18 сентября 2019</span>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="uk-margin-small-bottom" uk-lightbox>
-                      <a href="https://www.youtube.com/watch?v=c2pz2mlSfXA" data-caption="YouTube">
-                        <img src="img/temp/review-2.jpg" width="300" height="300" alt="">
-                      </a>
-                    </div>
-                    <div class="uk-flex uk-flex-between uk-margin-small-bottom">
-                      <span>Максим</span>
-                      <span>iPhone XS</span>
-                    </div>
-                    <span>18 сентября 2019</span>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="uk-margin-small-bottom" uk-lightbox>
-                      <a href="https://www.youtube.com/watch?v=c2pz2mlSfXA" data-caption="YouTube">
-                        <img src="img/temp/review-3.jpg" width="300" height="300" alt="">
-                      </a>
-                    </div>
-                    <div class="uk-flex uk-flex-between uk-margin-small-bottom">
-                      <span>Карина</span>
-                      <span>iPhone XS Max</span>
-                    </div>
-                    <span>18 сентября 2019</span>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="uk-margin-small-bottom" uk-lightbox>
-                      <a href="https://www.youtube.com/watch?v=c2pz2mlSfXA" data-caption="YouTube">
-                        <img src="img/temp/review-3.jpg" width="300" height="300" alt="">
-                      </a>
-                    </div>
-                    <div class="uk-flex uk-flex-between uk-margin-small-bottom">
-                      <span>Валерий</span>
-                      <span>iPhone X</span>
-                    </div>
-                    <span>18 сентября 2019</span>
-                  </div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
     </ul>
   </div>
 

@@ -52,11 +52,24 @@
 
       p {
         &:first-of-type {
-          font: 600 18px/24px FuturaPT;
           color: rgba(48, 55, 61, .9);
+
+          @include screen(xl) {
+            font: 600 20px/24px FuturaPT;
+          }
+
+          @include screen(l) {
+            font: 600 18px/24px FuturaPT;
+          }
+        }
+
+        &:last-of-type {
+
+          @include screen(xl) {
+            font-size: 16px;
+          }
         }
       }
-
     }
   }
 
@@ -191,7 +204,6 @@
 
     .btn {
       padding: 18px 15px;
-      margin: 0 auto;
       font: 500 18px/21px FuturaPT;
       text-transform: uppercase;
 
@@ -200,6 +212,7 @@
       }
 
       @include screen(l) {
+        margin: 0 auto;
         max-width: 280px;
       }
 
@@ -210,6 +223,14 @@
         &:hover {
           background: rgb(103, 60, 221);
           box-shadow: 0px 4px 15px rgba(107, 72, 169, 0.7);
+        }
+      }
+    }
+
+    .title {
+      br {
+        @include screen(xl) {
+          display: none;
         }
       }
     }

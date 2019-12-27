@@ -354,13 +354,25 @@
 
       &:first-of-type {
         label {
-          border-radius: 10px 0 0 10px;
+          @include screen(xl) {
+            border-radius: 10px 10px 0 0;
+          }
+
+          @include screen(l) {
+            border-radius: 10px 0 0 10px;
+          }
         }
       }
 
       &:last-of-type {
         label {
-          border-radius: 0 10px 10px 0;
+          @include screen(xl) {
+            border-radius: 0 0 10px 10px;
+          }
+
+          @include screen(l) {
+            border-radius: 0 10px 10px 0;
+          }
         }
       }
     }
