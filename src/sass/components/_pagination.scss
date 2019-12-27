@@ -100,4 +100,28 @@
       }
     }
   }
+
+  &--is-loading {
+
+    .pagination__btn {
+      &--large {
+        svg {
+          animation-iteration-count: infinite;
+          animation-name: is-loading;
+          animation-duration: 1s;
+          animation-timing-function: linear;
+        }
+      }
+    }
+  }
+
+  @keyframes is-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }

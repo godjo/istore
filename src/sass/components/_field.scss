@@ -97,4 +97,24 @@
       }
     }
   }
+
+  &__message {
+    display: none;
+    color: #FF548C;
+  }
+
+  &__error {
+    .field__message {
+      display: block;
+    }
+
+    .field__title {
+      color: #FF548C;
+    }
+
+    input,
+    textarea {
+      border: 1px solid #FF548C !important;
+    }
+  }
 }

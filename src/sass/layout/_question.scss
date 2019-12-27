@@ -90,7 +90,7 @@
     }
 
     @include screen(l) {
-      align-self: flex-end;
+      align-self: flex-start;
     }
   }
 }
