@@ -24,7 +24,9 @@
   }
 
   .swiper-slide {
+    position: relative;
     text-align: center;
+    overflow: hidden;
 
     @include screen(xl) {
       padding: 25px 15px 0;
@@ -40,6 +42,8 @@
     }
 
     p {
+      position: relative;
+      z-index: 1;
       color: #ffffff;
 
       &:nth-of-type(1) {
@@ -65,47 +69,78 @@
     }
 
     &.slide-1 {
-      @include screen (xl) {
-        background: url("../img/pic/bg/main-banner-mobile.jpg") no-repeat, #000000;
-        background-position: bottom center;
-        background-size: contain;
-      }
+      background-color: #000000;
 
-      @include screen(l) {
-        background: url("../img/pic/bg/main-banner.jpg") no-repeat, #000000;
-        background-position: bottom center;
-        background-size: contain;
+      img {
+        @include screen(xl) {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 100%;
+          max-width: 400px;
+        }
+
+        @include screen(l) {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 600px;
+        }
       }
     }
 
     &.slide-2 {
-      @include screen (xl) {
-        background: url("../img/pic/bg/main-banner-2-mobile.jpg") no-repeat, #000000;
-        background-position: center 200px;
-        background-size: 230px 300px;
-      }
+      background-color: #000000;
 
-      @include screen(l) {
-        padding-top: 70px;
-        background: url("../img/pic/bg/main-banner-2.jpg") no-repeat;
-        background-color: #000000;
-        background-size: 430px 330px;
-        background-position: center 250px;
+      img {
+        @include screen(xl) {
+          position: absolute;
+          bottom: -20px;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 100%;
+          max-width: 300px;
+        }
+
+        @include screen(l) {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 400px;
+        }
       }
     }
 
     &.slide-3 {
-      @include screen (xl) {
-        background: url("../img/pic/bg/main-banner-3-mobile.jpg") no-repeat, #fafafa;
-        background-position: bottom center;
-        background-size: contain;
-      }
+      background-color: #fafafa;
 
-      @include screen(l) {
-        padding-top: 50px;
-        background: url("../img/pic/bg/main-banner-3.jpg") no-repeat, #fafafa;
-        background-size: cover;
-        background-position: bottom center;
+      img {
+        @include screen(xl) {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 100%;
+          max-width: 300px;
+        }
+
+        @include screen(l) {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 400px;
+        }
       }
 
       p {
@@ -114,17 +149,27 @@
     }
 
     &.slide-4 {
-      @include screen (xl) {
-        background: url("../img/pic/bg/main-banner-4-mobile.jpg") no-repeat, #fafafa;
-        background-position: bottom center;
-        background-size: contain;
-      }
+      background-color: #fafafa;
 
-      @include screen(l) {
-        padding-top: 50px;
-        background: url("../img/pic/bg/main-banner-4.jpg") no-repeat, #fafafa;
-        background-size: 1227px 564px;
-        background-position: center 30px;
+      img {
+        @include screen(xl) {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 100%;
+          max-width: 350px;
+        }
+
+        @include screen(l) {
+          position: absolute;
+          bottom: 20px;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 800px;
+        }
       }
 
       p {
@@ -133,16 +178,27 @@
     }
 
     &.slide-5 {
-      @include screen (xl) {
-        background: url("../img/pic/bg/main-banner-5-mobile.jpg") no-repeat, #fafafa;
-        background-position: bottom center;
-        background-size: contain;
-      }
+      background-color: #fafafa;
 
-      @include screen(l) {
-        background: url("../img/pic/bg/main-banner-5.jpg") no-repeat, #fafafa;
-        background-size: contain;
-        background-position: center bottom;
+      img {
+        @include screen(xl) {
+          position: absolute;
+          bottom: -25px;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 100%;
+          max-width: 350px;
+        }
+
+        @include screen(l) {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 1200px;
+        }
       }
 
       p {
@@ -151,6 +207,8 @@
     }
 
     .btn {
+      position: relative;
+      z-index: 1;
       margin: 15px auto;
       padding: 10px 15px;
       max-width: 150px;
