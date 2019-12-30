@@ -17,13 +17,50 @@
 
       @include screen(l) {
         padding: 15px 30px 10px;
-        background-image: url("../img/pic/bg/catalog-header.jpg");
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: contain;
         border: 1px solid #E7E7E7;
         box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05);
+        background-repeat: no-repeat;
         border-radius: 20px;
+      }
+
+      &--iphone {
+        @include screen(l) {
+          background-image: url("../img/pic/bg/catalog-header.jpg");
+          background-position: right;
+          background-size: contain;
+        }
+      }
+
+      &--ipad {
+        @include screen(l) {
+          background-image: url("../img/pic/bg/catalog-header-2.jpg");
+          background-position: right;
+          background-size: contain;
+        }
+      }
+
+      &--macbook {
+        @include screen(l) {
+          background-image: url("../img/pic/bg/catalog-header-3.jpg");
+          background-size: 980px 80px;
+          background-position: 600px 40px;
+        }
+      }
+
+      &--iwatch {
+        @include screen(l) {
+          background-image: url("../img/pic/bg/catalog-header-4.jpg");
+          background-position: right;
+          background-size: contain;
+        }
+      }
+
+      &--accessories {
+        @include screen(l) {
+          background-image: url("../img/pic/bg/catalog-header-5.jpg");
+          background-position: right;
+          background-size: contain;
+        }
       }
     }
 
