@@ -353,3 +353,62 @@ button {
 select {
   display: none;
 }
+
+.scroll-top {
+  position: fixed;
+  z-index: 1000;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #F8355E;
+  background-color: transparent;
+  opacity: 0;
+  visibility: hidden;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+
+  @include screen(xl) {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  @include screen(l) {
+    bottom: 30px;
+    left: 30px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 18px;
+    left: 14px;
+    background: url('../img/pic/ico/arrow.svg') no-repeat;
+    transform: rotate(-90deg);
+    width: 50px;
+    height: 50px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: #F8355E;
+
+    &::after {
+      background: url('../img/pic/ico/arrow-white.svg') no-repeat !important;
+    }
+  }
+
+  &:active {
+    background-color: #F8355E;
+
+    &::after {
+      background: url('../img/pic/ico/arrow-white.svg') no-repeat !important;
+    }
+  }
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
