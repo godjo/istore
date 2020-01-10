@@ -279,3 +279,16 @@ var swiperSeoReviews = new Swiper('.seo-msk__reviews-container', {
     },
   },
 });
+
+var swiperDescription = new Swiper('.description__swiper', {
+  autoHeight: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+$('body').on('click', '.product__description', function () {
+  var swiperProductReviews = $('body').find('.description__swiper')[0].swiper;
+  swiperProductReviews.update(true);
+});
