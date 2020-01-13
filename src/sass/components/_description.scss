@@ -557,4 +557,444 @@
       }
     }
   }
+
+  &--iphone11 {
+    background-color: #ffffff;
+
+    .description__section {
+      &:not(:last-of-type) {
+        border-bottom: 1px solid #E9E9E9;
+      }
+
+      p {
+        font: normal 16px/26px Roboto;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      &--1 {
+        @include screen(xl) {
+          padding: 30px 20px;
+        }
+
+        @include screen(l) {
+          padding: 50px;
+        }
+
+        div {
+          &:last-of-type {
+            @include screen(xl) {
+              margin-top: 30px;
+            }
+
+            @include screen(l) {
+              padding-left: 50px;
+            }
+          }
+        }
+
+        img {
+          max-width: 586px;
+          max-height: 503px;
+        }
+
+        span {
+          display: inline-block;
+          color: #333333;
+
+          &:first-of-type {
+            @include screen(xl) {
+              margin-bottom: 10px;
+              font: 600 48px/57px FuturaPT;
+            }
+
+            @include screen(l) {
+              margin-bottom: 20px;
+              font: 600 72px/57px FuturaPT;
+            }
+          }
+
+          &:last-of-type {
+            @include screen(xl) {
+              margin-bottom: 20px;
+              font: normal 32px/46px FuturaPT;
+            }
+
+            @include screen(l) {
+              margin-bottom: 30px;
+              text-transform: uppercase;
+              font: normal 42px/46px FuturaPT;
+            }
+          }
+        }
+      }
+
+      &--2 {
+        @include screen(xl) {
+          padding: 30px 0 0 20px;
+        }
+
+        @include screen(l) {
+          padding: 40px 0 0 80px;
+        }
+
+        div {
+          &:first-of-type {
+            @include screen(xl) {
+              padding-right: 20px;
+              margin-bottom: 30px;
+            }
+
+            @include screen(l) {
+              padding-right: 150px;
+            }
+          }
+        }
+
+        img {
+          display: block;
+          margin: auto 0 auto auto;
+          max-width: 587px;
+          max-height: 493px;
+        }
+
+        span {
+          display: inline-block;
+          color: #333333;
+
+          @include screen(xl) {
+            margin-bottom: 20px;
+            font: 600 24px/32px FuturaPT;
+          }
+
+          @include screen(l) {
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            font: 600 32px/44px FuturaPT;
+          }
+        }
+      }
+
+      &--3 {
+        @include screen(xl) {
+          padding: 40px 0 0;
+        }
+
+        @include screen(l) {
+          padding: 80px 50px 0;
+          text-align: center;
+        }
+
+        div {
+          &:first-of-type {
+            @include screen(xl) {
+              padding: 0 20px;
+            }
+
+            @include screen(l) {
+              padding: 0 220px;
+            }
+          }
+        }
+
+        img {
+          display: block;
+          margin: auto;
+          max-width: 1200px;
+          max-height: 478px;
+        }
+
+        span {
+          margin-bottom: 30px;
+          display: inline-block;
+          color: #333333;
+
+          @include screen(xl) {
+            font: 600 24px/32px FuturaPT;
+          }
+
+          @include screen(l) {
+            text-transform: uppercase;
+            font: 600 32px/44px FuturaPT;
+          }
+        }
+
+        p {
+          margin-bottom: 20px;
+        }
+      }
+
+      &--4 {
+        @include screen(xl) {
+          padding: 40px 0 0;
+        }
+
+        @include screen(l) {
+          text-align: center;
+          padding: 80px 30px 0;
+        }
+
+        div {
+          &:first-of-type {
+            @include screen(xl) {
+              padding: 0 20px;
+              margin-bottom: 30px;
+            }
+
+            @include screen(l) {
+              padding: 0 240px;
+            }
+          }
+        }
+
+        img {
+          padding-bottom: 40px;
+          display: block;
+          margin: auto;
+          max-width: 650px;
+          max-height: 400px;
+        }
+
+        span {
+          display: inline-block;
+          color: #333333;
+
+          @include screen(xl) {
+            margin-bottom: 20px;
+            font: 600 24px/32px FuturaPT;
+          }
+
+          @include screen(l) {
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            font: 600 32px/44px FuturaPT;
+          }
+        }
+
+        p {
+          margin-bottom: 20px;
+        }
+      }
+
+      &--5 {
+        @include screen(xl) {
+          padding: 40px 20px 0;
+        }
+
+        @include screen(l) {
+          padding: 0 180px 0 100px;
+        }
+
+        img {
+          display: block;
+          margin: auto;
+          max-width: 460px;
+          max-height: 529px;
+        }
+
+        span {
+          display: inline-block;
+          color: #333333;
+
+          @include screen(xl) {
+            margin-bottom: 20px;
+            font: 600 24px/32px FuturaPT;
+          }
+
+          @include screen(l) {
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            font: 600 32px/44px FuturaPT;
+          }
+        }
+      }
+
+      &--6 {
+        @include screen(xl) {
+          padding: 40px 0 0;
+        }
+
+        @include screen(l) {
+          padding: 80px 30px 0;
+          text-align: center;
+        }
+
+        div {
+          &:first-of-type {
+            @include screen(xl) {
+              padding: 0 20px;
+            }
+
+            @include screen(l) {
+              padding: 0 240px;
+            }
+          }
+        }
+
+        img {
+          display: block;
+          margin: auto;
+          max-width: 952px;
+          max-height: 464px;
+        }
+
+        span {
+          display: inline-block;
+          color: #333333;
+
+          @include screen(xl) {
+            margin-bottom: 20px;
+            font: 600 24px/32px FuturaPT;
+          }
+
+          @include screen(l) {
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            font: 600 32px/44px FuturaPT;
+          }
+        }
+
+        p {
+          margin-bottom: 20px;
+        }
+      }
+
+      &--7 {
+        background-color: #FAFAFA;
+
+        @include screen(xl) {
+          padding: 40px 20px 0;
+        }
+
+        @include screen(l) {
+          padding: 80px 70px 0 0;
+        }
+
+        div {
+          &:last-of-type {
+            @include screen(xl) {
+              margin-bottom: 30px;
+            }
+          }
+        }
+
+        img {
+          display: block;
+          max-width: 500px;
+          max-height: 430px;
+          mix-blend-mode: darken;
+
+          @include screen(xl) {
+            margin: auto;
+          }
+        }
+
+        span {
+          display: inline-block;
+          color: #333333;
+
+          @include screen(xl) {
+            margin-bottom: 20px;
+            font: 600 24px/32px FuturaPT;
+          }
+
+          @include screen(l) {
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            font: 600 32px/44px FuturaPT;
+          }
+        }
+      }
+
+      &--8 {
+        @include screen(xl) {
+          padding: 40px 20px 0;
+        }
+
+        @include screen(l) {
+          padding: 80px 30px 0;
+          text-align: center;
+        }
+
+        div {
+          &:first-of-type {
+            margin-bottom: 20px;
+
+            @include screen(l) {
+              padding: 0 240px;
+            }
+          }
+        }
+
+        img {
+          display: block;
+          max-width: 906px;
+          max-height: 395px;
+          margin: auto;
+        }
+
+        span {
+          display: inline-block;
+          color: #333333;
+
+          @include screen(xl) {
+            margin-bottom: 20px;
+            font: 600 24px/32px FuturaPT;
+          }
+
+          @include screen(l) {
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            font: 600 32px/44px FuturaPT;
+          }
+        }
+      }
+
+      &--9 {
+        @include screen(xl) {
+          padding: 40px 20px;
+        }
+
+        @include screen(l) {
+          padding: 50px;
+        }
+
+        div {
+          &:last-of-type {
+            display: flex;
+            justify-content: center;
+
+            @include screen(xl) {
+              margin-top: 30px;
+            }
+          }
+        }
+
+        img {
+          display: block;
+          max-width: 282px;
+          max-height: 385px;
+        }
+
+        span {
+          display: inline-block;
+          color: #333333;
+
+          @include screen(xl) {
+            margin-bottom: 20px;
+            font: 600 24px/32px FuturaPT;
+          }
+
+          @include screen(l) {
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            font: 600 32px/44px FuturaPT;
+          }
+        }
+      }
+    }
+  }
 }
