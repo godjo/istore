@@ -1083,4 +1083,32 @@
       }
     }
   }
+
+  &--video {
+    & .uk-modal-dialog {
+      width: auto;
+      
+      @include screen(l) {
+        max-height: 500px;
+      }
+    }
+
+    iframe {
+      @include screen(xl) {
+        width: 320px;
+        height: 200px;
+      }
+
+      @include screen(m) {
+        width: 700px;
+        height: 400px;
+      }
+
+      @include screen(l) {
+        max-width: 1110px;
+        max-height: 500px;
+        margin: auto;
+      }
+    }
+  }
 }

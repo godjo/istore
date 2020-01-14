@@ -52,4 +52,23 @@ $(document).ready(function () {
 	/* 	UIkit.util.on('#popupSearch', 'shown', function () {
 			$('#searchInputModal').attr('autofocus', '');
 		}); */
+
+	/* scroll top */
+
+	var btn = $('.scroll-top');
+
+	$(window).scroll(function () {
+		if ($(window).scrollTop() > 300) {
+			btn.addClass('show');
+		} else {
+			btn.removeClass('show');
+		}
+	});
+
+	btn.on('click', function (e) {
+		e.preventDefault();
+		$('html, body').animate({
+			scrollTop: 0
+		}, '300');
+	});
 });
