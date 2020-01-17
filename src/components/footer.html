@@ -707,18 +707,25 @@
       <p>Выберите куда хотите получить выплату</p>
     </div>
     <div class="popup__content">
-      <ul class="checkout__list-select uk-flex uk-flex-column@s uk-child-width-1-2@l uk-margin-bottom">
-        <li class="uk-flex uk-flex-center uk-flex-middle">
-          <div>
-            <img src="img/pic/ico/popup-cash.svg" width="50" height="48" alt="">
-          </div>
-          <span>На э-кошелек <br>Qiwi, Webmoney</span>
+      <ul class="checkout__list-select uk-flex uk-child-width-1-2@l uk-margin-bottom">
+        <li>
+          <input id="c1" class="uk-hidden" type="radio" name="c" checked>
+          <label class="uk-flex uk-flex-center@s uk-flex-middle uk-child-width-1-1@s uk-child-width-auto@l" for="c1">
+            <div class="uk-margin-right@l">
+              <img src="img/pic/ico/popup-cash.svg" width="50" height="45" alt="">
+            </div>
+            <span>На э-кошелек <br>Qiwi, Webmoney</span>
+          </label>
         </li>
-        <li class="active uk-flex uk-flex-center uk-flex-middle">
-          <div>
-            <img src="img/pic/ico/popup-card.svg" width="60" height="40" alt="">
-          </div>
-          <span>На карту <br>Visa, MC, Мир</span>
+
+        <li>
+          <input id="c2" class="uk-hidden" type="radio" name="c" checked>
+          <label class="uk-flex uk-flex-center@s uk-flex-middle uk-child-width-1-1@s uk-child-width-auto@l" for="c2">
+            <div class="uk-margin-right@l">
+              <img src="img/pic/ico/popup-card.svg" width="60" height="45" alt="">
+            </div>
+            <span>На карту <br>Visa, MC, Мир</span>
+          </label>
         </li>
       </ul>
       <div class="field field--account uk-margin-bottom">
@@ -869,8 +876,9 @@
 <!-- Land-video -->
 <div id="popup-video" class="uk-flex-top popup popup--video" uk-modal>
   <div class="uk-modal-dialog uk-margin-auto-vertical">
-    <iframe id="videoLand" width="1100" height="500" src="https://www.youtube-nocookie.com/embed/9m_K2Yg7wGQ" frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe id="videoLand" width="1100" height="500" src="https://www.youtube-nocookie.com/embed/9m_K2Yg7wGQ"
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
   </div>
 </div>
 

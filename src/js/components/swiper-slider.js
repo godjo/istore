@@ -163,7 +163,7 @@ var galleryTop = new Swiper('.gallery-top', {
 
 var swiperPopupMaps = new Swiper('.popup-maps__swiper-container', {
   direction: 'vertical',
-  slidesPerView: 5,
+  slidesPerView: 'auto',
   mousewheel: true,
   touchReleaseOnEdges: true,
   breakpoints: {

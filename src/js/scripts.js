@@ -4,7 +4,7 @@ $(document).ready(function () {
 	//= components/calc.js
 
 	/* Adds scroll for accordion on page Product */
-	UIkit.util.on('.accordion', 'shown', function () {
+	UIkit.util.on('.accordion--scroll', 'shown', function () {
 		var li_open = $(this).find('.uk-open');
 		var li_content = $(li_open).find('.uk-accordion-content');
 		var top_margin = $('.header__top').is(':visible') ? '52' : '63';

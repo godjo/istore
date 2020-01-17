@@ -814,6 +814,14 @@
       }
     }
 
+    .popup__header {
+      .title {
+        @include screen(l) {
+          padding: 0;
+        }
+      }
+    }
+
     .popup__footer {
       a {
         display: inline;
@@ -822,23 +830,6 @@
         border-bottom: 1px solid #FF548C;
         text-decoration: none;
         font: normal 12px/16px Roboto;
-      }
-    }
-
-    .checkout__list-select {
-      li {
-        padding: 20px;
-      }
-
-      span {
-        margin-left: 20px;
-        display: inline-block;
-        text-align: left;
-        font: 500 14px/18px Roboto;
-      }
-
-      img {
-        margin: 0;
       }
     }
   }
@@ -1087,7 +1078,7 @@
   &--video {
     & .uk-modal-dialog {
       width: auto;
-      
+
       @include screen(l) {
         max-height: 500px;
       }
