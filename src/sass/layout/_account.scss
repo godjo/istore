@@ -9,10 +9,12 @@
     }
   }
 
-  .title {
-    @include screen(l) {
-      padding: 30px 30px 0 30px;
-      margin-bottom: 25px;
+  .frame {
+    .title {
+      @include screen(l) {
+        padding: 30px 30px 0 30px;
+        margin-bottom: 25px;
+      }
     }
   }
 
