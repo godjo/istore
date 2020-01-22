@@ -233,12 +233,17 @@
 					font: 500 18px/28px FuturaPT;
 					color: #30373D;
 					transition: color .15s;
+
+					&:first-of-type {
+						font: 400 12px/10px FuturaPT;
+						color: rgb(140, 140, 141);
+					}
 				}
 
 				div {
 					margin-bottom: 10px;
-					width: 140px;
-					height: 140px;
+					width: 125px;
+					height: 125px;
 				}
 			}
 		}

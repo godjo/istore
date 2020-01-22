@@ -1117,7 +1117,22 @@
     }
 
     .btn {
-      max-width: 160px;
+      padding: 12px 15px 11px;
+      width: 100%;
+      max-width: 110px;
+      font: 600 15px/18px FuturaPT;
+      color: #6B6B6B;
+      text-transform: uppercase;
+      background: #DDDDDD;
+      border-radius: 8px;
+      transition: box-shadow .3s;
+      box-shadow: none;
+
+      &:hover {
+        background: #DDDDDD;
+        color: #6B6B6B;
+        box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+      }
     }
 
     .filter__memory {

@@ -465,6 +465,11 @@
         font: 400 18px/28px FuturaPT;
         color: #30373D;
         transition: color .15s;
+
+        &:first-of-type {
+          font: 400 12px/20px FuturaPT;
+          color: rgb(190, 190, 194);
+        }
       }
     }
   }

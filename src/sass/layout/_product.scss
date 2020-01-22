@@ -117,6 +117,10 @@
     @include screen(xl) {
       padding: 20px 20px 0;
     }
+
+    &-footer {
+      padding: 20px 160px 0 40px;
+    }
   }
 
   &__header {
@@ -698,6 +702,17 @@
       @include screen(xl) {
         margin-top: 0;
       }
+
+      @include screen(l) {
+        height: 250px;
+
+      }
+
+      &.active {
+        @include screen(l) {
+          height: 100%;
+        }
+      }
     }
 
     .accordion {
@@ -843,6 +858,38 @@
           box-shadow: 0px 6px 30px rgba(248, 53, 94, 0.4);
         }
       } */
+    }
+
+    &-see-all {
+      @include screen(xl) {
+        display: none;
+      }
+
+      @include screen(l) {
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+        z-index: 1;
+        color: #FF548C;
+        display: inline-block;
+        padding: 8px 15px 10px;
+        width: 100%;
+        max-width: 480px;
+        text-align: center;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        font: 600 16px/22px FuturaPT;
+        background: #fff;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: border-color .3s;
+      }
+
+      &:hover {
+        @include screen(l) {
+          border-color: #FF548C;
+        }
+      }
     }
   }
 
@@ -1071,6 +1118,21 @@
           font: normal 14px/22px Roboto;
           color: rgba(48, 55, 61, .5);
         }
+      }
+    }
+  }
+
+  &__was-sold {
+    span {
+      &:first-of-type {
+        text-transform: uppercase;
+        font: 500 12px/20px FuturaPT;
+        color: rgba(48, 55, 61, .5);
+      }
+
+      &:last-of-type {
+        font: 500 16px/21px FuturaPT;
+        color: #FF548C;
       }
     }
   }

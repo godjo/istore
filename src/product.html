@@ -79,8 +79,6 @@
                 <div class="swiper-pagination uk-hidden@l"></div>
               </div>
             </div>
-            <span class="product__points uk-visible@l" data-uk-toggle="#popupRegistration">+ 95 баллов на бонусный
-              счет</span>
           </div>
 
           <div class="product__frame">
@@ -174,6 +172,15 @@
             </div>
           </div>
         </div>
+
+        <div class="product__content-footer uk-flex uk-flex-between uk-visible@l">
+          <div class="product__was-sold uk-flex uk-flex-column">
+            <span>Было продано</span>
+            <span>543 устройства</span>
+          </div>
+          <span class="product__points uk-visible@l" data-uk-toggle="#popupRegistration">+ 95 баллов на бонусный
+            счет</span>
+        </div>
       </div>
 
       <div class="product__section">
@@ -239,7 +246,9 @@
       <li class="uk-open">
         <h2 class="uk-accordion-title product__faq-title">Часто задаваемые вопросы</h2>
 
-        <div class="uk-accordion-content uk-flex">
+        <div id="faq" class="uk-accordion-content uk-flex">
+          <button class="product__faq-see-all" data-uk-toggle="target: #faq; cls: active">Показать
+            все вопросы</button>
           <ul class="accordion uk-width-expand@s" uk-accordion="collapsible: true"
             uk-switcher="animation: uk-animation-fade; active: 12;">
             <li>
