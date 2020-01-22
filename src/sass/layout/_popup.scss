@@ -1102,4 +1102,28 @@
       }
     }
   }
+
+  &--filter {
+    .popup__content {
+      background: #F8F8F8;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07);
+    }
+
+    .popup__title {
+      margin-right: 20px;
+      display: block;
+      font: 500 28px/36px FuturaPT;
+      color: #30373D;
+    }
+
+    .btn {
+      max-width: 160px;
+    }
+
+    .filter__memory {
+      li {
+        margin: 0 5px 5px 0;
+      }
+    }
+  }
 }

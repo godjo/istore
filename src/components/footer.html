@@ -882,6 +882,142 @@
   </div>
 </div>
 
+<!-- filter -->
+<div id="popupFilter" class="popup popup--filter uk-flex-top" data-uk-modal>
+  <div class="popup__dialog popup__dialog--medium uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+    <div class="popup__content">
+      <div class="uk-flex uk-flex-between uk-flex-middle uk-child-width-1-2">
+        <span class="popup__title">Фильтр</span>
+        <button class="btn" data-uk-toggle="target: #popupFilter">Закрыть</button>
+      </div>
+
+      <div class="filter uk-margin-top">
+
+        <ul class="accordion" uk-accordion="multiple: true">
+          <li class="uk-margin-small-bottom">
+            <a class="uk-accordion-title" href="#">Модель</a>
+            <div class="uk-accordion-content">
+              <ul class="filter__checkbox">
+                <li>
+                  <input class="uk-hidden" type="checkbox" id="f1m" name="f1m" checked="">
+                  <label for="f1m">iPhone Xs <span>(9)</span></label>
+                </li>
+                <li>
+                  <input class="uk-hidden" type="checkbox" id="f2m" name="f2m">
+                  <label for="f2m">iPhone Xs Max <span>(19)</span></label>
+                </li>
+                <li>
+                  <input class="uk-hidden" type="checkbox" id="f3m" name="f3m">
+                  <label for="f3m">iPhone Xr <span>(36)</span></label>
+                </li>
+                <li>
+                  <input class="uk-hidden" type="checkbox" id="f4m" name="f4m">
+                  <label for="f4m">iPhone X <span>(14)</span></label>
+                </li>
+                <li>
+                  <input class="uk-hidden" type="checkbox" id="f5m" name="f5m">
+                  <label for="f5m">iPhone 8 <span>(10)</span></label>
+                </li>
+                <li>
+                  <input class="uk-hidden" type="checkbox" id="f6m" name="f6m">
+                  <label for="f6m">iPhone 8 <span>(10)</span></label>
+                </li>
+                <li>
+                  <input class="uk-hidden" type="checkbox" id="f7m" name="f7m">
+                  <label for="f7m">iPhone 8 <span>(10)</span></label>
+                </li>
+                <li>
+                  <input class="uk-hidden" type="checkbox" id="f8m" name="f8m">
+                  <label for="f8m">iPhone 8 <span>(10)</span></label>
+                </li>
+              </ul>
+              <button class="filter__btn-see-all uk-margin-top" type="button"
+                data-uk-toggle="target: - .filter__checkbox; cls: filter__checkbox-full">Показать
+                еще</button>
+            </div>
+          </li>
+
+          <li class="uk-margin-small-bottom">
+            <a class="uk-accordion-title" href="#">Объем памяти</a>
+            <div class="uk-accordion-content">
+              <ul class="filter__memory uk-flex uk-flex-wrap uk-flex-middle">
+                <li>
+                  <input class="uk-hidden" type="checkbox" id="m1m" name="m1m">
+                  <label for="m1m">64 Gb</label>
+                </li>
+                <li>
+                  <input class="uk-hidden" type="checkbox" id="m2m" name="m2m" checked="">
+                  <label for="m2m">256 Gb</label>
+                </li>
+                <li>
+                  <input class="uk-hidden" type="checkbox" id="m3m" name="m3m">
+                  <label for="m3m">512 Gb</label>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="uk-margin-small-bottom">
+            <a class="uk-accordion-title" href="#">Цвет</a>
+            <div class="uk-accordion-content">
+              <ul class="filter__colors uk-flex uk-flex-middle uk-child-width-1-6 uk-grid-small" data-uk-grid>
+                <li class="filter__color filter__color--black">
+                  <input class="uk-hidden" type="checkbox" id="c1m" name="c1m" checked="">
+                  <label for="c1"></label>
+                </li>
+                <li class="filter__color filter__color--orange">
+                  <input class="uk-hidden" type="checkbox" id="c2m" name="c2m">
+                  <label for="c2m"></label>
+                </li>
+                <li class="filter__color filter__color--violet">
+                  <input class="uk-hidden" type="checkbox" id="c3m" name="c3m">
+                  <label for="c3m"></label>
+                </li>
+                <li class="filter__color filter__color--white">
+                  <input class="uk-hidden" type="checkbox" id="c4m" name="c4m">
+                  <label for="c4m"></label>
+                </li>
+                <li class="filter__color filter__color--turquoise">
+                  <input class="uk-hidden" type="checkbox" id="c5m" name="c5m">
+                  <label for="c5m"></label>
+                </li>
+                <li class="filter__color filter__color--pearl">
+                  <input class="uk-hidden" type="checkbox" id="c6m" name="c6m">
+                  <label for="c6m"></label>
+                </li>
+                <li class="filter__color filter__color--gray">
+                  <input class="uk-hidden" type="checkbox" id="c7m" name="c7m">
+                  <label for="c7m"></label>
+                </li>
+                <li class="filter__color filter__color--blue">
+                  <input class="uk-hidden" type="checkbox" id="c8m" name="c8m">
+                  <label for="c8m"></label>
+                </li>
+                <li class="filter__color filter__color--green">
+                  <input class="uk-hidden" type="checkbox" id="c9m" name="c9m">
+                  <label for="c9m"></label>
+                </li>
+                <li class="filter__color filter__color--red">
+                  <input class="uk-hidden" type="checkbox" id="c10m" name="c10m">
+                  <label for="c10m"></label>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="uk-margin-small-bottom">
+            <a class="uk-accordion-title" href="#">Количество SIM</a>
+            <div class="uk-accordion-content">
+              123
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+
 <a class="scroll-top"></a>
 
 <script defer src="js/library.min.js"></script>

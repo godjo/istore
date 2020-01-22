@@ -11,19 +11,13 @@
     background-color: #ffffff;
 
     &::before {
-      @include screen(xl) {
-        display: none;
-      }
-
-      @include screen (l) {
-        width: 25px;
-        height: 25px;
-        background: url("../img/pic/ico/arrow-bottom-ico.svg") no-repeat, #E9E9E9;
-        background-size: 10px 7px;
-        background-position: center;
-        border-radius: 50%;
-        transition: transform .3s;
-      }
+      width: 25px;
+      height: 25px;
+      background: url("../img/pic/ico/arrow-bottom-ico.svg") no-repeat, #E9E9E9;
+      background-size: 10px 7px;
+      background-position: center;
+      border-radius: 50%;
+      transition: transform .3s;
     }
   }
 
