@@ -1,7 +1,7 @@
 //= components/head.html
 
 <body class="contacts">
-    //= components/header.html
+  //= components/header.html
   <div class="contacts__wrapper uk-container bg-full-width--gradient">
     <div class="frame">
       <ul class="breadcrumbs uk-subnav uk-subnav-divider">
@@ -37,65 +37,81 @@
             <div class="contacts__swiper-container">
               <ul class="swiper-wrapper">
                 <li class="swiper-slide active">
-                  <div class="contacts__info uk-flex uk-flex-column">
+                  <div class="contacts__info uk-flex uk-flex-column"
+                    onclick="$('#c1').select().focus(); document.execCommand('copy');$('#v1').show().hide(2200);">
+                    <span id="v1" class="contacts__info-text-copy">Скопировано</span>
                     <span class="contacts__info-title">Савеловская</span>
-                    <span class="contacts__info-address">Сущевский Вал 5 с 6,</span>
+                    <input id="c1" class="contacts__info-address" value="Сущевский Вал 5 с 6" readonly>
                     <span class="contacts__info-phone">0987654321</span>
                     <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
                   </div>
                 </li>
                 <li class="swiper-slide">
-                  <div class="contacts__info uk-flex uk-flex-column">
+                  <div class="contacts__info uk-flex uk-flex-column"
+                    onclick="$('#c2').select().focus(); document.execCommand('copy');$('#v2').show().hide(2200);">
+                    <span id="v2" class="contacts__info-text-copy">Скопировано</span>
                     <span class="contacts__info-title">Ломоновский проспект</span>
-                    <span class="contacts__info-address">ул. Мосфильмовская 31</span>
+                    <input id="c2" class="contacts__info-address" value="ул. Мосфильмовская 31" readonly>
                     <span class="contacts__info-phone">0987654321</span>
                     <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
                   </div>
                 </li>
                 <li class="swiper-slide">
-                  <div class="contacts__info uk-flex uk-flex-column">
-                    <span class="contacts__info-title">Озерная</span>
-                    <span class="contacts__info-address">ул. Озерная 38</span>
+                  <div class="contacts__info uk-flex uk-flex-column"
+                    onclick="$('#c3').select().focus(); document.execCommand('copy');$('#v3').show().hide(2200);">
+                    <span id="v3" class="contacts__info-text-copy">Скопировано</span>
+                    <span class="contacts__info-title">Ломоновский проспект</span>
+                    <input id="c3" class="contacts__info-address" value="ул. Озерная 38" readonly>
                     <span class="contacts__info-phone">0987654321</span>
                     <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
                   </div>
                 </li>
                 <li class="swiper-slide">
-                  <div class="contacts__info uk-flex uk-flex-column">
-                    <span class="contacts__info-title">Кузьминки</span>
-                    <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
+                  <div class="contacts__info uk-flex uk-flex-column"
+                    onclick="$('#c4').select().focus(); document.execCommand('copy');$('#v4').show().hide(2200);">
+                    <span id="v4" class="contacts__info-text-copy">Скопировано</span>
+                    <span class="contacts__info-title">Ломоновский проспект</span>
+                    <input id="c4" class="contacts__info-address" value="ул. Зеленодельская 121/35," readonly>
                     <span class="contacts__info-phone">0987654321</span>
                     <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
                   </div>
                 </li>
                 <li class="swiper-slide">
-                  <div class="contacts__info uk-flex uk-flex-column">
-                    <span class="contacts__info-title">Кузьминки</span>
-                    <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
+                  <div class="contacts__info uk-flex uk-flex-column"
+                    onclick="$('#c5').select().focus(); document.execCommand('copy');$('#v5').show().hide(2200);">
+                    <span id="v5" class="contacts__info-text-copy">Скопировано</span>
+                    <span class="contacts__info-title">Ломоновский проспект</span>
+                    <input id="c5" class="contacts__info-address" value="Ломоновский проспект 1" readonly>
                     <span class="contacts__info-phone">0987654321</span>
                     <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
                   </div>
                 </li>
                 <li class="swiper-slide">
-                  <div class="contacts__info uk-flex uk-flex-column">
-                    <span class="contacts__info-title">Кузьминки</span>
-                    <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
+                  <div class="contacts__info uk-flex uk-flex-column"
+                    onclick="$('#c6').select().focus(); document.execCommand('copy');$('#v6').show().hide(2200);">
+                    <span id="v6" class="contacts__info-text-copy">Скопировано</span>
+                    <span class="contacts__info-title">Ломоновский проспект</span>
+                    <input id="c6" class="contacts__info-address" value="Ломоновский проспект 2" readonly>
                     <span class="contacts__info-phone">0987654321</span>
                     <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
                   </div>
                 </li>
                 <li class="swiper-slide">
-                  <div class="contacts__info uk-flex uk-flex-column">
-                    <span class="contacts__info-title">Кузьминки</span>
-                    <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
+                  <div class="contacts__info uk-flex uk-flex-column"
+                    onclick="$('#c7').select().focus(); document.execCommand('copy');$('#v7').show().hide(2200);">
+                    <span id="v7" class="contacts__info-text-copy">Скопировано</span>
+                    <span class="contacts__info-title">Ломоновский проспект</span>
+                    <input id="c7" class="contacts__info-address" value="Ломоновский проспект 3" readonly>
                     <span class="contacts__info-phone">0987654321</span>
                     <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
                   </div>
                 </li>
                 <li class="swiper-slide">
-                  <div class="contacts__info uk-flex uk-flex-column">
-                    <span class="contacts__info-title">Кузьминки</span>
-                    <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
+                  <div class="contacts__info uk-flex uk-flex-column"
+                    onclick="$('#c8').select().focus(); document.execCommand('copy');$('#v8').show().hide(2200);">
+                    <span id="v8" class="contacts__info-text-copy">Скопировано</span>
+                    <span class="contacts__info-title">Ломоновский проспект</span>
+                    <input id="c8" class="contacts__info-address" value="Ломоновский проспект 4" readonly>
                     <span class="contacts__info-phone">0987654321</span>
                     <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
                   </div>
@@ -122,7 +138,7 @@
   </div>
 
 
-  //= components/question.html
+  //= components/subscribe.html
   //= components/footer.html
 </body>
 //= components/bottom.html

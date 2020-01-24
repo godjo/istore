@@ -297,4 +297,79 @@
       color: rgba(43, 45, 48, 0.7);
     }
   }
+
+  &__info {
+    position: relative;
+
+    &-text-copy {
+      position: absolute;
+      font: normal 12px/19px Roboto;
+      color: rgba(121, 123, 126, 0.9);
+      top: 0;
+      right: 15px;
+      display: none;
+    }
+
+    &--on-map {
+      @include screen(xl) {
+        position: absolute;
+        bottom: 25px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding: 20px;
+        width: 80%;
+        z-index: 1;
+        background: #ffffff;
+        border: 1px solid #E7E7E7;
+        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+      }
+
+      @include screen(l) {
+        display: none;
+      }
+    }
+
+    &-title {
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 25px;
+      font: 500 16px/19px Roboto;
+      color: #797C80;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 20px;
+        height: 20px;
+        background: url("../img/pic/ico/metro-ico.svg") no-repeat;
+      }
+    }
+
+    &-address {
+      position: relative;
+      margin-bottom: 10px;
+      display: block;
+      font: normal 16px/19px Roboto;
+      color: rgba(43, 45, 48, 0.9);
+      border: none;
+      background-color: transparent;
+    }
+
+    &-phone {
+      margin-bottom: 10px;
+      font: 500 18px/21px Roboto;
+      color: #2B2D30;
+    }
+
+    &-time {
+      font: normal 12px/20px Roboto;
+      color: rgba(43, 45, 48, 0.7);
+    }
+  }
 }
