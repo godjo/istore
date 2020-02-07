@@ -65,7 +65,6 @@
       var $selected_image = $select.find('option:selected').data('image') ? '<img src="' + $select.find('option:selected').data('image') + '"/ >' : '';
       var $selected_svg = $select.find('option:selected').data('svg-color') ? '<svg width="28" height="28" viewBox="0 0 28 28"><path fill-rule="evenodd" clip-rule="evenodd" d="M14 28C21.732 28 28 21.732 28 14C28 6.26801 21.732 0 14 0C6.26801 0 0 6.26801 0 14C0 21.732 6.26801 28 14 28Z" fill="' + $select.find('option:selected').data('svg-color') + '"/></svg>' : '';
 
-
       $dropdown.find('.current').html($selected.data('display') || $selected_image + $selected_svg + $selected.text());
 
       $options.each(function (i) {
@@ -76,9 +75,10 @@
 
         $dropdown.find('ul').append($('<li></li>')
           .attr('data-value', $option.val())
+          .attr('uk-filter-control', $option.val())
           .attr('data-display', (display || null))
-          .addClass('option' +
-            ($option.is(':selected') ? ' selected' : '') +
+          .addClass('option'  +
+            ($option.is(':selected') ? ' selected' +  ' uk-active' : '') +
             ($option.is(':disabled') ? ' disabled' : ''))
           .html(image + svg + $option.text())
         );
@@ -124,7 +124,7 @@
       var text = $option.data('display') || $option.html();
       var image = $option.find('img');
       var svg = $option.find('svg');
-      console.log(this);
+      //console.log(this);
 
       $dropdown.find('.current').html(text);
 
