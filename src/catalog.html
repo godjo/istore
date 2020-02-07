@@ -117,128 +117,136 @@
         <button class="catalog__btn uk-margin-bottom uk-visible@l" type="button"
           data-uk-toggle="target: #popupQuestion">Есть вопросы по модели?</button>
 
-        <div class="filter uk-margin-large-bottom@l">
+        <div id="popupFilter" class="popup popup--filter uk-flex-top" data-uk-modal>
+          <div class="popup__dialog popup__dialog--medium uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+            <div class="popup__content">
+              <div class="uk-hidden@l uk-flex uk-flex-between uk-flex-middle uk-child-width-1-2 uk-margin-small-bottom">
+                <span class="popup__title">Фильтр</span>
+                <button class="btn" data-uk-toggle="target: #popupFilter">Закрыть</button>
+              </div>
+              <div class="filter uk-margin-large-bottom@l">
+                <ul class="accordion" uk-accordion="multiple: true">
+                  <li class="uk-margin-small-bottom">
+                    <a class="uk-accordion-title" href="#">Модель</a>
+                    <div class="uk-accordion-content">
+                      <ul class="filter__checkbox">
+                        <li>
+                          <input class="uk-hidden" type="checkbox" id="f1" name="f1" checked="">
+                          <label for="f1">iPhone Xs <span>(9)</span></label>
+                        </li>
+                        <li>
+                          <input class="uk-hidden" type="checkbox" id="f2" name="f2">
+                          <label for="f2">iPhone Xs Max <span>(19)</span></label>
+                        </li>
+                        <li>
+                          <input class="uk-hidden" type="checkbox" id="f3" name="f3">
+                          <label for="f3">iPhone Xr <span>(36)</span></label>
+                        </li>
+                        <li>
+                          <input class="uk-hidden" type="checkbox" id="f4" name="f4">
+                          <label for="f4">iPhone X <span>(14)</span></label>
+                        </li>
+                        <li>
+                          <input class="uk-hidden" type="checkbox" id="f5" name="f5">
+                          <label for="f5">iPhone 8 <span>(10)</span></label>
+                        </li>
+                        <li>
+                          <input class="uk-hidden" type="checkbox" id="f6" name="f6">
+                          <label for="f6">iPhone 8 <span>(10)</span></label>
+                        </li>
+                        <li>
+                          <input class="uk-hidden" type="checkbox" id="f7" name="f7">
+                          <label for="f7">iPhone 8 <span>(10)</span></label>
+                        </li>
+                        <li>
+                          <input class="uk-hidden" type="checkbox" id="f8" name="f8">
+                          <label for="f8">iPhone 8 <span>(10)</span></label>
+                        </li>
+                      </ul>
+                      <button class="filter__btn-see-all uk-margin-top" type="button"
+                        data-uk-toggle="target: - .filter__checkbox; cls: filter__checkbox-full">Показать
+                        еще</button>
+                    </div>
+                  </li>
 
-          <ul class="accordion" uk-accordion="multiple: true">
-            <li class="uk-margin-small-bottom@l">
-              <a class="uk-accordion-title" href="#">Модель</a>
-              <div class="uk-accordion-content">
-                <ul class="filter__checkbox">
-                  <li>
-                    <input class="uk-hidden" type="checkbox" id="f1" name="f1" checked="">
-                    <label for="f1">iPhone Xs <span>(9)</span></label>
+                  <li class="uk-margin-small-bottom">
+                    <a class="uk-accordion-title" href="#">Объем памяти</a>
+                    <div class="uk-accordion-content">
+                      <ul class="filter__memory uk-flex uk-flex-between uk-flex-wrap uk-flex-middle">
+                        <li>
+                          <input class="uk-hidden" type="checkbox" id="m1" name="m1">
+                          <label for="m1">64 Gb</label>
+                        </li>
+                        <li>
+                          <input class="uk-hidden" type="checkbox" id="m2" name="m2" checked="">
+                          <label for="m2">256 Gb</label>
+                        </li>
+                        <li>
+                          <input class="uk-hidden" type="checkbox" id="m3" name="m3">
+                          <label for="m3">512 Gb</label>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
-                  <li>
-                    <input class="uk-hidden" type="checkbox" id="f2" name="f2">
-                    <label for="f2">iPhone Xs Max <span>(19)</span></label>
+
+                  <li class="uk-margin-small-bottom">
+                    <a class="uk-accordion-title" href="#">Цвет</a>
+                    <div class="uk-accordion-content">
+                      <ul class="filter__colors uk-flex uk-flex-middle uk-child-width-1-6 uk-grid-small" data-uk-grid>
+                        <li class="filter__color filter__color--black">
+                          <input class="uk-hidden" type="checkbox" id="c1" name="c1" checked="">
+                          <label for="c1"></label>
+                        </li>
+                        <li class="filter__color filter__color--orange">
+                          <input class="uk-hidden" type="checkbox" id="c2" name="c2">
+                          <label for="c2"></label>
+                        </li>
+                        <li class="filter__color filter__color--violet">
+                          <input class="uk-hidden" type="checkbox" id="c3" name="c3">
+                          <label for="c3"></label>
+                        </li>
+                        <li class="filter__color filter__color--white">
+                          <input class="uk-hidden" type="checkbox" id="c4" name="c4">
+                          <label for="c4"></label>
+                        </li>
+                        <li class="filter__color filter__color--turquoise">
+                          <input class="uk-hidden" type="checkbox" id="c5" name="c5">
+                          <label for="c5"></label>
+                        </li>
+                        <li class="filter__color filter__color--pearl">
+                          <input class="uk-hidden" type="checkbox" id="c6" name="c6">
+                          <label for="c6"></label>
+                        </li>
+                        <li class="filter__color filter__color--gray">
+                          <input class="uk-hidden" type="checkbox" id="c7" name="c7">
+                          <label for="c7"></label>
+                        </li>
+                        <li class="filter__color filter__color--blue">
+                          <input class="uk-hidden" type="checkbox" id="c8" name="c8">
+                          <label for="c8"></label>
+                        </li>
+                        <li class="filter__color filter__color--green">
+                          <input class="uk-hidden" type="checkbox" id="c9" name="c9">
+                          <label for="c9"></label>
+                        </li>
+                        <li class="filter__color filter__color--red">
+                          <input class="uk-hidden" type="checkbox" id="c10" name="c10">
+                          <label for="c10"></label>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
-                  <li>
-                    <input class="uk-hidden" type="checkbox" id="f3" name="f3">
-                    <label for="f3">iPhone Xr <span>(36)</span></label>
-                  </li>
-                  <li>
-                    <input class="uk-hidden" type="checkbox" id="f4" name="f4">
-                    <label for="f4">iPhone X <span>(14)</span></label>
-                  </li>
-                  <li>
-                    <input class="uk-hidden" type="checkbox" id="f5" name="f5">
-                    <label for="f5">iPhone 8 <span>(10)</span></label>
-                  </li>
-                  <li>
-                    <input class="uk-hidden" type="checkbox" id="f6" name="f6">
-                    <label for="f6">iPhone 8 <span>(10)</span></label>
-                  </li>
-                  <li>
-                    <input class="uk-hidden" type="checkbox" id="f7" name="f7">
-                    <label for="f7">iPhone 8 <span>(10)</span></label>
-                  </li>
-                  <li>
-                    <input class="uk-hidden" type="checkbox" id="f8" name="f8">
-                    <label for="f8">iPhone 8 <span>(10)</span></label>
+
+                  <li class="uk-margin-small-bottom">
+                    <a class="uk-accordion-title" href="#">Количество SIM</a>
+                    <div class="uk-accordion-content">
+                      123
+                    </div>
                   </li>
                 </ul>
-                <button class="filter__btn-see-all uk-margin-top" type="button"
-                  data-uk-toggle="target: - .filter__checkbox; cls: filter__checkbox-full">Показать
-                  еще</button>
               </div>
-            </li>
-
-            <li class="uk-margin-small-bottom@l">
-              <a class="uk-accordion-title" href="#">Объем памяти</a>
-              <div class="uk-accordion-content">
-                <ul class="filter__memory uk-flex uk-flex-between uk-flex-wrap uk-flex-middle">
-                  <li>
-                    <input class="uk-hidden" type="checkbox" id="m1" name="m1">
-                    <label for="m1">64 Gb</label>
-                  </li>
-                  <li>
-                    <input class="uk-hidden" type="checkbox" id="m2" name="m2" checked="">
-                    <label for="m2">256 Gb</label>
-                  </li>
-                  <li>
-                    <input class="uk-hidden" type="checkbox" id="m3" name="m3">
-                    <label for="m3">512 Gb</label>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="uk-margin-small-bottom@l">
-              <a class="uk-accordion-title" href="#">Цвет</a>
-              <div class="uk-accordion-content">
-                <ul class="filter__colors uk-flex uk-flex-middle uk-child-width-1-6 uk-grid-small" data-uk-grid>
-                  <li class="filter__color filter__color--black">
-                    <input class="uk-hidden" type="checkbox" id="c1" name="c1" checked="">
-                    <label for="c1"></label>
-                  </li>
-                  <li class="filter__color filter__color--orange">
-                    <input class="uk-hidden" type="checkbox" id="c2" name="c2">
-                    <label for="c2"></label>
-                  </li>
-                  <li class="filter__color filter__color--violet">
-                    <input class="uk-hidden" type="checkbox" id="c3" name="c3">
-                    <label for="c3"></label>
-                  </li>
-                  <li class="filter__color filter__color--white">
-                    <input class="uk-hidden" type="checkbox" id="c4" name="c4">
-                    <label for="c4"></label>
-                  </li>
-                  <li class="filter__color filter__color--turquoise">
-                    <input class="uk-hidden" type="checkbox" id="c5" name="c5">
-                    <label for="c5"></label>
-                  </li>
-                  <li class="filter__color filter__color--pearl">
-                    <input class="uk-hidden" type="checkbox" id="c6" name="c6">
-                    <label for="c6"></label>
-                  </li>
-                  <li class="filter__color filter__color--gray">
-                    <input class="uk-hidden" type="checkbox" id="c7" name="c7">
-                    <label for="c7"></label>
-                  </li>
-                  <li class="filter__color filter__color--blue">
-                    <input class="uk-hidden" type="checkbox" id="c8" name="c8">
-                    <label for="c8"></label>
-                  </li>
-                  <li class="filter__color filter__color--green">
-                    <input class="uk-hidden" type="checkbox" id="c9" name="c9">
-                    <label for="c9"></label>
-                  </li>
-                  <li class="filter__color filter__color--red">
-                    <input class="uk-hidden" type="checkbox" id="c10" name="c10">
-                    <label for="c10"></label>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="uk-margin-small-bottom@l">
-              <a class="uk-accordion-title" href="#">Количество SIM</a>
-              <div class="uk-accordion-content">
-                123
-              </div>
-            </li>
-          </ul>
-
+            </div>
+          </div>
         </div>
 
         <div class="catalog__features uk-visible@l">

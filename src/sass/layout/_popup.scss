@@ -1104,40 +1104,86 @@
   }
 
   &--filter {
+    @include screen(l) {
+      padding: 0 !important;
+
+      display: block !important;
+      position: relative !important;
+      top: inherit;
+      right: inherit;
+      bottom: inherit;
+      left: inherit;
+      z-index: 1 !important;
+      overflow-y: inherit !important;
+      background: none !important;
+      opacity: 1 !important;
+      transition: opacity .15s linear;
+    }
+
     .popup__content {
-      background: #F8F8F8;
-      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07);
+      @include screen(xl) {
+        background: #F8F8F8;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07);
+      }
+
+      @include screen(l) {
+        padding: 0 !important;
+        background-color: transparent;
+      }
+    }
+
+    .popup__dialog {
+      @include screen(l) {
+        margin: 0 auto;
+        width: 100% !important;
+        background: transparent !important;
+        opacity: 1 !important;
+        transform: none !important;
+        box-shadow: none;
+      }
     }
 
     .popup__title {
-      margin-right: 20px;
-      display: block;
-      font: 500 28px/36px FuturaPT;
-      color: #30373D;
+      @include screen(xl) {
+        margin-right: 20px;
+        display: block;
+        font: 500 28px/36px FuturaPT;
+        color: #30373D;
+      }
     }
 
     .btn {
-      padding: 12px 15px 11px;
-      width: 100%;
-      max-width: 110px;
-      font: 600 15px/18px FuturaPT;
-      color: #6B6B6B;
-      text-transform: uppercase;
-      background: #DDDDDD;
-      border-radius: 8px;
-      transition: box-shadow .3s;
-      box-shadow: none;
+      @include screen(xl) {
+        padding: 12px 15px 11px;
+        width: 100%;
+        max-width: 110px;
+        font: 600 15px/18px FuturaPT;
+        color: #6B6B6B;
+        text-transform: uppercase;
+        background: #DDDDDD;
+        border-radius: 8px;
+        transition: box-shadow .3s;
+        box-shadow: none;
+      }
+
+      @include screen(l) {
+        display: none;
+      }
 
       &:hover {
-        background: #DDDDDD;
-        color: #6B6B6B;
-        box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+        @include screen(xl) {
+          background: #DDDDDD;
+          color: #6B6B6B;
+          box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+        }
       }
     }
 
     .filter__memory {
       li {
-        margin: 0 5px 5px 0;
+        @include screen(xl) {
+          margin: 0 5px 5px 0;
+        }
       }
     }
   }
