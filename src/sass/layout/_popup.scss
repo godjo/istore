@@ -913,11 +913,38 @@
   }
 
   &--search {
-    .uk-modal-body {
+    @include screen(l) {
+      position: relative;
       padding: 0;
-      border-radius: 12px;
-      overflow: hidden;
+      display: block;
+      top: inherit;
+      right: inherit;
+      bottom: inherit;
+      left: inherit;
+      z-index: 1;
+      overflow: inherit;
       background: transparent;
+      opacity: 1;
+      transition: opacity .15s linear;
+    }
+
+    .uk-modal-body {
+      @include screen(xl) {
+        padding: 0;
+        border-radius: 12px;
+        overflow: hidden;
+        background: transparent;
+      }
+
+      @include screen(l) {
+        padding: 0;
+        margin: 0;
+        width: auto;
+        max-width: none;
+        background: transparent;
+        opacity: 1;
+        transform: none;
+      }
     }
 
     /* .search__clear {
@@ -941,74 +968,90 @@
     } */
 
     .popup__search-btn {
-      position: absolute;
-      right: 10px;
-      top: 0;
-      width: 40px;
-      height: 40px;
-      transition: opacity .3s;
-      z-index: 350;
-      pointer-events: none;
-      opacity: 0;
+      @include screen(xl) {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        transition: opacity .3s;
+        z-index: 350;
+        pointer-events: none;
+        opacity: 0;
+      }
 
       svg {
-        vertical-align: middle;
-        width: 25px;
-        height: 25px;
-        fill: #FF548C;
+        @include screen(xl) {
+          vertical-align: middle;
+          width: 25px;
+          height: 25px;
+          fill: #FF548C;
+        }
       }
     }
 
     input {
-      padding: 12px 150px 12px 20px;
-      border: 1px solid #DDDDDD;
-      border-radius: 12px;
-      background: url('../img/pic/ico/search.svg') 20px center no-repeat, #ffffff;
+      @include screen(xl) {
+        width: 100%;
+        padding: 12px 150px 12px 20px;
+        border: 1px solid #DDDDDD;
+        border-radius: 12px;
+        background: url('../img/pic/ico/search.svg') 20px center no-repeat, #ffffff;
+      }
 
       &:valid {
 
-        &~.popup__search-btn {
+        &~.search__close-wrap .search__close {
           transform: translate(100px);
           opacity: 0;
-          transition: opacity .3s, transform .3s;
+          transition: opacity .3s, transform .4s;
         }
       }
-
+  
       &:invalid {
-
-        &~.popup__search-btn {
+        background-position: 1000px;
+  
+        &~.search__close-wrap .search__close {
           transform: translate(0px);
           opacity: 1;
           pointer-events: inherit;
-          transition: opacity .3s, transform .3s;
+          transition: opacity .3s, transform .4s;
         }
       }
     }
 
     .popup__search__result {
-      z-index: 100;
-      margin-top: 5px;
-      width: 100%;
-      background: #FFFFFF;
-      border: 1px solid #E5E5E5;
-      box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-      overflow: hidden;
-      transition: opacity .3s;
+      @include screen(xl) {
+        z-index: 100;
+        margin-top: 5px;
+        width: 100%;
+        background: #FFFFFF;
+        border: 1px solid #E5E5E5;
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        transition: opacity .3s;
+      }
 
       a {
-        display: block;
-        padding: 17px 20px 15px;
-        color: #30373D;
+        @include screen(xl) {
+          display: block;
+          padding: 17px 20px 15px;
+          color: #30373D;
+        }
 
         &:not(:last-of-type) {
-          border-bottom: 1px solid #E6E6E6;
-          font: normal 16px/19px Roboto;
+          @include screen(xl) {
+            border-bottom: 1px solid #E6E6E6;
+            font: normal 16px/19px Roboto;
+          }
         }
 
         &:hover {
-          background: #2C0952;
-          color: rgba(255, 255, 255, .9);
+          @include screen (xl) {
+            background: #2C0952;
+            color: rgba(255, 255, 255, .9);
+          }
         }
       }
     }

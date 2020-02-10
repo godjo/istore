@@ -999,43 +999,61 @@
       </div>
 
       <div class="search uk-width-expand@l">
-        <input id="searchInput" class="uk-visible@l" type="text" placeholder="Поиск по каталогу" pattern=".{0}" value=""
-          autocomplete="new-password">
-
-        <div class="search__close-wrap uk-visible@l">
-          <button class="search__close" type="button">
-            <svg width="24" height="24">
-              <use xlink:href="img/symbol/sprite.svg#close" />
-            </svg>
-          </button>
-        </div>
-
         <button class="search__mobile uk-hidden@l" uk-toggle="target: #popupSearch">
           <svg width="24" height="24" fill="#393939">
             <use xlink:href="img/symbol/sprite.svg#header__search-mobile" />
           </svg>
         </button>
 
-        <ul class="search__result">
-          <li>
-            <a href="#">iphone xr 256</a>
-          </li>
-          <li>
-            <a href="#">iphone xr 64</a>
-          </li>
-          <li>
-            <a href="#">iphone xr Dual SIM</a>
-          </li>
-          <li>
-            <a href="#">iphone xr 128</a>
-          </li>
-          <li>
-            <a href="#">iphone xr чехол</a>
-          </li>
-        </ul>
+        <div id="popupSearch" class="popup popup--search" uk-modal>
+          <div class="uk-modal-dialog uk-modal-body">
+            <input id="searchInput" type="text" placeholder="Поиск по каталогу" pattern=".{0}"
+              value="" autocomplete="new-password">
 
-        <div class="backdrop" uk-toggle="target: body; cls: search--opened"></div>
+            <div class="search__close-wrap">
+              <button class="search__close" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="img/symbol/sprite.svg#close" />
+                </svg>
+              </button>
+            </div>
+
+            <ul class="search__result">
+              <li>
+                <a href="#">iphone xr 256</a>
+              </li>
+              <li>
+                <a href="#">iphone xr 64</a>
+              </li>
+              <li>
+                <a href="#">iphone xr Dual SIM</a>
+              </li>
+              <li>
+                <a href="#">iphone xr 128</a>
+              </li>
+              <li>
+                <a href="#">iphone xr чехол</a>
+              </li>
+            </ul>
+
+            <div class="backdrop uk-visible@l" uk-toggle="target: body; cls: search--opened"></div>
+          </div>
+        </div>
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <a class="header__contacts-mobile uk-hidden@l" href="tel:84991131908">
         <svg width="24" height="24">
@@ -1371,42 +1389,5 @@
       </ul>
     </div>
     <div class="header__city-backdrop"></div>
-  </div>
-</div>
-
-
-
-<!-- Search -->
-<div id="popupSearch" class="popup popup--search" uk-modal>
-  <div class="uk-modal-dialog uk-modal-body">
-    <input id="searchInputModal" class="uk-width-1-1" type="text" placeholder="Поиск" pattern=".{0}" value=""
-      autocomplete="off" autofocus />
-    <!-- <button class="search__clear" type="button">
-      <svg width="24" height="24">
-        <use xlink:href="img/symbol/sprite.svg#close" />
-      </svg>
-    </button> -->
-    <button class="popup__search-btn" type="button">
-      <svg width="24" height="24" fill="#FF548C">
-        <use xlink:href="img/symbol/sprite.svg#search" />
-      </svg>
-    </button>
-    <ul class="popup__search__result">
-      <li>
-        <a href="#">iphone xr 256</a>
-      </li>
-      <li>
-        <a href="#">iphone xr 64</a>
-      </li>
-      <li>
-        <a href="#">iphone xr Dual SIM</a>
-      </li>
-      <li>
-        <a href="#">iphone xr 128</a>
-      </li>
-      <li>
-        <a href="#">iphone xr чехол</a>
-      </li>
-    </ul>
   </div>
 </div>
