@@ -149,91 +149,73 @@
     }
   }
 
-  /* swiper */
-  &__swiper-container {
+  &__list {
     position: relative;
-    height: 600px;
-    overflow: hidden;
+    max-height: 600px;
+    overflow-y: scroll;
 
     @include screen(l) {
       max-width: 315px;
       border-top: 1px solid #E6E6E6;
       border-right: 1px solid #E6E6E6;
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    @include screen(xl) {
+      border-bottom: 1px solid #E6E6E6;
     }
 
-    .swiper-wrapper {
+    @include screen(l) {
+      border-top: 1px solid #E6E6E6;
+      border-right: 1px solid #E6E6E6;
+    }
+
+    &:first-of-type {
       @include screen(l) {
-        max-width: 300px;
-        flex-direction: column;
+        border-top: none;
       }
     }
 
-    li {
+    &.active {
+      @include screen(l) {
+        background-color: rgba(230, 230, 230, .3);
+      }
+
+      &::after {
+        @include screen (l) {
+          content: "";
+          position: absolute;
+          right: 20px;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 7px;
+          height: 15px;
+          background: url("../img/pic/ico/arrow.svg") no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+
+    div {
+      position: relative;
+      transition: background-color .3s;
+      cursor: pointer;
+
       @include screen(xl) {
-        border-bottom: 1px solid #E6E6E6;
+        padding: 10px 10px 10px 50px;
       }
 
       @include screen(l) {
-        border-top: 1px solid #E6E6E6;
-        border-right: 1px solid #E6E6E6;
+        padding: 12px 10px 10px 40px;
       }
 
-      &:first-of-type {
-        @include screen(l) {
-          border-top: none;
-        }
-      }
-
-      &.active {
-        @include screen(l) {
-          background-color: rgba(230, 230, 230, .3);
-        }
-
-        &::after {
-          @include screen (l) {
-            content: "";
-            position: absolute;
-            right: 20px;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            width: 7px;
-            height: 15px;
-            background: url("../img/pic/ico/arrow.svg") no-repeat;
-            background-size: contain;
-          }
-        }
-      }
-
-      div {
-        position: relative;
-        transition: background-color .3s;
-        cursor: pointer;
-
-        @include screen(xl) {
-          padding: 10px 10px 10px 50px;
-        }
-
-        @include screen(l) {
-          padding: 12px 10px 10px 40px;
-        }
-
-        &:hover {
-          background-color: rgba(230, 230, 230, .3);
-        }
-      }
-    }
-
-    .swiper-scrollbar {
-      position: absolute;
-      right: 4px !important;
-      left: auto !important;
-      background: transparent !important;
-      z-index: 1;
-
-      &-drag {
-        background: #D4D4D4 !important;
-        border-radius: 8px;
+      &:hover {
+        background-color: rgba(230, 230, 230, .3);
       }
     }
   }

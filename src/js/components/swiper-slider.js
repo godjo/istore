@@ -35,7 +35,7 @@ var swiperFeatures = new Swiper('.main-features__container', {
   },
 });
 
-var swiperContacts = new Swiper('.contacts__swiper-container', {
+/* var swiperContacts = new Swiper('.contacts__swiper-container', {
   direction: 'vertical',
   slidesPerView: 4,
   mousewheel: true,
@@ -45,7 +45,7 @@ var swiperContacts = new Swiper('.contacts__swiper-container', {
     hide: false,
   },
   touchReleaseOnEdges: true,
-});
+}); */
 
 var swiperReviews = new Swiper('.reviews__container', {
   threshold: 20,
