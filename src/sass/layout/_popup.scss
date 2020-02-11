@@ -478,7 +478,6 @@
       }
     }
 
-    /* swiper */
     .popup-maps__wrap {
       @include screen(xl) {
         background-color: #F4F4F4;
@@ -489,115 +488,100 @@
       }
     }
 
-    .popup-maps__swiper-container {
+    .popup-maps__list {
       position: relative;
-      overflow: hidden;
+      
+
+      @include screen(xl) {
+        display: flex;
+        overflow-x: scroll;
+      }
 
       @include screen(l) {
+        overflow-y: scroll;
+        width: 300px;
         height: 500px;
         border-top: 1px solid #E6E6E6;
         border-right: 1px solid #E6E6E6;
       }
+    }
 
-      .swiper-wrapper {
+    .popup-maps__item {
+      position: relative;
+      border-top: 1px solid #E6E6E6;
+
+      @include screen(xl) {
+        padding: 10px;
+        width: 100%;
+      }
+
+      @include screen(l) {
+        height: auto !important;
+      }
+
+      &.active {
         @include screen(l) {
-          width: 300px;
+          background-color: rgba(230, 230, 230, .3);
+        }
+
+        & div {
+          background-color: #ffffff;
+          border-color: transparent;
+        }
+
+        &::after {
+          @include screen (xl) {
+            content: "";
+            position: absolute;
+            right: 25px;
+            bottom: 20px;
+            width: 7px;
+            height: 15px;
+            background: url("../img/pic/ico/arrow.svg") no-repeat;
+            background-size: contain;
+            transform: rotate(90deg);
+          }
+
+          @include screen (l) {
+            content: "";
+            position: absolute;
+            right: 20px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 7px;
+            height: 15px;
+            background: url("../img/pic/ico/arrow.svg") no-repeat;
+            background-size: contain;
+          }
         }
       }
 
-      .swiper-slide {
+      &:first-of-type {
+        border-top: none;
+      }
+
+      div {
+        position: relative;
+        transition: background-color .3s;
+        cursor: pointer;
+
         @include screen(xl) {
-          padding: 10px;
-          width: auto;
+          padding: 20px 20px 15px 15px;
+          background-color: #F4F4F4;
+          /*  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05); */
+          border: 1px solid #E2E2E2;
+          border-radius: 8px;
         }
 
         @include screen(l) {
-          height: auto !important;
+          padding: 12px 35px 12px 40px;
         }
 
-        &-active {
+        &:hover {
           @include screen(l) {
             background-color: rgba(230, 230, 230, .3);
           }
-
-          & div {
-            background-color: #ffffff;
-            border-color: transparent;
-          }
-
-          &::after {
-            @include screen (xl) {
-              content: "";
-              position: absolute;
-              right: 25px;
-              bottom: 20px;
-              width: 7px;
-              height: 15px;
-              background: url("../img/pic/ico/arrow.svg") no-repeat;
-              background-size: contain;
-              transform: rotate(90deg);
-            }
-
-            @include screen (l) {
-              content: "";
-              position: absolute;
-              right: 20px;
-              top: 0;
-              bottom: 0;
-              margin: auto;
-              width: 7px;
-              height: 15px;
-              background: url("../img/pic/ico/arrow.svg") no-repeat;
-              background-size: contain;
-            }
-          }
-        }
-      }
-
-      li {
-        border-top: 1px solid #E6E6E6;
-
-        &:first-of-type {
-          border-top: none;
-        }
-
-
-
-        div {
-          position: relative;
-          transition: background-color .3s;
-          cursor: pointer;
-
-          @include screen(xl) {
-            padding: 20px 20px 15px 15px;
-            background-color: #F4F4F4;
-            /*  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05); */
-            border: 1px solid #E2E2E2;
-            border-radius: 8px;
-          }
-
-          @include screen(l) {
-            padding: 12px 35px 12px 40px;
-          }
-
-          &:hover {
-            @include screen(l) {
-              background-color: rgba(230, 230, 230, .3);
-            }
-          }
-        }
-      }
-
-      .swiper-scrollbar {
-        position: absolute;
-        right: 5px !important;
-        left: auto !important;
-        background: transparent !important;
-
-        &-drag {
-          background: #D4D4D4 !important;
-          border-radius: 8px;
-          ;
         }
       }
     }
@@ -609,6 +593,7 @@
         padding-left: 25px;
         font: 500 16px/19px Roboto;
         color: #797C80;
+        white-space: nowrap;
 
         &::before {
           content: "";
@@ -624,6 +609,7 @@
       }
 
       &-address {
+        white-space: nowrap;
         margin-bottom: 10px;
         font: normal 16px/19px Roboto;
         color: #2B2D30;
@@ -1007,10 +993,10 @@
           transition: opacity .3s, transform .4s;
         }
       }
-  
+
       &:invalid {
         background-position: 1000px;
-  
+
         &~.search__close-wrap .search__close {
           transform: translate(0px);
           opacity: 1;

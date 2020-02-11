@@ -161,7 +161,7 @@ var galleryTop = new Swiper('.gallery-top', {
   },
 });
 
-var swiperPopupMaps = new Swiper('.popup-maps__swiper-container', {
+/* var swiperPopupMaps = new Swiper('.popup-maps__swiper-container', {
   direction: 'vertical',
   slidesPerView: 'auto',
   mousewheel: true,
@@ -176,7 +176,7 @@ var swiperPopupMaps = new Swiper('.popup-maps__swiper-container', {
 });
 UIkit.util.on('#popupMaps', 'show', function () {
   swiperPopupMaps.update();
-})
+}) */
 
 var swiperProductReviews = new Swiper('.product__reviews-container', {
   direction: 'vertical',

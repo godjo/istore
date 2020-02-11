@@ -396,88 +396,120 @@
 
 <!-- Maps -->
 <div id="popupMaps" class="popup popup--maps uk-flex-top" data-uk-modal>
-  <div class="popup__dialog popup__dialog--large uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+  <div class="popup__dialog popup__dialog--large uk-modal-dialog uk-modal-body uk-margin-auto-vertical"
+    uk-filter="target: .map-filter">
     <svg class="popup__close uk-modal-close-default" width="30" height="30">
       <use xlink:href="img/symbol/sprite.svg#close" />
     </svg>
     <div class="popup__header">
       <h2 class="title title--small">Пункты самовывоза</h2>
       <select>
-        <option data-display="Санкт-Петербург">Санкт-Петербург</option>
-        <option value="1">Москва</option>
-        <option value="2">Псков</option>
+        <option value="filter: .map-spb" data-display="Санкт-Петербург">Санкт-Петербург</option>
+        <option value="filter: .map-moscow">Москва</option>
       </select>
     </div>
-    <div class="popup__content uk-flex uk-flex-column@s">
-      <div class="popup-maps__wrap">
-        <!-- Swiper -->
-        <div class="popup-maps__swiper-container">
-          <ul class="swiper-wrapper">
-            <li class="swiper-slide active">
-              <div class="contacts__info uk-flex uk-flex-column">
-                <span class="contacts__info-title">Савеловская</span>
-                <span class="contacts__info-address">Сущевский Вал 5 с 6,</span>
-                <span class="contacts__info-phone">0987654321</span>
-              </div>
-            </li>
-            <li class="swiper-slide">
-              <div class="contacts__info uk-flex uk-flex-column">
-                <span class="contacts__info-title">Ломоновский проспект</span>
-                <span class="contacts__info-address">ул. Мосфильмовская 31</span>
-                <span class="contacts__info-phone">0987654321</span>
-              </div>
-            </li>
-            <li class="swiper-slide">
-              <div class="contacts__info uk-flex uk-flex-column">
-                <span class="contacts__info-title">Озерная</span>
-                <span class="contacts__info-address">ул. Озерная 38</span>
-                <span class="contacts__info-phone">0987654321</span>
-              </div>
-            </li>
-            <li class="swiper-slide">
-              <div class="contacts__info uk-flex uk-flex-column">
-                <span class="contacts__info-title">Кузьминки</span>
-                <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
-                <span class="contacts__info-phone">0987654321</span>
-              </div>
-            </li>
-            <li class="swiper-slide">
-              <div class="contacts__info uk-flex uk-flex-column">
-                <span class="contacts__info-title">Кузьминки</span>
-                <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
-                <span class="contacts__info-phone">0987654321</span>
-              </div>
-            </li>
-            <li class="swiper-slide">
-              <div class="contacts__info uk-flex uk-flex-column">
-                <span class="contacts__info-title">Кузьминки</span>
-                <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
-                <span class="contacts__info-phone">0987654321</span>
-              </div>
-            </li>
-            <li class="swiper-slide">
-              <div class="contacts__info uk-flex uk-flex-column">
-                <span class="contacts__info-title">Кузьминки</span>
-                <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
-                <span class="contacts__info-phone">0987654321</span>
-              </div>
-            </li>
-            <li class="swiper-slide">
-              <div class="contacts__info uk-flex uk-flex-column">
-                <span class="contacts__info-title">Кузьминки</span>
-                <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
-                <span class="contacts__info-phone">0987654321</span>
-              </div>
-            </li>
-          </ul>
-          <!-- Add Scrollbar -->
-          <div class="swiper-scrollbar"></div>
+    <ul class="map-filter">
+      <li class="map-spb">
+        <div class="popup__content uk-flex uk-flex-column@s">
+          <div class="popup-maps__wrap">
+            <ul class="popup-maps__list">
+              <li class="popup-maps__item active">
+                <div class="contacts__info uk-flex uk-flex-column">
+                  <span class="contacts__info-title">Савеловская</span>
+                  <span class="contacts__info-address">Сущевский Вал 5 с 6,</span>
+                  <span class="contacts__info-phone">0987654321</span>
+                </div>
+              </li>
+              <li class="popup-maps__item">
+                <div class="contacts__info uk-flex uk-flex-column">
+                  <span class="contacts__info-title">Ломоновский проспект</span>
+                  <span class="contacts__info-address">ул. Мосфильмовская 31</span>
+                  <span class="contacts__info-phone">0987654321</span>
+                </div>
+              </li>
+              <li class="popup-maps__item">
+                <div class="contacts__info uk-flex uk-flex-column">
+                  <span class="contacts__info-title">Озерная</span>
+                  <span class="contacts__info-address">ул. Озерная 38</span>
+                  <span class="contacts__info-phone">0987654321</span>
+                </div>
+              </li>
+              <li class="popup-maps__item">
+                <div class="contacts__info uk-flex uk-flex-column">
+                  <span class="contacts__info-title">Кузьминки</span>
+                  <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
+                  <span class="contacts__info-phone">0987654321</span>
+                </div>
+              </li>
+              <li class="popup-maps__item">
+                <div class="contacts__info uk-flex uk-flex-column">
+                  <span class="contacts__info-title">Кузьминки</span>
+                  <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
+                  <span class="contacts__info-phone">0987654321</span>
+                </div>
+              </li>
+              <li class="popup-maps__item">
+                <div class="contacts__info uk-flex uk-flex-column">
+                  <span class="contacts__info-title">Кузьминки</span>
+                  <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
+                  <span class="contacts__info-phone">0987654321</span>
+                </div>
+              </li>
+              <li class="popup-maps__item">
+                <div class="contacts__info uk-flex uk-flex-column">
+                  <span class="contacts__info-title">Кузьминки</span>
+                  <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
+                  <span class="contacts__info-phone">0987654321</span>
+                </div>
+              </li>
+              <li class="popup-maps__item">
+                <div class="contacts__info uk-flex uk-flex-column">
+                  <span class="contacts__info-title">Кузьминки</span>
+                  <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
+                  <span class="contacts__info-phone">0987654321</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53787.65773638526!2d30.337858222679674!3d59.93387135736224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1562672617310!5m2!1sru!2sru"
+            width="640" height="500" style="border:0" allowfullscreen></iframe>
         </div>
-      </div>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53787.65773638526!2d30.337858222679674!3d59.93387135736224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1562672617310!5m2!1sru!2sru"
-        width="640" height="500" style="border:0" allowfullscreen></iframe>
-    </div>
+      </li>
+
+      <li class="map-moscow">
+        <div class="popup__content uk-flex uk-flex-column@s">
+          <div class="popup-maps__wrap">
+            <ul class="popup-maps__list">
+              <li class="popup-maps__item active">
+                <div class="contacts__info uk-flex uk-flex-column">
+                  <span class="contacts__info-title">Савеловская</span>
+                  <span class="contacts__info-address">Сущевский Вал 5 с 6,</span>
+                  <span class="contacts__info-phone">0987654321</span>
+                </div>
+              </li>
+              <li class="popup-maps__item">
+                <div class="contacts__info uk-flex uk-flex-column">
+                  <span class="contacts__info-title">Ломоновский проспект</span>
+                  <span class="contacts__info-address">ул. Мосфильмовская 31</span>
+                  <span class="contacts__info-phone">0987654321</span>
+                </div>
+              </li>
+              <li class="popup-maps__item">
+                <div class="contacts__info uk-flex uk-flex-column">
+                  <span class="contacts__info-title">Озерная</span>
+                  <span class="contacts__info-address">ул. Озерная 38</span>
+                  <span class="contacts__info-phone">0987654321</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d143693.11994706304!2d37.617188!3d55.754941!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1581413365319!5m2!1sru!2sru"
+            width="640" height="500" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+      </li>
+    </ul>
   </div>
 </div>
 
