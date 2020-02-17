@@ -11,10 +11,9 @@
 
 	&__close {
 		position: absolute;
-		top: 0;
+		top: 7px;
 		bottom: 0;
 		right: -20px;
-		margin: auto;
 		width: 100px;
 		transition: opacity .3s;
 		z-index: 110;

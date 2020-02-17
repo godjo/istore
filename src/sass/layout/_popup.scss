@@ -998,7 +998,7 @@
         background-position: 1000px;
 
         &~.search__close-wrap .search__close {
-          transform: translate(0px);
+          transform: translate(45px);
           opacity: 1;
           pointer-events: inherit;
           transition: opacity .3s, transform .4s;
