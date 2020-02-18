@@ -173,10 +173,11 @@
     img {
       @media (max-width: 374px) {
         width: 80px !important;
+        height: 13px;
       }
 
       @include screen(xl) {
-        width: 111px;
+        width: 120px;
       }
     }
   }
