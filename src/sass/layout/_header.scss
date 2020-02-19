@@ -294,11 +294,10 @@
       position: relative;
       z-index: 51;
       padding: 13px 25px 9px;
-      max-width: 230px;
-      min-width: 230px;
       box-shadow: 0px 4px 12px rgba(255, 84, 140, 0.4);
       border-radius: 8px;
       background-color: #FF548C;
+      white-space: nowrap;
       font: 500 15px/19px FuturaPT;
       color: #ffffff;
       text-transform: uppercase;
@@ -306,6 +305,7 @@
 
       @include screen(l) {
         margin-right: 10px;
+        min-width: 205.38px;
         max-width: 205.38px;
         max-height: 41px;
       }
