@@ -282,6 +282,8 @@
     }
 
     img {
+      width: auto;
+      height: 48px;
       mix-blend-mode: darken;
 
       @include screen(xl) {
