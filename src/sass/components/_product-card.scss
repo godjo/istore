@@ -126,7 +126,7 @@
       &__image {
         margin-right: 25px;
         padding: 0 5px;
-        width: 90px;
+        width: 105px;
         text-align: center;
         border-radius: 8px;
         background: #FFFFFF;
@@ -141,6 +141,8 @@
         display: -webkit-box;
         -webkit-box-orient: vertical;
         overflow: hidden;
+        width: 100%;
+        padding-right: 30px;
        /*  text-overflow: ellipsis; */
        /*  -webkit-line-clamp: 2; */
         max-height: 50px;

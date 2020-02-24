@@ -12,7 +12,7 @@ $(document).ready(function () {
 			setTimeout(function () {
 				$('html, body').animate({
 					scrollTop: li_open.offset().top - top_margin
-				}, 600);
+				}, 200);
 
 			}, 50);
 		}
@@ -23,9 +23,9 @@ $(document).ready(function () {
 		$('body').addClass('search--opened');
 	});
 
-	$("body").on('blur', '#searchInput', function () {
+	/* $("body").on('blur', '#searchInput', function () {
 		$('body').removeClass('search--opened');
-	});
+	}); */
 
 	/* clear val for search input */
 	$(document).ready(function () {
@@ -71,4 +71,8 @@ $(document).ready(function () {
 			scrollTop: 0
 		}, '300');
 	});
+
+	$('.product__link').on('click', function () {
+		$('.product__reviews a')[0].click();
+	})
 });
