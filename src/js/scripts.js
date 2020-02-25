@@ -2,6 +2,7 @@ $(document).ready(function () {
 	//= components/swiper-slider.js
 	//= components/select.js
 	//= components/calc.js
+	//= components/presents.js
 
 	/* Adds scroll for accordion on page Product */
 	UIkit.util.on('.accordion--scroll', 'shown', function () {

@@ -19,14 +19,17 @@
     div {
       position: relative;
       padding-bottom: 20px;
-      min-height: 431.641px;
-      max-height: 431.641px;
       text-align: center;
       box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.05);
       border-radius: 20px;
       background: #FFFFFF;
       overflow: hidden;
       color: #30373D;
+
+      @include screen(l) {
+        min-height: 431.641px;
+        max-height: 431.641px;
+      }
     }
 
     img {

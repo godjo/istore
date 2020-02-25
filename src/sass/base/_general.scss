@@ -430,6 +430,7 @@ select {
   list-style: none;
 }
 
-/* #mfilter-content-container {
-  display: flex;
-} */
+.text-danger,
+.alert-error {
+  color: #FF548C;
+}
