@@ -1,7 +1,7 @@
 .seo-features {
   text-align: center;
-  border-top: 1px solid #ECECEC;
-  border-bottom: 1px solid #ECECEC;
+  border-top: 1px solid $gray-12;
+  border-bottom: 1px solid $gray-12;
 
   @include screen(xl) {
     padding-top: 40px;
@@ -29,8 +29,8 @@
             width: 32px;
             height: 32px;
             border-radius: 50%;
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
-            background: url('../img/pic/ico/arrow-gray.svg') no-repeat, #ffffff;
+            box-shadow: 0px 4px 12px $black-opacity-12;
+            background: url('../img/pic/ico/arrow-gray.svg') no-repeat, $white;
             background-size: 10px 16px;
             background-position: center center;
           }

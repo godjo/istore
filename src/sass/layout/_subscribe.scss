@@ -1,7 +1,7 @@
 .subscribe {
-  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 2px 24px $black-opacity-05;
   border-radius: 20px;
-  background: #FFFFFF;
+  background: $white;
 
   @include screen(xl) {
     padding: 30px 15px 0;
@@ -27,7 +27,7 @@
 
   &__title {
     display: block;
-    color: #30373D;
+    color: $main-black-color;
 
     @include screen(xl) {
       margin-bottom: 10px;
@@ -43,7 +43,7 @@
   p {
     margin-bottom: 30px;
     font: normal 16px/26px Roboto;
-    color: rgba(48, 55, 61, 0.9);
+    color: $main-black-color-opacity-9;
 
     br {
       @include screen(xl) {

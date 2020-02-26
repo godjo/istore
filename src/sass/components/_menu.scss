@@ -3,7 +3,7 @@
 		top: 60px;
 		padding: 0;
 		background: #FFFFFF;
-		box-shadow: inset 2px 2px 5px rgba(0, 0, 0, .1);
+		box-shadow: inset 2px 2px 5px $black-opacity-1;
 		z-index: 300;
 		transition: opacity .05s linear;
 
@@ -18,37 +18,36 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		/* height: 100%; */
 		height: auto;
 	}
 
 	&__footer {
-		border-top: 1px solid rgba(216, 216, 216, .5);
-		border-bottom: 1px solid rgba(216, 216, 216, .5);
+		border-top: 1px solid $gray-10-opacity-5;
+		border-bottom: 1px solid $gray-10-opacity-5;
 	}
 
 	&__header {
-		border-bottom: 1px solid rgba(0, 0, 0, .1);
-		box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, .1);
+		border-bottom: 1px solid $black-opacity-1;
+		box-shadow: inset 0 2px 2px 0 $black-opacity-1;
 
 		button {
 			padding: 10px 15px 9px;
 			font: 500 16px/22px FuturaPT;
-			color: #FF548C;
+			color: $main-color;
 
 			&:first-of-type {
-				border-right: 1px solid rgba(0, 0, 0, .1);
+				border-right: 1px solid $black-opacity-1;
 			}
 
 			&:last-of-type {
-				color: #6344B6;
+				color: $second-color;
 			}
 		}
 	}
 
 	&__tabs {
-		border-bottom: 1px solid rgba(216, 216, 216, .5);
-		background-color: #F4F4F4;
+		border-bottom: 1px solid $gray-10-opacity-5;
+		background-color: $gray-light-4;
 
 		a {
 			position: relative;
@@ -56,7 +55,7 @@
 			padding: 20px 15px 16px;
 			text-align: center;
 			font: 500 16px/16px FuturaPT;
-			color: #333333;
+			color: $second-black-color;
 
 			&::after {
 				content: "";
@@ -75,11 +74,11 @@
 
 		.uk-active {
 			a {
-				color: #FF548C;
+				color: $main-color;
 
 				&::after {
 					width: 100%;
-					background-color: #FF548C;
+					background-color: $main-color;
 				}
 			}
 		}
@@ -93,7 +92,7 @@
 			display: block;
 			padding: 10px 15px;
 			font: 500 18px/24px FuturaPT;
-			color: #333333;
+			color: $second-black-color;
 		}
 	}
 
@@ -109,8 +108,8 @@
 			top: 0;
 			bottom: 0;
 			margin: auto;
-			border-bottom: 2px solid #f8355e;
-			border-right: 2px solid #f8355e;
+			border-bottom: 2px solid $main-dark-color;
+			border-right: 2px solid $main-dark-color;
 			height: 8px;
 			width: 8px;
 			transform: rotate(45deg);
@@ -118,10 +117,10 @@
 
 		span {
 			font: normal 14px/22px Roboto;
-			color: rgba(51, 51, 51, 0.5);
+			color: $second-black-color-opacity-5;
 
 			&:last-of-type {
-				color: #FF548C;
+				color: $main-color;
 			}
 		}
 	}
@@ -129,7 +128,7 @@
 	&__socials {
 		li {
 			height: auto;
-			border-left: 1px solid rgba(0, 0, 0, .1);
+			border-left: 1px solid $black-opacity-1;
 		}
 
 		a {
@@ -144,7 +143,7 @@
 	&__categories {
 		li:not(:last-of-type) {
 			.uk-accordion-title {
-				border-bottom: 1px solid rgba(216, 216, 216, .5);
+				border-bottom: 1px solid $gray-10-opacity-5;
 			}
 		}
 
@@ -152,7 +151,7 @@
 			position: relative;
 			padding: 15px;
 			font: 500 19px/24px FuturaPT;
-			color: #333333;
+			color: $second-black-color;
 
 			&::before {
 				content: "";
@@ -162,8 +161,8 @@
 				top: 0;
 				bottom: 0;
 				margin: auto;
-				border-bottom: 2px solid #f8355e;
-				border-right: 2px solid #f8355e;
+				border-bottom: 2px solid $main-dark-color;
+				border-right: 2px solid $main-dark-color;
 				height: 8px;
 				width: 8px;
 				transform: rotate(45deg);
@@ -181,8 +180,8 @@
 		.uk-accordion-content {
 			margin: 0;
 			padding: 20px 0;
-			border-bottom: 1px solid rgba(216, 216, 216, .5);
-			background-color: #F4F4F4;
+			border-bottom: 1px solid $gray-10-opacity-5;
+			background-color: $gray-light-4;
 		}
 
 		&-list {
@@ -193,7 +192,7 @@
 				max-height: 190px;
 				margin-right: 10px;
 				padding: 10px;
-				box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+				box-shadow: 0px 2px 6px $black-opacity-05;
 				border-radius: 8px;
 				background: #FFFFFF;
 			}
@@ -206,7 +205,7 @@
 				align-items: center;
 				text-align: center;
 				font: 500 14px/16px FuturaPT;
-				color: #30373D;
+				color: $main-black-color;
 			}
 		}
 
@@ -231,12 +230,12 @@
 
 				span {
 					font: 500 18px/28px FuturaPT;
-					color: #30373D;
+					color: $main-black-color;
 					transition: color .15s;
 
 					&:first-of-type {
 						font: 400 12px/10px FuturaPT;
-						color: rgb(140, 140, 141);
+						color: $gray-11;
 					}
 				}
 

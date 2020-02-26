@@ -2,13 +2,13 @@
   &__title {
     position: relative;
     padding-left: 20px;
-    color: #FF7914;
+    color: $orange;
 
     svg {
       position: absolute;
       top: 3px;
       left: 0;
-      fill: #FF7914;
+      fill: $orange;
     }
   }
 
@@ -64,13 +64,13 @@
 
     position: relative;
     padding-left: 20px;
-    color: #FF7914;
+    color: $orange;
 
     svg {
       position: absolute;
       top: 3px;
       left: 0;
-      fill: #FF7914;
+      fill: $orange;
     }
 
     .fileuploader-download:only-child & {

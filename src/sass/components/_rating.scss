@@ -29,7 +29,7 @@
     cursor: pointer;
     font-size: 20px;
     line-height: 1;
-    color: #dedede;
+    color: $gray;
   }
 
   &:not(:checked)>label:before {
@@ -37,12 +37,12 @@
   }
 
   &>input:checked~label {
-    color: #FF548C;
+    color: $main-color;
   }
 
   &:not(:checked)>label:hover,
   &:not(:checked)>label:hover~label {
-    color: #FF548C;
+    color: $main-color;
   }
 
   &>input:checked+label:hover,
@@ -50,6 +50,6 @@
   &>input:checked~label:hover,
   &>input:checked~label:hover~label,
   &>label:hover~input:checked~label {
-    color: #FF548C;
+    color: $main-color;
   }
 }

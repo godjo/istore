@@ -4,7 +4,7 @@
     margin-bottom: 10px;
     font: 600 16px/19px FuturaPT;
     text-transform: uppercase;
-    color: #30373D;
+    color: $main-black-color;
   }
 
   input {
@@ -13,22 +13,22 @@
     border-radius: 8px;
     border: 1px solid transparent;
     font: normal 15px/18px Roboto;
-    color: #30373D;
-    background: #F3F2F4;
+    color: $main-black-color;
+    background: $gray-light-2;
   }
 
   &--account {
     &__title {
       font: 600 12px/20px FuturaPT;
-      color: rgba(66, 92, 116, .8);
+      color: $gray-6-opacity-8;
     }
 
     input {
       padding: 15px;
-      background: #FFFFFF;
-      border: 1px solid #E9E9E9;
-      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
-      -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+      background: $white;
+      border: 1px solid $gray-7;
+      box-shadow: 0px 4px 12px $black-opacity-08;
+      -webkit-box-shadow: 0px 4px 12px $black-opacity-08;
       border-radius: 8px;
     }
 
@@ -36,27 +36,27 @@
       padding: 15px;
       width: 100%;
       max-height: 150px;
-      background: #FFFFFF;
+      background: $white;
       font: normal 15px/18px Roboto;
-      color: #30373D;
-      border: 1px solid #E9E9E9;
-      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
-      -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+      color: $main-black-color;
+      border: 1px solid $gray-7;
+      box-shadow: 0px 4px 12px $black-opacity-08;
+      -webkit-box-shadow: 0px 4px 12px $black-opacity-08;
       border-radius: 8px;
       resize: none;
     }
 
     .field__title {
       font: 500 14px/19px FuturaPT;
-      color: rgba(48, 55, 61, 0.6);
+      color: $gray-8-opacity-6;
     }
   }
 
   &--checkout {
     @include screen(l) {
-      border: 1px solid #E9E9E9;
-      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
-      -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+      border: 1px solid $gray-7;
+      box-shadow: 0px 4px 12px $black-opacity-08;
+      -webkit-box-shadow: 0px 4px 12px $black-opacity-08;
       border-radius: 6px;
       overflow: hidden;
     }
@@ -68,10 +68,10 @@
 
       @include screen(xl) {
         margin-bottom: 15px;
-        background: #FFFFFF;
-        border: 1px solid #E9E9E9;
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
-        -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+        background: $white;
+        border: 1px solid $gray-7;
+        box-shadow: 0px 4px 12px $black-opacity-08;
+        -webkit-box-shadow: 0px 4px 12px $black-opacity-08;
         border-radius: 6px;
       }
     }
@@ -79,12 +79,12 @@
     &>div {
       @include screen(l) {
         padding: 10px;
-        background: #FFFFFF;
+        background: $white;
       }
 
       .btn {
         font: 600 14px/16px FuturaPT;
-        color: #ffffff;
+        color: $white;
 
         @include screen(xl) {
           padding: 10px 15px 12px;
@@ -100,7 +100,7 @@
 
   &__message {
     display: none;
-    color: #FF548C;
+    color: $main-color;
   }
 
   &__error {
@@ -109,12 +109,12 @@
     }
 
     .field__title {
-      color: #FF548C;
+      color: $main-color;
     }
 
     input,
     textarea {
-      border: 1px solid #FF548C !important;
+      border: 1px solid $main-color !important;
     }
   }
 }

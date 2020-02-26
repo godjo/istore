@@ -1,12 +1,12 @@
 .article-list {
-  border: 1px solid #EAEAEA;
+  border: 1px solid $gray-3;
   border-radius: 15px;
-  background-color: #F8F8F8;
+  background-color: $gray-light;
   overflow: hidden;
 
   li {
     &:not(:last-of-type) {
-      border-bottom: 1px solid #EAEAEA;
+      border-bottom: 1px solid $gray-3;
     }
 
     a {
@@ -15,7 +15,7 @@
       transition: background-color .3s;
 
       &:hover {
-        background-color: darken(#F8F8F8, 5%);
+        background-color: darken($gray-light, 5%);
       }
     }
   }
@@ -23,11 +23,11 @@
   p {
     margin-bottom: 10px;
     font: 500 22px/26px FuturaPT;
-    color: #30373D;
+    color: $main-black-color;
   }
 
   span {
     font: normal 14px/22px Roboto;
-    color: rgba(48, 55, 61, .4);
+    color: $main-black-color-opacity-4;
   }
 }

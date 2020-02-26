@@ -22,7 +22,7 @@
 			vertical-align: middle;
 			width: 25px;
 			height: 25px;
-			fill: #FF548C;
+			fill: $main-color;
 		}
 
 		&-wrap {
@@ -41,13 +41,13 @@
 		width: 100%;
 		border-radius: 8px;
 		border: 1px solid transparent;
-		background: url("../img/pic/ico/search-ico.svg") no-repeat, rgba(239, 239, 240, .6);
+		background: url("../img/pic/ico/search-ico.svg") no-repeat, $gray-15-opacity-6;
 		background-size: 18px 18px;
 		background-position: 730px;
 
 		&::placeholder {
 			font: normal 15px/18px FuturaPT;
-			color: rgba(48, 55, 61, .6);
+			color: $gray-8-opacity-6;
 		}
 
 		&:valid {
@@ -84,9 +84,9 @@
 		position: absolute;
 		top: 44px;
 		width: 100%;
-		background: #FFFFFF;
-		border: 1px solid #E5E5E5;
-		box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+		background: $white;
+		border: 1px solid $gray-16;
+		box-shadow: 0px 4px 24px $black-opacity-1;
 		border-radius: 8px;
 		overflow: hidden;
 		transition: opacity .3s;
@@ -94,16 +94,16 @@
 		a {
 			display: block;
 			padding: 17px 20px 15px;
-			color: #30373D;
+			color: $main-black-color;
 
 			&:not(:last-of-type) {
-				border-bottom: 1px solid #E6E6E6;
+				border-bottom: 1px solid $gray-17;
 				font: normal 16px/19px Roboto;
 			}
 
 			&:hover {
-				background: #2C0952;
-				color: rgba(255, 255, 255, .9);
+				background: $third-color;
+				color: $white-opacity-9;
 			}
 		}
 	}

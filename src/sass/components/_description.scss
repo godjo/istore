@@ -314,7 +314,7 @@
 
         span {
           display: inline-block;
-          color: #FFCD00;
+          color: $yellow;
 
           @include screen(xl) {
             margin-bottom: 20px;
@@ -1212,12 +1212,6 @@
         }
 
         div {
-          &:first-of-type {
-            @include screen(xl) {
-              /* margin-bottom: 20px; */
-            }
-          }
-
           &:last-of-type {
             @include screen(l) {
               padding-left: 50px;
@@ -1528,7 +1522,7 @@
           }
 
           span {
-            color: rgb(39, 204, 0);
+            color: $green;
           }
         }
       }
