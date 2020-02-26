@@ -176,6 +176,13 @@
           padding: 20px 30px;
         }
 
+        .account__container-link {
+          @include screen(l) {
+            width: auto;
+            margin: 0 35px 0 0;
+          }
+        }
+
         &--cart {
           min-height: 220px;
           color: rgba(255, 255, 255, .7);
