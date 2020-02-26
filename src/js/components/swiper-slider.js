@@ -259,7 +259,7 @@ var swiperSeoReviews = new Swiper('.seo-msk__reviews-container', {
   slidesPerView: 3,
   spaceBetween: 15,
   autoplay: {
-    delay: 3000,
+    delay: 15000,
   },
   pagination: {
     el: '.swiper-pagination',
