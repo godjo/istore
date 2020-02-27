@@ -350,6 +350,10 @@
   &__price {
     margin-bottom: 10px;
 
+    @include screen(xl) {
+      padding-top: 20px;
+    }
+
     &-old {
       text-align: right;
       font: 600 18px/21px FuturaPT;
