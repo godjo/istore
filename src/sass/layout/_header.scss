@@ -3,8 +3,8 @@
   /* select city, links and login */
   &__top {
     font: 500 16px/24px FuturaPT;
-    background-color: rgb(248, 248, 248);
-    border-bottom: 1px solid rgba(233, 233, 233, 0.7);
+    background-color: $gray-light;
+    border-bottom: 1px solid $gray-7-opacity-7;
 
     @include screen(l) {
       padding-top: 7.5px;
@@ -14,7 +14,7 @@
     &-select-city {
       span {
         font: 400 13px/14px Roboto;
-        color: rgba(51, 51, 51, 0.45);
+        color: $second-black-color-opacity-45;
       }
 
       &>a {
@@ -38,10 +38,10 @@
     }
 
     a {
-      color: rgba(255, 84, 141, 0.9);
+      color: $main-color-2;
 
       &:hover {
-        color: #F8355E;
+        color: $main-dark-color;
       }
     }
 
@@ -59,7 +59,7 @@
           margin: auto;
           width: 1px;
           height: 20px;
-          background-color: rgba(0, 0, 0, .1);
+          background-color: $black-opacity-1;
         }
 
         &:first-of-type {
@@ -72,7 +72,7 @@
             margin: auto;
             width: 1px;
             height: 20px;
-            background-color: rgba(0, 0, 0, .1);
+            background-color: $black-opacity-1;
           }
 
           a {
@@ -92,10 +92,10 @@
 
         &:last-of-type {
           a {
-            color: #6344B6;
+            color: $second-color;
 
             &:hover {
-              color: #2C0952;
+              color: $third-color;
             }
           }
         }
@@ -124,26 +124,26 @@
   &__dropdown {
     min-width: 260px;
     padding: 5px;
-    background: #FFFFFF;
-    border: 1px solid #E9E9E9;
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+    background: $white;
+    border: 1px solid $gray-7;
+    box-shadow: 0px 6px 20px $black-opacity-08;
     border-radius: 12px;
 
     input {
       margin-bottom: 15px;
       padding: 10px 20px;
       width: 100%;
-      background: #EFEFF0;
+      background: $gray-15;
       border-radius: 8px;
       font: normal 15px/19px FuturaPT;
-      color: #30373D;
+      color: $main-black-color;
       border: none;
     }
 
     a {
       padding: 10px;
       font: normal 15px/19px FuturaPT;
-      color: #30373D;
+      color: $main-black-color;
     }
 
     li {
@@ -151,7 +151,7 @@
 
       &.active {
         a {
-          color: #FF548C;
+          color: $main-color;
         }
       }
     }
@@ -190,11 +190,11 @@
     a {
       border-bottom: 1px solid transparent;
       font: normal 16px/22px FuturaPT;
-      color: #30373d;
+      color: $main-black-color;
       transition: border .3s;
 
       &:hover {
-        border-color: #30373d;
+        border-color: $main-black-color;
       }
     }
   }
@@ -204,7 +204,7 @@
     white-space: nowrap;
 
     span {
-      color: rgba(51, 51, 51, .4);
+      color: $second-black-color-opacity-4;
 
       @include screen(xl) {
         display: none;
@@ -218,7 +218,7 @@
           padding-right: 20px;
           margin-right: 20px;
           text-align: right;
-          color: rgba(51, 51, 51, .4);
+          color: $second-black-color-opacity-4;
         }
 
         &:after {
@@ -230,7 +230,7 @@
           margin: auto;
           width: 1px;
           height: 40px;
-          background-color: #E9E9E9;
+          background-color: $gray-7;
         }
       }
 
@@ -250,7 +250,7 @@
       position: relative;
       margin-bottom: 5px;
       font: 500 20px/23px FuturaPT;
-      color: rgba(51, 51, 51, 1);
+      color: $second-black-color;
 
       svg {
         transition: transform .3s;
@@ -281,7 +281,7 @@
       top: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, .7);
+      background: $black-opacity-7;
       z-index: 49;
       transition: opacity .15;
       opacity: 0;
@@ -294,12 +294,12 @@
       position: relative;
       z-index: 51;
       padding: 13px 25px 9px;
-      box-shadow: 0px 4px 12px rgba(255, 84, 140, 0.4);
+      box-shadow: 0px 4px 12px $main-color-opacity-4;
       border-radius: 8px;
-      background-color: #FF548C;
+      background-color: $main-color;
       white-space: nowrap;
       font: 500 15px/19px FuturaPT;
-      color: #ffffff;
+      color: $white;
       text-transform: uppercase;
       transition: box-shadow .3s, background-color.3s;
 
@@ -311,8 +311,8 @@
       }
 
       &:hover {
-        background: #F8355E;
-        box-shadow: 0px 6px 30px rgba(248, 53, 94, 0.4);
+        background: $main-dark-color;
+        box-shadow: 0px 6px 30px $main-dark-color-opacity-4;
       }
 
       svg {
@@ -334,7 +334,7 @@
       width: 1250px;
       border-radius: 20px;
       z-index: 50;
-      background: #F8F8F8;
+      background: $gray-light;
       overflow: hidden;
     }
 
@@ -356,14 +356,14 @@
       width: 100%;
       max-width: 110px;
       font: 600 15px/18px FuturaPT;
-      color: #6B6B6B;
+      color: $gray-21;
       text-transform: uppercase;
-      background: #DDDDDD;
+      background: $gray-22;
       border-radius: 8px;
       transition: box-shadow .3s;
 
       &:hover {
-        box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+        box-shadow: inset 2px 2px 5px $gray-23-opacity-5, 1px 1px 5px $white;
       }
     }
 
@@ -376,19 +376,19 @@
       border-radius: 8px;
       font: 500 16px/22px FuturaPT;
       cursor: pointer;
-      background: #6344b6;
-      box-shadow: 0 4px 12px rgba(107, 72, 169, .4);
+      background: $second-color;
+      box-shadow: 0 4px 12px $second-color-opacity-4;
 
       &:hover {
-        background: rgb(103, 60, 221);
-        box-shadow: 0px 4px 15px rgba(107, 72, 169, 0.7);
+        background: $second-dark-color;
+        box-shadow: 0px 4px 15px $second-color-opacity-7;
       }
     }
 
     &-tabs {
       padding-left: 20px;
       margin: 0;
-      border-bottom: 1px solid rgba(216, 216, 216, .5);
+      border-bottom: 1px solid $gray-10-opacity-5;
 
       li {
         &:not(:last-of-type) {
@@ -400,11 +400,11 @@
 
       &.uk-subnav-pill>.uk-active>a {
         background-color: transparent !important;
-        color: #FF548C;
+        color: $main-color;
 
         &::after {
           width: 100%;
-          background: #FF548C;
+          background: $main-color;
         }
       }
 
@@ -412,7 +412,7 @@
         position: relative;
         padding: 5px 25px 10px;
         background: transparent;
-        color: #333333;
+        color: $second-black-color;
         font: 500 20px/28px FuturaPT;
         text-transform: inherit;
 
@@ -434,7 +434,7 @@
 
     &-content {
       padding: 15px 15px 20px;
-      background: #FFFFFF;
+      background: $white;
     }
 
     &-list {
@@ -452,10 +452,10 @@
         transition: box-shadow .15s;
 
         &:hover {
-          box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 24px $black-opacity-1;
 
           span {
-            color: #FF548C;
+            color: $main-color;
           }
         }
       }
@@ -475,12 +475,12 @@
 
       span {
         font: 400 18px/28px FuturaPT;
-        color: #30373D;
+        color: $main-black-color;
         transition: color .15s;
 
         &:first-of-type {
           font: 400 12px/20px FuturaPT;
-          color: rgb(190, 190, 194);
+          color: $gray-24;
         }
 
         &:last-of-type {
@@ -498,7 +498,7 @@
   &__bottom {
     @include screen(xl) {
       padding: 15px 0 15px 5px;
-      background: rgb(248, 248, 248);
+      background: $gray-light;
     }
 
     @include screen(l) {
@@ -529,9 +529,9 @@
           max-height: 100px;
           margin-right: 10px;
           padding: 10px;
-          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 6px $black-opacity-05;
           border-radius: 8px;
-          background: #FFFFFF;
+          background: $white;
         }
 
         @include screen(l) {
@@ -549,7 +549,7 @@
               margin: auto;
               width: 1px;
               height: 50px;
-              background-color: rgba(0, 0, 0, .1);
+              background-color: $black-opacity-1;
             }
           }
         }
@@ -562,12 +562,12 @@
           }
 
           &>a {
-            color: #FF548C;
+            color: $main-color;
           }
         }
 
         &>a {
-          color: #30373D;
+          color: $main-black-color;
 
           @include screen(xl) {
             margin: 0 auto;
@@ -619,10 +619,10 @@
       overflow-x: hidden;
       padding: 10px 25px 10px 10px;
       border-radius: 15px;
-      border: 1px solid #EAEAEA;
+      border: 1px solid $gray-3;
       opacity: 0;
       pointer-events: none;
-      background: #F8F8F8;
+      background: $gray-light;
       transition: opacity .2s;
     }
 
@@ -652,15 +652,15 @@
       @include screen(l) {
         padding: 10px 30px !important;
         font: 500 16px/23px FuturaPT;
-        color: #30373D;
+        color: $main-black-color;
       }
 
       &:hover {
         @include screen(l) {
-          background: #FFFFFF;
-          box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+          background: $white;
+          box-shadow: 0px 4px 24px $black-opacity-1;
           border-radius: 12px;
-          color: #FF548C;
+          color: $main-color;
 
           img {
             @include screen(l) {
@@ -700,14 +700,14 @@
     padding: 15px 25px 15px 105px;
     width: 305px;
     text-align: right;
-    background-color: #F4F4F4;
+    background-color: $gray-light-4;
     border-radius: 8px;
     overflow: hidden;
     cursor: pointer;
     transition: box-shadow .3s;
 
     &:hover {
-      box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
+      box-shadow: 0 3px 15px $black-opacity-2;
     }
 
     img {
@@ -725,14 +725,14 @@
         white-space: nowrap;
         font: 400 11px/13px Roboto;
         text-transform: uppercase;
-        color: #FF548C;
+        color: $main-color;
         text-align: center;
       }
 
       &:last-of-type {
         white-space: nowrap;
         font: 700 20px/23px Roboto;
-        color: #30373D;
+        color: $main-black-color;
       }
     }
   }
@@ -745,14 +745,14 @@
     &.uk-active {
       @include screen(l) {
         padding: 5px 0;
-        background: #ffffff;
+        background: $white;
       }
     }
 
     &-mobile {
       @include screen(xl) {
         padding: 5px;
-        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 1px 4px $black-opacity-1;
       }
     }
   }
@@ -767,8 +767,8 @@
       width: 50px;
       height: 50px;
       border-radius: 8px;
-      box-shadow: 0px 2px 8px rgba(255, 84, 140, 0.4);
-      background: #FF548C;
+      box-shadow: 0px 2px 8px $main-color-opacity-4;
+      background: $main-color;
 
       span {
         display: block;
@@ -780,7 +780,7 @@
         margin: auto;
         height: 4px;
         width: 60%;
-        background: white;
+        background: $white;
         border-radius: 10px;
         transition: transform .5s, opacity .05s;
 
@@ -793,7 +793,7 @@
           margin: auto;
           height: 4px;
           width: 100%;
-          background: white;
+          background: $white;
           border-radius: 10px;
         }
 
@@ -806,7 +806,7 @@
           margin: auto;
           height: 4px;
           width: 100%;
-          background: white;
+          background: $white;
           border-radius: 10px;
         }
       }
@@ -826,21 +826,6 @@
         }
       }
     }
-
-    /*  .uk-offcanvas {
-      top: 61px;
-    }
-
-    .uk-offcanvas-bar {
-      width: 100%;
-      transform: none !important;
-      left: 0;
-      overflow-x: hidden;
-    }
-
-    .menu.uk-open>.uk-offcanvas-bar {
-      transform: none !important;
-    } */
   }
 
   &__city {
@@ -854,8 +839,8 @@
       padding: 25px;
       position: fixed;
       z-index: 1000;
-      background: #FFFFFF;
-      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+      background: $white;
+      box-shadow: 0px 5px 20px $black-opacity-15;
       border-radius: 20px;
       z-index: 1000;
 
@@ -891,10 +876,10 @@
 
         &:last-of-type {
           .btn {
-            background-color: rgb(187, 187, 187);
+            background-color: $gray-25;
 
             &:hover {
-              box-shadow: 0px 6px 30px rgba(216, 216, 216, .5);
+              box-shadow: 0px 6px 30px $gray-10-opacity-5;
             }
           }
         }
@@ -907,7 +892,7 @@
     }
 
     &-backdrop {
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: $black-opacity-8;
       position: fixed;
       top: 0;
       left: 0;

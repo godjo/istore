@@ -46,17 +46,17 @@
         margin-bottom: 85px;
         margin-top: 30px;
         max-width: 270px;
-        color: #FF548C;
-        background-color: #ffffff;
-        border: 1px solid rgba(236, 236, 236, .7);
+        color: $main-color;
+        background-color: $white;
+        border: 1px solid $gray-12-opacity-7;
         transition: border .3s, background-color .3s, box-shadow .3s, color .15s;
         overflow: hidden;
 
         &:hover {
-          background-color: #FF548C;
-          color: #ffffff;
-          border-color: #FF548C;
-          box-shadow: 0px 6px 30px rgba(248, 53, 94, 0.4);
+          background-color: $main-color;
+          color: $white;
+          border-color: $main-color;
+          box-shadow: 0px 6px 30px $main-dark-color-opacity-4;
         }
       }
     }
@@ -67,8 +67,8 @@
         padding: 20px 5px 15px;
         width: 100%;
         overflow-x: scroll;
-        background: #f7f7f7;
-        border-bottom: 1px solid rgba(234, 234, 234, .8);
+        background: $gray-light;
+        border-bottom: 1px solid $gray-3-opacity-8;
       }
 
       div:first-of-type {
@@ -83,8 +83,8 @@
 
       li {
         @include screen(xl) {
-          background: #FFFFFF;
-          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+          background: $white;
+          box-shadow: 0px 2px 6px $black-opacity-05;
           border-radius: 8px;
           min-width: 276px;
           padding: 15px;
@@ -160,7 +160,7 @@
     display: inline-block;
     font: normal 13px/15px Roboto;
     text-decoration: underline;
-    color: #FF548C;
+    color: $main-color;
   }
 
   &__status {
@@ -169,20 +169,20 @@
     text-transform: uppercase;
 
     &--preorder {
-      color: #0095FF;
+      color: $blue;
     }
   }
 
   &__vendor-code {
     display: inline-block;
     font: normal 14px/16px Roboto;
-    color: rgba(51, 51, 51, .5);
+    color: $second-black-color-opacity-5;
   }
 
   &__frame {
-    border: 1px solid #EAEAEA;
+    border: 1px solid $gray-3;
     border-radius: 15px;
-    background: #F8F8F8;
+    background: $gray-light;
 
     @include screen(xl) {
       padding: 15px 0 20px;
@@ -198,7 +198,7 @@
       &:not(.product__container--present) {
         margin-bottom: 20px;
         padding-bottom: 20px;
-        border-bottom: 1px solid #EAEAEA;
+        border-bottom: 1px solid $gray-3;
 
         @include screen(xl) {
           padding-left: 20px;
@@ -222,10 +222,10 @@
         width: 100%;
         padding: 15px;
         font: normal 15px/18px Roboto;
-        color: #30373D;
-        background: #FFFFFF;
-        border: 1px solid #E9E9E9;
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+        color: $main-black-color;
+        background: $white;
+        border: 1px solid $gray-7;
+        box-shadow: 0px 4px 12px $black-opacity-08;
         border-radius: 8px;
 
         @include screen(l) {
@@ -242,14 +242,14 @@
         padding: 15px 13px;
         font: 500 18px/21px FuturaPT;
         text-transform: uppercase;
-        background: #27CC00;
-        box-shadow: 0px 3px 10px rgba(39, 204, 0, 0.35);
+        background: $green;
+        box-shadow: 0px 3px 10px $green-opacity-35;
         border-radius: 8px;
         transition: background-color .3s, box-shadow .3s;
 
         &:hover {
-          background: #5EF13B;
-          box-shadow: 0px 3px 20px rgba(67, 254, 22, 0.701841);
+          background: $green-2;
+          box-shadow: 0px 3px 20px $green-4-opacity-7;
         }
 
         @include screen(l) {
@@ -261,8 +261,8 @@
         padding: 19px 15px;
         font: 500 18px/21px FuturaPT;
         text-transform: uppercase;
-        background: #27CC00;
-        box-shadow: 0px 3px 10px rgba(39, 204, 0, 0.35);
+        background: $green;
+        box-shadow: 0px 3px 10px $green-opacity-35;
 
         span {
           position: relative;
@@ -278,8 +278,8 @@
         }
 
         &:hover {
-          background: #6344B6;
-          box-shadow: 0px 4px 12px rgba(107, 72, 169, 0.4);
+          background: $second-color;
+          box-shadow: 0px 4px 12px $second-color-opacity-4;
         }
       }
     }
@@ -290,8 +290,8 @@
 
     .filter__memory {
       padding: 3px;
-      background: #FFFFFF;
-      border: 1px solid #E9E9E9;
+      background: $white;
+      border: 1px solid $gray-7;
       border-radius: 10px;
       text-align: center;
 
@@ -305,8 +305,8 @@
 
     .filter__radio {
       padding: 3px;
-      background: #FFFFFF;
-      border: 1px solid #E9E9E9;
+      background: $white;
+      border: 1px solid $gray-7;
       border-radius: 10px;
       text-align: center;
 
@@ -354,12 +354,12 @@
       text-align: right;
       font: 600 18px/21px FuturaPT;
       text-decoration-line: line-through;
-      color: rgba(48, 55, 61, .5);
+      color: $main-black-color-opacity-5;
     }
 
     &-total {
       font: 600 38px/28px FuturaPT;
-      color: #2C0952;
+      color: $third-color;
 
       @include screen(xl) {
         align-self: flex-start;
@@ -372,8 +372,8 @@
       margin: 2px 0 0 0;
       text-align: center;
       font: 600 14px/16px FuturaPT;
-      color: #FF548C;
-      background-color: rgba(255, 84, 140, .2);
+      color: $main-color;
+      background-color: $main-color-opacity-2;
       border-radius: 13px;
     }
   }
@@ -441,7 +441,7 @@
       cursor: pointer;
       width: 100%;
       height: 100%;
-      background: #FFFFFF;
+      background: $white;
       border-radius: 10px;
 
       span {
@@ -457,8 +457,8 @@
     }
 
     input:checked+label {
-      border: 1px solid #FF548C;
-      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+      border: 1px solid $main-color;
+      box-shadow: 0px 2px 8px $black-opacity-1;
       border-radius: 10px;
     }
 
@@ -524,11 +524,11 @@
 
       .swiper-pagination {
         &-bullet {
-          background: #E0E0E0;
+          background: $gray-light-4;
           opacity: 1;
 
           &-active {
-            background: #7A7A7A;
+            background: $gray-29;
           }
         }
       }
@@ -563,7 +563,7 @@
 
     .gallery-thumbs .swiper-slide {
       position: relative;
-      background-color: #ffffff !important;
+      background-color: $white !important;
       background-size: contain !important;
       background-position: center !important;
       background-repeat: no-repeat !important;
@@ -591,7 +591,7 @@
           margin: auto;
           width: 4px;
           height: 80px;
-          background: #F8355E;
+          background: $main-dark-color;
           border-radius: 0px 100px 100px 0px;
         }
       }
@@ -619,13 +619,13 @@
     text-align: center;
     border-radius: 8px;
     font: 600 16px/22px FuturaPT;
-    background: #FFFFFF;
+    background: $white;
 
     cursor: pointer;
     white-space: nowrap;
 
     @include screen(xl) {
-      color: #6344B6;
+      color: $second-color;
     }
 
 
@@ -633,8 +633,8 @@
       align-self: flex-start;
       margin-left: 40px;
       max-width: 244px;
-      color: #FF548C;
-      border: 1px solid #FF548C;
+      color: $main-color;
+      border: 1px solid $main-color;
     }
   }
 
@@ -645,24 +645,24 @@
     }
 
     .frame {
-      background: #FFFFFF;
+      background: $white;
 
 
       @include screen(xl) {
-        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 2px 7px $black-opacity-1;
         border-radius: 20px;
         overflow: hidden;
       }
 
       @include screen(l) {
         padding: 30px 25px 40px 0;
-        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05);
+        box-shadow: 0px 2px 7px $black-opacity-05;
       }
     }
 
     &-title {
       position: relative;
-      color: #333333;
+      color: $second-black-color;
 
       @include screen(xl) {
         padding: 20px 40px 20px 20px;
@@ -724,7 +724,7 @@
 
     .accordion {
       box-shadow: none;
-      border-top: 1px solid #E9E9E9;
+      border-top: 1px solid $gray-7;
       border-radius: 0;
 
       @include screen(l) {
@@ -744,7 +744,7 @@
         &.uk-active {
           .uk-accordion-title {
             @include screen(l) {
-              background: #F8F8F8;
+              background: $gray-light;
             }
           }
         }
@@ -752,9 +752,9 @@
 
       .uk-accordion-title {
         position: relative;
-        border-bottom: 1px solid #E9E9E9;
+        border-bottom: 1px solid $gray-7;
         text-transform: uppercase;
-        color: #30373D;
+        color: $main-black-color;
 
         @include screen(xl) {
           padding: 15px 60px 15px 25px;
@@ -830,7 +830,7 @@
 
       p {
         font: normal 18px/29px Roboto;
-        color: #30373D;
+        color: $main-black-color;
       }
 
       img {
@@ -847,24 +847,6 @@
         max-width: 335px;
         margin: 15px auto 0;
       }
-
-      /* @include screen(l) {
-        margin-bottom: 85px;
-        margin-top: 30px;
-        max-width: 270px;
-        color: #FF548C;
-        background-color: #ffffff;
-        border: 1px solid rgba(236, 236, 236, .7);
-        transition: border .3s, background-color .3s, box-shadow .3s, color .15s;
-        overflow: hidden;
-
-        &:hover {
-          background-color: #FF548C;
-          color: #ffffff;
-          border-color: #FF548C;
-          box-shadow: 0px 6px 30px rgba(248, 53, 94, 0.4);
-        }
-      } */
     }
 
     &-see-all {
@@ -877,7 +859,7 @@
         bottom: 0;
         left: 15px;
         z-index: 1;
-        color: #FF548C;
+        color: $main-color;
         display: inline-block;
         padding: 8px 15px 10px;
         width: 100%;
@@ -886,7 +868,7 @@
         border: 1px solid transparent;
         border-radius: 8px;
         font: 600 16px/22px FuturaPT;
-        background: #fff;
+        background: $white;
         cursor: pointer;
         white-space: nowrap;
         transition: border-color .3s;
@@ -894,7 +876,7 @@
 
       &:hover {
         @include screen(l) {
-          border-color: #FF548C;
+          border-color: $main-color;
         }
       }
     }
@@ -917,13 +899,13 @@
 
     .product__main-atributes {
       ul {
-        background-color: #F8F8F8;
+        background-color: $gray-light;
 
         li {
           padding: 16px 25px 18px;
 
           &:not(:last-of-type) {
-            border-bottom: 1px solid #E9E9E9;
+            border-bottom: 1px solid $gray-7;
           }
         }
 
@@ -931,11 +913,11 @@
           font: normal 14px/16px Roboto;
 
           &:first-of-type {
-            color: #959595;
+            color: $gray-30;
           }
 
           &:last-of-type {
-            color: #30373D;
+            color: $main-black-color;
           }
         }
       }
@@ -943,13 +925,13 @@
 
     .product__all-atributes {
       ul {
-        background-color: #F8F8F8;
+        background-color: $gray-light;
 
         li {
           padding: 16px 25px 18px;
 
           &:not(:last-of-type) {
-            border-bottom: 1px solid #E9E9E9;
+            border-bottom: 1px solid $gray-7;
           }
         }
 
@@ -957,7 +939,7 @@
           font: normal 14px/16px Roboto;
 
           &:first-of-type {
-            color: #959595;
+            color: $gray-30;
 
             @include screen(xl) {
               margin-right: 10px;
@@ -965,7 +947,7 @@
           }
 
           &:last-of-type {
-            color: #30373D;
+            color: $main-black-color;
           }
         }
       }
@@ -975,7 +957,7 @@
       .delivery__container {
         padding: 60px 40px;
         text-align: center;
-        background-color: #ffffff;
+        background-color: $white;
       }
 
       .delivery__lower-text {
@@ -1012,7 +994,7 @@
       }
 
       .reviews__content {
-        background-color: #ffffff;
+        background-color: $white;
 
         .pagination__btn--large {
           @include screen(xl) {
@@ -1046,10 +1028,10 @@
 
         &-bullet {
           opacity: 1;
-          background-color: #E0E0E0;
+          background-color: $gray-light-4;
 
           &-active {
-            background-color: #7A7A7A;
+            background-color: $gray-29;
           }
         }
       }
@@ -1061,7 +1043,6 @@
         }
 
         @include screen(l) {
-          /* margin-right: 10px; */
           height: 100% !important;
         }
 
@@ -1093,7 +1074,7 @@
           img {
             width: 100%;
             height: auto;
-            border: 1px solid #EAEAEA;
+            border: 1px solid $gray-3;
             border-radius: 15px;
             overflow: hidden;
 
@@ -1109,13 +1090,13 @@
             &:first-child {
               padding-left: 10px;
               font: 500 22px/26px FuturaPT;
-              color: #30373D;
+              color: $main-black-color;
             }
 
             &:last-child {
               padding-right: 10px;
               font: normal 16px/19px Roboto;
-              color: #FF548C;
+              color: $main-color;
             }
           }
         }
@@ -1123,7 +1104,7 @@
         span {
           padding-left: 10px;
           font: normal 14px/22px Roboto;
-          color: rgba(48, 55, 61, .5);
+          color: $main-black-color-opacity-5;
         }
       }
     }
@@ -1134,12 +1115,12 @@
       &:first-of-type {
         text-transform: uppercase;
         font: 500 12px/20px FuturaPT;
-        color: rgba(48, 55, 61, .5);
+        color: $main-black-color-opacity-5;
       }
 
       &:last-of-type {
         font: 500 16px/21px FuturaPT;
-        color: #FF548C;
+        color: $main-color;
       }
     }
   }

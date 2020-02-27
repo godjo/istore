@@ -45,13 +45,13 @@
   &__text {
     &--pink {
       font: normal 24px/32px FuturaPT;
-      color: #FF548C;
+      color: $main-color;
     }
 
     &--bg-pink {
       font: normal 16px/22px FuturaPT;
       border-radius: 15px;
-      background: rgba(255, 84, 140, .1);
+      background: $main-color-opacity-1;
 
       @include screen(xl) {
         padding: 15px;

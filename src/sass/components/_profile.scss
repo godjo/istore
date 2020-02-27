@@ -111,7 +111,7 @@
   }
 
   &__region {
-    color: $gray-8-opacity-7;
+    color: $main-black-color-opacity-7;
 
     @include screen(xl) {
       font: normal 14px/22px Roboto;
@@ -189,7 +189,7 @@
     display: inline-block;
     text-transform: uppercase;
     font: 600 12px/22px FuturaPT;
-    color: $gray-8-opacity-8;
+    color: $main-black-color-opacity-8;
   }
 
   &__offers {
@@ -236,7 +236,7 @@
       .profile__referral-copy {
         cursor: pointer;
         font: normal 12px/14px Roboto;
-        color: $gray-8-opacity-4;
+        color: $main-black-color-opacity-4;
         transition: color .3s;
 
         &:hover {
@@ -245,7 +245,7 @@
       }
 
       p {
-        color: $gray-8-opacity-6;
+        color: $main-black-color-opacity-6;
       }
     }
   }

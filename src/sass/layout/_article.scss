@@ -10,7 +10,7 @@
   }
 
   &__header {
-    border-bottom: 1px solid rgba(216, 216, 216, .5);
+    border-bottom: 1px solid $gray-10-opacity-5;
 
     @include screen(xl) {
       padding: 20px;
@@ -43,7 +43,7 @@
 
   &__date {
     font: normal 14px/22px Roboto;
-    color: rgba(48, 55, 61, .5);
+    color: $main-black-color-opacity-5;
 
     @include screen(l) {
       align-self: flex-end;

@@ -143,16 +143,16 @@ button {
 /* subnav */
 .breadcrumbs {
   &.uk-subnav>*> :first-child {
-    color: $dark-gray-opacity-8 !important;
+    color: $second-black-color-opacity-8 !important;
     font: normal 14px/16px FuturaPT !important;
     text-transform: none !important;
   }
 
   &.uk-subnav>.uk-active>a {
-    color: $dark-gray-opacity-4 !important;
+    color: $second-black-color-opacity-4 !important;
 
     &:hover {
-      color: $dark-gray-opacity-8 !important;
+      color: $second-black-color-opacity-8 !important;
     }
   }
 

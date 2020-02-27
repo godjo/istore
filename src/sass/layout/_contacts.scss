@@ -47,7 +47,7 @@
     label {
       text-transform: uppercase;
       font: 600 12px/15px FuturaPT;
-      color: rgba(48, 55, 61, .4);
+      color: $main-black-color-opacity-4;
 
       @include screen(x) {
         margin-bottom: 10px;
@@ -64,7 +64,7 @@
     }
 
     .uk-subnav>*> :first-child {
-      color: rgba(51, 51, 51, .8) !important;
+      color: $second-black-color-opacity-8 !important;
       text-transform: none !important;
 
       @include screen(xl) {
@@ -79,7 +79,7 @@
     .uk-subnav {
       @include screen(xl) {
         padding: 0 20px 10px;
-        border-bottom: 1px solid rgba(216, 216, 216, .5);
+        border-bottom: 1px solid $gray-10-opacity-5;
       }
 
       @include screen(l) {
@@ -105,7 +105,7 @@
 
     .uk-subnav>.uk-active>a {
       position: relative;
-      color: #FF548C !important;
+      color: $main-color !important;
 
 
       &::after {
@@ -117,7 +117,7 @@
         margin: auto;
         width: 100%;
         height: 5px;
-        background: #FF548C;
+        background: $main-color;
         border-radius: 100px 100px 0px 0px;
       }
     }
@@ -150,14 +150,14 @@
   }
 
   &__list {
-    position: relative; 
+    position: relative;
     max-height: 600px;
     overflow-y: scroll;
 
     @include screen(l) {
       max-width: 315px;
-      border-top: 1px solid #E6E6E6;
-      border-right: 1px solid #E6E6E6;
+      border-top: 1px solid $gray-17;
+      border-right: 1px solid $gray-17;
       flex-direction: column;
     }
   }
@@ -166,12 +166,12 @@
     position: relative;
 
     @include screen(xl) {
-      border-bottom: 1px solid #E6E6E6;
+      border-bottom: 1px solid $gray-17;
     }
 
     @include screen(l) {
-      border-top: 1px solid #E6E6E6;
-      border-right: 1px solid #E6E6E6;
+      border-top: 1px solid $gray-17;
+      border-right: 1px solid $gray-17;
     }
 
     &:first-of-type {
@@ -182,7 +182,7 @@
 
     &.active {
       @include screen(l) {
-        background-color: rgba(230, 230, 230, .3);
+        background-color: $gray-17-opacity-3;
       }
 
       &::after {
@@ -215,7 +215,7 @@
       }
 
       &:hover {
-        background-color: rgba(230, 230, 230, .3);
+        background-color: $gray-17-opacity-3;
       }
     }
   }
@@ -226,7 +226,7 @@
     &-text-copy {
       position: absolute;
       font: normal 12px/19px Roboto;
-      color: rgba(121, 123, 126, 0.9);
+      color: $gray-8-opacity-9;
       top: 0;
       right: 15px;
       display: none;
@@ -242,9 +242,9 @@
         padding: 20px;
         width: 80%;
         z-index: 1;
-        background: #ffffff;
-        border: 1px solid #E7E7E7;
-        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05);
+        background: $white;
+        border: 1px solid $gray-2;
+        box-shadow: 0px 2px 7px $black-opacity-05;
         border-radius: 8px;
       }
 
@@ -258,7 +258,7 @@
       position: relative;
       padding-left: 25px;
       font: 500 16px/19px Roboto;
-      color: #797C80;
+      color: $gray-18;
 
       &::before {
         content: "";
@@ -278,7 +278,7 @@
       margin-bottom: 10px;
       display: block;
       font: normal 16px/19px Roboto;
-      color: rgba(43, 45, 48, 0.9);
+      color: $third-black-color-opacity-9;
       border: none;
       background-color: transparent;
     }
@@ -286,12 +286,12 @@
     &-phone {
       margin-bottom: 10px;
       font: 500 18px/21px Roboto;
-      color: #2B2D30;
+      color: $third-black-color;
     }
 
     &-time {
       font: normal 12px/20px Roboto;
-      color: rgba(43, 45, 48, 0.7);
+      color: $third-black-color-opacity-7;
     }
   }
 }

@@ -84,11 +84,11 @@
 
         a {
           font: 500 16px/22px FuturaPT;
-          color: $gray-8-opacity-4;
+          color: $main-black-color-opacity-4;
           transition: color .3s;
 
           &:hover {
-            color: $gray-8-opacity-8;
+            color: $main-black-color-opacity-8;
           }
         }
 
@@ -173,7 +173,7 @@
           text-align: right;
           font: 600 12px/14px FuturaPT;
           text-decoration-line: line-through;
-          color: $gray-8-opacity-5;
+          color: $main-black-color-opacity-5;
         }
 
         &-total {
@@ -362,7 +362,7 @@
           text-align: right;
           font: 600 12px/14px FuturaPT;
           text-decoration-line: line-through;
-          color: $gray-8-opacity-5;
+          color: $main-black-color-opacity-5;
         }
 
         &-total {

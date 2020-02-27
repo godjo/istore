@@ -1,5 +1,5 @@
 .return {
-  color: #30373D;
+  color: $main-black-color;
 
   &__wrapper {
     @include screen(xl) {
@@ -12,7 +12,7 @@
   }
 
   &__top {
-    background: #F8F8F8;
+    background: $gray-light;
 
     @include screen(xl) {
       padding: 20px 0 0;
@@ -36,7 +36,7 @@
   &__tabs {
     justify-content: center;
     margin: 0;
-    border-bottom: 1px solid rgba(216, 216, 216, .5);
+    border-bottom: 1px solid $gray-10-opacity-5;
 
     li {
       &:not(:last-of-type) {
@@ -48,11 +48,11 @@
 
     &.uk-subnav-pill>.uk-active>a {
       background-color: transparent !important;
-      color: #FF548C;
+      color: $main-color;
 
       &::after {
         width: 100%;
-        background: #FF548C;
+        background: $main-color;
       }
     }
 
@@ -60,7 +60,7 @@
       position: relative;
       padding: 5px 10px 15px;
       background: transparent;
-      color: #333333;
+      color: $second-black-color;
       font: 500 20px/24px FuturaPT;
       text-transform: inherit;
 
@@ -81,7 +81,7 @@
   }
 
   &__content {
-    background-color: #fff;
+    background-color: $white;
 
     @include screen(xl) {
       padding: 20px 20px 40px;
@@ -93,8 +93,8 @@
   }
 
   &__inner-frame {
-    background: #F8F8F8;
-    border: 1px solid #EAEAEA;
+    background: $gray-light;
+    border: 1px solid $gray-3;
     border-radius: 20px;
 
     @include screen(xl) {
@@ -114,11 +114,11 @@
       width: max-content;
       border-bottom: 1px solid transparent;
       font: 600 16px/22px FuturaPT;
-      color: #FF548C;
+      color: $main-color;
       transition: border .3s;
 
       &:hover {
-        border-color: #FF548C;
+        border-color: $main-color;
       }
     }
 
@@ -137,29 +137,29 @@
 
   &__subtitle {
     font: 600 24px/24px FuturaPT;
-    color: #30373D;
+    color: $main-black-color;
   }
 
   &__text {
-    color: #30373D;
+    color: $main-black-color;
 
     &-gray {
       font: normal 16px/26px Roboto;
-      color: rgba(48, 55, 61, .7);
+      color: $main-black-color-opacity-7;
     }
 
     &-green {
       font: 600 24px/24px FuturaPT;
-      color: #27CC00;
+      color: $green;
     }
 
     &-pink {
       font: normal 20px/26px FuturaPT;
-      color: #FF548C;
+      color: $main-color;
     }
 
     &-border {
-      border-top: 1px solid rgba(216, 216, 216, .5);
+      border-top: 1px solid $gray-10-opacity-5;
       font: normal 16px/26px Roboto;
     }
   }
@@ -171,9 +171,9 @@
       height: 100px;
       border-radius: 50%;
       overflow: hidden;
-      background: #FFFFFF;
-      border: 4px solid #FFFFFF;
-      box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1);
+      background: $white;
+      border: 4px solid $white;
+      box-shadow: 0px 2px 7px $black-opacity-1;
 
       &::after {
         content: "";
@@ -209,7 +209,7 @@
         content: "";
         position: absolute;
         display: block;
-        background-color: #EAEAEA;
+        background-color: $gray-3;
 
         @include screen(xl) {
           left: 0;
@@ -236,7 +236,7 @@
     label {
       text-transform: uppercase;
       font: 700 12px/15px FuturaPT;
-      color: rgba(48, 55, 61, .4);
+      color: $main-black-color-opacity-4;
 
       @media (max-width: 346px) {
         margin-bottom: 10px;
@@ -246,6 +246,6 @@
 
   &__date {
     font: normal 16px/26px Roboto;
-    color: #30373D;
+    color: $main-black-color;
   }
 }

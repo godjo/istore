@@ -1,6 +1,6 @@
 .accordion {
-  background: #FFFFFF;
-  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05);
+  background: $white;
+  box-shadow: 0px 2px 7px $black-opacity-05;
   border-radius: 10px;
   overflow: hidden;
 
@@ -8,12 +8,12 @@
     padding: 15px 20px 15px 25px;
     font: 600 16px/28px FuturaPT;
     text-transform: uppercase;
-    background-color: #ffffff;
+    background-color: $white;
 
     &::before {
       width: 25px;
       height: 25px;
-      background: url("../img/pic/ico/arrow-bottom-ico.svg") no-repeat, #E9E9E9;
+      background: url("../img/pic/ico/arrow-bottom-ico.svg") no-repeat, $gray-7;
       background-size: 10px 7px;
       background-position: center;
       border-radius: 50%;
@@ -24,22 +24,22 @@
   li {
     &:not(:last-of-type) {
       .uk-accordion-title {
-        border-bottom: 1px solid #E9E9E9;
+        border-bottom: 1px solid $gray-7;
       }
 
       .uk-accordion-content {
-        border-bottom: 1px solid #E9E9E9;
+        border-bottom: 1px solid $gray-7;
       }
     }
 
     &:last-of-type.uk-open .uk-accordion-title {
-      border-bottom: 1px solid #E9E9E9;
+      border-bottom: 1px solid $gray-7;
     }
   }
 
   .uk-accordion-title:hover,
   .uk-accordion-title:focus {
-    color: #30373d;
+    color: $main-black-color;
   }
 
   li.uk-open {
@@ -51,6 +51,6 @@
   .uk-accordion-content {
     margin: 0;
     padding: 20px 20px 20px 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: $gray-light;
   }
 }

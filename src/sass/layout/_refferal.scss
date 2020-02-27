@@ -28,7 +28,7 @@
           content: "";
           position: absolute;
           display: block;
-          background-color: #EAEAEA;
+          background-color: $gray-3;
 
           @include screen(xl) {
             left: 0;
@@ -52,7 +52,7 @@
 
       p {
         &:first-of-type {
-          color: rgba(48, 55, 61, .9);
+          color: $main-black-color-opacity-9;
 
           @include screen(xl) {
             font: 600 20px/24px FuturaPT;
@@ -107,7 +107,7 @@
 
   &__copy {
     &-wrap {
-      border-top: 1px solid #E9E9E9;
+      border-top: 1px solid $gray-7;
 
       @include screen(xl) {
         padding: 20px 0 40px;
@@ -129,9 +129,9 @@
       width: 100%;
       border: none;
       border-radius: 8px;
-      background: #F3F2F4;
+      background: $gray-light-2;
       font: normal 18px/26px Roboto;
-      color: rgba(48, 55, 61, .6);
+      color: $main-black-color-opacity-6;
 
       @include screen(l) {
         margin-right: 10px;
@@ -141,7 +141,7 @@
     &-btn {
       padding: 14px 15px 15px;
       border-radius: 8px;
-      background: #FF548C;
+      background: $main-color;
       text-transform: uppercase;
       font: 600 16px/19px FuturaPT;
       cursor: pointer;
@@ -192,7 +192,7 @@
   &__footer {
     margin: 0 auto;
     text-align: center;
-    border-top: 1px solid #E9E9E9;
+    border-top: 1px solid $gray-7;
 
     @include screen(xl) {
       padding: 40px 0 0;
@@ -217,12 +217,12 @@
       }
 
       &:last-of-type {
-        background: #6344B6;
-        box-shadow: 0px 4px 12px rgba(107, 72, 169, 0.4);
+        background: $second-color;
+        box-shadow: 0px 4px 12px $second-color-opacity-4;
 
         &:hover {
-          background: rgb(103, 60, 221);
-          box-shadow: 0px 4px 15px rgba(107, 72, 169, 0.7);
+          background: $second-dark-color;
+          box-shadow: 0px 4px 15px $second-color-opacity-7;
         }
       }
     }

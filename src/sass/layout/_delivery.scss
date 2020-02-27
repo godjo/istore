@@ -35,12 +35,12 @@
   &__lower-text {
     display: block;
     font: normal 24px/32px FuturaPT;
-    color: rgba(48, 55, 61, .5);
+    color: $main-black-color-opacity-5;
   }
 
   &__inner-frame {
-    background: #F8F8F8;
-    border: 1px solid #EAEAEA;
+    background: $gray-light;
+    border: 1px solid $gray-3;
     border-radius: 20px;
 
     @include screen(xl) {
@@ -62,7 +62,7 @@
     justify-content: center;
     text-align: center;
 
-    color: #ffffff;
+    color: $white;
     border-radius: 50%;
 
     @include screen(xl) {
@@ -80,11 +80,11 @@
     }
 
     &--orange {
-      background: linear-gradient(180deg, #FF8A00 0%, #FF5100 100%);
+      background: $gradient-orange;
     }
 
     &--violet {
-      background: linear-gradient(180deg, #C54AF0 0%, #9324DC 100%);
+      background: $gradient-vioelt-3;
     }
 
     span {
@@ -106,7 +106,7 @@
         content: "";
         position: absolute;
         display: block;
-        background-color: #EAEAEA;
+        background-color: $gray-3;
 
         @include screen(xl) {
           left: 0;

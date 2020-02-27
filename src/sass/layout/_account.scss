@@ -19,7 +19,7 @@
   }
 
   &__list {
-    border-bottom: 1px solid rgba(216, 216, 216, .5);
+    border-bottom: 1px solid $gray-10-opacity-5;
 
     @include screen(xl) {
       overflow: scroll;
@@ -34,7 +34,7 @@
       display: inline-block;
       padding: 0 15px 10px;
       font: 500 16px/24px FuturaPT;
-      color: #333333;
+      color: $second-black-color;
     }
 
     a {
@@ -43,7 +43,7 @@
 
     li.active a {
       position: relative;
-      color: #FF548C;
+      color: $main-color;
 
       &::after {
         content: "";
@@ -54,7 +54,7 @@
         margin: auto;
         width: 100%;
         height: 6px;
-        background-color: #FF548C;
+        background-color: $main-color;
         border-radius: 100px 100px 0px 0px;
       }
     }
@@ -73,7 +73,7 @@
     padding: 0 30px 0 0;
     display: inline-block;
     font: 500 16px/24px FuturaPT;
-    color: #FF548C;
+    color: $main-color;
 
     svg {
       position: absolute;
@@ -86,7 +86,7 @@
 
   .account__date {
     font: normal 14px/24px Roboto;
-    color: #30373D;
+    color: $main-black-color;
 
     @include screen(xl) {
       align-self: flex-start;
@@ -102,21 +102,21 @@
     font: normal 14px/24px Roboto;
 
     &--process {
-      color: #FF9600;
+      color: $orange-2;
     }
 
     &--transit {
-      color: #0095FF;
+      color: $blue;
     }
 
     &--done {
-      color: #27CC00;
+      color: $green;
     }
   }
 
   .account__order-number {
     font: 700 18px/24px Roboto;
-    color: #FF548C;
+    color: $main-color;
   }
 
   .account__info-list {
@@ -130,7 +130,7 @@
   .account__container-link {
     border-bottom: 1px solid transparent;
     font: 500 16px/22px FuturaPT;
-    color: #FF548C;
+    color: $main-color;
 
     @include screen(l) {
       display: inline-block;
@@ -140,7 +140,7 @@
 
     &:hover {
       @include screen(l) {
-        border-color: #FF548C;
+        border-color: $main-color;
       }
     }
   }
@@ -148,7 +148,7 @@
   .account__container-title {
     display: inline-block;
     font: 500 24px/28px FuturaPT;
-    color: #30373D;
+    color: $main-black-color;
   }
 
   /* main */
@@ -185,8 +185,8 @@
 
         &--cart {
           min-height: 220px;
-          color: rgba(255, 255, 255, .7);
-          background: #2C0952;
+          color: $white-opacity-7;
+          background: $third-color;
 
           .account__container-link {
             @include screen(xl) {
@@ -198,18 +198,18 @@
             @include screen(xl) {
               padding-bottom: 10px;
               margin-bottom: 10px;
-              border-bottom: 1px solid rgba(255, 255, 255, .2);
+              border-bottom: 1px solid $white-opacity-2;
             }
 
             @include screen(l) {
               margin-right: 30px;
-              border-right: 1px solid rgba(255, 255, 255, .2);
+              border-right: 1px solid $white-opacity-2;
             }
           }
 
           .account__container-right {
             font: normal 18px/24px Roboto;
-            color: #ffffff;
+            color: $white;
 
             li {
               &:not(:last-of-type) {
@@ -220,20 +220,20 @@
 
           .account__container-title {
             margin-bottom: 5px;
-            color: #ffffff;
+            color: $white;
           }
         }
 
         &--order {
-          color: rgba(48, 55, 61, .7);
-          background: #F8F8F8;
-          border: 1px solid #EAEAEA;
+          color: $main-black-color-opacity-7;
+          background: $gray-light;
+          border: 1px solid $gray-3;
 
           .account__container-link {
             @include screen(xl) {
               padding-top: 20px;
               margin-top: 15px;
-              border-top: 1px solid rgba(0, 0, 0, .1);
+              border-top: 1px solid $black-opacity-1;
             }
           }
 
@@ -241,18 +241,18 @@
             @include screen(xl) {
               padding-bottom: 10px;
               margin-bottom: 10px;
-              border-bottom: 1px solid rgba(0, 0, 0, .1);
+              border-bottom: 1px solid $black-opacity-1;
             }
 
             @include screen(l) {
               margin-right: 30px;
-              border-right: 1px solid rgba(0, 0, 0, .1);
+              border-right: 1px solid $black-opacity-1;
             }
           }
 
           .account__container-right {
             &>li:not(:first-of-type) {
-              border-top: 1px solid rgba(0, 0, 0, .1);
+              border-top: 1px solid $black-opacity-1;
 
               @include screen(xl) {
                 margin-top: 15px;
@@ -268,7 +268,7 @@
 
           .account__container-title {
             margin-bottom: 5px;
-            color: #30373D;
+            color: $main-black-color;
           }
         }
       }
@@ -291,8 +291,8 @@
       &__cashback {
         &-header {
           padding: 20px 25px;
-          color: #ffffff;
-          background: #2C0952;
+          color: $white;
+          background: $third-color;
           border-radius: 15px;
 
           span {
@@ -315,14 +315,14 @@
             padding: 20px 0;
 
             &:not(:first-of-type) {
-              border-top: 1px solid rgba(0, 0, 0, .1);
+              border-top: 1px solid $black-opacity-1;
             }
           }
         }
 
         &-subtitle {
           font: 700 18px/24px Roboto;
-          color: #30373D;
+          color: $main-black-color;
         }
       }
     }
@@ -365,7 +365,7 @@
 
           &:not(:first-of-type) {
             padding-top: 20px;
-            border-top: 1px solid rgba(0, 0, 0, .1);
+            border-top: 1px solid $black-opacity-1;
           }
         }
       }
@@ -394,7 +394,7 @@
         }
 
         &:not(:first-of-type) {
-          border-top: 1px solid rgba(0, 0, 0, .1);
+          border-top: 1px solid $black-opacity-1;
         }
 
         &-link {

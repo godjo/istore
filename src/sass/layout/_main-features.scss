@@ -1,8 +1,8 @@
 .main-features {
-  background-color: #2C0952;
+  background-color: $third-color;
 
   .title {
-    color: #ffffff;
+    color: $white;
   }
 
   li {
@@ -20,11 +20,11 @@
       position: relative;
       padding-bottom: 20px;
       text-align: center;
-      box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.05);
+      box-shadow: 0px 2px 24px $black-opacity-05;
       border-radius: 20px;
-      background: #FFFFFF;
+      background: $white;
       overflow: hidden;
-      color: #30373D;
+      color: $main-black-color;
 
       @include screen(l) {
         min-height: 431.641px;
@@ -49,7 +49,7 @@
       padding: 0 15px;
       margin-bottom: 60px;
       font: 400 16px/24px Roboto;
-      color: rgba(48, 55, 61, 0.9);
+      color: $main-black-color-opacity-9;
     }
 
     a {
@@ -61,11 +61,11 @@
       width: max-content;
       border-bottom: 1px solid transparent;
       font: 600 16px/22px FuturaPT;
-      color: #FF548C;
+      color: $main-color;
       transition: border .3s;
 
       &:hover {
-        border-color: #FF548C;
+        border-color: $main-color;
       }
     }
   }
@@ -96,8 +96,8 @@
 
     &-bullet {
       height: 3px;
-      background: #FF548C;
-      box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.05);
+      background: $main-color;
+      box-shadow: 0px 2px 24px $black-opacity-05;
       border-radius: 20px;
 
       @include screen(x) {
