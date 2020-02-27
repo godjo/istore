@@ -39,9 +39,20 @@ $(document).ready(function () {
 		})
 	})
 
+	/* Кнопка Меню для мобильных устройств */
+
 	$(".header__menu-button").click(function () {
 		$(this).toggleClass('open');
 	});
+
+	$('#menuMobile').not('.uk-open').mouseleave(function () {
+		$(".header__menu-button").removeClass('open');
+	});
+
+
+	$('.search__mobile, .cart__mobile').on('click', function () {
+		$(".header__menu-button").removeClass('open');
+	})
 
 	/* Удалить при натяжке!!! */
 	if (localStorage.selected_city == undefined) {
