@@ -4,26 +4,6 @@
       <div class="header__top-select-city">
         <span>Ваш город:</span>
         <a href="#" data-uk-toggle="target: #popupSelectCity">Санкт-Петeрбург</a>
-        <!-- <div class="header__dropdown" uk-dropdown="mode: click">
-          <input type="text" placeholder="Введите название своего города">
-          <ul class="uk-flex uk-flex-column">
-            <li class="active">
-              <a href="#">Москва</a>
-            </li>
-            <li>
-              <a href="#">Санкт-Петербург</a>
-            </li>
-            <li>
-              <a href="#">Ростов на Дону</a>
-            </li>
-            <li>
-              <a href="#">Новгород</a>
-            </li>
-            <li>
-              <a href="#">Казань</a>
-            </li>
-          </ul>
-        </div> -->
       </div>
       <ul class="header__top-list uk-flex uk-flex-middle">
         <li>
@@ -44,7 +24,7 @@
 
   <div
     class="header__sticky-mobile uk-container uk-flex uk-flex-between uk-flex-column@l uk-flex-row@s bg-full-width--white"
-    uk-sticky="media: (max-width:1249px)">
+    data-uk-sticky="media: (max-width:1249px)">
 
     <div class="uk-flex uk-flex-middle uk-padding-small-top@l uk-padding-small-bottom@l">
       <div class="header__menu uk-hidden@l">
@@ -62,14 +42,14 @@
                   <button type="button">Регистрация</button>
                 </div>
 
-                <ul class="menu__tabs uk-flex uk-child-width-1-2" uk-switcher="swiping: false">
+                <ul class="menu__tabs uk-flex uk-child-width-1-2" data-uk-switcher="swiping: false">
                   <li><a href="#">Категории товаров</a></li>
                   <li><a href="#">Меню</a></li>
                 </ul>
 
                 <ul class="uk-switcher uk-overflow-container">
                   <li>
-                    <ul class="menu__categories" uk-accordion>
+                    <ul class="menu__categories" data-uk-accordion>
                       <li>
                         <a class="uk-accordion-title" href="#">iPhone</a>
                         <!-- Swiper -->
@@ -83,7 +63,7 @@
                                 <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
                                 <span>iPhone 11 Pro Max</span>
                               </a>
-                            </li class="swiper-slide">
+                            </li>
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -93,6 +73,7 @@
                                 <span>iPhone 11 Pro</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -102,6 +83,7 @@
                                 <span>iPhone 11</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -111,6 +93,7 @@
                                 <span>iPhone XS Max</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -120,6 +103,7 @@
                                 <span>iPhone XS</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -129,6 +113,7 @@
                                 <span>iPhone XR</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -138,6 +123,7 @@
                                 <span>iPhone X</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -147,6 +133,7 @@
                                 <span>iPhone 8 Plus</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -156,6 +143,7 @@
                                 <span>iPhone 8</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -165,6 +153,7 @@
                                 <span>iPhone 7 Plus</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -174,6 +163,7 @@
                                 <span>iPhone 7</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -183,6 +173,7 @@
                                 <span>iPhone 6S Plus</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -192,6 +183,7 @@
                                 <span>iPhone 6S</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -218,7 +210,8 @@
                                 <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
                                 <span>iPhone 11 Pro Max</span>
                               </a>
-                            </li class="swiper-slide">
+                            </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -228,6 +221,7 @@
                                 <span>iPhone 11 Pro</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -237,6 +231,7 @@
                                 <span>iPhone 11</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -246,6 +241,7 @@
                                 <span>iPhone XS Max</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -255,6 +251,7 @@
                                 <span>iPhone XS</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -264,6 +261,7 @@
                                 <span>iPhone XR</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -273,6 +271,7 @@
                                 <span>iPhone X</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -282,6 +281,7 @@
                                 <span>iPhone 8 Plus</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -291,6 +291,7 @@
                                 <span>iPhone 8</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -300,6 +301,7 @@
                                 <span>iPhone 7 Plus</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -309,6 +311,7 @@
                                 <span>iPhone 7</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -318,6 +321,7 @@
                                 <span>iPhone 6S Plus</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -327,6 +331,7 @@
                                 <span>iPhone 6S</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -353,7 +358,8 @@
                                 <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
                                 <span>iPhone 11 Pro Max</span>
                               </a>
-                            </li class="swiper-slide">
+                            </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -363,6 +369,7 @@
                                 <span>iPhone 11 Pro</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -372,6 +379,7 @@
                                 <span>iPhone 11</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -381,6 +389,7 @@
                                 <span>iPhone XS Max</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -390,6 +399,7 @@
                                 <span>iPhone XS</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -399,6 +409,7 @@
                                 <span>iPhone XR</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -408,6 +419,7 @@
                                 <span>iPhone X</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -417,6 +429,7 @@
                                 <span>iPhone 8 Plus</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -426,6 +439,7 @@
                                 <span>iPhone 8</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -435,6 +449,7 @@
                                 <span>iPhone 7 Plus</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -444,6 +459,7 @@
                                 <span>iPhone 7</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -453,6 +469,7 @@
                                 <span>iPhone 6S Plus</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -462,6 +479,7 @@
                                 <span>iPhone 6S</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -488,7 +506,8 @@
                                 <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
                                 <span>iPhone 11 Pro Max</span>
                               </a>
-                            </li class="swiper-slide">
+                            </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -498,6 +517,7 @@
                                 <span>iPhone 11 Pro</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -507,6 +527,7 @@
                                 <span>iPhone 11</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -516,6 +537,7 @@
                                 <span>iPhone XS Max</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -525,6 +547,7 @@
                                 <span>iPhone XS</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -534,6 +557,7 @@
                                 <span>iPhone XR</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -543,6 +567,7 @@
                                 <span>iPhone X</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -552,6 +577,7 @@
                                 <span>iPhone 8 Plus</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -561,6 +587,7 @@
                                 <span>iPhone 8</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -570,6 +597,7 @@
                                 <span>iPhone 7 Plus</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -579,6 +607,7 @@
                                 <span>iPhone 7</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -588,6 +617,7 @@
                                 <span>iPhone 6S Plus</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -597,6 +627,7 @@
                                 <span>iPhone 6S</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -623,7 +654,8 @@
                                 <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
                                 <span>iPhone 11 Pro Max</span>
                               </a>
-                            </li class="swiper-slide">
+                            </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -633,6 +665,7 @@
                                 <span>iPhone 11 Pro</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -642,6 +675,7 @@
                                 <span>iPhone 11</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -651,6 +685,7 @@
                                 <span>iPhone XS Max</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -660,6 +695,7 @@
                                 <span>iPhone XS</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -669,6 +705,7 @@
                                 <span>iPhone XR</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -678,6 +715,7 @@
                                 <span>iPhone X</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -687,6 +725,7 @@
                                 <span>iPhone 8 Plus</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -696,6 +735,7 @@
                                 <span>iPhone 8</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -705,6 +745,7 @@
                                 <span>iPhone 7 Plus</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -714,6 +755,7 @@
                                 <span>iPhone 7</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -723,6 +765,7 @@
                                 <span>iPhone 6S Plus</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -732,6 +775,7 @@
                                 <span>iPhone 6S</span>
                               </a>
                             </li>
+
                             <li class="swiper-slide">
                               <a class="uk-flex uk-flex-column" href="#">
                                 <div>
@@ -837,7 +881,7 @@
       </div>
     </div>
 
-    <div class="header__sticky uk-flex uk-flex-middle bg-full-width--white" uk-sticky="media: (min-width: 1250px)">
+    <div class="header__sticky uk-flex uk-flex-middle bg-full-width--white" data-uk-sticky="media: (min-width: 1250px)">
       <div class="header__catalog uk-visible@l">
         <button class="header__catalog-btn" type="button">
           <svg width="24" height="6" fill="rgba(255,255,255,.5)">
@@ -846,11 +890,11 @@
           Каталог товаров
         </button>
 
-        <div class="header__catalog-container" uk-dropdown="mode: click; delay-hide: 0">
+        <div class="header__catalog-container" data-uk-dropdown="mode: click; delay-hide: 0">
           <button class="header__catalog-close" id="header-catalog-close" type="button"
             onclick="UIkit.dropdown('.header__catalog-container').hide();">Закрыть</button>
           <span class="btn header__catalog-question" data-uk-toggle="target: #popupQuestion">Задать вопрос онлайн</span>
-          <ul class="header__catalog-tabs uk-subnav uk-subnav-pill" uk-switcher>
+          <ul class="header__catalog-tabs uk-subnav uk-subnav-pill" data-uk-switcher>
             <li><a href="#">iPhone</a></li>
             <li><a href="#">iPad</a></li>
             <li><a href="#">MacBook и iMac</a></li>
@@ -859,7 +903,7 @@
           </ul>
           <ul class="header__catalog-content uk-switcher uk-text-left">
             <li>
-              <ul class="header__catalog-list uk-flex uk-child-width-auto uk-grid-small" uk-grid>
+              <ul class="header__catalog-list uk-flex uk-child-width-auto uk-grid-small" data-uk-grid>
                 <li>
                   <a class="uk-flex uk-flex-column" href="#">
                     <div>
@@ -1017,13 +1061,13 @@
       </div>
 
       <div class="search uk-width-expand@l">
-        <button class="search__mobile uk-hidden@l" uk-toggle="target: #popupSearch">
+        <button class="search__mobile uk-hidden@l" data-uk-toggle="target: #popupSearch">
           <svg width="24" height="24" fill="#393939">
             <use xlink:href="img/symbol/sprite.svg#header__search-mobile" />
           </svg>
         </button>
 
-        <div id="popupSearch" class="popup popup--search" uk-modal>
+        <div id="popupSearch" class="popup popup--search" data-uk-modal>
           <div class="uk-modal-dialog uk-modal-body">
             <input id="searchInput" type="text" placeholder="Поиск по каталогу" pattern=".{0}" value=""
               autocomplete="new-password">
@@ -1054,24 +1098,10 @@
               </li>
             </ul>
 
-            <div class="backdrop uk-visible@l" uk-toggle="target: body; cls: search--opened"></div>
+            <div class="backdrop uk-visible@l" data-uk-toggle="target: body; cls: search--opened"></div>
           </div>
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       <a class="header__contacts-mobile uk-hidden@l" href="tel:84991131908">
         <svg width="24" height="24">
@@ -1089,7 +1119,6 @@
           data-uk-toggle="target: #popupRegistration"></button>
       </div>
     </div>
-
   </div>
 
   <div class="header__bottom uk-container uk-flex uk-flex-middle">
