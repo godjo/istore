@@ -40,7 +40,6 @@ $(document).ready(function () {
 	})
 
 	/* Кнопка Меню для мобильных устройств */
-
 	$(".header__menu-button").click(function () {
 		$(this).toggleClass('open');
 	});
