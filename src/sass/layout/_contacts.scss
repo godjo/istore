@@ -27,7 +27,6 @@
   &__header {
     @include screen(xl) {
       padding: 0 20px;
-      margin-bottom: 30px;
     }
 
     @include screen(l) {
