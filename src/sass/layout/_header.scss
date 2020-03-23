@@ -623,6 +623,19 @@
       pointer-events: none;
       background: $gray-light;
       transition: opacity .2s;
+
+      &::-webkit-scrollbar {
+        width: 9px;
+
+        &-thumb {
+          background: $main-black-color-opacity-4;
+          border-radius: 15px;
+
+          &:hover {
+            background: $main-black-color-opacity-6;
+          }
+        }
+      }
     }
 
     &-wrap {
