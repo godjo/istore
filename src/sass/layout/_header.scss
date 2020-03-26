@@ -580,6 +580,7 @@
 
           @include screen(l) {
             padding: 0 30px;
+            min-height: 48px;
             white-space: nowrap;
             font: 500 18px/23px FuturaPT;
             transition: color .15s;
