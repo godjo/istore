@@ -203,4 +203,223 @@
       mix-blend-mode: darken;
     }
   }
+
+  &__banner--iphone11promax {
+    @include screen(l) {
+      background-color: $black;
+    }
+
+    .seo__title {
+      @include screen(l) {
+        color: $white;
+      }
+    }
+
+    img {
+      @include screen(l) {
+        right: 0;
+        left: inherit;
+        width: 700px;
+      }
+    }
+  }
+
+  &__banner--iphone11 {
+    @include screen(l) {
+      background-color: $black;
+    }
+
+    .seo__title {
+      @include screen(l) {
+        color: $white;
+      }
+    }
+
+    img {
+      @include screen(l) {
+        height: auto;
+      }
+    }
+  }
+
+  &__banner--iphonexsmax {
+    @include screen(l) {
+      background-color: $black;
+    }
+
+    .seo__title {
+      @include screen(l) {
+        color: $white;
+      }
+    }
+
+    img {
+      @include screen(l) {
+        width: auto;
+        right: 0;
+        left: inherit;
+      }
+    }
+  }
+
+  &__banner--iphonexs {
+    @include screen(l) {
+      background-color: $black;
+    }
+
+    .seo__title {
+      @include screen(l) {
+        color: $white;
+      }
+    }
+
+    img {
+      @include screen(l) {
+        left: 200px;
+      }
+    }
+  }
+
+  &__banner--iphonex {
+    @include screen(l) {
+      background-color: $gray-light-5;
+    }
+
+    img {
+      @include screen(l) {
+        left: inherit;
+        right: 0;
+        width: auto;
+      }
+    }
+  }
+
+  &__banner--iphone8plus {
+    @include screen(l) {
+      background-color: $pink-light;
+    }
+
+    img {
+      @include screen(l) {
+        left: inherit;
+        right: 0;
+        width: auto;
+      }
+    }
+  }
+
+  &__banner--iphone8 {
+    @include screen(l) {
+      background-color: $white;
+    }
+
+    img {
+      @include screen(l) {
+        width: auto;
+        left: inherit;
+        right: -200px;
+      }
+    }
+  }
+
+  &__banner--iphone7plus {
+    @include screen(l) {
+      background-color: $black;
+    }
+
+    .seo__title {
+      @include screen(l) {
+        color: $white;
+      }
+    }
+
+    img {
+      @include screen(l) {
+        width: auto;
+        left: 50px;
+      }
+    }
+  }
+
+  &__banner--iphone7 {
+    @include screen(l) {
+      background-color: $red-light;
+    }
+
+    .seo__title {
+      @include screen(l) {
+        color: $white;
+      }
+    }
+
+    img {
+      @include screen(l) {
+        width: auto;
+        left: inherit;
+        right: 0;
+      }
+    }
+  }
+
+  &__banner--iphone6splus {
+    @include screen(l) {
+      background-color: $white;
+    }
+
+    img {
+      @include screen(l) {
+        width: auto;
+        left: inherit;
+        right: 0;
+      }
+    }
+  }
+
+  &__banner--iphone6s {
+    @include screen(l) {
+      background-color: $white;
+    }
+
+    img {
+      @include screen(l) {
+        width: auto;
+        left: inherit;
+        right: 0;
+      }
+    }
+  }
+
+  &__banner--iphonese {
+    @include screen(l) {
+      background-color: $white;
+    }
+
+    img {
+      @include screen(l) {
+        width: auto;
+        left: inherit;
+        right: 0;
+      }
+    }
+  }
+
+  &__banner--iphone6 {
+    img {
+      @include screen(l) {
+        width: auto;
+        left: inherit;
+        right: 0;
+      }
+    }
+  }
+
+  &__banner--iphone5s {
+    img {
+      @include screen(l) {
+        width: auto;
+        left: inherit;
+        right: 0;
+      }
+    }
+  }
 }

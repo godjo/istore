@@ -242,169 +242,91 @@
   </div>
 
   <div class="product__faq uk-container bg-full-width">
-    <ul class="frame" uk-accordion>
+    <ul class="frame" data-uk-accordion>
       <li class="uk-open">
         <h2 class="uk-accordion-title product__faq-title">Часто задаваемые вопросы</h2>
 
-        <div id="faq" class="uk-accordion-content uk-flex">
-          <button class="product__faq-see-all" data-uk-toggle="target: #faq; cls: active">Показать
-            все вопросы</button>
-          <ul class="accordion uk-width-expand@s" uk-accordion="collapsible: true"
-            uk-switcher="animation: uk-animation-fade; active: 12;">
-            <li>
-              <a class="uk-accordion-title" href="#">1. Телефоны новые или восстановленные?</a>
-              <div class="uk-accordion-content">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
-                  doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
-                  neque impedit repellat!</p>
-              </div>
-            </li>
-            <li>
-              <a class="uk-accordion-title" href="#">2. Почему такая низкая цена?</a>
-              <div class="uk-accordion-content">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
-                  doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
-                  neque impedit repellat!</p>
-              </div>
-            </li>
-            <li>
-              <a class="uk-accordion-title" href="#">3. Какие сроки гарантии? Куда обратиться по гарантии?</a>
-              <div class="uk-accordion-content">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
-                  doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
-                  neque impedit repellat!</p>
-              </div>
-            </li>
-            <li>
-              <a class="uk-accordion-title" href="#">4. Есть ли у вас рассрочка или кредит?</a>
-              <div class="uk-accordion-content">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
-                  doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
-                  neque impedit repellat!</p>
-              </div>
-            </li>
-            <li>
-              <a class="uk-accordion-title" href="#">5. Могу ли я получить скидку?</a>
-              <div class="uk-accordion-content">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
-                  doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
-                  neque impedit repellat!</p>
-              </div>
-            </li>
-            <li>
-              <a class="uk-accordion-title" href="#">6. Как происходит доставка?</a>
-              <div class="uk-accordion-content">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
-                  doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
-                  neque impedit repellat!</p>
-              </div>
-            </li>
-            <li>
-              <a class="uk-accordion-title" href="#">7. Сколько времени занимает доставка?</a>
-              <div class="uk-accordion-content">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
-                  doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
-                  neque impedit repellat!</p>
-              </div>
-            </li>
-            <li>
-              <a class="uk-accordion-title" href="#">8. Нужно ли мне платить вперед?</a>
-              <div class="uk-accordion-content">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
-                  doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
-                  neque impedit repellat!</p>
-              </div>
-            </li>
-            <li>
-              <a class="uk-accordion-title" href="#">9. Сколько стоит доставка?</a>
-              <div class="uk-accordion-content">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
-                  doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
-                  neque impedit repellat!</p>
-              </div>
-            </li>
-            <li>
-              <a class="uk-accordion-title" href="#">10. Могу ли я отказаться от покупки?</a>
-              <div class="uk-accordion-content">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
-                  doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
-                  neque impedit repellat!</p>
-              </div>
-            </li>
-            <li>
-              <a class="uk-accordion-title" href="#">11. Как я могу отследить заказ?</a>
-              <div class="uk-accordion-content">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
-                  doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
-                  neque impedit repellat!</p>
-              </div>
-            </li>
-            <li>
-              <a class="uk-accordion-title" href="#">12. Какие данные нужны для доставки?</a>
-              <div class="uk-accordion-content">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio, incidunt, dolorem consequatur
-                  doloribus similique odit delectus vel ipsum quod provident earum laborum deleniti ipsam tenetur velit
-                  neque impedit repellat!</p>
-              </div>
-            </li>
-            <!-- Не удалять последнюю <li> !!! -->
-            <!-- <li>
-              <a class="uk-accordion-title" href="#"></a>
-              <div class="uk-accordion-content">
-              </div>
-            </li> -->
-          </ul>
+        <div class="uk-accordion-content">
+          <div class="product__faq-wrapper uk-child-width-1-2@l">
+            <ul class="accordion" data-uk-accordion>
+              <li>
+                <a class="uk-accordion-title" href="#">У ВАС ТЕЛЕФОНЫ НОВЫЕ ИЛИ ВОССТАНОВЛЕННЫЕ?</a>
+                <div class="uk-accordion-content">
+                  <p>Мы не продаем телефоны, бывшие в употреблении. Вся продукция, представленная в iStore, оригинальная
+                    и
+                    продается в полной комплектации. Убедиться в этом можно на сайте компании Apple</p>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title" href="#">РАБОТАЕТЕ ЛИ ВЫ В КАРАНТИН ?</a>
+                <div class="uk-accordion-content">
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor reprehenderit.</p>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title" href="#">РАБОТАЕТЕ ЛИ ВЫ В КАРАНТИН ?</a>
+                <div class="uk-accordion-content">
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor reprehenderit.</p>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title" href="#">РАБОТАЕТЕ ЛИ ВЫ В КАРАНТИН ?</a>
+                <div class="uk-accordion-content">
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor reprehenderit.</p>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title" href="#">РАБОТАЕТЕ ЛИ ВЫ В КАРАНТИН ?</a>
+                <div class="uk-accordion-content">
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor reprehenderit.</p>
+                </div>
+              </li>
+            </ul>
 
-          <ul class="uk-switcher uk-width-expand@l uk-visible@l">
-            <li>
-              <p>Мы продаем американские и европейские смартфоны. На них цена на 15-20% дешевле, чем на смартфоны,
-                выпущенные для Российского рынка. Для пользователя никакой разницы между Американскими и Российскими
-                моделями нет. При желании, у нас есть и ростест модели, но цена на них будет выше.</p>
-            </li>
-            <li>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus in reiciendis magnam perferendis quos
-                vitae illum aliquid vero animi, amet voluptate aut quae harum eaque delectus saepe. Illo, atque fuga.
-              </p>
-            </li>
-            <li>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur veritatis nisi nam, iusto
-                adipisci
-                expedita repellat minus enim doloribus asperiores repudiandae eveniet, accusantium quaerat id ipsum quam
-                voluptas, magni unde fugiat architecto quisquam cupiditate! Ea, sit molestias doloribus ex voluptates
-                reiciendis vitae ut, exercitationem aspernatur dolor excepturi voluptatem eligendi. Quaerat.</p>
-            </li>
-            <li>
-              <p>Bazinga!</p>
-            </li>
-            <li>
-              <p>Bazinga!</p>
-            </li>
-            <li>
-              <p>Bazinga!</p>
-            </li>
-            <li>
-              <p>Bazinga!</p>
-            </li>
-            <li>
-              <p>Bazinga!</p>
-            </li>
-            <li>
-              <p>Bazinga!</p>
-            </li>
-            <li>
-              <p>Bazinga!</p>
-            </li>
-            <li>
-              <p>Bazinga!</p>
-            </li>
-            <li>
-              <p>Bazinga!</p>
-            </li>
-            <!-- Не удалять последнюю <li> !!! -->
-            <!-- <li>
-              <img src="img/pic/bg/faq-bg.svg" alt="">
-            </li> -->
-          </ul>
+            <ul class="accordion" data-uk-accordion>
+              <li>
+                <a class="uk-accordion-title" href="#">У ВАС ТЕЛЕФОНЫ НОВЫЕ ИЛИ ВОССТАНОВЛЕННЫЕ?</a>
+                <div class="uk-accordion-content">
+                  <p>Мы не продаем телефоны, бывшие в употреблении. Вся продукция, представленная в iStore, оригинальная
+                    и
+                    продается в полной комплектации. Убедиться в этом можно на сайте компании Apple</p>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title" href="#">РАБОТАЕТЕ ЛИ ВЫ В КАРАНТИН ?</a>
+                <div class="uk-accordion-content">
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor reprehenderit.</p>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title" href="#">РАБОТАЕТЕ ЛИ ВЫ В КАРАНТИН ?</a>
+                <div class="uk-accordion-content">
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor reprehenderit.</p>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title" href="#">РАБОТАЕТЕ ЛИ ВЫ В КАРАНТИН ?</a>
+                <div class="uk-accordion-content">
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor reprehenderit.</p>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title" href="#">РАБОТАЕТЕ ЛИ ВЫ В КАРАНТИН ?</a>
+                <div class="uk-accordion-content">
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor reprehenderit.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="product__faq-see-all">Показать все</button>
         </div>
       </li>
     </ul>
