@@ -784,6 +784,18 @@
         .uk-accordion-content {
           padding: 15px 20px 15px 25px;
           background-color: $white;
+
+          ul {
+            padding: 0;
+            background-color: transparent;
+
+            li {
+              margin: 0;
+              padding: 0;
+              box-shadow: none;
+              background-color: transparent;
+            }
+          }
         }
       }
     }
