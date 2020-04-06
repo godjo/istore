@@ -143,13 +143,13 @@ button {
 
 /* subnav */
 .breadcrumbs {
-  &.uk-subnav>*> :first-child {
+  &.uk-subnav > * > :first-child {
     color: $second-black-color-opacity-8 !important;
     font: normal 14px/16px FuturaPT !important;
     text-transform: none !important;
   }
 
-  &.uk-subnav>.uk-active>a {
+  &.uk-subnav > .uk-active > a {
     color: $second-black-color-opacity-4 !important;
 
     &:hover {
@@ -157,7 +157,7 @@ button {
     }
   }
 
-  &.uk-subnav-divider> :nth-child(n+2):not(.uk-first-column)::before {
+  &.uk-subnav-divider > :nth-child(n+2):not(.uk-first-column)::before {
     position: absolute;
     left: 8px;
     content: "";
@@ -379,7 +379,7 @@ select {
   opacity: 0;
   visibility: hidden;
   transition: background-color .3s,
-    opacity .5s, visibility .5s;
+  opacity .5s, visibility .5s;
 
   @include screen(xl) {
     bottom: 20px;

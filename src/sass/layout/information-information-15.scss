@@ -1,0 +1,63 @@
+.information-information-15 {
+  .frame {
+    position: relative;
+
+    @include screen(xl) {
+      padding: 20px 20px 40px;
+    }
+
+    @include screen(l) {
+      padding: 15px 30px 40px;
+    }
+  }
+
+  &__wrapper {
+    @include screen(xl) {
+      padding: 0;
+    }
+
+    @include screen(l) {
+      padding-top: 20px;
+    }
+
+    ol {
+      list-style: decimal;
+
+      @include screen(xl) {
+        margin: 0 0 30px 20px;
+      }
+      @include screen(l) {
+        margin: 0 0 30px 40px;
+      }
+
+      li {
+        &:not(:last-of-type) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    a {
+      color: $main-color;
+    }
+  }
+
+  &__text {
+    &-large {
+      margin-bottom: 30px;
+      font: normal 24px/32px FuturaPT;
+    }
+
+    &-bold {
+      font: 500 22px/32px FuturaPT;
+    }
+
+    &-subtitle {
+      font: 500 24px/32px FuturaPT;
+    }
+  }
+
+  .dotted-list {
+    margin-bottom: 30px;
+  }
+}
