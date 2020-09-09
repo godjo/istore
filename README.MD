@@ -10,5 +10,5 @@ $ npm i
 
 ### dev mode
 ```sh
-$ gulp
+$ gulp dev
 ```
